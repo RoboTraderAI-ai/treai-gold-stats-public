@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-20T14:57:04+00:00",
+  "generated_utc": "2026-10-20T15:11:57+00:00",
   "data": {
     "symbol": "XAUUSD",
     "gold_like_symbols": [
@@ -16,12 +16,12 @@
     "digits": 2,
     "symbol_path": "Gold\\XAUUSD",
     "live_clock": {
-      "tick_server_epoch": 1792519019,
-      "local_utc_epoch": 1792508219
+      "tick_server_epoch": 1792519912,
+      "local_utc_epoch": 1792509112
     },
-    "m5_bars": 553309,
+    "m5_bars": 553312,
     "m5_first": "2019-01-02 01:00:00",
-    "m5_last": "2026-10-20 17:55:00",
+    "m5_last": "2026-10-20 18:10:00",
     "d1_bars": 3046,
     "d1_first": "2015-01-02 00:00:00",
     "d1_last": "2026-10-20 00:00:00",
@@ -9442,9 +9442,9 @@
     }
   },
   "reference_levels": {
-    "as_of_london": "2026-10-20 16:00",
-    "latest_price": 4141.68,
-    "latest_bar_london": "2026-10-20 15:55",
+    "as_of_london": "2026-10-20 16:15",
+    "latest_price": 4142.57,
+    "latest_bar_london": "2026-10-20 16:10",
     "rules": {
       "max_distance_E": 2.0,
       "dedup_threshold_E": 0.1,
@@ -9455,16 +9455,40 @@
       "priority": [
         "20-day high",
         "20-day low",
+        "prior month high",
+        "prior month low",
+        "prior week high",
+        "prior week low",
         "prior day high",
         "prior day low",
         "London morning high",
         "London morning low",
         "overnight high",
         "overnight low",
+        "reaction level",
+        "200-day MA",
+        "50-day MA",
+        "20-day MA",
+        "D1 swing high",
+        "D1 swing low",
+        "H4 swing high",
+        "H4 swing low",
         "prior day close",
         "round 50",
         "round 25"
       ],
+      "swing_bars_each_side": {
+        "D1": 3,
+        "H4": 3
+      },
+      "swing_sessions": 60,
+      "reaction_cluster_E": 0.1,
+      "moving_averages": [
+        20,
+        50,
+        200
+      ],
+      "confluence_E": 0.15,
       "brief_max_rows": 8,
       "brief_structural_order": [
         "prior day high",
@@ -9477,61 +9501,137 @@
         "20-day high",
         "20-day low"
       ],
-      "brief_round_gap_E": 0.2
+      "brief_round_gap_E": 0.2,
+      "brief_band_E": 0.25
+    },
+    "swing_points": {
+      "from_server_day": "2026-07-28",
+      "to_server_day": "2026-10-19",
+      "d1_bars": 60,
+      "h4_bars": 363,
+      "d1_pivots": 12,
+      "h4_pivots_distinct_turns": 54
     },
     "distance_note": "distance_E = (level - latest price) / E of the window. The excursion arrays are measured from the window OPEN, so p_reach_from_array is exact only when the latest price is the window open; before the open it is an approximation.",
     "partial_note": "partial=true means the level's window was still forming; computed_to_london is the close time of the last bar included (e.g. 'morning range as at 12:45').",
+    "confluence_note": "confluence = number of distinct level types (prior day, prior week, D1 swing, reaction level, 50-day MA, round number, ...) with a level within 0.15 E, the level's own type included, counted over every in-range candidate before dedup. A count of labels, not of independent evidence: one price extreme is often several types at once. Not used in any probability.",
     "windows": {
       "london_0800_1300": {
         "window_status": "closed",
         "E_usd": 29.79,
         "dedup_threshold_usd": 2.98,
+        "confluence_threshold_usd": 4.47,
         "brief_levels": [
           {
-            "label": "round 50",
-            "price": 4200.0,
-            "source": "round number",
-            "side": "up",
-            "partial": false,
-            "computed_to_london": null,
-            "distance_usd": 58.32,
-            "distance_E": 1.958,
-            "p_reach_from_array": {
-              "hits": 2,
-              "n": 250,
-              "rate": 0.008
-            },
-            "absorbed": []
-          },
-          {
             "label": "prior day high",
+            "type": "prior day",
             "price": 4190.33,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 48.65,
-            "distance_E": 1.633,
+            "touches": null,
+            "distance_usd": 47.76,
+            "distance_E": 1.603,
             "p_reach_from_array": {
               "hits": 3,
               "n": 250,
               "rate": 0.012
             },
+            "confluence": 3,
+            "confluence_types": {
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33",
+              "reaction level": "reaction level 4191.60"
+            },
+            "absorbed": [
+              {
+                "label": "reaction level",
+                "price": 4191.6,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4190.33,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4192.88,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4170.33,
+            "source": "H4 pivot (3 bars each side) at 2026-10-05 08:00 server",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 27.76,
+            "distance_E": 0.932,
+            "p_reach_from_array": {
+              "hits": 27,
+              "n": 250,
+              "rate": 0.108
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4170.33"
+            },
+            "absorbed": []
+          },
+          {
+            "label": "H4 swing low",
+            "type": "H4 swing",
+            "price": 4150.7,
+            "source": "H4 pivot (3 bars each side) at 2026-10-13 04:00 server",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 8.13,
+            "distance_E": 0.273,
+            "p_reach_from_array": {
+              "hits": 141,
+              "n": 250,
+              "rate": 0.564
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4150.70",
+              "round number": "round 50 4150.00",
+              "overnight": "overnight high 4147.08"
+            },
             "absorbed": []
           },
           {
             "label": "overnight high",
+            "type": "overnight",
             "price": 4147.08,
             "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 5.4,
-            "distance_E": 0.181,
+            "touches": null,
+            "distance_usd": 4.51,
+            "distance_E": 0.151,
             "p_reach_from_array": {
-              "hits": 173,
+              "hits": 192,
               "n": 250,
-              "rate": 0.692
+              "rate": 0.768
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "overnight": "overnight high 4147.08",
+              "round number": "round 50 4150.00",
+              "H4 swing": "H4 swing low 4150.70"
             },
             "absorbed": [
               {
@@ -9543,133 +9643,341 @@
             ]
           },
           {
-            "label": "prior day close",
-            "price": 4140.53,
-            "source": "D1 2026-10-19 (server day ending 17:00 New York)",
-            "side": "down",
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4143.24,
+            "source": "H4 pivot (3 bars each side) at 2026-10-08 04:00 server",
+            "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -1.15,
-            "distance_E": -0.039,
+            "touches": null,
+            "distance_usd": 0.67,
+            "distance_E": 0.022,
             "p_reach_from_array": {
-              "hits": 235,
+              "hits": 245,
               "n": 250,
-              "rate": 0.94
+              "rate": 0.98
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4143.24",
+              "prior day": "prior day close 4140.53",
+              "overnight": "overnight high 4147.08"
+            },
+            "absorbed": [
+              {
+                "label": "prior day close",
+                "price": 4140.53,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "prior day low",
+            "type": "prior day",
             "price": 4136.59,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -5.09,
-            "distance_E": -0.171,
+            "touches": null,
+            "distance_usd": -5.98,
+            "distance_E": -0.201,
             "p_reach_from_array": {
-              "hits": 199,
+              "hits": 190,
               "n": 250,
-              "rate": 0.796
+              "rate": 0.76
             },
-            "absorbed": []
+            "confluence": 2,
+            "confluence_types": {
+              "prior day": "prior day low 4136.59",
+              "H4 swing": "H4 swing low 4139.27"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing low",
+                "price": 4139.27,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
-            "label": "round 25",
-            "price": 4125.0,
-            "source": "round number",
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4120.1,
+            "source": "H4 pivot (3 bars each side) at 2026-07-30 16:00 server",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -16.68,
-            "distance_E": -0.56,
+            "touches": null,
+            "distance_usd": -22.47,
+            "distance_E": -0.754,
             "p_reach_from_array": {
-              "hits": 84,
+              "hits": 51,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.204
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4120.10",
+              "overnight": "overnight low 4115.67"
             },
             "absorbed": []
           },
           {
             "label": "overnight low",
+            "type": "overnight",
             "price": 4115.67,
             "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -26.01,
-            "distance_E": -0.873,
+            "touches": null,
+            "distance_usd": -26.9,
+            "distance_E": -0.903,
             "p_reach_from_array": {
-              "hits": 46,
+              "hits": 41,
               "n": 250,
-              "rate": 0.184
+              "rate": 0.164
             },
-            "absorbed": []
-          },
-          {
-            "label": "round 50",
-            "price": 4100.0,
-            "source": "round number",
-            "side": "down",
-            "partial": false,
-            "computed_to_london": null,
-            "distance_usd": -41.68,
-            "distance_E": -1.399,
-            "p_reach_from_array": {
-              "hits": 22,
-              "n": 250,
-              "rate": 0.088
+            "confluence": 2,
+            "confluence_types": {
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing high 4116.34"
             },
-            "absorbed": []
+            "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4116.34,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           }
         ],
-        "brief_excluded": [],
-        "levels": [
+        "brief_excluded": [
+          {
+            "label": "round 25",
+            "price": 4125.0,
+            "reason": "H4 swing high 4120.1 within 0.2 E"
+          },
           {
             "label": "round 50",
-            "price": 4200.0,
-            "source": "round number",
+            "price": 4100.0,
+            "reason": "reaction level 4104.48 within 0.2 E"
+          },
+          {
+            "label": "prior month low",
+            "price": 4110.8,
+            "reason": "brief cap of 8 rows (band 4, confluence 2)"
+          },
+          {
+            "label": "reaction level",
+            "price": 4104.48,
+            "reason": "brief cap of 8 rows (band 5, confluence 2)"
+          },
+          {
+            "label": "20-day MA",
+            "price": 4181.49,
+            "reason": "brief cap of 8 rows (band 5, confluence 2)"
+          },
+          {
+            "label": "reaction level",
+            "price": 4199.61,
+            "reason": "brief cap of 8 rows (band 7, confluence 3)"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4083.36,
+            "reason": "brief cap of 8 rows (band 7, confluence 1)"
+          }
+        ],
+        "levels": [
+          {
+            "label": "reaction level",
+            "type": "reaction level",
+            "price": 4199.61,
+            "source": "2 turns 4198.75-4200.47: H4 high 2026-10-13 08:00, H4 high 2026-10-16 16:00",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 58.32,
-            "distance_E": 1.958,
+            "touches": 2,
+            "distance_usd": 57.04,
+            "distance_E": 1.915,
             "p_reach_from_array": {
               "hits": 2,
               "n": 250,
               "rate": 0.008
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "reaction level": "reaction level 4199.61",
+              "round number": "round 50 4200.00",
+              "H4 swing": "H4 swing high 4200.47"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4198.75,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4200.47,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "round 50",
+                "price": 4200.0,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "prior day high",
+            "type": "prior day",
             "price": 4190.33,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 48.65,
-            "distance_E": 1.633,
+            "touches": null,
+            "distance_usd": 47.76,
+            "distance_E": 1.603,
             "p_reach_from_array": {
               "hits": 3,
               "n": 250,
               "rate": 0.012
             },
+            "confluence": 3,
+            "confluence_types": {
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33",
+              "reaction level": "reaction level 4191.60"
+            },
+            "absorbed": [
+              {
+                "label": "reaction level",
+                "price": 4191.6,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4190.33,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4192.88,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "20-day MA",
+            "type": "20-day MA",
+            "price": 4181.49,
+            "source": "SMA of D1 closes 2026-09-22 -> 2026-10-19",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 38.92,
+            "distance_E": 1.307,
+            "p_reach_from_array": {
+              "hits": 11,
+              "n": 250,
+              "rate": 0.044
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "20-day MA": "20-day MA 4181.49",
+              "H4 swing": "H4 swing high 4184.35"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4184.35,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4170.33,
+            "source": "H4 pivot (3 bars each side) at 2026-10-05 08:00 server",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 27.76,
+            "distance_E": 0.932,
+            "p_reach_from_array": {
+              "hits": 27,
+              "n": 250,
+              "rate": 0.108
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4170.33"
+            },
+            "absorbed": []
+          },
+          {
+            "label": "H4 swing low",
+            "type": "H4 swing",
+            "price": 4150.7,
+            "source": "H4 pivot (3 bars each side) at 2026-10-13 04:00 server",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 8.13,
+            "distance_E": 0.273,
+            "p_reach_from_array": {
+              "hits": 141,
+              "n": 250,
+              "rate": 0.564
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4150.70",
+              "round number": "round 50 4150.00",
+              "overnight": "overnight high 4147.08"
+            },
             "absorbed": []
           },
           {
             "label": "overnight high",
+            "type": "overnight",
             "price": 4147.08,
             "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 5.4,
-            "distance_E": 0.181,
+            "touches": null,
+            "distance_usd": 4.51,
+            "distance_E": 0.151,
             "p_reach_from_array": {
-              "hits": 173,
+              "hits": 192,
               "n": 250,
-              "rate": 0.692
+              "rate": 0.768
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "overnight": "overnight high 4147.08",
+              "round number": "round 50 4150.00",
+              "H4 swing": "H4 swing low 4150.70"
             },
             "absorbed": [
               {
@@ -9681,87 +9989,572 @@
             ]
           },
           {
-            "label": "prior day close",
-            "price": 4140.53,
-            "source": "D1 2026-10-19 (server day ending 17:00 New York)",
-            "side": "down",
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4143.24,
+            "source": "H4 pivot (3 bars each side) at 2026-10-08 04:00 server",
+            "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -1.15,
-            "distance_E": -0.039,
+            "touches": null,
+            "distance_usd": 0.67,
+            "distance_E": 0.022,
             "p_reach_from_array": {
-              "hits": 235,
+              "hits": 245,
               "n": 250,
-              "rate": 0.94
+              "rate": 0.98
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4143.24",
+              "prior day": "prior day close 4140.53",
+              "overnight": "overnight high 4147.08"
+            },
+            "absorbed": [
+              {
+                "label": "prior day close",
+                "price": 4140.53,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "prior day low",
+            "type": "prior day",
             "price": 4136.59,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -5.09,
-            "distance_E": -0.171,
+            "touches": null,
+            "distance_usd": -5.98,
+            "distance_E": -0.201,
             "p_reach_from_array": {
-              "hits": 199,
+              "hits": 190,
               "n": 250,
-              "rate": 0.796
+              "rate": 0.76
             },
-            "absorbed": []
+            "confluence": 2,
+            "confluence_types": {
+              "prior day": "prior day low 4136.59",
+              "H4 swing": "H4 swing low 4139.27"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing low",
+                "price": 4139.27,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "round 25",
+            "type": "round number",
             "price": 4125.0,
             "source": "round number",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -16.68,
-            "distance_E": -0.56,
+            "touches": null,
+            "distance_usd": -17.57,
+            "distance_E": -0.59,
             "p_reach_from_array": {
-              "hits": 84,
+              "hits": 77,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.308
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "round number": "round 25 4125.00"
+            },
+            "absorbed": []
+          },
+          {
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4120.1,
+            "source": "H4 pivot (3 bars each side) at 2026-07-30 16:00 server",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -22.47,
+            "distance_E": -0.754,
+            "p_reach_from_array": {
+              "hits": 51,
+              "n": 250,
+              "rate": 0.204
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4120.10",
+              "overnight": "overnight low 4115.67"
             },
             "absorbed": []
           },
           {
             "label": "overnight low",
+            "type": "overnight",
             "price": 4115.67,
             "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -26.01,
-            "distance_E": -0.873,
+            "touches": null,
+            "distance_usd": -26.9,
+            "distance_E": -0.903,
             "p_reach_from_array": {
-              "hits": 46,
+              "hits": 41,
               "n": 250,
-              "rate": 0.184
+              "rate": 0.164
             },
-            "absorbed": []
+            "confluence": 2,
+            "confluence_types": {
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing high 4116.34"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4116.34,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "prior month low",
+            "type": "prior month",
+            "price": 4110.8,
+            "source": "D1 2026-09-01 -> 2026-09-30 (22 days); low on 2026-09-28",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -31.77,
+            "distance_E": -1.066,
+            "p_reach_from_array": {
+              "hits": 28,
+              "n": 250,
+              "rate": 0.112
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80"
+            },
+            "absorbed": [
+              {
+                "label": "D1 swing low",
+                "price": 4110.8,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "reaction level",
+            "type": "reaction level",
+            "price": 4104.48,
+            "source": "2 turns 4103.67-4105.28: H4 low 2026-10-06 04:00, H4 low 2026-10-08 16:00",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": -38.09,
+            "distance_E": -1.279,
+            "p_reach_from_array": {
+              "hits": 24,
+              "n": 250,
+              "rate": 0.096
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "reaction level": "reaction level 4104.48",
+              "H4 swing": "H4 swing low 4105.28"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing low",
+                "price": 4105.28,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4103.67,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "round 50",
+            "type": "round number",
             "price": 4100.0,
             "source": "round number",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -41.68,
-            "distance_E": -1.399,
+            "touches": null,
+            "distance_usd": -42.57,
+            "distance_E": -1.429,
             "p_reach_from_array": {
               "hits": 22,
               "n": 250,
               "rate": 0.088
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "round number": "round 50 4100.00",
+              "H4 swing": "H4 swing low 4103.67"
+            },
+            "absorbed": []
+          },
+          {
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4083.36,
+            "source": "H4 pivot (3 bars each side) at 2026-08-03 00:00 server",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -59.21,
+            "distance_E": -1.988,
+            "p_reach_from_array": {
+              "hits": 10,
+              "n": 250,
+              "rate": 0.04
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4083.36"
             },
             "absorbed": []
           }
         ],
         "dropped": [
+          {
+            "label": "reaction level",
+            "price": 4191.6,
+            "source": "2 turns 4190.33-4192.88: H4 high 2026-10-01 08:00, H4 high 2026-10-19 08:00",
+            "dropped_for": "prior day high 4190.33",
+            "gap_usd": 1.27,
+            "gap_E": 0.043,
+            "reason": "within 0.1 E ($2.98) of higher-priority prior day high",
+            "type": "reaction level",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": 49.03,
+            "distance_E": 1.646,
+            "p_reach_from_array": {
+              "hits": 3,
+              "n": 250,
+              "rate": 0.012
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "reaction level": "reaction level 4191.60",
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33"
+            }
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4110.8,
+            "source": "D1 pivot (3 bars each side) at 2026-09-28 00:00 server",
+            "dropped_for": "prior month low 4110.80",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($2.98) of higher-priority prior month low",
+            "type": "D1 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -31.77,
+            "distance_E": -1.066,
+            "p_reach_from_array": {
+              "hits": 28,
+              "n": 250,
+              "rate": 0.112
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4190.33,
+            "source": "H4 pivot (3 bars each side) at 2026-10-19 08:00 server",
+            "dropped_for": "prior day high 4190.33",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($2.98) of higher-priority prior day high",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 47.76,
+            "distance_E": 1.603,
+            "p_reach_from_array": {
+              "hits": 3,
+              "n": 250,
+              "rate": 0.012
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33",
+              "reaction level": "reaction level 4191.60"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4198.75,
+            "source": "H4 pivot (3 bars each side) at 2026-10-16 16:00 server",
+            "dropped_for": "reaction level 4199.61",
+            "gap_usd": 0.86,
+            "gap_E": 0.029,
+            "reason": "within 0.1 E ($2.98) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 56.18,
+            "distance_E": 1.886,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4198.75",
+              "reaction level": "reaction level 4199.61",
+              "round number": "round 50 4200.00"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4200.47,
+            "source": "H4 pivot (3 bars each side) at 2026-10-13 08:00 server",
+            "dropped_for": "reaction level 4199.61",
+            "gap_usd": 0.86,
+            "gap_E": 0.029,
+            "reason": "within 0.1 E ($2.98) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 57.9,
+            "distance_E": 1.944,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4200.47",
+              "round number": "round 50 4200.00",
+              "reaction level": "reaction level 4199.61"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4184.35,
+            "source": "H4 pivot (3 bars each side) at 2026-10-06 20:00 server",
+            "dropped_for": "20-day MA 4181.49",
+            "gap_usd": 2.86,
+            "gap_E": 0.096,
+            "reason": "within 0.1 E ($2.98) of higher-priority 20-day MA",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 41.78,
+            "distance_E": 1.402,
+            "p_reach_from_array": {
+              "hits": 6,
+              "n": 250,
+              "rate": 0.024
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4184.35",
+              "20-day MA": "20-day MA 4181.49"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4192.88,
+            "source": "H4 pivot (3 bars each side) at 2026-10-01 08:00 server",
+            "dropped_for": "prior day high 4190.33",
+            "gap_usd": 2.55,
+            "gap_E": 0.086,
+            "reason": "within 0.1 E ($2.98) of higher-priority prior day high",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 50.31,
+            "distance_E": 1.689,
+            "p_reach_from_array": {
+              "hits": 3,
+              "n": 250,
+              "rate": 0.012
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4192.88",
+              "reaction level": "reaction level 4191.60",
+              "prior day": "prior day high 4190.33"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4116.34,
+            "source": "H4 pivot (3 bars each side) at 2026-07-29 20:00 server",
+            "dropped_for": "overnight low 4115.67",
+            "gap_usd": 0.67,
+            "gap_E": 0.022,
+            "reason": "within 0.1 E ($2.98) of higher-priority overnight low",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -26.23,
+            "distance_E": -0.88,
+            "p_reach_from_array": {
+              "hits": 45,
+              "n": 250,
+              "rate": 0.18
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4116.34",
+              "overnight": "overnight low 4115.67"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4105.28,
+            "source": "H4 pivot (3 bars each side) at 2026-10-08 16:00 server",
+            "dropped_for": "reaction level 4104.48",
+            "gap_usd": 0.8,
+            "gap_E": 0.027,
+            "reason": "within 0.1 E ($2.98) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -37.29,
+            "distance_E": -1.252,
+            "p_reach_from_array": {
+              "hits": 25,
+              "n": 250,
+              "rate": 0.1
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4105.28",
+              "reaction level": "reaction level 4104.48"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4103.67,
+            "source": "H4 pivot (3 bars each side) at 2026-10-06 04:00 server",
+            "dropped_for": "reaction level 4104.48",
+            "gap_usd": 0.81,
+            "gap_E": 0.027,
+            "reason": "within 0.1 E ($2.98) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -38.9,
+            "distance_E": -1.306,
+            "p_reach_from_array": {
+              "hits": 24,
+              "n": 250,
+              "rate": 0.096
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4103.67",
+              "reaction level": "reaction level 4104.48",
+              "round number": "round 50 4100.00"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4139.27,
+            "source": "H4 pivot (3 bars each side) at 2026-10-01 00:00 server",
+            "dropped_for": "prior day low 4136.59",
+            "gap_usd": 2.68,
+            "gap_E": 0.09,
+            "reason": "within 0.1 E ($2.98) of higher-priority prior day low",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -3.3,
+            "distance_E": -0.111,
+            "p_reach_from_array": {
+              "hits": 212,
+              "n": 250,
+              "rate": 0.848
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4139.27",
+              "prior day": "prior day close 4140.53"
+            }
+          },
+          {
+            "label": "prior day close",
+            "price": 4140.53,
+            "source": "D1 2026-10-19 (server day ending 17:00 New York)",
+            "dropped_for": "H4 swing high 4143.24",
+            "gap_usd": 2.71,
+            "gap_E": 0.091,
+            "reason": "within 0.1 E ($2.98) of higher-priority H4 swing high",
+            "type": "prior day",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -2.04,
+            "distance_E": -0.068,
+            "p_reach_from_array": {
+              "hits": 226,
+              "n": 250,
+              "rate": 0.904
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "prior day": "prior day close 4140.53",
+              "H4 swing": "H4 swing low 4139.27"
+            }
+          },
           {
             "label": "round 50",
             "price": 4150.0,
@@ -9769,20 +10562,473 @@
             "dropped_for": "overnight high 4147.08",
             "gap_usd": 2.92,
             "gap_E": 0.098,
-            "reason": "within 0.1 E ($2.98) of higher-priority overnight high"
+            "reason": "within 0.1 E ($2.98) of higher-priority overnight high",
+            "type": "round number",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 7.43,
+            "distance_E": 0.249,
+            "p_reach_from_array": {
+              "hits": 150,
+              "n": 250,
+              "rate": 0.6
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "round number": "round 50 4150.00",
+              "H4 swing": "H4 swing low 4150.70",
+              "overnight": "overnight high 4147.08"
+            }
+          },
+          {
+            "label": "round 50",
+            "price": 4200.0,
+            "source": "round number",
+            "dropped_for": "reaction level 4199.61",
+            "gap_usd": 0.39,
+            "gap_E": 0.013,
+            "reason": "within 0.1 E ($2.98) of higher-priority reaction level",
+            "type": "round number",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 57.43,
+            "distance_E": 1.928,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "round number": "round 50 4200.00",
+              "reaction level": "reaction level 4199.61",
+              "H4 swing": "H4 swing high 4200.47"
+            }
           }
         ],
         "beyond_max_distance": [
           {
             "label": "20-day high",
             "price": 4375.92,
-            "distance_E": 7.863,
+            "distance_E": 7.833,
             "reason": "beyond 2.0 E"
           },
           {
             "label": "20-day low",
             "price": 4066.43,
-            "distance_E": -2.526,
+            "distance_E": -2.556,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "prior week high",
+            "price": 4217.18,
+            "distance_E": 2.505,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "prior week low",
+            "price": 4073.38,
+            "distance_E": -2.323,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "prior month high",
+            "price": 4510.8,
+            "distance_E": 12.361,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "50-day MA",
+            "price": 4326.1,
+            "distance_E": 6.161,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "200-day MA",
+            "price": 4520.59,
+            "distance_E": 12.689,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4449.69,
+            "distance_E": 10.309,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4310.94,
+            "distance_E": 5.652,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4696.71,
+            "distance_E": 18.602,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4282.47,
+            "distance_E": 4.696,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4510.8,
+            "distance_E": 12.361,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4235.04,
+            "distance_E": 3.104,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4399.56,
+            "distance_E": 8.627,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4225.41,
+            "distance_E": 2.781,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4066.43,
+            "distance_E": -2.556,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4217.18,
+            "distance_E": 2.505,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4073.38,
+            "distance_E": -2.323,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 3995.92,
+            "distance_E": -4.923,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4021.0,
+            "distance_E": -4.081,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4019.11,
+            "distance_E": -4.144,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4304.08,
+            "distance_E": 5.422,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4223.37,
+            "distance_E": 2.712,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4371.84,
+            "distance_E": 7.696,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4313.37,
+            "distance_E": 5.733,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4435.17,
+            "distance_E": 9.822,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4436.13,
+            "distance_E": 9.854,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4324.61,
+            "distance_E": 6.111,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4527.36,
+            "distance_E": 12.917,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4450.65,
+            "distance_E": 10.342,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4605.31,
+            "distance_E": 15.533,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4673.71,
+            "distance_E": 17.829,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4583.03,
+            "distance_E": 14.785,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4643.02,
+            "distance_E": 16.799,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4565.19,
+            "distance_E": 14.187,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4631.4,
+            "distance_E": 16.409,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4396.44,
+            "distance_E": 8.522,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4365.49,
+            "distance_E": 7.483,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4381.12,
+            "distance_E": 8.008,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4442.95,
+            "distance_E": 10.083,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4341.26,
+            "distance_E": 6.67,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4434.06,
+            "distance_E": 9.785,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4434.91,
+            "distance_E": 9.813,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4292.4,
+            "distance_E": 5.03,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4402.45,
+            "distance_E": 8.724,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4253.63,
+            "distance_E": 3.728,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4261.33,
+            "distance_E": 3.987,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4366.76,
+            "distance_E": 7.526,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4381.19,
+            "distance_E": 8.01,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4334.37,
+            "distance_E": 6.438,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4322.7,
+            "distance_E": 6.047,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4375.92,
+            "distance_E": 7.833,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4291.51,
+            "distance_E": 5.0,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4371.16,
+            "distance_E": 7.673,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4244.29,
+            "distance_E": 3.415,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4315.68,
+            "distance_E": 5.811,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4219.24,
+            "distance_E": 2.574,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4207.48,
+            "distance_E": 2.179,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4020.06,
+            "distance_E": -4.113,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4218.21,
+            "distance_E": 2.539,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4224.39,
+            "distance_E": 2.747,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4291.95,
+            "distance_E": 5.015,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4312.15,
+            "distance_E": 5.693,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4323.65,
+            "distance_E": 6.079,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4366.12,
+            "distance_E": 7.504,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4371.5,
+            "distance_E": 7.685,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4381.15,
+            "distance_E": 8.009,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4401.01,
+            "distance_E": 8.675,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4435.07,
+            "distance_E": 9.819,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4450.17,
+            "distance_E": 10.326,
             "reason": "beyond 2.0 E"
           }
         ]
@@ -9791,54 +11037,118 @@
         "window_status": "in progress",
         "E_usd": 48.36,
         "dedup_threshold_usd": 4.84,
+        "confluence_threshold_usd": 7.25,
         "brief_levels": [
           {
             "label": "prior day high",
+            "type": "prior day",
             "price": 4190.33,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 48.65,
-            "distance_E": 1.006,
+            "touches": null,
+            "distance_usd": 47.76,
+            "distance_E": 0.988,
             "p_reach_from_array": {
-              "hits": 18,
+              "hits": 20,
               "n": 250,
-              "rate": 0.072
+              "rate": 0.08
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33",
+              "reaction level": "reaction level 4191.60"
+            },
+            "absorbed": [
+              {
+                "label": "reaction level",
+                "price": 4191.6,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4190.33,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4192.88,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
-            "label": "round 25",
-            "price": 4175.0,
-            "source": "round number",
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4170.33,
+            "source": "H4 pivot (3 bars each side) at 2026-10-05 08:00 server",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 33.32,
-            "distance_E": 0.689,
+            "touches": null,
+            "distance_usd": 27.76,
+            "distance_E": 0.574,
             "p_reach_from_array": {
-              "hits": 51,
+              "hits": 64,
               "n": 250,
-              "rate": 0.204
+              "rate": 0.256
             },
-            "absorbed": []
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4170.33",
+              "round number": "round 25 4175.00"
+            },
+            "absorbed": [
+              {
+                "label": "round 25",
+                "price": 4175.0,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "overnight high",
+            "type": "overnight",
             "price": 4147.08,
             "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 5.4,
-            "distance_E": 0.112,
+            "touches": null,
+            "distance_usd": 4.51,
+            "distance_E": 0.093,
             "p_reach_from_array": {
-              "hits": 203,
+              "hits": 210,
               "n": 250,
-              "rate": 0.812
+              "rate": 0.84
+            },
+            "confluence": 5,
+            "confluence_types": {
+              "overnight": "overnight high 4147.08",
+              "round number": "round 50 4150.00",
+              "H4 swing": "H4 swing low 4150.70",
+              "reaction level": "reaction level 4141.26",
+              "prior day": "prior day close 4140.53"
             },
             "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4143.24,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4150.7,
+                "partial": false,
+                "computed_to_london": null
+              },
               {
                 "label": "round 50",
                 "price": 4150.0,
@@ -9849,22 +11159,43 @@
           },
           {
             "label": "prior day low",
+            "type": "prior day",
             "price": 4136.59,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -5.09,
-            "distance_E": -0.105,
+            "touches": null,
+            "distance_usd": -5.98,
+            "distance_E": -0.124,
             "p_reach_from_array": {
-              "hits": 223,
+              "hits": 217,
               "n": 250,
-              "rate": 0.892
+              "rate": 0.868
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "prior day": "prior day low 4136.59",
+              "London morning": "London morning high 4136.58",
+              "H4 swing": "H4 swing low 4139.27",
+              "reaction level": "reaction level 4141.26"
             },
             "absorbed": [
               {
                 "label": "London morning high",
                 "price": 4136.58,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "reaction level",
+                "price": 4141.26,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4139.27,
                 "partial": false,
                 "computed_to_london": null
               },
@@ -9877,153 +11208,532 @@
             ]
           },
           {
-            "label": "round 25",
-            "price": 4125.0,
-            "source": "round number",
+            "label": "overnight low",
+            "type": "overnight",
+            "price": 4115.67,
+            "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -16.68,
-            "distance_E": -0.345,
+            "touches": null,
+            "distance_usd": -26.9,
+            "distance_E": -0.556,
             "p_reach_from_array": {
-              "hits": 145,
+              "hits": 87,
               "n": 250,
-              "rate": 0.58
+              "rate": 0.348
             },
-            "absorbed": []
-          },
-          {
-            "label": "London morning low",
-            "price": 4111.63,
-            "source": "London morning 2026-10-20 08:00 -> 13:00",
-            "side": "down",
-            "partial": false,
-            "computed_to_london": null,
-            "distance_usd": -30.05,
-            "distance_E": -0.621,
-            "p_reach_from_array": {
-              "hits": 77,
-              "n": 250,
-              "rate": 0.308
+            "confluence": 6,
+            "confluence_types": {
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing high 4116.34",
+              "reaction level": "reaction level 4118.22",
+              "London morning": "London morning low 4111.63",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80"
             },
             "absorbed": [
               {
-                "label": "overnight low",
-                "price": 4115.67,
+                "label": "reaction level",
+                "price": 4118.22,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4120.1,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4116.34,
                 "partial": false,
                 "computed_to_london": null
               }
             ]
           },
           {
-            "label": "round 50",
-            "price": 4100.0,
-            "source": "round number",
+            "label": "prior month low",
+            "type": "prior month",
+            "price": 4110.8,
+            "source": "D1 2026-09-01 -> 2026-09-30 (22 days); low on 2026-09-28",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -41.68,
-            "distance_E": -0.862,
+            "touches": null,
+            "distance_usd": -31.77,
+            "distance_E": -0.657,
             "p_reach_from_array": {
-              "hits": 47,
+              "hits": 71,
               "n": 250,
-              "rate": 0.188
+              "rate": 0.284
             },
-            "absorbed": []
+            "confluence": 6,
+            "confluence_types": {
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80",
+              "London morning": "London morning low 4111.63",
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing low 4105.28",
+              "reaction level": "reaction level 4104.48"
+            },
+            "absorbed": [
+              {
+                "label": "London morning low",
+                "price": 4111.63,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "D1 swing low",
+                "price": 4110.8,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "reaction level",
+            "type": "reaction level",
+            "price": 4104.48,
+            "source": "2 turns 4103.67-4105.28: H4 low 2026-10-06 04:00, H4 low 2026-10-08 16:00",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": -38.09,
+            "distance_E": -0.788,
+            "p_reach_from_array": {
+              "hits": 51,
+              "n": 250,
+              "rate": 0.204
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "reaction level": "reaction level 4104.48",
+              "H4 swing": "H4 swing low 4105.28",
+              "round number": "round 50 4100.00",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80",
+              "London morning": "London morning low 4111.63"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing low",
+                "price": 4105.28,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4103.67,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "round 50",
+                "price": 4100.0,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "20-day low",
+            "type": "20-day range",
             "price": 4066.43,
             "source": "D1 2026-10-07 (server day ending 17:00 New York); min of 2026-09-22 -> 2026-10-19",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -75.25,
-            "distance_E": -1.556,
+            "touches": null,
+            "distance_usd": -76.14,
+            "distance_E": -1.574,
             "p_reach_from_array": {
               "hits": 12,
               "n": 250,
               "rate": 0.048
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "20-day range": "20-day low 4066.43",
+              "D1 swing": "D1 swing low 4066.43",
+              "prior week": "prior week low 4073.38"
+            },
+            "absorbed": [
+              {
+                "label": "D1 swing low",
+                "price": 4066.43,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           }
         ],
         "brief_excluded": [
           {
-            "label": "round 50",
-            "price": 4200.0,
-            "reason": "prior day high 4190.33 within 0.2 E"
+            "label": "round 25",
+            "price": 4125.0,
+            "reason": "overnight low 4115.67 within 0.2 E"
+          },
+          {
+            "label": "20-day MA",
+            "price": 4181.49,
+            "reason": "brief cap of 8 rows (band 3, confluence 3)"
+          },
+          {
+            "label": "reaction level",
+            "price": 4199.61,
+            "reason": "brief cap of 8 rows (band 4, confluence 3)"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4083.36,
+            "reason": "brief cap of 8 rows (band 4, confluence 1)"
+          },
+          {
+            "label": "prior week low",
+            "price": 4073.38,
+            "reason": "brief cap of 8 rows (band 5, confluence 3)"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4207.48,
+            "reason": "brief cap of 8 rows (band 5, confluence 1)"
+          },
+          {
+            "label": "prior week high",
+            "price": 4217.18,
+            "reason": "brief cap of 8 rows (band 6, confluence 4)"
+          },
+          {
+            "label": "reaction level",
+            "price": 4224.39,
+            "reason": "brief cap of 8 rows (band 6, confluence 4)"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4235.04,
+            "reason": "brief cap of 8 rows (band 7, confluence 1)"
           },
           {
             "label": "round 50",
             "price": 4050.0,
-            "reason": "brief cap of 8 rows"
+            "reason": "brief cap of 8 rows (band 7, confluence 1)"
           }
         ],
         "levels": [
           {
-            "label": "round 50",
-            "price": 4200.0,
-            "source": "round number",
+            "label": "D1 swing low",
+            "type": "D1 swing",
+            "price": 4235.04,
+            "source": "D1 pivot (3 bars each side) at 2026-09-16 00:00 server",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 58.32,
-            "distance_E": 1.206,
+            "touches": null,
+            "distance_usd": 92.47,
+            "distance_E": 1.912,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "D1 swing": "D1 swing low 4235.04"
+            },
+            "absorbed": []
+          },
+          {
+            "label": "reaction level",
+            "type": "reaction level",
+            "price": 4224.39,
+            "source": "2 turns 4223.37-4225.41: H4 low 2026-08-06 16:00, D1 high 2026-10-02 00:00",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": 81.82,
+            "distance_E": 1.692,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "reaction level": "reaction level 4224.39",
+              "H4 swing": "H4 swing low 4223.37",
+              "D1 swing": "D1 swing high 4225.41",
+              "prior week": "prior week high 4217.18"
+            },
+            "absorbed": [
+              {
+                "label": "D1 swing high",
+                "price": 4225.41,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4223.37,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "prior week high",
+            "type": "prior week",
+            "price": 4217.18,
+            "source": "D1 2026-10-12 -> 2026-10-16 (5 days); high on 2026-10-12",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 74.61,
+            "distance_E": 1.543,
+            "p_reach_from_array": {
+              "hits": 4,
+              "n": 250,
+              "rate": 0.016
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "prior week": "prior week high 4217.18",
+              "D1 swing": "D1 swing high 4217.18",
+              "reaction level": "reaction level 4218.21",
+              "H4 swing": "H4 swing high 4219.24"
+            },
+            "absorbed": [
+              {
+                "label": "reaction level",
+                "price": 4218.21,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "D1 swing high",
+                "price": 4217.18,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4219.24,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4207.48,
+            "source": "H4 pivot (3 bars each side) at 2026-10-09 08:00 server",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 64.91,
+            "distance_E": 1.342,
+            "p_reach_from_array": {
+              "hits": 6,
+              "n": 250,
+              "rate": 0.024
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4207.48"
+            },
+            "absorbed": []
+          },
+          {
+            "label": "reaction level",
+            "type": "reaction level",
+            "price": 4199.61,
+            "source": "2 turns 4198.75-4200.47: H4 high 2026-10-13 08:00, H4 high 2026-10-16 16:00",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": 57.04,
+            "distance_E": 1.179,
             "p_reach_from_array": {
               "hits": 12,
               "n": 250,
               "rate": 0.048
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "reaction level": "reaction level 4199.61",
+              "round number": "round 50 4200.00",
+              "H4 swing": "H4 swing high 4200.47"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4198.75,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4200.47,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "round 50",
+                "price": 4200.0,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "prior day high",
+            "type": "prior day",
             "price": 4190.33,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 48.65,
-            "distance_E": 1.006,
+            "touches": null,
+            "distance_usd": 47.76,
+            "distance_E": 0.988,
             "p_reach_from_array": {
-              "hits": 18,
+              "hits": 20,
               "n": 250,
-              "rate": 0.072
+              "rate": 0.08
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33",
+              "reaction level": "reaction level 4191.60"
+            },
+            "absorbed": [
+              {
+                "label": "reaction level",
+                "price": 4191.6,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4190.33,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4192.88,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
-            "label": "round 25",
-            "price": 4175.0,
-            "source": "round number",
+            "label": "20-day MA",
+            "type": "20-day MA",
+            "price": 4181.49,
+            "source": "SMA of D1 closes 2026-09-22 -> 2026-10-19",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 33.32,
-            "distance_E": 0.689,
+            "touches": null,
+            "distance_usd": 38.92,
+            "distance_E": 0.805,
             "p_reach_from_array": {
-              "hits": 51,
+              "hits": 36,
               "n": 250,
-              "rate": 0.204
+              "rate": 0.144
             },
-            "absorbed": []
+            "confluence": 3,
+            "confluence_types": {
+              "20-day MA": "20-day MA 4181.49",
+              "H4 swing": "H4 swing high 4184.35",
+              "round number": "round 25 4175.00"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4184.35,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4170.33,
+            "source": "H4 pivot (3 bars each side) at 2026-10-05 08:00 server",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 27.76,
+            "distance_E": 0.574,
+            "p_reach_from_array": {
+              "hits": 64,
+              "n": 250,
+              "rate": 0.256
+            },
+            "confluence": 2,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4170.33",
+              "round number": "round 25 4175.00"
+            },
+            "absorbed": [
+              {
+                "label": "round 25",
+                "price": 4175.0,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
           },
           {
             "label": "overnight high",
+            "type": "overnight",
             "price": 4147.08,
             "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 5.4,
-            "distance_E": 0.112,
+            "touches": null,
+            "distance_usd": 4.51,
+            "distance_E": 0.093,
             "p_reach_from_array": {
-              "hits": 203,
+              "hits": 210,
               "n": 250,
-              "rate": 0.812
+              "rate": 0.84
+            },
+            "confluence": 5,
+            "confluence_types": {
+              "overnight": "overnight high 4147.08",
+              "round number": "round 50 4150.00",
+              "H4 swing": "H4 swing low 4150.70",
+              "reaction level": "reaction level 4141.26",
+              "prior day": "prior day close 4140.53"
             },
             "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4143.24,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4150.7,
+                "partial": false,
+                "computed_to_london": null
+              },
               {
                 "label": "round 50",
                 "price": 4150.0,
@@ -10034,22 +11744,43 @@
           },
           {
             "label": "prior day low",
+            "type": "prior day",
             "price": 4136.59,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -5.09,
-            "distance_E": -0.105,
+            "touches": null,
+            "distance_usd": -5.98,
+            "distance_E": -0.124,
             "p_reach_from_array": {
-              "hits": 223,
+              "hits": 217,
               "n": 250,
-              "rate": 0.892
+              "rate": 0.868
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "prior day": "prior day low 4136.59",
+              "London morning": "London morning high 4136.58",
+              "H4 swing": "H4 swing low 4139.27",
+              "reaction level": "reaction level 4141.26"
             },
             "absorbed": [
               {
                 "label": "London morning high",
                 "price": 4136.58,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "reaction level",
+                "price": 4141.26,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4139.27,
                 "partial": false,
                 "computed_to_london": null
               },
@@ -10063,38 +11794,239 @@
           },
           {
             "label": "round 25",
+            "type": "round number",
             "price": 4125.0,
             "source": "round number",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -16.68,
-            "distance_E": -0.345,
+            "touches": null,
+            "distance_usd": -17.57,
+            "distance_E": -0.363,
             "p_reach_from_array": {
-              "hits": 145,
+              "hits": 138,
               "n": 250,
-              "rate": 0.58
+              "rate": 0.552
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "round number": "round 25 4125.00",
+              "H4 swing": "H4 swing high 4120.10",
+              "reaction level": "reaction level 4118.22"
             },
             "absorbed": []
           },
           {
-            "label": "London morning low",
-            "price": 4111.63,
-            "source": "London morning 2026-10-20 08:00 -> 13:00",
+            "label": "overnight low",
+            "type": "overnight",
+            "price": 4115.67,
+            "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -30.05,
-            "distance_E": -0.621,
+            "touches": null,
+            "distance_usd": -26.9,
+            "distance_E": -0.556,
             "p_reach_from_array": {
-              "hits": 77,
+              "hits": 87,
               "n": 250,
-              "rate": 0.308
+              "rate": 0.348
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing high 4116.34",
+              "reaction level": "reaction level 4118.22",
+              "London morning": "London morning low 4111.63",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80"
             },
             "absorbed": [
               {
-                "label": "overnight low",
-                "price": 4115.67,
+                "label": "reaction level",
+                "price": 4118.22,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4120.1,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing high",
+                "price": 4116.34,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "prior month low",
+            "type": "prior month",
+            "price": 4110.8,
+            "source": "D1 2026-09-01 -> 2026-09-30 (22 days); low on 2026-09-28",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -31.77,
+            "distance_E": -0.657,
+            "p_reach_from_array": {
+              "hits": 71,
+              "n": 250,
+              "rate": 0.284
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80",
+              "London morning": "London morning low 4111.63",
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing low 4105.28",
+              "reaction level": "reaction level 4104.48"
+            },
+            "absorbed": [
+              {
+                "label": "London morning low",
+                "price": 4111.63,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "D1 swing low",
+                "price": 4110.8,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "reaction level",
+            "type": "reaction level",
+            "price": 4104.48,
+            "source": "2 turns 4103.67-4105.28: H4 low 2026-10-06 04:00, H4 low 2026-10-08 16:00",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": -38.09,
+            "distance_E": -0.788,
+            "p_reach_from_array": {
+              "hits": 51,
+              "n": 250,
+              "rate": 0.204
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "reaction level": "reaction level 4104.48",
+              "H4 swing": "H4 swing low 4105.28",
+              "round number": "round 50 4100.00",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80",
+              "London morning": "London morning low 4111.63"
+            },
+            "absorbed": [
+              {
+                "label": "H4 swing low",
+                "price": 4105.28,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "H4 swing low",
+                "price": 4103.67,
+                "partial": false,
+                "computed_to_london": null
+              },
+              {
+                "label": "round 50",
+                "price": 4100.0,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "H4 swing high",
+            "type": "H4 swing",
+            "price": 4083.36,
+            "source": "H4 pivot (3 bars each side) at 2026-08-03 00:00 server",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -59.21,
+            "distance_E": -1.224,
+            "p_reach_from_array": {
+              "hits": 20,
+              "n": 250,
+              "rate": 0.08
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4083.36"
+            },
+            "absorbed": []
+          },
+          {
+            "label": "prior week low",
+            "type": "prior week",
+            "price": 4073.38,
+            "source": "D1 2026-10-12 -> 2026-10-16 (5 days); low on 2026-10-14",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -69.19,
+            "distance_E": -1.431,
+            "p_reach_from_array": {
+              "hits": 15,
+              "n": 250,
+              "rate": 0.06
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "prior week": "prior week low 4073.38",
+              "D1 swing": "D1 swing low 4073.38",
+              "20-day range": "20-day low 4066.43"
+            },
+            "absorbed": [
+              {
+                "label": "D1 swing low",
+                "price": 4073.38,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ]
+          },
+          {
+            "label": "20-day low",
+            "type": "20-day range",
+            "price": 4066.43,
+            "source": "D1 2026-10-07 (server day ending 17:00 New York); min of 2026-09-22 -> 2026-10-19",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -76.14,
+            "distance_E": -1.574,
+            "p_reach_from_array": {
+              "hits": 12,
+              "n": 250,
+              "rate": 0.048
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "20-day range": "20-day low 4066.43",
+              "D1 swing": "D1 swing low 4066.43",
+              "prior week": "prior week low 4073.38"
+            },
+            "absorbed": [
+              {
+                "label": "D1 swing low",
+                "price": 4066.43,
                 "partial": false,
                 "computed_to_london": null
               }
@@ -10102,49 +12034,23 @@
           },
           {
             "label": "round 50",
-            "price": 4100.0,
-            "source": "round number",
-            "side": "down",
-            "partial": false,
-            "computed_to_london": null,
-            "distance_usd": -41.68,
-            "distance_E": -0.862,
-            "p_reach_from_array": {
-              "hits": 47,
-              "n": 250,
-              "rate": 0.188
-            },
-            "absorbed": []
-          },
-          {
-            "label": "20-day low",
-            "price": 4066.43,
-            "source": "D1 2026-10-07 (server day ending 17:00 New York); min of 2026-09-22 -> 2026-10-19",
-            "side": "down",
-            "partial": false,
-            "computed_to_london": null,
-            "distance_usd": -75.25,
-            "distance_E": -1.556,
-            "p_reach_from_array": {
-              "hits": 12,
-              "n": 250,
-              "rate": 0.048
-            },
-            "absorbed": []
-          },
-          {
-            "label": "round 50",
+            "type": "round number",
             "price": 4050.0,
             "source": "round number",
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -91.68,
-            "distance_E": -1.896,
+            "touches": null,
+            "distance_usd": -92.57,
+            "distance_E": -1.914,
             "p_reach_from_array": {
               "hits": 9,
               "n": 250,
               "rate": 0.036
+            },
+            "confluence": 1,
+            "confluence_types": {
+              "round number": "round 50 4050.00"
             },
             "absorbed": []
           }
@@ -10157,16 +12063,702 @@
             "dropped_for": "prior day low 4136.59",
             "gap_usd": 0.01,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.84) of higher-priority prior day low"
+            "reason": "within 0.1 E ($4.84) of higher-priority prior day low",
+            "type": "London morning",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -5.99,
+            "distance_E": -0.124,
+            "p_reach_from_array": {
+              "hits": 217,
+              "n": 250,
+              "rate": 0.868
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "London morning": "London morning high 4136.58",
+              "prior day": "prior day low 4136.59",
+              "H4 swing": "H4 swing low 4139.27",
+              "reaction level": "reaction level 4141.26"
+            }
           },
           {
-            "label": "overnight low",
-            "price": 4115.67,
-            "source": "overnight Mon 2026-10-19 23:00 -> 08:00 London",
-            "dropped_for": "London morning low 4111.63",
-            "gap_usd": 4.04,
-            "gap_E": 0.084,
-            "reason": "within 0.1 E ($4.84) of higher-priority London morning low"
+            "label": "London morning low",
+            "price": 4111.63,
+            "source": "London morning 2026-10-20 08:00 -> 13:00",
+            "dropped_for": "prior month low 4110.80",
+            "gap_usd": 0.83,
+            "gap_E": 0.017,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior month low",
+            "type": "London morning",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -30.94,
+            "distance_E": -0.64,
+            "p_reach_from_array": {
+              "hits": 74,
+              "n": 250,
+              "rate": 0.296
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "London morning": "London morning low 4111.63",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80",
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing high 4116.34",
+              "reaction level": "reaction level 4118.22"
+            }
+          },
+          {
+            "label": "reaction level",
+            "price": 4191.6,
+            "source": "2 turns 4190.33-4192.88: H4 high 2026-10-01 08:00, H4 high 2026-10-19 08:00",
+            "dropped_for": "prior day high 4190.33",
+            "gap_usd": 1.27,
+            "gap_E": 0.026,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior day high",
+            "type": "reaction level",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": 49.03,
+            "distance_E": 1.014,
+            "p_reach_from_array": {
+              "hits": 17,
+              "n": 250,
+              "rate": 0.068
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "reaction level": "reaction level 4191.60",
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33"
+            }
+          },
+          {
+            "label": "reaction level",
+            "price": 4218.21,
+            "source": "2 turns 4217.18-4219.24: H4 high 2026-09-30 12:00, D1 high 2026-10-12 00:00",
+            "dropped_for": "prior week high 4217.18",
+            "gap_usd": 1.03,
+            "gap_E": 0.021,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior week high",
+            "type": "reaction level",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": 75.64,
+            "distance_E": 1.564,
+            "p_reach_from_array": {
+              "hits": 4,
+              "n": 250,
+              "rate": 0.016
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "reaction level": "reaction level 4218.21",
+              "prior week": "prior week high 4217.18",
+              "D1 swing": "D1 swing high 4217.18",
+              "H4 swing": "H4 swing high 4219.24"
+            }
+          },
+          {
+            "label": "reaction level",
+            "price": 4141.26,
+            "source": "2 turns 4139.27-4143.24: H4 low 2026-10-01 00:00, H4 high 2026-10-08 04:00",
+            "dropped_for": "prior day low 4136.59",
+            "gap_usd": 4.66,
+            "gap_E": 0.096,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior day low",
+            "type": "reaction level",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": -1.31,
+            "distance_E": -0.027,
+            "p_reach_from_array": {
+              "hits": 242,
+              "n": 250,
+              "rate": 0.968
+            },
+            "confluence": 5,
+            "confluence_types": {
+              "reaction level": "reaction level 4141.26",
+              "prior day": "prior day close 4140.53",
+              "H4 swing": "H4 swing high 4143.24",
+              "London morning": "London morning high 4136.58",
+              "overnight": "overnight high 4147.08"
+            }
+          },
+          {
+            "label": "reaction level",
+            "price": 4118.22,
+            "source": "2 turns 4116.34-4120.10: H4 high 2026-07-29 20:00, H4 high 2026-07-30 16:00",
+            "dropped_for": "overnight low 4115.67",
+            "gap_usd": 2.55,
+            "gap_E": 0.053,
+            "reason": "within 0.1 E ($4.84) of higher-priority overnight low",
+            "type": "reaction level",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": 2,
+            "distance_usd": -24.35,
+            "distance_E": -0.504,
+            "p_reach_from_array": {
+              "hits": 110,
+              "n": 250,
+              "rate": 0.44
+            },
+            "confluence": 5,
+            "confluence_types": {
+              "reaction level": "reaction level 4118.22",
+              "H4 swing": "H4 swing high 4120.10",
+              "overnight": "overnight low 4115.67",
+              "London morning": "London morning low 4111.63",
+              "round number": "round 25 4125.00"
+            }
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4217.18,
+            "source": "D1 pivot (3 bars each side) at 2026-10-12 00:00 server",
+            "dropped_for": "prior week high 4217.18",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior week high",
+            "type": "D1 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 74.61,
+            "distance_E": 1.543,
+            "p_reach_from_array": {
+              "hits": 4,
+              "n": 250,
+              "rate": 0.016
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "prior week": "prior week high 4217.18",
+              "D1 swing": "D1 swing high 4217.18",
+              "reaction level": "reaction level 4218.21",
+              "H4 swing": "H4 swing high 4219.24"
+            }
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4225.41,
+            "source": "D1 pivot (3 bars each side) at 2026-10-02 00:00 server",
+            "dropped_for": "reaction level 4224.39",
+            "gap_usd": 1.02,
+            "gap_E": 0.021,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "D1 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 82.84,
+            "distance_E": 1.713,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "D1 swing": "D1 swing high 4225.41",
+              "reaction level": "reaction level 4224.39",
+              "H4 swing": "H4 swing low 4223.37"
+            }
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4073.38,
+            "source": "D1 pivot (3 bars each side) at 2026-10-14 00:00 server",
+            "dropped_for": "prior week low 4073.38",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior week low",
+            "type": "D1 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -69.19,
+            "distance_E": -1.431,
+            "p_reach_from_array": {
+              "hits": 15,
+              "n": 250,
+              "rate": 0.06
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "prior week": "prior week low 4073.38",
+              "D1 swing": "D1 swing low 4073.38",
+              "20-day range": "20-day low 4066.43"
+            }
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4066.43,
+            "source": "D1 pivot (3 bars each side) at 2026-10-07 00:00 server",
+            "dropped_for": "20-day low 4066.43",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($4.84) of higher-priority 20-day low",
+            "type": "D1 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -76.14,
+            "distance_E": -1.574,
+            "p_reach_from_array": {
+              "hits": 12,
+              "n": 250,
+              "rate": 0.048
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "20-day range": "20-day low 4066.43",
+              "D1 swing": "D1 swing low 4066.43",
+              "prior week": "prior week low 4073.38"
+            }
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4110.8,
+            "source": "D1 pivot (3 bars each side) at 2026-09-28 00:00 server",
+            "dropped_for": "prior month low 4110.80",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior month low",
+            "type": "D1 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -31.77,
+            "distance_E": -0.657,
+            "p_reach_from_array": {
+              "hits": 71,
+              "n": 250,
+              "rate": 0.284
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80",
+              "London morning": "London morning low 4111.63",
+              "overnight": "overnight low 4115.67",
+              "H4 swing": "H4 swing low 4105.28",
+              "reaction level": "reaction level 4104.48"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4190.33,
+            "source": "H4 pivot (3 bars each side) at 2026-10-19 08:00 server",
+            "dropped_for": "prior day high 4190.33",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior day high",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 47.76,
+            "distance_E": 0.988,
+            "p_reach_from_array": {
+              "hits": 20,
+              "n": 250,
+              "rate": 0.08
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "prior day": "prior day high 4190.33",
+              "H4 swing": "H4 swing high 4190.33",
+              "reaction level": "reaction level 4191.60"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4198.75,
+            "source": "H4 pivot (3 bars each side) at 2026-10-16 16:00 server",
+            "dropped_for": "reaction level 4199.61",
+            "gap_usd": 0.86,
+            "gap_E": 0.018,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 56.18,
+            "distance_E": 1.162,
+            "p_reach_from_array": {
+              "hits": 14,
+              "n": 250,
+              "rate": 0.056
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4198.75",
+              "reaction level": "reaction level 4199.61",
+              "round number": "round 50 4200.00"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4200.47,
+            "source": "H4 pivot (3 bars each side) at 2026-10-13 08:00 server",
+            "dropped_for": "reaction level 4199.61",
+            "gap_usd": 0.86,
+            "gap_E": 0.018,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 57.9,
+            "distance_E": 1.197,
+            "p_reach_from_array": {
+              "hits": 12,
+              "n": 250,
+              "rate": 0.048
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4200.47",
+              "round number": "round 50 4200.00",
+              "reaction level": "reaction level 4199.61"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4143.24,
+            "source": "H4 pivot (3 bars each side) at 2026-10-08 04:00 server",
+            "dropped_for": "overnight high 4147.08",
+            "gap_usd": 3.84,
+            "gap_E": 0.079,
+            "reason": "within 0.1 E ($4.84) of higher-priority overnight high",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 0.67,
+            "distance_E": 0.014,
+            "p_reach_from_array": {
+              "hits": 243,
+              "n": 250,
+              "rate": 0.972
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4143.24",
+              "reaction level": "reaction level 4141.26",
+              "prior day": "prior day close 4140.53",
+              "overnight": "overnight high 4147.08",
+              "London morning": "London morning high 4136.58",
+              "round number": "round 50 4150.00"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4184.35,
+            "source": "H4 pivot (3 bars each side) at 2026-10-06 20:00 server",
+            "dropped_for": "20-day MA 4181.49",
+            "gap_usd": 2.86,
+            "gap_E": 0.059,
+            "reason": "within 0.1 E ($4.84) of higher-priority 20-day MA",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 41.78,
+            "distance_E": 0.864,
+            "p_reach_from_array": {
+              "hits": 30,
+              "n": 250,
+              "rate": 0.12
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4184.35",
+              "20-day MA": "20-day MA 4181.49",
+              "prior day": "prior day high 4190.33"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4192.88,
+            "source": "H4 pivot (3 bars each side) at 2026-10-01 08:00 server",
+            "dropped_for": "prior day high 4190.33",
+            "gap_usd": 2.55,
+            "gap_E": 0.053,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior day high",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 50.31,
+            "distance_E": 1.04,
+            "p_reach_from_array": {
+              "hits": 17,
+              "n": 250,
+              "rate": 0.068
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4192.88",
+              "reaction level": "reaction level 4191.60",
+              "prior day": "prior day high 4190.33",
+              "round number": "round 50 4200.00"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4219.24,
+            "source": "H4 pivot (3 bars each side) at 2026-09-30 12:00 server",
+            "dropped_for": "prior week high 4217.18",
+            "gap_usd": 2.06,
+            "gap_E": 0.043,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior week high",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 76.67,
+            "distance_E": 1.585,
+            "p_reach_from_array": {
+              "hits": 4,
+              "n": 250,
+              "rate": 0.016
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4219.24",
+              "reaction level": "reaction level 4218.21",
+              "prior week": "prior week high 4217.18",
+              "D1 swing": "D1 swing high 4217.18"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4120.1,
+            "source": "H4 pivot (3 bars each side) at 2026-07-30 16:00 server",
+            "dropped_for": "overnight low 4115.67",
+            "gap_usd": 4.43,
+            "gap_E": 0.092,
+            "reason": "within 0.1 E ($4.84) of higher-priority overnight low",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -22.47,
+            "distance_E": -0.465,
+            "p_reach_from_array": {
+              "hits": 118,
+              "n": 250,
+              "rate": 0.472
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4120.10",
+              "reaction level": "reaction level 4118.22",
+              "overnight": "overnight low 4115.67",
+              "round number": "round 25 4125.00"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4116.34,
+            "source": "H4 pivot (3 bars each side) at 2026-07-29 20:00 server",
+            "dropped_for": "overnight low 4115.67",
+            "gap_usd": 0.67,
+            "gap_E": 0.014,
+            "reason": "within 0.1 E ($4.84) of higher-priority overnight low",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -26.23,
+            "distance_E": -0.542,
+            "p_reach_from_array": {
+              "hits": 91,
+              "n": 250,
+              "rate": 0.364
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "H4 swing": "H4 swing high 4116.34",
+              "overnight": "overnight low 4115.67",
+              "reaction level": "reaction level 4118.22",
+              "London morning": "London morning low 4111.63",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4150.7,
+            "source": "H4 pivot (3 bars each side) at 2026-10-13 04:00 server",
+            "dropped_for": "overnight high 4147.08",
+            "gap_usd": 3.62,
+            "gap_E": 0.075,
+            "reason": "within 0.1 E ($4.84) of higher-priority overnight high",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 8.13,
+            "distance_E": 0.168,
+            "p_reach_from_array": {
+              "hits": 190,
+              "n": 250,
+              "rate": 0.76
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4150.70",
+              "round number": "round 50 4150.00",
+              "overnight": "overnight high 4147.08"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4105.28,
+            "source": "H4 pivot (3 bars each side) at 2026-10-08 16:00 server",
+            "dropped_for": "reaction level 4104.48",
+            "gap_usd": 0.8,
+            "gap_E": 0.017,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -37.29,
+            "distance_E": -0.771,
+            "p_reach_from_array": {
+              "hits": 53,
+              "n": 250,
+              "rate": 0.212
+            },
+            "confluence": 6,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4105.28",
+              "reaction level": "reaction level 4104.48",
+              "round number": "round 50 4100.00",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80",
+              "London morning": "London morning low 4111.63"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4103.67,
+            "source": "H4 pivot (3 bars each side) at 2026-10-06 04:00 server",
+            "dropped_for": "reaction level 4104.48",
+            "gap_usd": 0.81,
+            "gap_E": 0.017,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -38.9,
+            "distance_E": -0.804,
+            "p_reach_from_array": {
+              "hits": 50,
+              "n": 250,
+              "rate": 0.2
+            },
+            "confluence": 5,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4103.67",
+              "reaction level": "reaction level 4104.48",
+              "round number": "round 50 4100.00",
+              "prior month": "prior month low 4110.80",
+              "D1 swing": "D1 swing low 4110.80"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4139.27,
+            "source": "H4 pivot (3 bars each side) at 2026-10-01 00:00 server",
+            "dropped_for": "prior day low 4136.59",
+            "gap_usd": 2.68,
+            "gap_E": 0.055,
+            "reason": "within 0.1 E ($4.84) of higher-priority prior day low",
+            "type": "H4 swing",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -3.3,
+            "distance_E": -0.068,
+            "p_reach_from_array": {
+              "hits": 233,
+              "n": 250,
+              "rate": 0.932
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4139.27",
+              "prior day": "prior day close 4140.53",
+              "reaction level": "reaction level 4141.26",
+              "London morning": "London morning high 4136.58"
+            }
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4223.37,
+            "source": "H4 pivot (3 bars each side) at 2026-08-06 16:00 server",
+            "dropped_for": "reaction level 4224.39",
+            "gap_usd": 1.02,
+            "gap_E": 0.021,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "H4 swing",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 80.8,
+            "distance_E": 1.671,
+            "p_reach_from_array": {
+              "hits": 4,
+              "n": 250,
+              "rate": 0.016
+            },
+            "confluence": 4,
+            "confluence_types": {
+              "H4 swing": "H4 swing low 4223.37",
+              "reaction level": "reaction level 4224.39",
+              "D1 swing": "D1 swing high 4225.41",
+              "prior week": "prior week high 4217.18"
+            }
           },
           {
             "label": "prior day close",
@@ -10175,7 +12767,54 @@
             "dropped_for": "prior day low 4136.59",
             "gap_usd": 3.94,
             "gap_E": 0.081,
-            "reason": "within 0.1 E ($4.84) of higher-priority prior day low"
+            "reason": "within 0.1 E ($4.84) of higher-priority prior day low",
+            "type": "prior day",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -2.04,
+            "distance_E": -0.042,
+            "p_reach_from_array": {
+              "hits": 242,
+              "n": 250,
+              "rate": 0.968
+            },
+            "confluence": 5,
+            "confluence_types": {
+              "prior day": "prior day close 4140.53",
+              "reaction level": "reaction level 4141.26",
+              "H4 swing": "H4 swing low 4139.27",
+              "London morning": "London morning high 4136.58",
+              "overnight": "overnight high 4147.08"
+            }
+          },
+          {
+            "label": "round 50",
+            "price": 4100.0,
+            "source": "round number",
+            "dropped_for": "reaction level 4104.48",
+            "gap_usd": 4.48,
+            "gap_E": 0.093,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "round number",
+            "side": "down",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -42.57,
+            "distance_E": -0.88,
+            "p_reach_from_array": {
+              "hits": 46,
+              "n": 250,
+              "rate": 0.184
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "round number": "round 50 4100.00",
+              "H4 swing": "H4 swing low 4103.67",
+              "reaction level": "reaction level 4104.48"
+            }
           },
           {
             "label": "round 50",
@@ -10184,14 +12823,422 @@
             "dropped_for": "overnight high 4147.08",
             "gap_usd": 2.92,
             "gap_E": 0.06,
-            "reason": "within 0.1 E ($4.84) of higher-priority overnight high"
+            "reason": "within 0.1 E ($4.84) of higher-priority overnight high",
+            "type": "round number",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 7.43,
+            "distance_E": 0.154,
+            "p_reach_from_array": {
+              "hits": 194,
+              "n": 250,
+              "rate": 0.776
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "round number": "round 50 4150.00",
+              "H4 swing": "H4 swing low 4150.70",
+              "overnight": "overnight high 4147.08"
+            }
+          },
+          {
+            "label": "round 50",
+            "price": 4200.0,
+            "source": "round number",
+            "dropped_for": "reaction level 4199.61",
+            "gap_usd": 0.39,
+            "gap_E": 0.008,
+            "reason": "within 0.1 E ($4.84) of higher-priority reaction level",
+            "type": "round number",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 57.43,
+            "distance_E": 1.188,
+            "p_reach_from_array": {
+              "hits": 12,
+              "n": 250,
+              "rate": 0.048
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "round number": "round 50 4200.00",
+              "reaction level": "reaction level 4199.61",
+              "H4 swing": "H4 swing high 4200.47"
+            }
+          },
+          {
+            "label": "round 25",
+            "price": 4175.0,
+            "source": "round number",
+            "dropped_for": "H4 swing high 4170.33",
+            "gap_usd": 4.67,
+            "gap_E": 0.097,
+            "reason": "within 0.1 E ($4.84) of higher-priority H4 swing high",
+            "type": "round number",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 32.43,
+            "distance_E": 0.671,
+            "p_reach_from_array": {
+              "hits": 54,
+              "n": 250,
+              "rate": 0.216
+            },
+            "confluence": 3,
+            "confluence_types": {
+              "round number": "round 25 4175.00",
+              "H4 swing": "H4 swing high 4170.33",
+              "20-day MA": "20-day MA 4181.49"
+            }
           }
         ],
         "beyond_max_distance": [
           {
             "label": "20-day high",
             "price": 4375.92,
-            "distance_E": 4.844,
+            "distance_E": 4.825,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "prior month high",
+            "price": 4510.8,
+            "distance_E": 7.614,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "50-day MA",
+            "price": 4326.1,
+            "distance_E": 3.795,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "200-day MA",
+            "price": 4520.59,
+            "distance_E": 7.817,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4449.69,
+            "distance_E": 6.351,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4310.94,
+            "distance_E": 3.482,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4696.71,
+            "distance_E": 11.459,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing low",
+            "price": 4282.47,
+            "distance_E": 2.893,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4510.8,
+            "distance_E": 7.614,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "D1 swing high",
+            "price": 4399.56,
+            "distance_E": 5.314,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 3995.92,
+            "distance_E": -3.032,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4021.0,
+            "distance_E": -2.514,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4019.11,
+            "distance_E": -2.553,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4304.08,
+            "distance_E": 3.34,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4371.84,
+            "distance_E": 4.741,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4313.37,
+            "distance_E": 3.532,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4435.17,
+            "distance_E": 6.05,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4436.13,
+            "distance_E": 6.07,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4324.61,
+            "distance_E": 3.764,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4527.36,
+            "distance_E": 7.957,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4450.65,
+            "distance_E": 6.371,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4605.31,
+            "distance_E": 9.569,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4673.71,
+            "distance_E": 10.983,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4583.03,
+            "distance_E": 9.108,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4643.02,
+            "distance_E": 10.348,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4565.19,
+            "distance_E": 8.739,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4631.4,
+            "distance_E": 10.108,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4396.44,
+            "distance_E": 5.25,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4365.49,
+            "distance_E": 4.61,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4381.12,
+            "distance_E": 4.933,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4442.95,
+            "distance_E": 6.211,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4341.26,
+            "distance_E": 4.109,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4434.06,
+            "distance_E": 6.028,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4434.91,
+            "distance_E": 6.045,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4292.4,
+            "distance_E": 3.098,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4402.45,
+            "distance_E": 5.374,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4253.63,
+            "distance_E": 2.297,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4261.33,
+            "distance_E": 2.456,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4366.76,
+            "distance_E": 4.636,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4381.19,
+            "distance_E": 4.934,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4334.37,
+            "distance_E": 3.966,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4322.7,
+            "distance_E": 3.725,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4375.92,
+            "distance_E": 4.825,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4291.51,
+            "distance_E": 3.08,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4371.16,
+            "distance_E": 4.727,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing low",
+            "price": 4244.29,
+            "distance_E": 2.103,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4315.68,
+            "distance_E": 3.58,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4020.06,
+            "distance_E": -2.533,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4291.95,
+            "distance_E": 3.089,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4313.33,
+            "distance_E": 3.531,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4323.65,
+            "distance_E": 3.745,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4366.12,
+            "distance_E": 4.623,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4372.97,
+            "distance_E": 4.764,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4381.15,
+            "distance_E": 4.934,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4398.0,
+            "distance_E": 5.282,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4435.07,
+            "distance_E": 6.048,
+            "reason": "beyond 2.0 E"
+          },
+          {
+            "label": "reaction level",
+            "price": 4450.17,
+            "distance_E": 6.361,
             "reason": "beyond 2.0 E"
           }
         ]
@@ -10213,5 +13260,10 @@
     "min_sessions_before_skill": 60,
     "skill": null,
     "note": "Record only: no fitting, no tuning. Skill is not computed or reported until 60 completed sessions exist (currently 0)."
+  },
+  "chart_outputs": {
+    "mql5_script": "chart/GoldStatsLevels.mq5 (private repo)",
+    "png": "gold_levels.png (public repo)",
+    "as_of_london": "2026-10-20 16:15"
   }
 }
