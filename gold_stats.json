@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-20T14:52:19+00:00",
+  "generated_utc": "2026-10-20T14:57:04+00:00",
   "data": {
     "symbol": "XAUUSD",
     "gold_like_symbols": [
@@ -16,12 +16,12 @@
     "digits": 2,
     "symbol_path": "Gold\\XAUUSD",
     "live_clock": {
-      "tick_server_epoch": 1792518734,
-      "local_utc_epoch": 1792507934
+      "tick_server_epoch": 1792519019,
+      "local_utc_epoch": 1792508219
     },
-    "m5_bars": 553308,
+    "m5_bars": 553309,
     "m5_first": "2019-01-02 01:00:00",
-    "m5_last": "2026-10-20 17:50:00",
+    "m5_last": "2026-10-20 17:55:00",
     "d1_bars": 3046,
     "d1_first": "2015-01-02 00:00:00",
     "d1_last": "2026-10-20 00:00:00",
@@ -9442,9 +9442,9 @@
     }
   },
   "reference_levels": {
-    "as_of_london": "2026-10-20 15:55",
-    "latest_price": 4139.3,
-    "latest_bar_london": "2026-10-20 15:50",
+    "as_of_london": "2026-10-20 16:00",
+    "latest_price": 4141.68,
+    "latest_bar_london": "2026-10-20 15:55",
     "rules": {
       "max_distance_E": 2.0,
       "dedup_threshold_E": 0.1,
@@ -9488,18 +9488,34 @@
         "dedup_threshold_usd": 2.98,
         "brief_levels": [
           {
+            "label": "round 50",
+            "price": 4200.0,
+            "source": "round number",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "distance_usd": 58.32,
+            "distance_E": 1.958,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "absorbed": []
+          },
+          {
             "label": "prior day high",
             "price": 4190.33,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 51.03,
-            "distance_E": 1.713,
+            "distance_usd": 48.65,
+            "distance_E": 1.633,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 3,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.012
             },
             "absorbed": []
           },
@@ -9510,12 +9526,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 7.78,
-            "distance_E": 0.261,
+            "distance_usd": 5.4,
+            "distance_E": 0.181,
             "p_reach_from_array": {
-              "hits": 144,
+              "hits": 173,
               "n": 250,
-              "rate": 0.576
+              "rate": 0.692
             },
             "absorbed": [
               {
@@ -9530,15 +9546,15 @@
             "label": "prior day close",
             "price": 4140.53,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
-            "side": "up",
+            "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 1.23,
-            "distance_E": 0.041,
+            "distance_usd": -1.15,
+            "distance_E": -0.039,
             "p_reach_from_array": {
-              "hits": 239,
+              "hits": 235,
               "n": 250,
-              "rate": 0.956
+              "rate": 0.94
             },
             "absorbed": []
           },
@@ -9549,12 +9565,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -2.71,
-            "distance_E": -0.091,
+            "distance_usd": -5.09,
+            "distance_E": -0.171,
             "p_reach_from_array": {
-              "hits": 218,
+              "hits": 199,
               "n": 250,
-              "rate": 0.872
+              "rate": 0.796
             },
             "absorbed": []
           },
@@ -9565,12 +9581,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -14.3,
-            "distance_E": -0.48,
+            "distance_usd": -16.68,
+            "distance_E": -0.56,
             "p_reach_from_array": {
-              "hits": 99,
+              "hits": 84,
               "n": 250,
-              "rate": 0.396
+              "rate": 0.336
             },
             "absorbed": []
           },
@@ -9581,12 +9597,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -23.63,
-            "distance_E": -0.793,
+            "distance_usd": -26.01,
+            "distance_E": -0.873,
             "p_reach_from_array": {
-              "hits": 48,
+              "hits": 46,
               "n": 250,
-              "rate": 0.192
+              "rate": 0.184
             },
             "absorbed": []
           },
@@ -9597,12 +9613,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -39.3,
-            "distance_E": -1.319,
+            "distance_usd": -41.68,
+            "distance_E": -1.399,
             "p_reach_from_array": {
-              "hits": 23,
+              "hits": 22,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.088
             },
             "absorbed": []
           }
@@ -9610,18 +9626,34 @@
         "brief_excluded": [],
         "levels": [
           {
+            "label": "round 50",
+            "price": 4200.0,
+            "source": "round number",
+            "side": "up",
+            "partial": false,
+            "computed_to_london": null,
+            "distance_usd": 58.32,
+            "distance_E": 1.958,
+            "p_reach_from_array": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "absorbed": []
+          },
+          {
             "label": "prior day high",
             "price": 4190.33,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 51.03,
-            "distance_E": 1.713,
+            "distance_usd": 48.65,
+            "distance_E": 1.633,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 3,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.012
             },
             "absorbed": []
           },
@@ -9632,12 +9664,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 7.78,
-            "distance_E": 0.261,
+            "distance_usd": 5.4,
+            "distance_E": 0.181,
             "p_reach_from_array": {
-              "hits": 144,
+              "hits": 173,
               "n": 250,
-              "rate": 0.576
+              "rate": 0.692
             },
             "absorbed": [
               {
@@ -9652,15 +9684,15 @@
             "label": "prior day close",
             "price": 4140.53,
             "source": "D1 2026-10-19 (server day ending 17:00 New York)",
-            "side": "up",
+            "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 1.23,
-            "distance_E": 0.041,
+            "distance_usd": -1.15,
+            "distance_E": -0.039,
             "p_reach_from_array": {
-              "hits": 239,
+              "hits": 235,
               "n": 250,
-              "rate": 0.956
+              "rate": 0.94
             },
             "absorbed": []
           },
@@ -9671,12 +9703,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -2.71,
-            "distance_E": -0.091,
+            "distance_usd": -5.09,
+            "distance_E": -0.171,
             "p_reach_from_array": {
-              "hits": 218,
+              "hits": 199,
               "n": 250,
-              "rate": 0.872
+              "rate": 0.796
             },
             "absorbed": []
           },
@@ -9687,12 +9719,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -14.3,
-            "distance_E": -0.48,
+            "distance_usd": -16.68,
+            "distance_E": -0.56,
             "p_reach_from_array": {
-              "hits": 99,
+              "hits": 84,
               "n": 250,
-              "rate": 0.396
+              "rate": 0.336
             },
             "absorbed": []
           },
@@ -9703,12 +9735,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -23.63,
-            "distance_E": -0.793,
+            "distance_usd": -26.01,
+            "distance_E": -0.873,
             "p_reach_from_array": {
-              "hits": 48,
+              "hits": 46,
               "n": 250,
-              "rate": 0.192
+              "rate": 0.184
             },
             "absorbed": []
           },
@@ -9719,12 +9751,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -39.3,
-            "distance_E": -1.319,
+            "distance_usd": -41.68,
+            "distance_E": -1.399,
             "p_reach_from_array": {
-              "hits": 23,
+              "hits": 22,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.088
             },
             "absorbed": []
           }
@@ -9744,13 +9776,13 @@
           {
             "label": "20-day high",
             "price": 4375.92,
-            "distance_E": 7.943,
+            "distance_E": 7.863,
             "reason": "beyond 2.0 E"
           },
           {
             "label": "20-day low",
             "price": 4066.43,
-            "distance_E": -2.446,
+            "distance_E": -2.526,
             "reason": "beyond 2.0 E"
           }
         ]
@@ -9767,12 +9799,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 51.03,
-            "distance_E": 1.055,
+            "distance_usd": 48.65,
+            "distance_E": 1.006,
             "p_reach_from_array": {
-              "hits": 17,
+              "hits": 18,
               "n": 250,
-              "rate": 0.068
+              "rate": 0.072
             },
             "absorbed": []
           },
@@ -9783,12 +9815,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 35.7,
-            "distance_E": 0.738,
+            "distance_usd": 33.32,
+            "distance_E": 0.689,
             "p_reach_from_array": {
-              "hits": 41,
+              "hits": 51,
               "n": 250,
-              "rate": 0.164
+              "rate": 0.204
             },
             "absorbed": []
           },
@@ -9799,12 +9831,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 7.78,
-            "distance_E": 0.161,
+            "distance_usd": 5.4,
+            "distance_E": 0.112,
             "p_reach_from_array": {
-              "hits": 193,
+              "hits": 203,
               "n": 250,
-              "rate": 0.772
+              "rate": 0.812
             },
             "absorbed": [
               {
@@ -9822,12 +9854,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -2.71,
-            "distance_E": -0.056,
+            "distance_usd": -5.09,
+            "distance_E": -0.105,
             "p_reach_from_array": {
-              "hits": 237,
+              "hits": 223,
               "n": 250,
-              "rate": 0.948
+              "rate": 0.892
             },
             "absorbed": [
               {
@@ -9851,12 +9883,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -14.3,
-            "distance_E": -0.296,
+            "distance_usd": -16.68,
+            "distance_E": -0.345,
             "p_reach_from_array": {
-              "hits": 156,
+              "hits": 145,
               "n": 250,
-              "rate": 0.624
+              "rate": 0.58
             },
             "absorbed": []
           },
@@ -9867,12 +9899,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -27.67,
-            "distance_E": -0.572,
+            "distance_usd": -30.05,
+            "distance_E": -0.621,
             "p_reach_from_array": {
-              "hits": 84,
+              "hits": 77,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.308
             },
             "absorbed": [
               {
@@ -9890,12 +9922,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -39.3,
-            "distance_E": -0.813,
+            "distance_usd": -41.68,
+            "distance_E": -0.862,
             "p_reach_from_array": {
-              "hits": 49,
+              "hits": 47,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.188
             },
             "absorbed": []
           },
@@ -9906,12 +9938,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -72.87,
-            "distance_E": -1.507,
+            "distance_usd": -75.25,
+            "distance_E": -1.556,
             "p_reach_from_array": {
-              "hits": 13,
+              "hits": 12,
               "n": 250,
-              "rate": 0.052
+              "rate": 0.048
             },
             "absorbed": []
           }
@@ -9936,12 +9968,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 60.7,
-            "distance_E": 1.255,
+            "distance_usd": 58.32,
+            "distance_E": 1.206,
             "p_reach_from_array": {
-              "hits": 9,
+              "hits": 12,
               "n": 250,
-              "rate": 0.036
+              "rate": 0.048
             },
             "absorbed": []
           },
@@ -9952,12 +9984,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 51.03,
-            "distance_E": 1.055,
+            "distance_usd": 48.65,
+            "distance_E": 1.006,
             "p_reach_from_array": {
-              "hits": 17,
+              "hits": 18,
               "n": 250,
-              "rate": 0.068
+              "rate": 0.072
             },
             "absorbed": []
           },
@@ -9968,12 +10000,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 35.7,
-            "distance_E": 0.738,
+            "distance_usd": 33.32,
+            "distance_E": 0.689,
             "p_reach_from_array": {
-              "hits": 41,
+              "hits": 51,
               "n": 250,
-              "rate": 0.164
+              "rate": 0.204
             },
             "absorbed": []
           },
@@ -9984,12 +10016,12 @@
             "side": "up",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": 7.78,
-            "distance_E": 0.161,
+            "distance_usd": 5.4,
+            "distance_E": 0.112,
             "p_reach_from_array": {
-              "hits": 193,
+              "hits": 203,
               "n": 250,
-              "rate": 0.772
+              "rate": 0.812
             },
             "absorbed": [
               {
@@ -10007,12 +10039,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -2.71,
-            "distance_E": -0.056,
+            "distance_usd": -5.09,
+            "distance_E": -0.105,
             "p_reach_from_array": {
-              "hits": 237,
+              "hits": 223,
               "n": 250,
-              "rate": 0.948
+              "rate": 0.892
             },
             "absorbed": [
               {
@@ -10036,12 +10068,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -14.3,
-            "distance_E": -0.296,
+            "distance_usd": -16.68,
+            "distance_E": -0.345,
             "p_reach_from_array": {
-              "hits": 156,
+              "hits": 145,
               "n": 250,
-              "rate": 0.624
+              "rate": 0.58
             },
             "absorbed": []
           },
@@ -10052,12 +10084,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -27.67,
-            "distance_E": -0.572,
+            "distance_usd": -30.05,
+            "distance_E": -0.621,
             "p_reach_from_array": {
-              "hits": 84,
+              "hits": 77,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.308
             },
             "absorbed": [
               {
@@ -10075,12 +10107,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -39.3,
-            "distance_E": -0.813,
+            "distance_usd": -41.68,
+            "distance_E": -0.862,
             "p_reach_from_array": {
-              "hits": 49,
+              "hits": 47,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.188
             },
             "absorbed": []
           },
@@ -10091,12 +10123,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -72.87,
-            "distance_E": -1.507,
+            "distance_usd": -75.25,
+            "distance_E": -1.556,
             "p_reach_from_array": {
-              "hits": 13,
+              "hits": 12,
               "n": 250,
-              "rate": 0.052
+              "rate": 0.048
             },
             "absorbed": []
           },
@@ -10107,12 +10139,12 @@
             "side": "down",
             "partial": false,
             "computed_to_london": null,
-            "distance_usd": -89.3,
-            "distance_E": -1.847,
+            "distance_usd": -91.68,
+            "distance_E": -1.896,
             "p_reach_from_array": {
-              "hits": 10,
+              "hits": 9,
               "n": 250,
-              "rate": 0.04
+              "rate": 0.036
             },
             "absorbed": []
           }
@@ -10159,11 +10191,27 @@
           {
             "label": "20-day high",
             "price": 4375.92,
-            "distance_E": 4.893,
+            "distance_E": 4.844,
             "reason": "beyond 2.0 E"
           }
         ]
       }
     }
+  },
+  "forward_log": {
+    "files": {
+      "forecasts": "forward/forecasts.csv",
+      "outcomes": "forward/outcomes.csv"
+    },
+    "forecasts_appended_this_run": 0,
+    "outcomes_appended_this_run": 0,
+    "forecast_rows_total": 0,
+    "outcome_rows_total": 0,
+    "completed_sessions": 0,
+    "completed_by_window": {},
+    "first_session": null,
+    "min_sessions_before_skill": 60,
+    "skill": null,
+    "note": "Record only: no fitting, no tuning. Skill is not computed or reported until 60 completed sessions exist (currently 0)."
   }
 }
