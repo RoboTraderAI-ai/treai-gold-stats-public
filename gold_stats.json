@@ -1,0 +1,6766 @@
+{
+  "generated_utc": "2026-10-20T11:54:46+00:00",
+  "data": {
+    "symbol": "XAUUSD",
+    "gold_like_symbols": [
+      "BTCXAU",
+      "ETHXAU",
+      "XAUAUD",
+      "XAUEUR",
+      "XAUJPY",
+      "XAUUSD",
+      "XAUUSD Dukascopy",
+      "XAUUSD.crp",
+      "XAUUSD247"
+    ],
+    "digits": 2,
+    "symbol_path": "Gold\\XAUUSD",
+    "live_clock": {
+      "tick_server_epoch": 1792508081,
+      "local_utc_epoch": 1792497281
+    },
+    "m5_bars": 553272,
+    "m5_first": "2019-01-02 01:00:00",
+    "m5_last": "2026-10-20 14:50:00",
+    "d1_bars": 3046,
+    "d1_first": "2015-01-02 00:00:00",
+    "d1_last": "2026-10-20 00:00:00",
+    "dxy_components_d1": {
+      "EURUSD": {
+        "bars": 3062,
+        "first": "2015-01-02 00:00:00",
+        "last": "2026-10-20 00:00:00"
+      },
+      "USDJPY": {
+        "bars": 3061,
+        "first": "2015-01-02 00:00:00",
+        "last": "2026-10-20 00:00:00"
+      },
+      "GBPUSD": {
+        "bars": 3061,
+        "first": "2015-01-02 00:00:00",
+        "last": "2026-10-20 00:00:00"
+      },
+      "USDCAD": {
+        "bars": 3061,
+        "first": "2015-01-02 00:00:00",
+        "last": "2026-10-20 00:00:00"
+      },
+      "USDSEK": {
+        "bars": 3061,
+        "first": "2015-01-02 00:00:00",
+        "last": "2026-10-20 00:00:00"
+      },
+      "USDCHF": {
+        "bars": 3060,
+        "first": "2015-01-02 00:00:00",
+        "last": "2026-10-20 00:00:00"
+      }
+    },
+    "sessions": 250,
+    "sample_first_session": "2025-10-17",
+    "sample_last_session": "2026-10-19",
+    "excluded_weekdays_low_coverage": [
+      {
+        "date": "2025-11-27",
+        "london_cov": 1.0,
+        "us_cov": 0.93
+      },
+      {
+        "date": "2025-11-28",
+        "london_cov": 0.48,
+        "us_cov": 0.96
+      },
+      {
+        "date": "2025-12-24",
+        "london_cov": 1.0,
+        "us_cov": 0.82
+      },
+      {
+        "date": "2026-01-19",
+        "london_cov": 1.0,
+        "us_cov": 0.94
+      },
+      {
+        "date": "2026-02-16",
+        "london_cov": 1.0,
+        "us_cov": 0.94
+      },
+      {
+        "date": "2026-05-25",
+        "london_cov": 1.0,
+        "us_cov": 0.93
+      },
+      {
+        "date": "2026-06-19",
+        "london_cov": 1.0,
+        "us_cov": 0.71
+      },
+      {
+        "date": "2026-07-03",
+        "london_cov": 1.0,
+        "us_cov": 0.71
+      },
+      {
+        "date": "2026-09-07",
+        "london_cov": 1.0,
+        "us_cov": 0.93
+      }
+    ],
+    "driver_first_dates": {
+      "dxy_mt5": "2015-01-02",
+      "usd_broad": "2006-01-02",
+      "wti": "1986-01-02",
+      "us10y": "1962-01-02",
+      "us2y": "1976-06-01",
+      "tips10y": "2003-01-02"
+    },
+    "driver_last_dates": {
+      "dxy_mt5": "2026-10-20",
+      "usd_broad": "2026-10-16",
+      "wti": "2026-10-14",
+      "us10y": "2026-10-16",
+      "us2y": "2026-10-16",
+      "tips10y": "2026-10-16"
+    },
+    "driver_notes": [
+      "dollar driver = ICE DXY formula rebuilt from Vantage MT5 D1 closes of EURUSD, USDJPY, GBPUSD, USDCAD, USDSEK, USDCHF (17:00 New York close, same feed as gold). FRED DTWEXBGS kept only for the old-vs-new comparison."
+    ],
+    "calendar_events": 346,
+    "calendar_first": "2021-01-27 14:00:00",
+    "calendar_last": "2027-12-08 14:00:00"
+  },
+  "server_offset": {
+    "method": "CME daily maintenance break start (17:00 New York) per Mon-Thu; cross-checked against Sunday 18:00 New York open",
+    "break_gaps_seen": 1601,
+    "break_gaps_matching_17ET": 1565,
+    "weekend_opens_seen": 402,
+    "weeks_with_offset": 408,
+    "weeks_cross_checked": 402,
+    "weeks_disagreeing": [],
+    "offset_values_seen": {
+      "3": 271,
+      "2": 137
+    },
+    "unmatched_break_examples": [
+      "2019-02-18 20:05:00",
+      "2020-01-20 20:25:00",
+      "2020-09-07 20:05:00",
+      "2021-11-25 19:45:00",
+      "2022-01-17 21:15:00",
+      "2022-02-21 21:15:00",
+      "2022-05-30 21:35:00",
+      "2022-06-20 21:35:00",
+      "2022-07-04 20:15:00",
+      "2022-09-05 21:30:00"
+    ],
+    "offsets_in_sample": [
+      2,
+      3
+    ],
+    "note": "Vantage server time = UTC+2 while New York is on EST and UTC+3 while on EDT (offsets seen in sample: [2, 3]); server midnight = 17:00 New York. D1 bars therefore close at 17:00 New York, near the FRED yield/oil/USD daily observation times."
+  },
+  "config": {
+    "windows_uk": {
+      "london_0800_1300": [
+        "08:00",
+        "13:00"
+      ],
+      "us_1300_2000": [
+        "13:00",
+        "20:00"
+      ]
+    },
+    "atr_period": 20,
+    "atr_rank_lookback": 250,
+    "atr_buckets": [
+      0,
+      25,
+      50,
+      75,
+      100
+    ],
+    "touch_bands_pct": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0
+    ],
+    "min_window_coverage": 0.95
+  },
+  "atr_bucket_counts": {
+    "P0-25": 8,
+    "P25-50": 43,
+    "P50-75": 103,
+    "P75-100": 96
+  },
+  "q1_touch_by_atr": {
+    "london_0800_1300": {
+      "all": {
+        "n": 250,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 203,
+              "n": 250,
+              "rate": 0.812
+            },
+            "touch_down": {
+              "hits": 215,
+              "n": 250,
+              "rate": 0.86
+            },
+            "touch_either": {
+              "hits": 250,
+              "n": 250,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 53,
+              "n": 250,
+              "rate": 0.212
+            },
+            "close_inside_given_touch": {
+              "hits": 53,
+              "n": 250,
+              "rate": 0.212
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 156,
+              "n": 250,
+              "rate": 0.624
+            },
+            "touch_down": {
+              "hits": 187,
+              "n": 250,
+              "rate": 0.748
+            },
+            "touch_either": {
+              "hits": 247,
+              "n": 250,
+              "rate": 0.988
+            },
+            "close_inside": {
+              "hits": 96,
+              "n": 250,
+              "rate": 0.384
+            },
+            "close_inside_given_touch": {
+              "hits": 93,
+              "n": 247,
+              "rate": 0.3765
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 121,
+              "n": 250,
+              "rate": 0.484
+            },
+            "touch_down": {
+              "hits": 147,
+              "n": 250,
+              "rate": 0.588
+            },
+            "touch_either": {
+              "hits": 220,
+              "n": 250,
+              "rate": 0.88
+            },
+            "close_inside": {
+              "hits": 136,
+              "n": 250,
+              "rate": 0.544
+            },
+            "close_inside_given_touch": {
+              "hits": 106,
+              "n": 220,
+              "rate": 0.4818
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 92,
+              "n": 250,
+              "rate": 0.368
+            },
+            "touch_down": {
+              "hits": 114,
+              "n": 250,
+              "rate": 0.456
+            },
+            "touch_either": {
+              "hits": 184,
+              "n": 250,
+              "rate": 0.736
+            },
+            "close_inside": {
+              "hits": 160,
+              "n": 250,
+              "rate": 0.64
+            },
+            "close_inside_given_touch": {
+              "hits": 94,
+              "n": 184,
+              "rate": 0.5109
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 73,
+              "n": 250,
+              "rate": 0.292
+            },
+            "touch_down": {
+              "hits": 87,
+              "n": 250,
+              "rate": 0.348
+            },
+            "touch_either": {
+              "hits": 149,
+              "n": 250,
+              "rate": 0.596
+            },
+            "close_inside": {
+              "hits": 173,
+              "n": 250,
+              "rate": 0.692
+            },
+            "close_inside_given_touch": {
+              "hits": 72,
+              "n": 149,
+              "rate": 0.4832
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 32,
+              "n": 250,
+              "rate": 0.128
+            },
+            "touch_down": {
+              "hits": 43,
+              "n": 250,
+              "rate": 0.172
+            },
+            "touch_either": {
+              "hits": 75,
+              "n": 250,
+              "rate": 0.3
+            },
+            "close_inside": {
+              "hits": 213,
+              "n": 250,
+              "rate": 0.852
+            },
+            "close_inside_given_touch": {
+              "hits": 38,
+              "n": 75,
+              "rate": 0.5067
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 17,
+              "n": 250,
+              "rate": 0.068
+            },
+            "touch_down": {
+              "hits": 29,
+              "n": 250,
+              "rate": 0.116
+            },
+            "touch_either": {
+              "hits": 46,
+              "n": 250,
+              "rate": 0.184
+            },
+            "close_inside": {
+              "hits": 227,
+              "n": 250,
+              "rate": 0.908
+            },
+            "close_inside_given_touch": {
+              "hits": 23,
+              "n": 46,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 6,
+              "n": 250,
+              "rate": 0.024
+            },
+            "touch_down": {
+              "hits": 20,
+              "n": 250,
+              "rate": 0.08
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 250,
+              "rate": 0.104
+            },
+            "close_inside": {
+              "hits": 234,
+              "n": 250,
+              "rate": 0.936
+            },
+            "close_inside_given_touch": {
+              "hits": 10,
+              "n": 26,
+              "rate": 0.3846
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 3,
+              "n": 250,
+              "rate": 0.012
+            },
+            "touch_down": {
+              "hits": 12,
+              "n": 250,
+              "rate": 0.048
+            },
+            "touch_either": {
+              "hits": 15,
+              "n": 250,
+              "rate": 0.06
+            },
+            "close_inside": {
+              "hits": 240,
+              "n": 250,
+              "rate": 0.96
+            },
+            "close_inside_given_touch": {
+              "hits": 5,
+              "n": 15,
+              "rate": 0.3333
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 2,
+              "n": 250,
+              "rate": 0.008
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 250,
+              "rate": 0.032
+            },
+            "touch_either": {
+              "hits": 10,
+              "n": 250,
+              "rate": 0.04
+            },
+            "close_inside": {
+              "hits": 243,
+              "n": 250,
+              "rate": 0.972
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 10,
+              "rate": 0.3
+            }
+          }
+        ]
+      },
+      "atr_P0-25": {
+        "n": 8,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 6,
+              "n": 8,
+              "rate": 0.75
+            },
+            "touch_down": {
+              "hits": 7,
+              "n": 8,
+              "rate": 0.875
+            },
+            "touch_either": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "touch_down": {
+              "hits": 6,
+              "n": 8,
+              "rate": 0.75
+            },
+            "touch_either": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 3,
+              "n": 8,
+              "rate": 0.375
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 8,
+              "rate": 0.375
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "touch_down": {
+              "hits": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "touch_either": {
+              "hits": 6,
+              "n": 8,
+              "rate": 0.75
+            },
+            "close_inside": {
+              "hits": 5,
+              "n": 8,
+              "rate": 0.625
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 6,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "touch_down": {
+              "hits": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "touch_either": {
+              "hits": 5,
+              "n": 8,
+              "rate": 0.625
+            },
+            "close_inside": {
+              "hits": 6,
+              "n": 8,
+              "rate": 0.75
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 5,
+              "rate": 0.6
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "touch_down": {
+              "hits": 3,
+              "n": 8,
+              "rate": 0.375
+            },
+            "touch_either": {
+              "hits": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "close_inside": {
+              "hits": 7,
+              "n": 8,
+              "rate": 0.875
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 4,
+              "rate": 0.75
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        ]
+      },
+      "atr_P25-50": {
+        "n": 43,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 33,
+              "n": 43,
+              "rate": 0.7674
+            },
+            "touch_down": {
+              "hits": 37,
+              "n": 43,
+              "rate": 0.8605
+            },
+            "touch_either": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 15,
+              "n": 43,
+              "rate": 0.3488
+            },
+            "close_inside_given_touch": {
+              "hits": 15,
+              "n": 43,
+              "rate": 0.3488
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 24,
+              "n": 43,
+              "rate": 0.5581
+            },
+            "touch_down": {
+              "hits": 30,
+              "n": 43,
+              "rate": 0.6977
+            },
+            "touch_either": {
+              "hits": 41,
+              "n": 43,
+              "rate": 0.9535
+            },
+            "close_inside": {
+              "hits": 19,
+              "n": 43,
+              "rate": 0.4419
+            },
+            "close_inside_given_touch": {
+              "hits": 17,
+              "n": 41,
+              "rate": 0.4146
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 18,
+              "n": 43,
+              "rate": 0.4186
+            },
+            "touch_down": {
+              "hits": 25,
+              "n": 43,
+              "rate": 0.5814
+            },
+            "touch_either": {
+              "hits": 35,
+              "n": 43,
+              "rate": 0.814
+            },
+            "close_inside": {
+              "hits": 26,
+              "n": 43,
+              "rate": 0.6047
+            },
+            "close_inside_given_touch": {
+              "hits": 18,
+              "n": 35,
+              "rate": 0.5143
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 14,
+              "n": 43,
+              "rate": 0.3256
+            },
+            "touch_down": {
+              "hits": 18,
+              "n": 43,
+              "rate": 0.4186
+            },
+            "touch_either": {
+              "hits": 29,
+              "n": 43,
+              "rate": 0.6744
+            },
+            "close_inside": {
+              "hits": 29,
+              "n": 43,
+              "rate": 0.6744
+            },
+            "close_inside_given_touch": {
+              "hits": 15,
+              "n": 29,
+              "rate": 0.5172
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 10,
+              "n": 43,
+              "rate": 0.2326
+            },
+            "touch_down": {
+              "hits": 12,
+              "n": 43,
+              "rate": 0.2791
+            },
+            "touch_either": {
+              "hits": 22,
+              "n": 43,
+              "rate": 0.5116
+            },
+            "close_inside": {
+              "hits": 32,
+              "n": 43,
+              "rate": 0.7442
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 22,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 5,
+              "n": 43,
+              "rate": 0.1163
+            },
+            "touch_down": {
+              "hits": 4,
+              "n": 43,
+              "rate": 0.093
+            },
+            "touch_either": {
+              "hits": 9,
+              "n": 43,
+              "rate": 0.2093
+            },
+            "close_inside": {
+              "hits": 38,
+              "n": 43,
+              "rate": 0.8837
+            },
+            "close_inside_given_touch": {
+              "hits": 4,
+              "n": 9,
+              "rate": 0.4444
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 2,
+              "n": 43,
+              "rate": 0.0465
+            },
+            "touch_down": {
+              "hits": 1,
+              "n": 43,
+              "rate": 0.0233
+            },
+            "touch_either": {
+              "hits": 3,
+              "n": 43,
+              "rate": 0.0698
+            },
+            "close_inside": {
+              "hits": 41,
+              "n": 43,
+              "rate": 0.9535
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 3,
+              "rate": 0.3333
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 43,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        ]
+      },
+      "atr_P50-75": {
+        "n": 103,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 85,
+              "n": 103,
+              "rate": 0.8252
+            },
+            "touch_down": {
+              "hits": 86,
+              "n": 103,
+              "rate": 0.835
+            },
+            "touch_either": {
+              "hits": 103,
+              "n": 103,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 17,
+              "n": 103,
+              "rate": 0.165
+            },
+            "close_inside_given_touch": {
+              "hits": 17,
+              "n": 103,
+              "rate": 0.165
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 65,
+              "n": 103,
+              "rate": 0.6311
+            },
+            "touch_down": {
+              "hits": 76,
+              "n": 103,
+              "rate": 0.7379
+            },
+            "touch_either": {
+              "hits": 102,
+              "n": 103,
+              "rate": 0.9903
+            },
+            "close_inside": {
+              "hits": 44,
+              "n": 103,
+              "rate": 0.4272
+            },
+            "close_inside_given_touch": {
+              "hits": 43,
+              "n": 102,
+              "rate": 0.4216
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 47,
+              "n": 103,
+              "rate": 0.4563
+            },
+            "touch_down": {
+              "hits": 54,
+              "n": 103,
+              "rate": 0.5243
+            },
+            "touch_either": {
+              "hits": 85,
+              "n": 103,
+              "rate": 0.8252
+            },
+            "close_inside": {
+              "hits": 62,
+              "n": 103,
+              "rate": 0.6019
+            },
+            "close_inside_given_touch": {
+              "hits": 44,
+              "n": 85,
+              "rate": 0.5176
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 33,
+              "n": 103,
+              "rate": 0.3204
+            },
+            "touch_down": {
+              "hits": 35,
+              "n": 103,
+              "rate": 0.3398
+            },
+            "touch_either": {
+              "hits": 64,
+              "n": 103,
+              "rate": 0.6214
+            },
+            "close_inside": {
+              "hits": 74,
+              "n": 103,
+              "rate": 0.7184
+            },
+            "close_inside_given_touch": {
+              "hits": 35,
+              "n": 64,
+              "rate": 0.5469
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 22,
+              "n": 103,
+              "rate": 0.2136
+            },
+            "touch_down": {
+              "hits": 29,
+              "n": 103,
+              "rate": 0.2816
+            },
+            "touch_either": {
+              "hits": 49,
+              "n": 103,
+              "rate": 0.4757
+            },
+            "close_inside": {
+              "hits": 77,
+              "n": 103,
+              "rate": 0.7476
+            },
+            "close_inside_given_touch": {
+              "hits": 23,
+              "n": 49,
+              "rate": 0.4694
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 10,
+              "n": 103,
+              "rate": 0.0971
+            },
+            "touch_down": {
+              "hits": 16,
+              "n": 103,
+              "rate": 0.1553
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 103,
+              "rate": 0.2524
+            },
+            "close_inside": {
+              "hits": 91,
+              "n": 103,
+              "rate": 0.8835
+            },
+            "close_inside_given_touch": {
+              "hits": 14,
+              "n": 26,
+              "rate": 0.5385
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 5,
+              "n": 103,
+              "rate": 0.0485
+            },
+            "touch_down": {
+              "hits": 10,
+              "n": 103,
+              "rate": 0.0971
+            },
+            "touch_either": {
+              "hits": 15,
+              "n": 103,
+              "rate": 0.1456
+            },
+            "close_inside": {
+              "hits": 96,
+              "n": 103,
+              "rate": 0.932
+            },
+            "close_inside_given_touch": {
+              "hits": 8,
+              "n": 15,
+              "rate": 0.5333
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 0,
+              "n": 103,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 103,
+              "rate": 0.0777
+            },
+            "touch_either": {
+              "hits": 8,
+              "n": 103,
+              "rate": 0.0777
+            },
+            "close_inside": {
+              "hits": 98,
+              "n": 103,
+              "rate": 0.9515
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 8,
+              "rate": 0.375
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 0,
+              "n": 103,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 3,
+              "n": 103,
+              "rate": 0.0291
+            },
+            "touch_either": {
+              "hits": 3,
+              "n": 103,
+              "rate": 0.0291
+            },
+            "close_inside": {
+              "hits": 103,
+              "n": 103,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 3,
+              "rate": 1.0
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 0,
+              "n": 103,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 1,
+              "n": 103,
+              "rate": 0.0097
+            },
+            "touch_either": {
+              "hits": 1,
+              "n": 103,
+              "rate": 0.0097
+            },
+            "close_inside": {
+              "hits": 103,
+              "n": 103,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 1,
+              "rate": 1.0
+            }
+          }
+        ]
+      },
+      "atr_P75-100": {
+        "n": 96,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 79,
+              "n": 96,
+              "rate": 0.8229
+            },
+            "touch_down": {
+              "hits": 85,
+              "n": 96,
+              "rate": 0.8854
+            },
+            "touch_either": {
+              "hits": 96,
+              "n": 96,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 21,
+              "n": 96,
+              "rate": 0.2188
+            },
+            "close_inside_given_touch": {
+              "hits": 21,
+              "n": 96,
+              "rate": 0.2188
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 63,
+              "n": 96,
+              "rate": 0.6562
+            },
+            "touch_down": {
+              "hits": 75,
+              "n": 96,
+              "rate": 0.7812
+            },
+            "touch_either": {
+              "hits": 96,
+              "n": 96,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 30,
+              "n": 96,
+              "rate": 0.3125
+            },
+            "close_inside_given_touch": {
+              "hits": 30,
+              "n": 96,
+              "rate": 0.3125
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 54,
+              "n": 96,
+              "rate": 0.5625
+            },
+            "touch_down": {
+              "hits": 64,
+              "n": 96,
+              "rate": 0.6667
+            },
+            "touch_either": {
+              "hits": 94,
+              "n": 96,
+              "rate": 0.9792
+            },
+            "close_inside": {
+              "hits": 43,
+              "n": 96,
+              "rate": 0.4479
+            },
+            "close_inside_given_touch": {
+              "hits": 41,
+              "n": 94,
+              "rate": 0.4362
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 44,
+              "n": 96,
+              "rate": 0.4583
+            },
+            "touch_down": {
+              "hits": 57,
+              "n": 96,
+              "rate": 0.5938
+            },
+            "touch_either": {
+              "hits": 86,
+              "n": 96,
+              "rate": 0.8958
+            },
+            "close_inside": {
+              "hits": 51,
+              "n": 96,
+              "rate": 0.5312
+            },
+            "close_inside_given_touch": {
+              "hits": 41,
+              "n": 86,
+              "rate": 0.4767
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 40,
+              "n": 96,
+              "rate": 0.4167
+            },
+            "touch_down": {
+              "hits": 43,
+              "n": 96,
+              "rate": 0.4479
+            },
+            "touch_either": {
+              "hits": 74,
+              "n": 96,
+              "rate": 0.7708
+            },
+            "close_inside": {
+              "hits": 57,
+              "n": 96,
+              "rate": 0.5938
+            },
+            "close_inside_given_touch": {
+              "hits": 35,
+              "n": 74,
+              "rate": 0.473
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 17,
+              "n": 96,
+              "rate": 0.1771
+            },
+            "touch_down": {
+              "hits": 23,
+              "n": 96,
+              "rate": 0.2396
+            },
+            "touch_either": {
+              "hits": 40,
+              "n": 96,
+              "rate": 0.4167
+            },
+            "close_inside": {
+              "hits": 76,
+              "n": 96,
+              "rate": 0.7917
+            },
+            "close_inside_given_touch": {
+              "hits": 20,
+              "n": 40,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 10,
+              "n": 96,
+              "rate": 0.1042
+            },
+            "touch_down": {
+              "hits": 18,
+              "n": 96,
+              "rate": 0.1875
+            },
+            "touch_either": {
+              "hits": 28,
+              "n": 96,
+              "rate": 0.2917
+            },
+            "close_inside": {
+              "hits": 82,
+              "n": 96,
+              "rate": 0.8542
+            },
+            "close_inside_given_touch": {
+              "hits": 14,
+              "n": 28,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 6,
+              "n": 96,
+              "rate": 0.0625
+            },
+            "touch_down": {
+              "hits": 12,
+              "n": 96,
+              "rate": 0.125
+            },
+            "touch_either": {
+              "hits": 18,
+              "n": 96,
+              "rate": 0.1875
+            },
+            "close_inside": {
+              "hits": 85,
+              "n": 96,
+              "rate": 0.8854
+            },
+            "close_inside_given_touch": {
+              "hits": 7,
+              "n": 18,
+              "rate": 0.3889
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 3,
+              "n": 96,
+              "rate": 0.0312
+            },
+            "touch_down": {
+              "hits": 9,
+              "n": 96,
+              "rate": 0.0938
+            },
+            "touch_either": {
+              "hits": 12,
+              "n": 96,
+              "rate": 0.125
+            },
+            "close_inside": {
+              "hits": 86,
+              "n": 96,
+              "rate": 0.8958
+            },
+            "close_inside_given_touch": {
+              "hits": 2,
+              "n": 12,
+              "rate": 0.1667
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 2,
+              "n": 96,
+              "rate": 0.0208
+            },
+            "touch_down": {
+              "hits": 7,
+              "n": 96,
+              "rate": 0.0729
+            },
+            "touch_either": {
+              "hits": 9,
+              "n": 96,
+              "rate": 0.0938
+            },
+            "close_inside": {
+              "hits": 89,
+              "n": 96,
+              "rate": 0.9271
+            },
+            "close_inside_given_touch": {
+              "hits": 2,
+              "n": 9,
+              "rate": 0.2222
+            }
+          }
+        ]
+      }
+    },
+    "us_1300_2000": {
+      "all": {
+        "n": 250,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 226,
+              "n": 250,
+              "rate": 0.904
+            },
+            "touch_down": {
+              "hits": 234,
+              "n": 250,
+              "rate": 0.936
+            },
+            "touch_either": {
+              "hits": 250,
+              "n": 250,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 32,
+              "n": 250,
+              "rate": 0.128
+            },
+            "close_inside_given_touch": {
+              "hits": 32,
+              "n": 250,
+              "rate": 0.128
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 201,
+              "n": 250,
+              "rate": 0.804
+            },
+            "touch_down": {
+              "hits": 213,
+              "n": 250,
+              "rate": 0.852
+            },
+            "touch_either": {
+              "hits": 250,
+              "n": 250,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 49,
+              "n": 250,
+              "rate": 0.196
+            },
+            "close_inside_given_touch": {
+              "hits": 49,
+              "n": 250,
+              "rate": 0.196
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 183,
+              "n": 250,
+              "rate": 0.732
+            },
+            "touch_down": {
+              "hits": 197,
+              "n": 250,
+              "rate": 0.788
+            },
+            "touch_either": {
+              "hits": 250,
+              "n": 250,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 72,
+              "n": 250,
+              "rate": 0.288
+            },
+            "close_inside_given_touch": {
+              "hits": 72,
+              "n": 250,
+              "rate": 0.288
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 156,
+              "n": 250,
+              "rate": 0.624
+            },
+            "touch_down": {
+              "hits": 174,
+              "n": 250,
+              "rate": 0.696
+            },
+            "touch_either": {
+              "hits": 247,
+              "n": 250,
+              "rate": 0.988
+            },
+            "close_inside": {
+              "hits": 94,
+              "n": 250,
+              "rate": 0.376
+            },
+            "close_inside_given_touch": {
+              "hits": 91,
+              "n": 247,
+              "rate": 0.3684
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 140,
+              "n": 250,
+              "rate": 0.56
+            },
+            "touch_down": {
+              "hits": 152,
+              "n": 250,
+              "rate": 0.608
+            },
+            "touch_either": {
+              "hits": 242,
+              "n": 250,
+              "rate": 0.968
+            },
+            "close_inside": {
+              "hits": 117,
+              "n": 250,
+              "rate": 0.468
+            },
+            "close_inside_given_touch": {
+              "hits": 109,
+              "n": 242,
+              "rate": 0.4504
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 90,
+              "n": 250,
+              "rate": 0.36
+            },
+            "touch_down": {
+              "hits": 111,
+              "n": 250,
+              "rate": 0.444
+            },
+            "touch_either": {
+              "hits": 185,
+              "n": 250,
+              "rate": 0.74
+            },
+            "close_inside": {
+              "hits": 158,
+              "n": 250,
+              "rate": 0.632
+            },
+            "close_inside_given_touch": {
+              "hits": 93,
+              "n": 185,
+              "rate": 0.5027
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 60,
+              "n": 250,
+              "rate": 0.24
+            },
+            "touch_down": {
+              "hits": 76,
+              "n": 250,
+              "rate": 0.304
+            },
+            "touch_either": {
+              "hits": 131,
+              "n": 250,
+              "rate": 0.524
+            },
+            "close_inside": {
+              "hits": 182,
+              "n": 250,
+              "rate": 0.728
+            },
+            "close_inside_given_touch": {
+              "hits": 63,
+              "n": 131,
+              "rate": 0.4809
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 39,
+              "n": 250,
+              "rate": 0.156
+            },
+            "touch_down": {
+              "hits": 53,
+              "n": 250,
+              "rate": 0.212
+            },
+            "touch_either": {
+              "hits": 91,
+              "n": 250,
+              "rate": 0.364
+            },
+            "close_inside": {
+              "hits": 202,
+              "n": 250,
+              "rate": 0.808
+            },
+            "close_inside_given_touch": {
+              "hits": 43,
+              "n": 91,
+              "rate": 0.4725
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 28,
+              "n": 250,
+              "rate": 0.112
+            },
+            "touch_down": {
+              "hits": 37,
+              "n": 250,
+              "rate": 0.148
+            },
+            "touch_either": {
+              "hits": 64,
+              "n": 250,
+              "rate": 0.256
+            },
+            "close_inside": {
+              "hits": 212,
+              "n": 250,
+              "rate": 0.848
+            },
+            "close_inside_given_touch": {
+              "hits": 26,
+              "n": 64,
+              "rate": 0.4062
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 7,
+              "n": 250,
+              "rate": 0.028
+            },
+            "touch_down": {
+              "hits": 24,
+              "n": 250,
+              "rate": 0.096
+            },
+            "touch_either": {
+              "hits": 31,
+              "n": 250,
+              "rate": 0.124
+            },
+            "close_inside": {
+              "hits": 238,
+              "n": 250,
+              "rate": 0.952
+            },
+            "close_inside_given_touch": {
+              "hits": 19,
+              "n": 31,
+              "rate": 0.6129
+            }
+          }
+        ]
+      },
+      "atr_P0-25": {
+        "n": 8,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "touch_either": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 5,
+              "n": 8,
+              "rate": 0.625
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "touch_either": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "touch_either": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "close_inside_given_touch": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 3,
+              "n": 8,
+              "rate": 0.375
+            },
+            "touch_down": {
+              "hits": 5,
+              "n": 8,
+              "rate": 0.625
+            },
+            "touch_either": {
+              "hits": 7,
+              "n": 8,
+              "rate": 0.875
+            },
+            "close_inside": {
+              "hits": 6,
+              "n": 8,
+              "rate": 0.75
+            },
+            "close_inside_given_touch": {
+              "hits": 5,
+              "n": 7,
+              "rate": 0.7143
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "touch_down": {
+              "hits": 4,
+              "n": 8,
+              "rate": 0.5
+            },
+            "touch_either": {
+              "hits": 6,
+              "n": 8,
+              "rate": 0.75
+            },
+            "close_inside": {
+              "hits": 6,
+              "n": 8,
+              "rate": 0.75
+            },
+            "close_inside_given_touch": {
+              "hits": 4,
+              "n": 6,
+              "rate": 0.6667
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 3,
+              "n": 8,
+              "rate": 0.375
+            },
+            "touch_either": {
+              "hits": 3,
+              "n": 8,
+              "rate": 0.375
+            },
+            "close_inside": {
+              "hits": 7,
+              "n": 8,
+              "rate": 0.875
+            },
+            "close_inside_given_touch": {
+              "hits": 2,
+              "n": 3,
+              "rate": 0.6667
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "touch_either": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "close_inside": {
+              "hits": 7,
+              "n": 8,
+              "rate": 0.875
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 2,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "touch_either": {
+              "hits": 2,
+              "n": 8,
+              "rate": 0.25
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 2,
+              "n": 2,
+              "rate": 1.0
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "touch_either": {
+              "hits": 1,
+              "n": 8,
+              "rate": 0.125
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 1,
+              "rate": 1.0
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_down": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "touch_either": {
+              "hits": 0,
+              "n": 8,
+              "rate": 0.0
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 8,
+              "rate": 1.0
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 0,
+              "rate": null
+            }
+          }
+        ]
+      },
+      "atr_P25-50": {
+        "n": 43,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 40,
+              "n": 43,
+              "rate": 0.9302
+            },
+            "touch_down": {
+              "hits": 40,
+              "n": 43,
+              "rate": 0.9302
+            },
+            "touch_either": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 7,
+              "n": 43,
+              "rate": 0.1628
+            },
+            "close_inside_given_touch": {
+              "hits": 7,
+              "n": 43,
+              "rate": 0.1628
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 34,
+              "n": 43,
+              "rate": 0.7907
+            },
+            "touch_down": {
+              "hits": 36,
+              "n": 43,
+              "rate": 0.8372
+            },
+            "touch_either": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 12,
+              "n": 43,
+              "rate": 0.2791
+            },
+            "close_inside_given_touch": {
+              "hits": 12,
+              "n": 43,
+              "rate": 0.2791
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 29,
+              "n": 43,
+              "rate": 0.6744
+            },
+            "touch_down": {
+              "hits": 35,
+              "n": 43,
+              "rate": 0.814
+            },
+            "touch_either": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 16,
+              "n": 43,
+              "rate": 0.3721
+            },
+            "close_inside_given_touch": {
+              "hits": 16,
+              "n": 43,
+              "rate": 0.3721
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 25,
+              "n": 43,
+              "rate": 0.5814
+            },
+            "touch_down": {
+              "hits": 32,
+              "n": 43,
+              "rate": 0.7442
+            },
+            "touch_either": {
+              "hits": 43,
+              "n": 43,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 21,
+              "n": 43,
+              "rate": 0.4884
+            },
+            "close_inside_given_touch": {
+              "hits": 21,
+              "n": 43,
+              "rate": 0.4884
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 23,
+              "n": 43,
+              "rate": 0.5349
+            },
+            "touch_down": {
+              "hits": 26,
+              "n": 43,
+              "rate": 0.6047
+            },
+            "touch_either": {
+              "hits": 42,
+              "n": 43,
+              "rate": 0.9767
+            },
+            "close_inside": {
+              "hits": 27,
+              "n": 43,
+              "rate": 0.6279
+            },
+            "close_inside_given_touch": {
+              "hits": 26,
+              "n": 42,
+              "rate": 0.619
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 15,
+              "n": 43,
+              "rate": 0.3488
+            },
+            "touch_down": {
+              "hits": 19,
+              "n": 43,
+              "rate": 0.4419
+            },
+            "touch_either": {
+              "hits": 30,
+              "n": 43,
+              "rate": 0.6977
+            },
+            "close_inside": {
+              "hits": 33,
+              "n": 43,
+              "rate": 0.7674
+            },
+            "close_inside_given_touch": {
+              "hits": 20,
+              "n": 30,
+              "rate": 0.6667
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 9,
+              "n": 43,
+              "rate": 0.2093
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 43,
+              "rate": 0.186
+            },
+            "touch_either": {
+              "hits": 16,
+              "n": 43,
+              "rate": 0.3721
+            },
+            "close_inside": {
+              "hits": 37,
+              "n": 43,
+              "rate": 0.8605
+            },
+            "close_inside_given_touch": {
+              "hits": 10,
+              "n": 16,
+              "rate": 0.625
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 4,
+              "n": 43,
+              "rate": 0.093
+            },
+            "touch_down": {
+              "hits": 2,
+              "n": 43,
+              "rate": 0.0465
+            },
+            "touch_either": {
+              "hits": 6,
+              "n": 43,
+              "rate": 0.1395
+            },
+            "close_inside": {
+              "hits": 39,
+              "n": 43,
+              "rate": 0.907
+            },
+            "close_inside_given_touch": {
+              "hits": 2,
+              "n": 6,
+              "rate": 0.3333
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 4,
+              "n": 43,
+              "rate": 0.093
+            },
+            "touch_down": {
+              "hits": 1,
+              "n": 43,
+              "rate": 0.0233
+            },
+            "touch_either": {
+              "hits": 5,
+              "n": 43,
+              "rate": 0.1163
+            },
+            "close_inside": {
+              "hits": 39,
+              "n": 43,
+              "rate": 0.907
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 5,
+              "rate": 0.2
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 1,
+              "n": 43,
+              "rate": 0.0233
+            },
+            "touch_down": {
+              "hits": 1,
+              "n": 43,
+              "rate": 0.0233
+            },
+            "touch_either": {
+              "hits": 2,
+              "n": 43,
+              "rate": 0.0465
+            },
+            "close_inside": {
+              "hits": 41,
+              "n": 43,
+              "rate": 0.9535
+            },
+            "close_inside_given_touch": {
+              "hits": 0,
+              "n": 2,
+              "rate": 0.0
+            }
+          }
+        ]
+      },
+      "atr_P50-75": {
+        "n": 103,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 94,
+              "n": 103,
+              "rate": 0.9126
+            },
+            "touch_down": {
+              "hits": 99,
+              "n": 103,
+              "rate": 0.9612
+            },
+            "touch_either": {
+              "hits": 103,
+              "n": 103,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 13,
+              "n": 103,
+              "rate": 0.1262
+            },
+            "close_inside_given_touch": {
+              "hits": 13,
+              "n": 103,
+              "rate": 0.1262
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 83,
+              "n": 103,
+              "rate": 0.8058
+            },
+            "touch_down": {
+              "hits": 87,
+              "n": 103,
+              "rate": 0.8447
+            },
+            "touch_either": {
+              "hits": 103,
+              "n": 103,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 20,
+              "n": 103,
+              "rate": 0.1942
+            },
+            "close_inside_given_touch": {
+              "hits": 20,
+              "n": 103,
+              "rate": 0.1942
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 77,
+              "n": 103,
+              "rate": 0.7476
+            },
+            "touch_down": {
+              "hits": 79,
+              "n": 103,
+              "rate": 0.767
+            },
+            "touch_either": {
+              "hits": 103,
+              "n": 103,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 29,
+              "n": 103,
+              "rate": 0.2816
+            },
+            "close_inside_given_touch": {
+              "hits": 29,
+              "n": 103,
+              "rate": 0.2816
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 67,
+              "n": 103,
+              "rate": 0.6505
+            },
+            "touch_down": {
+              "hits": 67,
+              "n": 103,
+              "rate": 0.6505
+            },
+            "touch_either": {
+              "hits": 102,
+              "n": 103,
+              "rate": 0.9903
+            },
+            "close_inside": {
+              "hits": 38,
+              "n": 103,
+              "rate": 0.3689
+            },
+            "close_inside_given_touch": {
+              "hits": 37,
+              "n": 102,
+              "rate": 0.3627
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 61,
+              "n": 103,
+              "rate": 0.5922
+            },
+            "touch_down": {
+              "hits": 64,
+              "n": 103,
+              "rate": 0.6214
+            },
+            "touch_either": {
+              "hits": 101,
+              "n": 103,
+              "rate": 0.9806
+            },
+            "close_inside": {
+              "hits": 50,
+              "n": 103,
+              "rate": 0.4854
+            },
+            "close_inside_given_touch": {
+              "hits": 48,
+              "n": 101,
+              "rate": 0.4752
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 32,
+              "n": 103,
+              "rate": 0.3107
+            },
+            "touch_down": {
+              "hits": 43,
+              "n": 103,
+              "rate": 0.4175
+            },
+            "touch_either": {
+              "hits": 71,
+              "n": 103,
+              "rate": 0.6893
+            },
+            "close_inside": {
+              "hits": 74,
+              "n": 103,
+              "rate": 0.7184
+            },
+            "close_inside_given_touch": {
+              "hits": 42,
+              "n": 71,
+              "rate": 0.5915
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 20,
+              "n": 103,
+              "rate": 0.1942
+            },
+            "touch_down": {
+              "hits": 30,
+              "n": 103,
+              "rate": 0.2913
+            },
+            "touch_either": {
+              "hits": 49,
+              "n": 103,
+              "rate": 0.4757
+            },
+            "close_inside": {
+              "hits": 87,
+              "n": 103,
+              "rate": 0.8447
+            },
+            "close_inside_given_touch": {
+              "hits": 33,
+              "n": 49,
+              "rate": 0.6735
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 12,
+              "n": 103,
+              "rate": 0.1165
+            },
+            "touch_down": {
+              "hits": 19,
+              "n": 103,
+              "rate": 0.1845
+            },
+            "touch_either": {
+              "hits": 31,
+              "n": 103,
+              "rate": 0.301
+            },
+            "close_inside": {
+              "hits": 90,
+              "n": 103,
+              "rate": 0.8738
+            },
+            "close_inside_given_touch": {
+              "hits": 18,
+              "n": 31,
+              "rate": 0.5806
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 9,
+              "n": 103,
+              "rate": 0.0874
+            },
+            "touch_down": {
+              "hits": 11,
+              "n": 103,
+              "rate": 0.1068
+            },
+            "touch_either": {
+              "hits": 20,
+              "n": 103,
+              "rate": 0.1942
+            },
+            "close_inside": {
+              "hits": 93,
+              "n": 103,
+              "rate": 0.9029
+            },
+            "close_inside_given_touch": {
+              "hits": 10,
+              "n": 20,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 3,
+              "n": 103,
+              "rate": 0.0291
+            },
+            "touch_down": {
+              "hits": 6,
+              "n": 103,
+              "rate": 0.0583
+            },
+            "touch_either": {
+              "hits": 9,
+              "n": 103,
+              "rate": 0.0874
+            },
+            "close_inside": {
+              "hits": 99,
+              "n": 103,
+              "rate": 0.9612
+            },
+            "close_inside_given_touch": {
+              "hits": 5,
+              "n": 9,
+              "rate": 0.5556
+            }
+          }
+        ]
+      },
+      "atr_P75-100": {
+        "n": 96,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 84,
+              "n": 96,
+              "rate": 0.875
+            },
+            "touch_down": {
+              "hits": 87,
+              "n": 96,
+              "rate": 0.9062
+            },
+            "touch_either": {
+              "hits": 96,
+              "n": 96,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 11,
+              "n": 96,
+              "rate": 0.1146
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 96,
+              "rate": 0.1146
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 79,
+              "n": 96,
+              "rate": 0.8229
+            },
+            "touch_down": {
+              "hits": 82,
+              "n": 96,
+              "rate": 0.8542
+            },
+            "touch_either": {
+              "hits": 96,
+              "n": 96,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 16,
+              "n": 96,
+              "rate": 0.1667
+            },
+            "close_inside_given_touch": {
+              "hits": 16,
+              "n": 96,
+              "rate": 0.1667
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 73,
+              "n": 96,
+              "rate": 0.7604
+            },
+            "touch_down": {
+              "hits": 75,
+              "n": 96,
+              "rate": 0.7812
+            },
+            "touch_either": {
+              "hits": 96,
+              "n": 96,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 25,
+              "n": 96,
+              "rate": 0.2604
+            },
+            "close_inside_given_touch": {
+              "hits": 25,
+              "n": 96,
+              "rate": 0.2604
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 61,
+              "n": 96,
+              "rate": 0.6354
+            },
+            "touch_down": {
+              "hits": 70,
+              "n": 96,
+              "rate": 0.7292
+            },
+            "touch_either": {
+              "hits": 95,
+              "n": 96,
+              "rate": 0.9896
+            },
+            "close_inside": {
+              "hits": 29,
+              "n": 96,
+              "rate": 0.3021
+            },
+            "close_inside_given_touch": {
+              "hits": 28,
+              "n": 95,
+              "rate": 0.2947
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 54,
+              "n": 96,
+              "rate": 0.5625
+            },
+            "touch_down": {
+              "hits": 58,
+              "n": 96,
+              "rate": 0.6042
+            },
+            "touch_either": {
+              "hits": 93,
+              "n": 96,
+              "rate": 0.9688
+            },
+            "close_inside": {
+              "hits": 34,
+              "n": 96,
+              "rate": 0.3542
+            },
+            "close_inside_given_touch": {
+              "hits": 31,
+              "n": 93,
+              "rate": 0.3333
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 43,
+              "n": 96,
+              "rate": 0.4479
+            },
+            "touch_down": {
+              "hits": 46,
+              "n": 96,
+              "rate": 0.4792
+            },
+            "touch_either": {
+              "hits": 81,
+              "n": 96,
+              "rate": 0.8438
+            },
+            "close_inside": {
+              "hits": 44,
+              "n": 96,
+              "rate": 0.4583
+            },
+            "close_inside_given_touch": {
+              "hits": 29,
+              "n": 81,
+              "rate": 0.358
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 31,
+              "n": 96,
+              "rate": 0.3229
+            },
+            "touch_down": {
+              "hits": 36,
+              "n": 96,
+              "rate": 0.375
+            },
+            "touch_either": {
+              "hits": 64,
+              "n": 96,
+              "rate": 0.6667
+            },
+            "close_inside": {
+              "hits": 51,
+              "n": 96,
+              "rate": 0.5312
+            },
+            "close_inside_given_touch": {
+              "hits": 19,
+              "n": 64,
+              "rate": 0.2969
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 23,
+              "n": 96,
+              "rate": 0.2396
+            },
+            "touch_down": {
+              "hits": 30,
+              "n": 96,
+              "rate": 0.3125
+            },
+            "touch_either": {
+              "hits": 52,
+              "n": 96,
+              "rate": 0.5417
+            },
+            "close_inside": {
+              "hits": 65,
+              "n": 96,
+              "rate": 0.6771
+            },
+            "close_inside_given_touch": {
+              "hits": 21,
+              "n": 52,
+              "rate": 0.4038
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 15,
+              "n": 96,
+              "rate": 0.1562
+            },
+            "touch_down": {
+              "hits": 24,
+              "n": 96,
+              "rate": 0.25
+            },
+            "touch_either": {
+              "hits": 38,
+              "n": 96,
+              "rate": 0.3958
+            },
+            "close_inside": {
+              "hits": 72,
+              "n": 96,
+              "rate": 0.75
+            },
+            "close_inside_given_touch": {
+              "hits": 14,
+              "n": 38,
+              "rate": 0.3684
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 3,
+              "n": 96,
+              "rate": 0.0312
+            },
+            "touch_down": {
+              "hits": 17,
+              "n": 96,
+              "rate": 0.1771
+            },
+            "touch_either": {
+              "hits": 20,
+              "n": 96,
+              "rate": 0.2083
+            },
+            "close_inside": {
+              "hits": 90,
+              "n": 96,
+              "rate": 0.9375
+            },
+            "close_inside_given_touch": {
+              "hits": 14,
+              "n": 20,
+              "rate": 0.7
+            }
+          }
+        ]
+      }
+    }
+  },
+  "q2_us_window_by_release": {
+    "definition": "release = tier <= 2 release inside 13:00-20:00 UK; jobless claims excluded",
+    "table": {
+      "release_in_window": {
+        "n": 86,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 79,
+              "n": 86,
+              "rate": 0.9186
+            },
+            "touch_down": {
+              "hits": 78,
+              "n": 86,
+              "rate": 0.907
+            },
+            "touch_either": {
+              "hits": 86,
+              "n": 86,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 15,
+              "n": 86,
+              "rate": 0.1744
+            },
+            "close_inside_given_touch": {
+              "hits": 15,
+              "n": 86,
+              "rate": 0.1744
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 69,
+              "n": 86,
+              "rate": 0.8023
+            },
+            "touch_down": {
+              "hits": 71,
+              "n": 86,
+              "rate": 0.8256
+            },
+            "touch_either": {
+              "hits": 86,
+              "n": 86,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 20,
+              "n": 86,
+              "rate": 0.2326
+            },
+            "close_inside_given_touch": {
+              "hits": 20,
+              "n": 86,
+              "rate": 0.2326
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 62,
+              "n": 86,
+              "rate": 0.7209
+            },
+            "touch_down": {
+              "hits": 64,
+              "n": 86,
+              "rate": 0.7442
+            },
+            "touch_either": {
+              "hits": 86,
+              "n": 86,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 25,
+              "n": 86,
+              "rate": 0.2907
+            },
+            "close_inside_given_touch": {
+              "hits": 25,
+              "n": 86,
+              "rate": 0.2907
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 55,
+              "n": 86,
+              "rate": 0.6395
+            },
+            "touch_down": {
+              "hits": 59,
+              "n": 86,
+              "rate": 0.686
+            },
+            "touch_either": {
+              "hits": 86,
+              "n": 86,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 33,
+              "n": 86,
+              "rate": 0.3837
+            },
+            "close_inside_given_touch": {
+              "hits": 33,
+              "n": 86,
+              "rate": 0.3837
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 51,
+              "n": 86,
+              "rate": 0.593
+            },
+            "touch_down": {
+              "hits": 51,
+              "n": 86,
+              "rate": 0.593
+            },
+            "touch_either": {
+              "hits": 84,
+              "n": 86,
+              "rate": 0.9767
+            },
+            "close_inside": {
+              "hits": 39,
+              "n": 86,
+              "rate": 0.4535
+            },
+            "close_inside_given_touch": {
+              "hits": 37,
+              "n": 84,
+              "rate": 0.4405
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 35,
+              "n": 86,
+              "rate": 0.407
+            },
+            "touch_down": {
+              "hits": 40,
+              "n": 86,
+              "rate": 0.4651
+            },
+            "touch_either": {
+              "hits": 66,
+              "n": 86,
+              "rate": 0.7674
+            },
+            "close_inside": {
+              "hits": 49,
+              "n": 86,
+              "rate": 0.5698
+            },
+            "close_inside_given_touch": {
+              "hits": 29,
+              "n": 66,
+              "rate": 0.4394
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 27,
+              "n": 86,
+              "rate": 0.314
+            },
+            "touch_down": {
+              "hits": 27,
+              "n": 86,
+              "rate": 0.314
+            },
+            "touch_either": {
+              "hits": 52,
+              "n": 86,
+              "rate": 0.6047
+            },
+            "close_inside": {
+              "hits": 61,
+              "n": 86,
+              "rate": 0.7093
+            },
+            "close_inside_given_touch": {
+              "hits": 27,
+              "n": 52,
+              "rate": 0.5192
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 19,
+              "n": 86,
+              "rate": 0.2209
+            },
+            "touch_down": {
+              "hits": 17,
+              "n": 86,
+              "rate": 0.1977
+            },
+            "touch_either": {
+              "hits": 36,
+              "n": 86,
+              "rate": 0.4186
+            },
+            "close_inside": {
+              "hits": 68,
+              "n": 86,
+              "rate": 0.7907
+            },
+            "close_inside_given_touch": {
+              "hits": 18,
+              "n": 36,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 14,
+              "n": 86,
+              "rate": 0.1628
+            },
+            "touch_down": {
+              "hits": 12,
+              "n": 86,
+              "rate": 0.1395
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 86,
+              "rate": 0.3023
+            },
+            "close_inside": {
+              "hits": 72,
+              "n": 86,
+              "rate": 0.8372
+            },
+            "close_inside_given_touch": {
+              "hits": 12,
+              "n": 26,
+              "rate": 0.4615
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 4,
+              "n": 86,
+              "rate": 0.0465
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 86,
+              "rate": 0.093
+            },
+            "touch_either": {
+              "hits": 12,
+              "n": 86,
+              "rate": 0.1395
+            },
+            "close_inside": {
+              "hits": 82,
+              "n": 86,
+              "rate": 0.9535
+            },
+            "close_inside_given_touch": {
+              "hits": 8,
+              "n": 12,
+              "rate": 0.6667
+            }
+          }
+        ]
+      },
+      "no_release_in_window": {
+        "n": 164,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 147,
+              "n": 164,
+              "rate": 0.8963
+            },
+            "touch_down": {
+              "hits": 156,
+              "n": 164,
+              "rate": 0.9512
+            },
+            "touch_either": {
+              "hits": 164,
+              "n": 164,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 17,
+              "n": 164,
+              "rate": 0.1037
+            },
+            "close_inside_given_touch": {
+              "hits": 17,
+              "n": 164,
+              "rate": 0.1037
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 132,
+              "n": 164,
+              "rate": 0.8049
+            },
+            "touch_down": {
+              "hits": 142,
+              "n": 164,
+              "rate": 0.8659
+            },
+            "touch_either": {
+              "hits": 164,
+              "n": 164,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 29,
+              "n": 164,
+              "rate": 0.1768
+            },
+            "close_inside_given_touch": {
+              "hits": 29,
+              "n": 164,
+              "rate": 0.1768
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 121,
+              "n": 164,
+              "rate": 0.7378
+            },
+            "touch_down": {
+              "hits": 133,
+              "n": 164,
+              "rate": 0.811
+            },
+            "touch_either": {
+              "hits": 164,
+              "n": 164,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 47,
+              "n": 164,
+              "rate": 0.2866
+            },
+            "close_inside_given_touch": {
+              "hits": 47,
+              "n": 164,
+              "rate": 0.2866
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 101,
+              "n": 164,
+              "rate": 0.6159
+            },
+            "touch_down": {
+              "hits": 115,
+              "n": 164,
+              "rate": 0.7012
+            },
+            "touch_either": {
+              "hits": 161,
+              "n": 164,
+              "rate": 0.9817
+            },
+            "close_inside": {
+              "hits": 61,
+              "n": 164,
+              "rate": 0.372
+            },
+            "close_inside_given_touch": {
+              "hits": 58,
+              "n": 161,
+              "rate": 0.3602
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 89,
+              "n": 164,
+              "rate": 0.5427
+            },
+            "touch_down": {
+              "hits": 101,
+              "n": 164,
+              "rate": 0.6159
+            },
+            "touch_either": {
+              "hits": 158,
+              "n": 164,
+              "rate": 0.9634
+            },
+            "close_inside": {
+              "hits": 78,
+              "n": 164,
+              "rate": 0.4756
+            },
+            "close_inside_given_touch": {
+              "hits": 72,
+              "n": 158,
+              "rate": 0.4557
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 55,
+              "n": 164,
+              "rate": 0.3354
+            },
+            "touch_down": {
+              "hits": 71,
+              "n": 164,
+              "rate": 0.4329
+            },
+            "touch_either": {
+              "hits": 119,
+              "n": 164,
+              "rate": 0.7256
+            },
+            "close_inside": {
+              "hits": 109,
+              "n": 164,
+              "rate": 0.6646
+            },
+            "close_inside_given_touch": {
+              "hits": 64,
+              "n": 119,
+              "rate": 0.5378
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 33,
+              "n": 164,
+              "rate": 0.2012
+            },
+            "touch_down": {
+              "hits": 49,
+              "n": 164,
+              "rate": 0.2988
+            },
+            "touch_either": {
+              "hits": 79,
+              "n": 164,
+              "rate": 0.4817
+            },
+            "close_inside": {
+              "hits": 121,
+              "n": 164,
+              "rate": 0.7378
+            },
+            "close_inside_given_touch": {
+              "hits": 36,
+              "n": 79,
+              "rate": 0.4557
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 20,
+              "n": 164,
+              "rate": 0.122
+            },
+            "touch_down": {
+              "hits": 36,
+              "n": 164,
+              "rate": 0.2195
+            },
+            "touch_either": {
+              "hits": 55,
+              "n": 164,
+              "rate": 0.3354
+            },
+            "close_inside": {
+              "hits": 134,
+              "n": 164,
+              "rate": 0.8171
+            },
+            "close_inside_given_touch": {
+              "hits": 25,
+              "n": 55,
+              "rate": 0.4545
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 14,
+              "n": 164,
+              "rate": 0.0854
+            },
+            "touch_down": {
+              "hits": 25,
+              "n": 164,
+              "rate": 0.1524
+            },
+            "touch_either": {
+              "hits": 38,
+              "n": 164,
+              "rate": 0.2317
+            },
+            "close_inside": {
+              "hits": 140,
+              "n": 164,
+              "rate": 0.8537
+            },
+            "close_inside_given_touch": {
+              "hits": 14,
+              "n": 38,
+              "rate": 0.3684
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 3,
+              "n": 164,
+              "rate": 0.0183
+            },
+            "touch_down": {
+              "hits": 16,
+              "n": 164,
+              "rate": 0.0976
+            },
+            "touch_either": {
+              "hits": 19,
+              "n": 164,
+              "rate": 0.1159
+            },
+            "close_inside": {
+              "hits": 156,
+              "n": 164,
+              "rate": 0.9512
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 19,
+              "rate": 0.5789
+            }
+          }
+        ]
+      }
+    },
+    "events_in_window_by_type": {
+      "CPI": 11,
+      "Core PCE": 10,
+      "Durable goods": 11,
+      "FOMC decision": 8,
+      "GDP": 10,
+      "ISM manufacturing": 12,
+      "ISM services": 11,
+      "NFP": 11,
+      "PPI": 11,
+      "Retail sales": 13
+    },
+    "releases_before_1300_uk_in_sample": [
+      "2026-03-11 12:30 Consumer Price Index (tier 1)",
+      "2026-03-12 12:30 Initial Jobless Claims [rule] (tier 3)",
+      "2026-03-13 12:30 GDP (Second Estimate), 4th Quarter and Year 2025 (tier 2)",
+      "2026-03-13 12:30 Durable Goods (advance) (tier 2)",
+      "2026-03-13 12:30 Personal Income and Outlays, January 2026 (tier 1)",
+      "2026-03-18 12:30 Producer Price Index (tier 1)",
+      "2026-03-19 12:30 Initial Jobless Claims [rule] (tier 3)",
+      "2026-03-26 12:30 Initial Jobless Claims [rule] (tier 3)"
+    ]
+  },
+  "q2b_us_window_by_release_tier": {
+    "collapsed_tiers_1_and_2": false,
+    "collapse_rule": "tiers 1 and 2 are merged if tier 1 has fewer than 30 sessions",
+    "tier_definitions": {
+      "1": [
+        "NFP",
+        "CPI",
+        "PPI",
+        "FOMC decision",
+        "Retail sales",
+        "Core PCE"
+      ],
+      "2": [
+        "ISM manufacturing",
+        "ISM services",
+        "GDP",
+        "Durable goods"
+      ],
+      "3": [
+        "Jobless claims"
+      ]
+    },
+    "session_counts": {
+      "tier_1": 57,
+      "tier_2_only": 29,
+      "nothing_above_tier_3": 164,
+      "ref_tier_3_claims_only": 26,
+      "ref_no_release_at_all": 138
+    },
+    "table": {
+      "tier_1": {
+        "n": 57,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 53,
+              "n": 57,
+              "rate": 0.9298
+            },
+            "touch_down": {
+              "hits": 51,
+              "n": 57,
+              "rate": 0.8947
+            },
+            "touch_either": {
+              "hits": 57,
+              "n": 57,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 12,
+              "n": 57,
+              "rate": 0.2105
+            },
+            "close_inside_given_touch": {
+              "hits": 12,
+              "n": 57,
+              "rate": 0.2105
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 48,
+              "n": 57,
+              "rate": 0.8421
+            },
+            "touch_down": {
+              "hits": 47,
+              "n": 57,
+              "rate": 0.8246
+            },
+            "touch_either": {
+              "hits": 57,
+              "n": 57,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 13,
+              "n": 57,
+              "rate": 0.2281
+            },
+            "close_inside_given_touch": {
+              "hits": 13,
+              "n": 57,
+              "rate": 0.2281
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 45,
+              "n": 57,
+              "rate": 0.7895
+            },
+            "touch_down": {
+              "hits": 42,
+              "n": 57,
+              "rate": 0.7368
+            },
+            "touch_either": {
+              "hits": 57,
+              "n": 57,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 15,
+              "n": 57,
+              "rate": 0.2632
+            },
+            "close_inside_given_touch": {
+              "hits": 15,
+              "n": 57,
+              "rate": 0.2632
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 40,
+              "n": 57,
+              "rate": 0.7018
+            },
+            "touch_down": {
+              "hits": 37,
+              "n": 57,
+              "rate": 0.6491
+            },
+            "touch_either": {
+              "hits": 57,
+              "n": 57,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 20,
+              "n": 57,
+              "rate": 0.3509
+            },
+            "close_inside_given_touch": {
+              "hits": 20,
+              "n": 57,
+              "rate": 0.3509
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 40,
+              "n": 57,
+              "rate": 0.7018
+            },
+            "touch_down": {
+              "hits": 33,
+              "n": 57,
+              "rate": 0.5789
+            },
+            "touch_either": {
+              "hits": 57,
+              "n": 57,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 22,
+              "n": 57,
+              "rate": 0.386
+            },
+            "close_inside_given_touch": {
+              "hits": 22,
+              "n": 57,
+              "rate": 0.386
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 30,
+              "n": 57,
+              "rate": 0.5263
+            },
+            "touch_down": {
+              "hits": 25,
+              "n": 57,
+              "rate": 0.4386
+            },
+            "touch_either": {
+              "hits": 46,
+              "n": 57,
+              "rate": 0.807
+            },
+            "close_inside": {
+              "hits": 30,
+              "n": 57,
+              "rate": 0.5263
+            },
+            "close_inside_given_touch": {
+              "hits": 19,
+              "n": 46,
+              "rate": 0.413
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 22,
+              "n": 57,
+              "rate": 0.386
+            },
+            "touch_down": {
+              "hits": 15,
+              "n": 57,
+              "rate": 0.2632
+            },
+            "touch_either": {
+              "hits": 35,
+              "n": 57,
+              "rate": 0.614
+            },
+            "close_inside": {
+              "hits": 37,
+              "n": 57,
+              "rate": 0.6491
+            },
+            "close_inside_given_touch": {
+              "hits": 15,
+              "n": 35,
+              "rate": 0.4286
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 14,
+              "n": 57,
+              "rate": 0.2456
+            },
+            "touch_down": {
+              "hits": 11,
+              "n": 57,
+              "rate": 0.193
+            },
+            "touch_either": {
+              "hits": 25,
+              "n": 57,
+              "rate": 0.4386
+            },
+            "close_inside": {
+              "hits": 43,
+              "n": 57,
+              "rate": 0.7544
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 25,
+              "rate": 0.44
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 11,
+              "n": 57,
+              "rate": 0.193
+            },
+            "touch_down": {
+              "hits": 8,
+              "n": 57,
+              "rate": 0.1404
+            },
+            "touch_either": {
+              "hits": 19,
+              "n": 57,
+              "rate": 0.3333
+            },
+            "close_inside": {
+              "hits": 47,
+              "n": 57,
+              "rate": 0.8246
+            },
+            "close_inside_given_touch": {
+              "hits": 9,
+              "n": 19,
+              "rate": 0.4737
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 3,
+              "n": 57,
+              "rate": 0.0526
+            },
+            "touch_down": {
+              "hits": 5,
+              "n": 57,
+              "rate": 0.0877
+            },
+            "touch_either": {
+              "hits": 8,
+              "n": 57,
+              "rate": 0.1404
+            },
+            "close_inside": {
+              "hits": 54,
+              "n": 57,
+              "rate": 0.9474
+            },
+            "close_inside_given_touch": {
+              "hits": 5,
+              "n": 8,
+              "rate": 0.625
+            }
+          }
+        ]
+      },
+      "tier_2_only": {
+        "n": 29,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 26,
+              "n": 29,
+              "rate": 0.8966
+            },
+            "touch_down": {
+              "hits": 27,
+              "n": 29,
+              "rate": 0.931
+            },
+            "touch_either": {
+              "hits": 29,
+              "n": 29,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 3,
+              "n": 29,
+              "rate": 0.1034
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 29,
+              "rate": 0.1034
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 21,
+              "n": 29,
+              "rate": 0.7241
+            },
+            "touch_down": {
+              "hits": 24,
+              "n": 29,
+              "rate": 0.8276
+            },
+            "touch_either": {
+              "hits": 29,
+              "n": 29,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 7,
+              "n": 29,
+              "rate": 0.2414
+            },
+            "close_inside_given_touch": {
+              "hits": 7,
+              "n": 29,
+              "rate": 0.2414
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 17,
+              "n": 29,
+              "rate": 0.5862
+            },
+            "touch_down": {
+              "hits": 22,
+              "n": 29,
+              "rate": 0.7586
+            },
+            "touch_either": {
+              "hits": 29,
+              "n": 29,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 10,
+              "n": 29,
+              "rate": 0.3448
+            },
+            "close_inside_given_touch": {
+              "hits": 10,
+              "n": 29,
+              "rate": 0.3448
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 15,
+              "n": 29,
+              "rate": 0.5172
+            },
+            "touch_down": {
+              "hits": 22,
+              "n": 29,
+              "rate": 0.7586
+            },
+            "touch_either": {
+              "hits": 29,
+              "n": 29,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 13,
+              "n": 29,
+              "rate": 0.4483
+            },
+            "close_inside_given_touch": {
+              "hits": 13,
+              "n": 29,
+              "rate": 0.4483
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 11,
+              "n": 29,
+              "rate": 0.3793
+            },
+            "touch_down": {
+              "hits": 18,
+              "n": 29,
+              "rate": 0.6207
+            },
+            "touch_either": {
+              "hits": 27,
+              "n": 29,
+              "rate": 0.931
+            },
+            "close_inside": {
+              "hits": 17,
+              "n": 29,
+              "rate": 0.5862
+            },
+            "close_inside_given_touch": {
+              "hits": 15,
+              "n": 27,
+              "rate": 0.5556
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 5,
+              "n": 29,
+              "rate": 0.1724
+            },
+            "touch_down": {
+              "hits": 15,
+              "n": 29,
+              "rate": 0.5172
+            },
+            "touch_either": {
+              "hits": 20,
+              "n": 29,
+              "rate": 0.6897
+            },
+            "close_inside": {
+              "hits": 19,
+              "n": 29,
+              "rate": 0.6552
+            },
+            "close_inside_given_touch": {
+              "hits": 10,
+              "n": 20,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 5,
+              "n": 29,
+              "rate": 0.1724
+            },
+            "touch_down": {
+              "hits": 12,
+              "n": 29,
+              "rate": 0.4138
+            },
+            "touch_either": {
+              "hits": 17,
+              "n": 29,
+              "rate": 0.5862
+            },
+            "close_inside": {
+              "hits": 24,
+              "n": 29,
+              "rate": 0.8276
+            },
+            "close_inside_given_touch": {
+              "hits": 12,
+              "n": 17,
+              "rate": 0.7059
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 5,
+              "n": 29,
+              "rate": 0.1724
+            },
+            "touch_down": {
+              "hits": 6,
+              "n": 29,
+              "rate": 0.2069
+            },
+            "touch_either": {
+              "hits": 11,
+              "n": 29,
+              "rate": 0.3793
+            },
+            "close_inside": {
+              "hits": 25,
+              "n": 29,
+              "rate": 0.8621
+            },
+            "close_inside_given_touch": {
+              "hits": 7,
+              "n": 11,
+              "rate": 0.6364
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 3,
+              "n": 29,
+              "rate": 0.1034
+            },
+            "touch_down": {
+              "hits": 4,
+              "n": 29,
+              "rate": 0.1379
+            },
+            "touch_either": {
+              "hits": 7,
+              "n": 29,
+              "rate": 0.2414
+            },
+            "close_inside": {
+              "hits": 25,
+              "n": 29,
+              "rate": 0.8621
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 7,
+              "rate": 0.4286
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 1,
+              "n": 29,
+              "rate": 0.0345
+            },
+            "touch_down": {
+              "hits": 3,
+              "n": 29,
+              "rate": 0.1034
+            },
+            "touch_either": {
+              "hits": 4,
+              "n": 29,
+              "rate": 0.1379
+            },
+            "close_inside": {
+              "hits": 28,
+              "n": 29,
+              "rate": 0.9655
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 4,
+              "rate": 0.75
+            }
+          }
+        ]
+      },
+      "nothing_above_tier_3": {
+        "n": 164,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 147,
+              "n": 164,
+              "rate": 0.8963
+            },
+            "touch_down": {
+              "hits": 156,
+              "n": 164,
+              "rate": 0.9512
+            },
+            "touch_either": {
+              "hits": 164,
+              "n": 164,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 17,
+              "n": 164,
+              "rate": 0.1037
+            },
+            "close_inside_given_touch": {
+              "hits": 17,
+              "n": 164,
+              "rate": 0.1037
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 132,
+              "n": 164,
+              "rate": 0.8049
+            },
+            "touch_down": {
+              "hits": 142,
+              "n": 164,
+              "rate": 0.8659
+            },
+            "touch_either": {
+              "hits": 164,
+              "n": 164,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 29,
+              "n": 164,
+              "rate": 0.1768
+            },
+            "close_inside_given_touch": {
+              "hits": 29,
+              "n": 164,
+              "rate": 0.1768
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 121,
+              "n": 164,
+              "rate": 0.7378
+            },
+            "touch_down": {
+              "hits": 133,
+              "n": 164,
+              "rate": 0.811
+            },
+            "touch_either": {
+              "hits": 164,
+              "n": 164,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 47,
+              "n": 164,
+              "rate": 0.2866
+            },
+            "close_inside_given_touch": {
+              "hits": 47,
+              "n": 164,
+              "rate": 0.2866
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 101,
+              "n": 164,
+              "rate": 0.6159
+            },
+            "touch_down": {
+              "hits": 115,
+              "n": 164,
+              "rate": 0.7012
+            },
+            "touch_either": {
+              "hits": 161,
+              "n": 164,
+              "rate": 0.9817
+            },
+            "close_inside": {
+              "hits": 61,
+              "n": 164,
+              "rate": 0.372
+            },
+            "close_inside_given_touch": {
+              "hits": 58,
+              "n": 161,
+              "rate": 0.3602
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 89,
+              "n": 164,
+              "rate": 0.5427
+            },
+            "touch_down": {
+              "hits": 101,
+              "n": 164,
+              "rate": 0.6159
+            },
+            "touch_either": {
+              "hits": 158,
+              "n": 164,
+              "rate": 0.9634
+            },
+            "close_inside": {
+              "hits": 78,
+              "n": 164,
+              "rate": 0.4756
+            },
+            "close_inside_given_touch": {
+              "hits": 72,
+              "n": 158,
+              "rate": 0.4557
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 55,
+              "n": 164,
+              "rate": 0.3354
+            },
+            "touch_down": {
+              "hits": 71,
+              "n": 164,
+              "rate": 0.4329
+            },
+            "touch_either": {
+              "hits": 119,
+              "n": 164,
+              "rate": 0.7256
+            },
+            "close_inside": {
+              "hits": 109,
+              "n": 164,
+              "rate": 0.6646
+            },
+            "close_inside_given_touch": {
+              "hits": 64,
+              "n": 119,
+              "rate": 0.5378
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 33,
+              "n": 164,
+              "rate": 0.2012
+            },
+            "touch_down": {
+              "hits": 49,
+              "n": 164,
+              "rate": 0.2988
+            },
+            "touch_either": {
+              "hits": 79,
+              "n": 164,
+              "rate": 0.4817
+            },
+            "close_inside": {
+              "hits": 121,
+              "n": 164,
+              "rate": 0.7378
+            },
+            "close_inside_given_touch": {
+              "hits": 36,
+              "n": 79,
+              "rate": 0.4557
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 20,
+              "n": 164,
+              "rate": 0.122
+            },
+            "touch_down": {
+              "hits": 36,
+              "n": 164,
+              "rate": 0.2195
+            },
+            "touch_either": {
+              "hits": 55,
+              "n": 164,
+              "rate": 0.3354
+            },
+            "close_inside": {
+              "hits": 134,
+              "n": 164,
+              "rate": 0.8171
+            },
+            "close_inside_given_touch": {
+              "hits": 25,
+              "n": 55,
+              "rate": 0.4545
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 14,
+              "n": 164,
+              "rate": 0.0854
+            },
+            "touch_down": {
+              "hits": 25,
+              "n": 164,
+              "rate": 0.1524
+            },
+            "touch_either": {
+              "hits": 38,
+              "n": 164,
+              "rate": 0.2317
+            },
+            "close_inside": {
+              "hits": 140,
+              "n": 164,
+              "rate": 0.8537
+            },
+            "close_inside_given_touch": {
+              "hits": 14,
+              "n": 38,
+              "rate": 0.3684
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 3,
+              "n": 164,
+              "rate": 0.0183
+            },
+            "touch_down": {
+              "hits": 16,
+              "n": 164,
+              "rate": 0.0976
+            },
+            "touch_either": {
+              "hits": 19,
+              "n": 164,
+              "rate": 0.1159
+            },
+            "close_inside": {
+              "hits": 156,
+              "n": 164,
+              "rate": 0.9512
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 19,
+              "rate": 0.5789
+            }
+          }
+        ]
+      },
+      "ref_tier_3_claims_only": {
+        "n": 26,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 22,
+              "n": 26,
+              "rate": 0.8462
+            },
+            "touch_down": {
+              "hits": 25,
+              "n": 26,
+              "rate": 0.9615
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 26,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 6,
+              "n": 26,
+              "rate": 0.2308
+            },
+            "close_inside_given_touch": {
+              "hits": 6,
+              "n": 26,
+              "rate": 0.2308
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 21,
+              "n": 26,
+              "rate": 0.8077
+            },
+            "touch_down": {
+              "hits": 22,
+              "n": 26,
+              "rate": 0.8462
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 26,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 7,
+              "n": 26,
+              "rate": 0.2692
+            },
+            "close_inside_given_touch": {
+              "hits": 7,
+              "n": 26,
+              "rate": 0.2692
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 18,
+              "n": 26,
+              "rate": 0.6923
+            },
+            "touch_down": {
+              "hits": 21,
+              "n": 26,
+              "rate": 0.8077
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 26,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 8,
+              "n": 26,
+              "rate": 0.3077
+            },
+            "close_inside_given_touch": {
+              "hits": 8,
+              "n": 26,
+              "rate": 0.3077
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 17,
+              "n": 26,
+              "rate": 0.6538
+            },
+            "touch_down": {
+              "hits": 19,
+              "n": 26,
+              "rate": 0.7308
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 26,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 10,
+              "n": 26,
+              "rate": 0.3846
+            },
+            "close_inside_given_touch": {
+              "hits": 10,
+              "n": 26,
+              "rate": 0.3846
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 15,
+              "n": 26,
+              "rate": 0.5769
+            },
+            "touch_down": {
+              "hits": 15,
+              "n": 26,
+              "rate": 0.5769
+            },
+            "touch_either": {
+              "hits": 26,
+              "n": 26,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 13,
+              "n": 26,
+              "rate": 0.5
+            },
+            "close_inside_given_touch": {
+              "hits": 13,
+              "n": 26,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 8,
+              "n": 26,
+              "rate": 0.3077
+            },
+            "touch_down": {
+              "hits": 11,
+              "n": 26,
+              "rate": 0.4231
+            },
+            "touch_either": {
+              "hits": 18,
+              "n": 26,
+              "rate": 0.6923
+            },
+            "close_inside": {
+              "hits": 19,
+              "n": 26,
+              "rate": 0.7308
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 18,
+              "rate": 0.6111
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 5,
+              "n": 26,
+              "rate": 0.1923
+            },
+            "touch_down": {
+              "hits": 10,
+              "n": 26,
+              "rate": 0.3846
+            },
+            "touch_either": {
+              "hits": 14,
+              "n": 26,
+              "rate": 0.5385
+            },
+            "close_inside": {
+              "hits": 20,
+              "n": 26,
+              "rate": 0.7692
+            },
+            "close_inside_given_touch": {
+              "hits": 8,
+              "n": 14,
+              "rate": 0.5714
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 3,
+              "n": 26,
+              "rate": 0.1154
+            },
+            "touch_down": {
+              "hits": 3,
+              "n": 26,
+              "rate": 0.1154
+            },
+            "touch_either": {
+              "hits": 6,
+              "n": 26,
+              "rate": 0.2308
+            },
+            "close_inside": {
+              "hits": 21,
+              "n": 26,
+              "rate": 0.8077
+            },
+            "close_inside_given_touch": {
+              "hits": 1,
+              "n": 6,
+              "rate": 0.1667
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 3,
+              "n": 26,
+              "rate": 0.1154
+            },
+            "touch_down": {
+              "hits": 3,
+              "n": 26,
+              "rate": 0.1154
+            },
+            "touch_either": {
+              "hits": 6,
+              "n": 26,
+              "rate": 0.2308
+            },
+            "close_inside": {
+              "hits": 23,
+              "n": 26,
+              "rate": 0.8846
+            },
+            "close_inside_given_touch": {
+              "hits": 3,
+              "n": 6,
+              "rate": 0.5
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 1,
+              "n": 26,
+              "rate": 0.0385
+            },
+            "touch_down": {
+              "hits": 3,
+              "n": 26,
+              "rate": 0.1154
+            },
+            "touch_either": {
+              "hits": 4,
+              "n": 26,
+              "rate": 0.1538
+            },
+            "close_inside": {
+              "hits": 24,
+              "n": 26,
+              "rate": 0.9231
+            },
+            "close_inside_given_touch": {
+              "hits": 2,
+              "n": 4,
+              "rate": 0.5
+            }
+          }
+        ]
+      },
+      "ref_no_release_at_all": {
+        "n": 138,
+        "bands": [
+          {
+            "band_pct": 0.1,
+            "touch_up": {
+              "hits": 125,
+              "n": 138,
+              "rate": 0.9058
+            },
+            "touch_down": {
+              "hits": 131,
+              "n": 138,
+              "rate": 0.9493
+            },
+            "touch_either": {
+              "hits": 138,
+              "n": 138,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 11,
+              "n": 138,
+              "rate": 0.0797
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 138,
+              "rate": 0.0797
+            }
+          },
+          {
+            "band_pct": 0.2,
+            "touch_up": {
+              "hits": 111,
+              "n": 138,
+              "rate": 0.8043
+            },
+            "touch_down": {
+              "hits": 120,
+              "n": 138,
+              "rate": 0.8696
+            },
+            "touch_either": {
+              "hits": 138,
+              "n": 138,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 22,
+              "n": 138,
+              "rate": 0.1594
+            },
+            "close_inside_given_touch": {
+              "hits": 22,
+              "n": 138,
+              "rate": 0.1594
+            }
+          },
+          {
+            "band_pct": 0.3,
+            "touch_up": {
+              "hits": 103,
+              "n": 138,
+              "rate": 0.7464
+            },
+            "touch_down": {
+              "hits": 112,
+              "n": 138,
+              "rate": 0.8116
+            },
+            "touch_either": {
+              "hits": 138,
+              "n": 138,
+              "rate": 1.0
+            },
+            "close_inside": {
+              "hits": 39,
+              "n": 138,
+              "rate": 0.2826
+            },
+            "close_inside_given_touch": {
+              "hits": 39,
+              "n": 138,
+              "rate": 0.2826
+            }
+          },
+          {
+            "band_pct": 0.4,
+            "touch_up": {
+              "hits": 84,
+              "n": 138,
+              "rate": 0.6087
+            },
+            "touch_down": {
+              "hits": 96,
+              "n": 138,
+              "rate": 0.6957
+            },
+            "touch_either": {
+              "hits": 135,
+              "n": 138,
+              "rate": 0.9783
+            },
+            "close_inside": {
+              "hits": 51,
+              "n": 138,
+              "rate": 0.3696
+            },
+            "close_inside_given_touch": {
+              "hits": 48,
+              "n": 135,
+              "rate": 0.3556
+            }
+          },
+          {
+            "band_pct": 0.5,
+            "touch_up": {
+              "hits": 74,
+              "n": 138,
+              "rate": 0.5362
+            },
+            "touch_down": {
+              "hits": 86,
+              "n": 138,
+              "rate": 0.6232
+            },
+            "touch_either": {
+              "hits": 132,
+              "n": 138,
+              "rate": 0.9565
+            },
+            "close_inside": {
+              "hits": 65,
+              "n": 138,
+              "rate": 0.471
+            },
+            "close_inside_given_touch": {
+              "hits": 59,
+              "n": 132,
+              "rate": 0.447
+            }
+          },
+          {
+            "band_pct": 0.75,
+            "touch_up": {
+              "hits": 47,
+              "n": 138,
+              "rate": 0.3406
+            },
+            "touch_down": {
+              "hits": 60,
+              "n": 138,
+              "rate": 0.4348
+            },
+            "touch_either": {
+              "hits": 101,
+              "n": 138,
+              "rate": 0.7319
+            },
+            "close_inside": {
+              "hits": 90,
+              "n": 138,
+              "rate": 0.6522
+            },
+            "close_inside_given_touch": {
+              "hits": 53,
+              "n": 101,
+              "rate": 0.5248
+            }
+          },
+          {
+            "band_pct": 1.0,
+            "touch_up": {
+              "hits": 28,
+              "n": 138,
+              "rate": 0.2029
+            },
+            "touch_down": {
+              "hits": 39,
+              "n": 138,
+              "rate": 0.2826
+            },
+            "touch_either": {
+              "hits": 65,
+              "n": 138,
+              "rate": 0.471
+            },
+            "close_inside": {
+              "hits": 101,
+              "n": 138,
+              "rate": 0.7319
+            },
+            "close_inside_given_touch": {
+              "hits": 28,
+              "n": 65,
+              "rate": 0.4308
+            }
+          },
+          {
+            "band_pct": 1.25,
+            "touch_up": {
+              "hits": 17,
+              "n": 138,
+              "rate": 0.1232
+            },
+            "touch_down": {
+              "hits": 33,
+              "n": 138,
+              "rate": 0.2391
+            },
+            "touch_either": {
+              "hits": 49,
+              "n": 138,
+              "rate": 0.3551
+            },
+            "close_inside": {
+              "hits": 113,
+              "n": 138,
+              "rate": 0.8188
+            },
+            "close_inside_given_touch": {
+              "hits": 24,
+              "n": 49,
+              "rate": 0.4898
+            }
+          },
+          {
+            "band_pct": 1.5,
+            "touch_up": {
+              "hits": 11,
+              "n": 138,
+              "rate": 0.0797
+            },
+            "touch_down": {
+              "hits": 22,
+              "n": 138,
+              "rate": 0.1594
+            },
+            "touch_either": {
+              "hits": 32,
+              "n": 138,
+              "rate": 0.2319
+            },
+            "close_inside": {
+              "hits": 117,
+              "n": 138,
+              "rate": 0.8478
+            },
+            "close_inside_given_touch": {
+              "hits": 11,
+              "n": 32,
+              "rate": 0.3438
+            }
+          },
+          {
+            "band_pct": 2.0,
+            "touch_up": {
+              "hits": 2,
+              "n": 138,
+              "rate": 0.0145
+            },
+            "touch_down": {
+              "hits": 13,
+              "n": 138,
+              "rate": 0.0942
+            },
+            "touch_either": {
+              "hits": 15,
+              "n": 138,
+              "rate": 0.1087
+            },
+            "close_inside": {
+              "hits": 132,
+              "n": 138,
+              "rate": 0.9565
+            },
+            "close_inside_given_touch": {
+              "hits": 9,
+              "n": 15,
+              "rate": 0.6
+            }
+          }
+        ]
+      }
+    }
+  },
+  "release_spike_by_type": {
+    "NFP": {
+      "tier": 1,
+      "n": 11,
+      "median_multiple": 5.57,
+      "ge_2x": 11,
+      "largest_bar_in_5h": 8,
+      "solo_n": 7,
+      "solo_median_multiple": 6.0,
+      "solo_ge_2x": 7
+    },
+    "CPI": {
+      "tier": 1,
+      "n": 12,
+      "median_multiple": 3.63,
+      "ge_2x": 11,
+      "largest_bar_in_5h": 8,
+      "solo_n": 11,
+      "solo_median_multiple": 3.65,
+      "solo_ge_2x": 10
+    },
+    "PPI": {
+      "tier": 1,
+      "n": 12,
+      "median_multiple": 2.17,
+      "ge_2x": 7,
+      "largest_bar_in_5h": 4,
+      "solo_n": 6,
+      "solo_median_multiple": 1.86,
+      "solo_ge_2x": 3
+    },
+    "FOMC decision": {
+      "tier": 1,
+      "n": 8,
+      "median_multiple": 4.99,
+      "ge_2x": 8,
+      "largest_bar_in_5h": 3,
+      "solo_n": 8,
+      "solo_median_multiple": 4.99,
+      "solo_ge_2x": 8
+    },
+    "Retail sales": {
+      "tier": 1,
+      "n": 13,
+      "median_multiple": 1.96,
+      "ge_2x": 6,
+      "largest_bar_in_5h": 2,
+      "solo_n": 6,
+      "solo_median_multiple": 2.09,
+      "solo_ge_2x": 3
+    },
+    "Core PCE": {
+      "tier": 1,
+      "n": 11,
+      "median_multiple": 1.92,
+      "ge_2x": 5,
+      "largest_bar_in_5h": 3,
+      "solo_n": 2,
+      "solo_median_multiple": 1.68,
+      "solo_ge_2x": 0
+    },
+    "ISM manufacturing": {
+      "tier": 2,
+      "n": 12,
+      "median_multiple": 2.16,
+      "ge_2x": 7,
+      "largest_bar_in_5h": 0,
+      "solo_n": 12,
+      "solo_median_multiple": 2.16,
+      "solo_ge_2x": 7
+    },
+    "ISM services": {
+      "tier": 2,
+      "n": 11,
+      "median_multiple": 1.62,
+      "ge_2x": 2,
+      "largest_bar_in_5h": 1,
+      "solo_n": 11,
+      "solo_median_multiple": 1.62,
+      "solo_ge_2x": 2
+    },
+    "GDP": {
+      "tier": 2,
+      "n": 11,
+      "median_multiple": 1.96,
+      "ge_2x": 5,
+      "largest_bar_in_5h": 3,
+      "solo_n": 0,
+      "solo_median_multiple": null,
+      "solo_ge_2x": 0
+    },
+    "Durable goods": {
+      "tier": 2,
+      "n": 12,
+      "median_multiple": 1.54,
+      "ge_2x": 3,
+      "largest_bar_in_5h": 3,
+      "solo_n": 6,
+      "solo_median_multiple": 1.45,
+      "solo_ge_2x": 1
+    },
+    "Jobless claims": {
+      "tier": 3,
+      "n": 47,
+      "median_multiple": 1.71,
+      "ge_2x": 17,
+      "largest_bar_in_5h": 9,
+      "solo_n": 31,
+      "solo_median_multiple": 1.52,
+      "solo_ge_2x": 8
+    }
+  },
+  "q3_us_vs_london_morning": {
+    "width_quartile_edges_pct": [
+      0.2206,
+      0.5634,
+      0.7466,
+      1.0741,
+      6.8953
+    ],
+    "by_quartile": {
+      "Q1_narrow": {
+        "n": 63,
+        "extends_high": {
+          "hits": 44,
+          "n": 63,
+          "rate": 0.6984
+        },
+        "extends_low": {
+          "hits": 50,
+          "n": 63,
+          "rate": 0.7937
+        },
+        "extends_either": {
+          "hits": 63,
+          "n": 63,
+          "rate": 1.0
+        },
+        "extends_both": {
+          "hits": 31,
+          "n": 63,
+          "rate": 0.4921
+        },
+        "stays_inside_am_range": {
+          "hits": 0,
+          "n": 63,
+          "rate": 0.0
+        },
+        "extends_in_am_direction": {
+          "hits": 54,
+          "n": 63,
+          "rate": 0.8571
+        },
+        "extends_against_am_direction": {
+          "hits": 40,
+          "n": 63,
+          "rate": 0.6349
+        },
+        "trades_through_am_open": {
+          "hits": 52,
+          "n": 63,
+          "rate": 0.8254
+        },
+        "reverses_through_am_open_close": {
+          "hits": 25,
+          "n": 63,
+          "rate": 0.3968
+        }
+      },
+      "Q2": {
+        "n": 62,
+        "extends_high": {
+          "hits": 45,
+          "n": 62,
+          "rate": 0.7258
+        },
+        "extends_low": {
+          "hits": 40,
+          "n": 62,
+          "rate": 0.6452
+        },
+        "extends_either": {
+          "hits": 62,
+          "n": 62,
+          "rate": 1.0
+        },
+        "extends_both": {
+          "hits": 23,
+          "n": 62,
+          "rate": 0.371
+        },
+        "stays_inside_am_range": {
+          "hits": 0,
+          "n": 62,
+          "rate": 0.0
+        },
+        "extends_in_am_direction": {
+          "hits": 52,
+          "n": 62,
+          "rate": 0.8387
+        },
+        "extends_against_am_direction": {
+          "hits": 33,
+          "n": 62,
+          "rate": 0.5323
+        },
+        "trades_through_am_open": {
+          "hits": 47,
+          "n": 62,
+          "rate": 0.7581
+        },
+        "reverses_through_am_open_close": {
+          "hits": 23,
+          "n": 62,
+          "rate": 0.371
+        }
+      },
+      "Q3": {
+        "n": 62,
+        "extends_high": {
+          "hits": 47,
+          "n": 62,
+          "rate": 0.7581
+        },
+        "extends_low": {
+          "hits": 31,
+          "n": 62,
+          "rate": 0.5
+        },
+        "extends_either": {
+          "hits": 62,
+          "n": 62,
+          "rate": 1.0
+        },
+        "extends_both": {
+          "hits": 16,
+          "n": 62,
+          "rate": 0.2581
+        },
+        "stays_inside_am_range": {
+          "hits": 0,
+          "n": 62,
+          "rate": 0.0
+        },
+        "extends_in_am_direction": {
+          "hits": 45,
+          "n": 62,
+          "rate": 0.7258
+        },
+        "extends_against_am_direction": {
+          "hits": 33,
+          "n": 62,
+          "rate": 0.5323
+        },
+        "trades_through_am_open": {
+          "hits": 45,
+          "n": 62,
+          "rate": 0.7258
+        },
+        "reverses_through_am_open_close": {
+          "hits": 25,
+          "n": 62,
+          "rate": 0.4032
+        }
+      },
+      "Q4_wide": {
+        "n": 63,
+        "extends_high": {
+          "hits": 26,
+          "n": 63,
+          "rate": 0.4127
+        },
+        "extends_low": {
+          "hits": 40,
+          "n": 63,
+          "rate": 0.6349
+        },
+        "extends_either": {
+          "hits": 59,
+          "n": 63,
+          "rate": 0.9365
+        },
+        "extends_both": {
+          "hits": 7,
+          "n": 63,
+          "rate": 0.1111
+        },
+        "stays_inside_am_range": {
+          "hits": 4,
+          "n": 63,
+          "rate": 0.0635
+        },
+        "extends_in_am_direction": {
+          "hits": 49,
+          "n": 63,
+          "rate": 0.7778
+        },
+        "extends_against_am_direction": {
+          "hits": 17,
+          "n": 63,
+          "rate": 0.2698
+        },
+        "trades_through_am_open": {
+          "hits": 26,
+          "n": 63,
+          "rate": 0.4127
+        },
+        "reverses_through_am_open_close": {
+          "hits": 12,
+          "n": 63,
+          "rate": 0.1905
+        }
+      },
+      "all": {
+        "n": 250,
+        "extends_high": {
+          "hits": 162,
+          "n": 250,
+          "rate": 0.648
+        },
+        "extends_low": {
+          "hits": 161,
+          "n": 250,
+          "rate": 0.644
+        },
+        "extends_either": {
+          "hits": 246,
+          "n": 250,
+          "rate": 0.984
+        },
+        "extends_both": {
+          "hits": 77,
+          "n": 250,
+          "rate": 0.308
+        },
+        "stays_inside_am_range": {
+          "hits": 4,
+          "n": 250,
+          "rate": 0.016
+        },
+        "extends_in_am_direction": {
+          "hits": 200,
+          "n": 250,
+          "rate": 0.8
+        },
+        "extends_against_am_direction": {
+          "hits": 123,
+          "n": 250,
+          "rate": 0.492
+        },
+        "trades_through_am_open": {
+          "hits": 170,
+          "n": 250,
+          "rate": 0.68
+        },
+        "reverses_through_am_open_close": {
+          "hits": 85,
+          "n": 250,
+          "rate": 0.34
+        }
+      }
+    }
+  },
+  "q4_driver_regression": {
+    "drivers": [
+      "dxy_mt5",
+      "wti",
+      "us10y",
+      "us2y",
+      "tips10y"
+    ],
+    "alignment_note": "Vantage server time = UTC+2 while New York is on EST and UTC+3 while on EDT (offsets seen in sample: [2, 3]); server midnight = 17:00 New York. D1 bars therefore close at 17:00 New York, near the FRED yield/oil/USD daily observation times.",
+    "last_common_date": "2026-10-14",
+    "units": {
+      "gold": "% log return",
+      "dxy_mt5": "% log change",
+      "wti": "% log change",
+      "us10y": "bp change",
+      "us2y": "bp change",
+      "tips10y": "bp change"
+    },
+    "windows": {
+      "20": {
+        "n_obs": 20,
+        "from": "2026-09-16",
+        "to": "2026-10-14",
+        "multivariate": {
+          "r2": 0.539,
+          "adj_r2": 0.375,
+          "df_resid": 14,
+          "coef": {
+            "const": {
+              "beta": -0.0535,
+              "t": -0.2
+            },
+            "dxy_mt5": {
+              "beta": -1.1671,
+              "t": -1.27
+            },
+            "wti": {
+              "beta": -0.1065,
+              "t": -2.07
+            },
+            "us10y": {
+              "beta": -0.2194,
+              "t": -1.34
+            },
+            "us2y": {
+              "beta": -0.1016,
+              "t": -1.52
+            },
+            "tips10y": {
+              "beta": 0.2378,
+              "t": 1.45
+            }
+          }
+        },
+        "univariate": {
+          "dxy_mt5": {
+            "beta": -1.523,
+            "t": -1.45,
+            "r2": 0.105
+          },
+          "wti": {
+            "beta": -0.1271,
+            "t": -2.25,
+            "r2": 0.219
+          },
+          "us10y": {
+            "beta": -0.1075,
+            "t": -2.04,
+            "r2": 0.188
+          },
+          "us2y": {
+            "beta": -0.1199,
+            "t": -2.87,
+            "r2": 0.314
+          },
+          "tips10y": {
+            "beta": -0.0927,
+            "t": -1.76,
+            "r2": 0.146
+          }
+        },
+        "driver_corr_10y_vs_tips": 0.96,
+        "driver_corr_10y_vs_2y": 0.79
+      },
+      "60": {
+        "n_obs": 60,
+        "from": "2026-07-21",
+        "to": "2026-10-14",
+        "multivariate": {
+          "r2": 0.359,
+          "adj_r2": 0.3,
+          "df_resid": 54,
+          "coef": {
+            "const": {
+              "beta": 0.1852,
+              "t": 1.1
+            },
+            "dxy_mt5": {
+              "beta": -2.3443,
+              "t": -3.86
+            },
+            "wti": {
+              "beta": -0.0591,
+              "t": -1.18
+            },
+            "us10y": {
+              "beta": -0.0428,
+              "t": -0.48
+            },
+            "us2y": {
+              "beta": -0.064,
+              "t": -1.12
+            },
+            "tips10y": {
+              "beta": 0.0661,
+              "t": 0.64
+            }
+          }
+        },
+        "univariate": {
+          "dxy_mt5": {
+            "beta": -2.6287,
+            "t": -4.69,
+            "r2": 0.275
+          },
+          "wti": {
+            "beta": -0.0962,
+            "t": -1.92,
+            "r2": 0.06
+          },
+          "us10y": {
+            "beta": -0.1104,
+            "t": -2.75,
+            "r2": 0.115
+          },
+          "us2y": {
+            "beta": -0.1185,
+            "t": -3.45,
+            "r2": 0.17
+          },
+          "tips10y": {
+            "beta": -0.1197,
+            "t": -2.64,
+            "r2": 0.107
+          }
+        },
+        "driver_corr_10y_vs_tips": 0.89,
+        "driver_corr_10y_vs_2y": 0.79
+      },
+      "250": {
+        "n_obs": 250,
+        "from": "2025-10-14",
+        "to": "2026-10-14",
+        "multivariate": {
+          "r2": 0.215,
+          "adj_r2": 0.199,
+          "df_resid": 244,
+          "coef": {
+            "const": {
+              "beta": 0.0503,
+              "t": 0.49
+            },
+            "dxy_mt5": {
+              "beta": -2.1713,
+              "t": -6.42
+            },
+            "wti": {
+              "beta": -0.0111,
+              "t": -0.33
+            },
+            "us10y": {
+              "beta": 0.0351,
+              "t": 0.51
+            },
+            "us2y": {
+              "beta": -0.0584,
+              "t": -1.49
+            },
+            "tips10y": {
+              "beta": -0.0166,
+              "t": -0.23
+            }
+          }
+        },
+        "univariate": {
+          "dxy_mt5": {
+            "beta": -2.4353,
+            "t": -7.95,
+            "r2": 0.203
+          },
+          "wti": {
+            "beta": -0.057,
+            "t": -1.82,
+            "r2": 0.013
+          },
+          "us10y": {
+            "beta": -0.0956,
+            "t": -3.58,
+            "r2": 0.049
+          },
+          "us2y": {
+            "beta": -0.1101,
+            "t": -4.67,
+            "r2": 0.081
+          },
+          "tips10y": {
+            "beta": -0.1114,
+            "t": -3.5,
+            "r2": 0.047
+          }
+        },
+        "driver_corr_10y_vs_tips": 0.89,
+        "driver_corr_10y_vs_2y": 0.81
+      }
+    }
+  },
+  "q4_dollar_comparison": {
+    "20": {
+      "dxy_mt5": {
+        "beta": -1.1671,
+        "t": -1.27,
+        "uni": {
+          "beta": -1.523,
+          "t": -1.45,
+          "r2": 0.105
+        },
+        "model_r2": 0.539,
+        "from": "2026-09-16",
+        "to": "2026-10-14"
+      },
+      "usd_broad_fred": {
+        "beta": 0.5515,
+        "t": 0.53,
+        "uni": {
+          "beta": -0.3658,
+          "t": -0.31,
+          "r2": 0.005
+        },
+        "model_r2": 0.497,
+        "from": "2026-09-16",
+        "to": "2026-10-14"
+      }
+    },
+    "60": {
+      "dxy_mt5": {
+        "beta": -2.3443,
+        "t": -3.86,
+        "uni": {
+          "beta": -2.6287,
+          "t": -4.69,
+          "r2": 0.275
+        },
+        "model_r2": 0.359,
+        "from": "2026-07-21",
+        "to": "2026-10-14"
+      },
+      "usd_broad_fred": {
+        "beta": -2.0429,
+        "t": -2.88,
+        "uni": {
+          "beta": -2.4586,
+          "t": -3.49,
+          "r2": 0.173
+        },
+        "model_r2": 0.291,
+        "from": "2026-07-21",
+        "to": "2026-10-14"
+      }
+    },
+    "250": {
+      "dxy_mt5": {
+        "beta": -2.1713,
+        "t": -6.42,
+        "uni": {
+          "beta": -2.4353,
+          "t": -7.95,
+          "r2": 0.203
+        },
+        "model_r2": 0.215,
+        "from": "2025-10-14",
+        "to": "2026-10-14"
+      },
+      "usd_broad_fred": {
+        "beta": -2.9245,
+        "t": -6.85,
+        "uni": {
+          "beta": -2.9447,
+          "t": -7.55,
+          "r2": 0.187
+        },
+        "model_r2": 0.231,
+        "from": "2025-10-14",
+        "to": "2026-10-14"
+      }
+    }
+  },
+  "validation": {
+    "release_spikes": {
+      "offset_shift_-1h": {
+        "release_bar_is_largest": 0,
+        "of": 92,
+        "median_release_bar_vs_median_range": 0.86,
+        "release_bar_ge_2x_median": 1
+      },
+      "offset_shift_+0h": {
+        "release_bar_is_largest": 28,
+        "of": 92,
+        "median_release_bar_vs_median_range": 2.03,
+        "release_bar_ge_2x_median": 46
+      },
+      "detail": [
+        {
+          "release_london": "2025-10-24 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 4.6,
+          "is_largest": true
+        },
+        {
+          "release_london": "2025-11-20 13:30",
+          "event": "Employment Situation + Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:35",
+          "release_bar_vs_median_range": 3.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-11-25 13:30",
+          "event": "Producer Price Index + Retail Sales",
+          "largest_bar_london": "12:40",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-11-26 13:30",
+          "event": "Durable Goods (advance) + Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:05",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-04 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 2.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-11 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "15:40",
+          "release_bar_vs_median_range": 1.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-16 13:30",
+          "event": "Employment Situation + Retail Sales",
+          "largest_bar_london": "15:10",
+          "release_bar_vs_median_range": 2.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-18 13:30",
+          "event": "Initial Jobless Claims [rule] + Consumer Price Index",
+          "largest_bar_london": "14:40",
+          "release_bar_vs_median_range": 3.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-23 13:30",
+          "event": "Durable Goods (advance) + GDP (Initial Estimate), 3rd Quarter 2025 [manual]",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-31 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:30",
+          "release_bar_vs_median_range": 0.9,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-08 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:45",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-09 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 5.6,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-01-13 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "15:15",
+          "release_bar_vs_median_range": 2.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-14 13:30",
+          "event": "Producer Price Index + Retail Sales",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-15 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 2.7,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-01-22 13:30",
+          "event": "Gross Domestic Product, 3rd Quarter 2025 (Updated Estimate), GDP by Industry, and Corporate Profits (Revised) + Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:30",
+          "release_bar_vs_median_range": 2.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-26 13:30",
+          "event": "Durable Goods (advance)",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 2.5,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-01-29 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "15:25",
+          "release_bar_vs_median_range": 0.9,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-30 13:30",
+          "event": "Producer Price Index",
+          "largest_bar_london": "12:45",
+          "release_bar_vs_median_range": 1.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-05 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:35",
+          "release_bar_vs_median_range": 1.3,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-10 13:30",
+          "event": "Retail Sales",
+          "largest_bar_london": "14:45",
+          "release_bar_vs_median_range": 2.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-11 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 6.0,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-02-12 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:10",
+          "release_bar_vs_median_range": 2.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-13 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.4,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-02-18 13:30",
+          "event": "Durable Goods (advance)",
+          "largest_bar_london": "14:30",
+          "release_bar_vs_median_range": 0.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-19 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.2,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-02-20 13:30",
+          "event": "Personal Income and Outlays, December 2025 + GDP (Advance Estimate), 4th Quarter and Year 2025",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 2.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-26 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:30",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-27 13:30",
+          "event": "Producer Price Index",
+          "largest_bar_london": "13:05",
+          "release_bar_vs_median_range": 2.3,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-05 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:20",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-06 13:30",
+          "event": "Employment Situation + Retail Sales",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 4.3,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-03-11 12:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:50",
+          "release_bar_vs_median_range": 2.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-12 12:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:45",
+          "release_bar_vs_median_range": 1.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-13 12:30",
+          "event": "GDP (Second Estimate), 4th Quarter and Year 2025 + Durable Goods (advance) + Personal Income and Outlays, January 2026",
+          "largest_bar_london": "14:55",
+          "release_bar_vs_median_range": 0.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-18 12:30",
+          "event": "Producer Price Index",
+          "largest_bar_london": "13:00",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-19 12:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:00",
+          "release_bar_vs_median_range": 1.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-26 12:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:40",
+          "release_bar_vs_median_range": 1.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-01 13:30",
+          "event": "Retail Sales",
+          "largest_bar_london": "13:45",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-02 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:45",
+          "release_bar_vs_median_range": 0.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-07 13:30",
+          "event": "Durable Goods (advance)",
+          "largest_bar_london": "15:20",
+          "release_bar_vs_median_range": 0.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-09 13:30",
+          "event": "Initial Jobless Claims [rule] + Personal Income and Outlays, February 2026 + GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 4th Quarter and Year 2025",
+          "largest_bar_london": "14:35",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-10 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.7,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-04-14 13:30",
+          "event": "Producer Price Index",
+          "largest_bar_london": "11:35",
+          "release_bar_vs_median_range": 1.3,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-16 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:50",
+          "release_bar_vs_median_range": 1.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-21 13:30",
+          "event": "Retail Sales",
+          "largest_bar_london": "15:45",
+          "release_bar_vs_median_range": 3.9,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-23 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:00",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-29 13:30",
+          "event": "Durable Goods (advance)",
+          "largest_bar_london": "14:40",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-30 13:30",
+          "event": "Initial Jobless Claims [rule] + GDP (Advance Estimate), 1st Quarter 2026 + Personal Income and Outlays, March 2026",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-07 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:30",
+          "release_bar_vs_median_range": 2.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-08 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.7,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-05-12 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-13 13:30",
+          "event": "Producer Price Index",
+          "largest_bar_london": "14:50",
+          "release_bar_vs_median_range": 2.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-14 13:30",
+          "event": "Retail Sales + Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:40",
+          "release_bar_vs_median_range": 1.3,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-21 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "11:25",
+          "release_bar_vs_median_range": 2.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-28 13:30",
+          "event": "Personal Income and Outlays, April 2026 + GDP (Second Estimate) and Corporate Profits, 1st Quarter 2026 + Initial Jobless Claims [rule] + Durable Goods (advance)",
+          "largest_bar_london": "15:10",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-04 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:00",
+          "release_bar_vs_median_range": 0.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-05 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:50",
+          "release_bar_vs_median_range": 3.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-10 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.6,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-06-11 13:30",
+          "event": "Initial Jobless Claims [rule] + Producer Price Index",
+          "largest_bar_london": "15:20",
+          "release_bar_vs_median_range": 2.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-17 13:30",
+          "event": "Retail Sales",
+          "largest_bar_london": "15:45",
+          "release_bar_vs_median_range": 2.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-18 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-25 13:30",
+          "event": "GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 1st Quarter 2026 + Personal Income and Outlays, May 2026 + Initial Jobless Claims [rule] + Durable Goods (advance)",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 4.5,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-07-02 13:30",
+          "event": "Initial Jobless Claims [rule] + Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 9.2,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-07-09 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:05",
+          "release_bar_vs_median_range": 1.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-07-14 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 13.1,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-07-15 13:30",
+          "event": "Producer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.5,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-07-16 13:30",
+          "event": "Initial Jobless Claims [rule] + Retail Sales",
+          "largest_bar_london": "14:00",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-07-23 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:55",
+          "release_bar_vs_median_range": 1.3,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-07-27 13:30",
+          "event": "Durable Goods (advance)",
+          "largest_bar_london": "14:55",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-07-30 13:30",
+          "event": "Initial Jobless Claims [rule] + GDP (Advance Estimate), 2nd Quarter 2026 + Personal Income and Outlays, June 2026",
+          "largest_bar_london": "14:35",
+          "release_bar_vs_median_range": 2.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-08-06 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:05",
+          "release_bar_vs_median_range": 2.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-08-07 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 8.9,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-08-12 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 8.7,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-08-13 13:30",
+          "event": "Initial Jobless Claims [rule] + Producer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 4.0,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-08-14 13:30",
+          "event": "Retail Sales",
+          "largest_bar_london": "16:00",
+          "release_bar_vs_median_range": 2.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-08-20 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "16:00",
+          "release_bar_vs_median_range": 1.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-08-26 13:30",
+          "event": "GDP (Second Estimate) and Corporate Profits, 2nd Quarter 2026 + Durable Goods (advance) + Personal Income and Outlays, July 2026",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.9,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-08-27 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:30",
+          "release_bar_vs_median_range": 0.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-03 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.8,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-09-04 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 11.6,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-09-10 13:30",
+          "event": "Initial Jobless Claims [rule] + Producer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 4.3,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-09-11 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 9.1,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-09-16 13:30",
+          "event": "Retail Sales",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-17 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "14:45",
+          "release_bar_vs_median_range": 2.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-24 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "15:30",
+          "release_bar_vs_median_range": 1.3,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-25 13:30",
+          "event": "Durable Goods (advance)",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-30 13:30",
+          "event": "GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025 + Personal Income and Outlays, August 2026",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 4.8,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-10-01 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "15:00",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-10-02 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 6.2,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-10-08 13:30",
+          "event": "Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 2.3,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-10-14 13:30",
+          "event": "Consumer Price Index",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 6.5,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-10-15 13:30",
+          "event": "Retail Sales + Producer Price Index + Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 5.0,
+          "is_largest": true
+        }
+      ],
+      "offset_shift_+1h": {
+        "release_bar_is_largest": 6,
+        "of": 92,
+        "median_release_bar_vs_median_range": 1.5,
+        "release_bar_ge_2x_median": 21
+      },
+      "nfp_1330_check": [
+        {
+          "release_london": "2025-11-20 13:30",
+          "event": "Employment Situation + Initial Jobless Claims [rule]",
+          "largest_bar_london": "13:35",
+          "release_bar_vs_median_range": 3.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-16 13:30",
+          "event": "Employment Situation + Retail Sales",
+          "largest_bar_london": "15:10",
+          "release_bar_vs_median_range": 2.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-09 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 5.6,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-02-11 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 6.0,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-03-06 13:30",
+          "event": "Employment Situation + Retail Sales",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 4.3,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-05-08 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 3.7,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-06-05 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:50",
+          "release_bar_vs_median_range": 3.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-07-02 13:30",
+          "event": "Initial Jobless Claims [rule] + Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 9.2,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-08-07 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 8.9,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-09-04 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 11.6,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-10-02 13:30",
+          "event": "Employment Situation",
+          "largest_bar_london": "13:30",
+          "release_bar_vs_median_range": 6.2,
+          "is_largest": true
+        }
+      ],
+      "other_release_times": [
+        {
+          "release_london": "2025-10-29 18:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 4.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-11-03 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-11-05 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 2.1,
+          "is_largest": true
+        },
+        {
+          "release_london": "2025-12-01 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 0.9,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-03 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 2.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-05 15:00",
+          "event": "Personal Income and Outlays, September 2025 [manual]",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2025-12-10 19:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 5.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-02 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 2.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-06 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-22 15:00",
+          "event": "Personal Income and Outlays, October and November 2025",
+          "release_bar_vs_median_range": 1.9,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-01-28 19:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 2.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-02 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-02-04 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.4,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-02 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 1.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-04 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-03-18 18:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 2.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-01 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 2.2,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-04-29 19:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 2.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-01 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 2.7,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-05-05 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-01 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 1.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-03 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-06-17 19:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 8.5,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-07-01 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 2.8,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-07-06 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.6,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-07-29 19:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 6.3,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-08-03 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 2.1,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-08-05 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.0,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-01 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 2.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-03 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 1.5,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-09-16 19:00",
+          "event": "FOMC statement",
+          "release_bar_vs_median_range": 9.3,
+          "is_largest": true
+        },
+        {
+          "release_london": "2026-10-01 15:00",
+          "event": "ISM Manufacturing PMI [rule]",
+          "release_bar_vs_median_range": 2.3,
+          "is_largest": false
+        },
+        {
+          "release_london": "2026-10-05 15:00",
+          "event": "ISM Services PMI [rule]",
+          "release_bar_vs_median_range": 2.7,
+          "is_largest": false
+        }
+      ]
+    },
+    "m5_gaps_in_sample": {
+      "daily_break": 199,
+      "weekend": 53,
+      "other": [
+        {
+          "from_london": "2025-11-27 Thu 19:25",
+          "to_london": "2025-11-27 23:00",
+          "missing_min": 210
+        },
+        {
+          "from_london": "2025-11-28 Fri 08:20",
+          "to_london": "2025-11-28 11:00",
+          "missing_min": 155
+        },
+        {
+          "from_london": "2025-12-24 Wed 18:40",
+          "to_london": "2025-12-25 23:00",
+          "missing_min": 1695
+        },
+        {
+          "from_london": "2025-12-31 Wed 21:55",
+          "to_london": "2026-01-01 23:00",
+          "missing_min": 1500
+        },
+        {
+          "from_london": "2026-01-19 Mon 19:30",
+          "to_london": "2026-01-19 23:00",
+          "missing_min": 205
+        },
+        {
+          "from_london": "2026-02-16 Mon 19:30",
+          "to_london": "2026-02-16 23:00",
+          "missing_min": 205
+        },
+        {
+          "from_london": "2026-05-25 Mon 19:25",
+          "to_london": "2026-05-25 23:00",
+          "missing_min": 210
+        },
+        {
+          "from_london": "2026-09-07 Mon 19:25",
+          "to_london": "2026-09-07 23:00",
+          "missing_min": 210
+        }
+      ],
+      "other_count": 8
+    }
+  }
+}
