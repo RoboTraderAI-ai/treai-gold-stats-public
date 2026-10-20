@@ -1,5 +1,23 @@
 {
-  "generated_utc": "2026-10-20T22:05:34+00:00",
+  "generated_utc": "2026-10-20T22:09:59+00:00",
+  "price": {
+    "status": "ok",
+    "source": "Vantage MT5 XAUUSD",
+    "bid": 4127.12,
+    "ask": 4127.38,
+    "mid": 4127.25,
+    "spread": 0.26,
+    "quote_server_time": "2026-10-21 01:09:54.218",
+    "quote_utc": "2026-10-20T22:09:54.218+00:00",
+    "quote_london": "2026-10-20 23:09:54",
+    "server_offset_h": 3,
+    "server_offset_source": "empirical weekly offset from the M5 daily break (UTC+2 on EST, UTC+3 on EDT)",
+    "live_clock_offset_h": 3.0,
+    "read_at_utc": "2026-10-20T22:09:54+00:00",
+    "quote_age_at_read_s": 0.6,
+    "stale_after_minutes": 15,
+    "usage": "Use mid as the gold price. Its age = brief time - quote_utc; if over 15 minutes, state the age. Fall back to a web spot price only if this file is stale (generated_utc more than 60 minutes old, or quote_utc more than 60 minutes old on a weekday market session) or the run failed (file missing or unreadable), and say which source the brief used."
+  },
   "data": {
     "symbol": "XAUUSD",
     "gold_like_symbols": [
@@ -16,8 +34,8 @@
     "digits": 2,
     "symbol_path": "Gold\\XAUUSD",
     "live_clock": {
-      "tick_server_epoch": 1792544729,
-      "local_utc_epoch": 1792533929
+      "tick_server_epoch": 1792544994,
+      "local_utc_epoch": 1792534194
     },
     "m5_bars": 553383,
     "m5_first": "2019-01-02 01:00:00",
@@ -9449,7 +9467,7 @@
   },
   "reference_levels": {
     "as_of_london": "2026-10-20 23:10",
-    "latest_price": 4127.65,
+    "latest_price": 4127.12,
     "latest_bar_london": "2026-10-20 23:05",
     "rules": {
       "brief_max_distance_E": 2.0,
@@ -9512,6 +9530,24 @@
       "brief_round_gap_E": 0.2,
       "brief_band_E": 0.25
     },
+    "session_ranges": {
+      "overnight": {
+        "definition": "last daily reopen (after the 1-hour break) -> 08:00 London",
+        "status": "complete",
+        "high": 4147.08,
+        "low": 4115.67,
+        "from_london": "2026-10-19 23:00",
+        "to_london": "2026-10-20 08:00"
+      },
+      "london_morning": {
+        "definition": "08:00 -> 13:00 London; the US window's reference range",
+        "status": "complete",
+        "high": 4136.58,
+        "low": 4111.63,
+        "from_london": "2026-10-20 08:00",
+        "to_london": "2026-10-20 13:00"
+      }
+    },
     "swing_points": {
       "from_server_day": "2026-07-29",
       "to_server_day": "2026-10-20",
@@ -9548,8 +9584,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 42.17,
-            "distance_E": 1.415,
+            "distance_usd": 42.7,
+            "distance_E": 1.433,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 5,
@@ -9583,18 +9619,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 27.78,
-            "distance_E": 0.933,
+            "distance_usd": 28.31,
+            "distance_E": 0.95,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 27,
+              "hits": 26,
               "n": 250,
-              "rate": 0.108
+              "rate": 0.104
             },
             "p_reach_unpublished": {
-              "hits": 27,
+              "hits": 26,
               "n": 250,
-              "rate": 0.108
+              "rate": 0.104
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -9618,18 +9654,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 19.43,
-            "distance_E": 0.652,
+            "distance_usd": 19.96,
+            "distance_E": 0.67,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 53,
+              "hits": 48,
               "n": 250,
-              "rate": 0.212
+              "rate": 0.192
             },
             "p_reach_unpublished": {
-              "hits": 53,
+              "hits": 48,
               "n": 250,
-              "rate": 0.212
+              "rate": 0.192
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -9664,14 +9700,14 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -2.85,
-            "distance_E": -0.096,
+            "distance_usd": -2.32,
+            "distance_E": -0.078,
             "within_brief_range": true,
             "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 216,
+              "hits": 225,
               "n": 250,
-              "rate": 0.864
+              "rate": 0.9
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -9706,18 +9742,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -11.98,
-            "distance_E": -0.402,
+            "distance_usd": -11.45,
+            "distance_E": -0.384,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 122,
+              "hits": 125,
               "n": 250,
-              "rate": 0.488
+              "rate": 0.5
             },
             "p_reach_unpublished": {
-              "hits": 122,
+              "hits": 125,
               "n": 250,
-              "rate": 0.488
+              "rate": 0.5
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -9745,18 +9781,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.85,
-            "distance_E": -0.566,
+            "distance_usd": -16.32,
+            "distance_E": -0.548,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 83,
+              "hits": 84,
               "n": 250,
-              "rate": 0.332
+              "rate": 0.336
             },
             "p_reach_unpublished": {
-              "hits": 83,
+              "hits": 84,
               "n": 250,
-              "rate": 0.332
+              "rate": 0.336
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -9791,8 +9827,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -27.65,
-            "distance_E": -0.928,
+            "distance_usd": -27.12,
+            "distance_E": -0.91,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 41,
@@ -9826,8 +9862,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -54.27,
-            "distance_E": -1.822,
+            "distance_usd": -53.74,
+            "distance_E": -1.804,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 13,
@@ -9873,8 +9909,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 569.06,
-            "distance_E": 19.102,
+            "distance_usd": 569.59,
+            "distance_E": 19.12,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -9908,8 +9944,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 503.75,
-            "distance_E": 16.91,
+            "distance_usd": 504.28,
+            "distance_E": 16.928,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -9943,8 +9979,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 390.58,
-            "distance_E": 13.111,
+            "distance_usd": 391.11,
+            "distance_E": 13.129,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -9978,8 +10014,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 383.15,
-            "distance_E": 12.862,
+            "distance_usd": 383.68,
+            "distance_E": 12.879,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10022,8 +10058,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 315.3,
-            "distance_E": 10.584,
+            "distance_usd": 315.83,
+            "distance_E": 10.602,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10057,8 +10093,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 3,
-            "distance_usd": 307.75,
-            "distance_E": 10.331,
+            "distance_usd": 308.28,
+            "distance_E": 10.349,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10101,8 +10137,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 273.36,
-            "distance_E": 9.176,
+            "distance_usd": 273.89,
+            "distance_E": 9.194,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10153,8 +10189,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 241.69,
-            "distance_E": 8.113,
+            "distance_usd": 242.22,
+            "distance_E": 8.131,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10188,8 +10224,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 193.58,
-            "distance_E": 6.498,
+            "distance_usd": 194.11,
+            "distance_E": 6.516,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10223,8 +10259,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 188.03,
-            "distance_E": 6.312,
+            "distance_usd": 188.56,
+            "distance_E": 6.33,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10258,8 +10294,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 164.31,
-            "distance_E": 5.515,
+            "distance_usd": 164.84,
+            "distance_E": 5.533,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -10293,8 +10329,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 96.74,
-            "distance_E": 3.247,
+            "distance_usd": 97.27,
+            "distance_E": 3.265,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -10337,8 +10373,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 89.53,
-            "distance_E": 3.005,
+            "distance_usd": 90.06,
+            "distance_E": 3.023,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -10389,8 +10425,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 71.96,
-            "distance_E": 2.416,
+            "distance_usd": 72.49,
+            "distance_E": 2.433,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -10440,8 +10476,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 42.17,
-            "distance_E": 1.415,
+            "distance_usd": 42.7,
+            "distance_E": 1.433,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 5,
@@ -10475,18 +10511,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 27.78,
-            "distance_E": 0.933,
+            "distance_usd": 28.31,
+            "distance_E": 0.95,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 27,
+              "hits": 26,
               "n": 250,
-              "rate": 0.108
+              "rate": 0.104
             },
             "p_reach_unpublished": {
-              "hits": 27,
+              "hits": 26,
               "n": 250,
-              "rate": 0.108
+              "rate": 0.104
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -10510,18 +10546,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 19.43,
-            "distance_E": 0.652,
+            "distance_usd": 19.96,
+            "distance_E": 0.67,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 53,
+              "hits": 48,
               "n": 250,
-              "rate": 0.212
+              "rate": 0.192
             },
             "p_reach_unpublished": {
-              "hits": 53,
+              "hits": 48,
               "n": 250,
-              "rate": 0.212
+              "rate": 0.192
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -10556,14 +10592,14 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -2.85,
-            "distance_E": -0.096,
+            "distance_usd": -2.32,
+            "distance_E": -0.078,
             "within_brief_range": true,
             "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 216,
+              "hits": 225,
               "n": 250,
-              "rate": 0.864
+              "rate": 0.9
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -10598,18 +10634,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -11.98,
-            "distance_E": -0.402,
+            "distance_usd": -11.45,
+            "distance_E": -0.384,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 122,
+              "hits": 125,
               "n": 250,
-              "rate": 0.488
+              "rate": 0.5
             },
             "p_reach_unpublished": {
-              "hits": 122,
+              "hits": 125,
               "n": 250,
-              "rate": 0.488
+              "rate": 0.5
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -10637,18 +10673,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.85,
-            "distance_E": -0.566,
+            "distance_usd": -16.32,
+            "distance_E": -0.548,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 83,
+              "hits": 84,
               "n": 250,
-              "rate": 0.332
+              "rate": 0.336
             },
             "p_reach_unpublished": {
-              "hits": 83,
+              "hits": 84,
               "n": 250,
-              "rate": 0.332
+              "rate": 0.336
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -10683,8 +10719,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -27.65,
-            "distance_E": -0.928,
+            "distance_usd": -27.12,
+            "distance_E": -0.91,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 41,
@@ -10718,8 +10754,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -54.27,
-            "distance_E": -1.822,
+            "distance_usd": -53.74,
+            "distance_E": -1.804,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 13,
@@ -10762,8 +10798,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -61.22,
-            "distance_E": -2.055,
+            "distance_usd": -60.69,
+            "distance_E": -2.037,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 9,
@@ -10806,8 +10842,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": -107.59,
-            "distance_E": -3.612,
+            "distance_usd": -107.06,
+            "distance_E": -3.594,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 3,
@@ -10856,18 +10892,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.02,
-            "distance_E": -0.538,
+            "distance_usd": -15.49,
+            "distance_E": -0.52,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 90,
+              "hits": 91,
               "n": 250,
-              "rate": 0.36
+              "rate": 0.364
             },
             "p_reach_unpublished": {
-              "hits": 90,
+              "hits": 91,
               "n": 250,
-              "rate": 0.36
+              "rate": 0.364
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -10902,8 +10938,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 90.56,
-            "distance_E": 3.04,
+            "distance_usd": 91.09,
+            "distance_E": 3.058,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -10944,8 +10980,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 89.53,
-            "distance_E": 3.005,
+            "distance_usd": 90.06,
+            "distance_E": 3.023,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -10986,8 +11022,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 97.76,
-            "distance_E": 3.282,
+            "distance_usd": 98.29,
+            "distance_E": 3.299,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -11026,8 +11062,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 271.91,
-            "distance_E": 9.128,
+            "distance_usd": 272.44,
+            "distance_E": 9.145,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11068,8 +11104,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 383.15,
-            "distance_E": 12.862,
+            "distance_usd": 383.68,
+            "distance_E": 12.879,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11108,8 +11144,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -54.27,
-            "distance_E": -1.822,
+            "distance_usd": -53.74,
+            "distance_E": -1.804,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 13,
@@ -11148,8 +11184,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -61.22,
-            "distance_E": -2.055,
+            "distance_usd": -60.69,
+            "distance_E": -2.037,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 9,
@@ -11188,8 +11224,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 71.1,
-            "distance_E": 2.387,
+            "distance_usd": 71.63,
+            "distance_E": 2.404,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -11229,8 +11265,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 72.82,
-            "distance_E": 2.444,
+            "distance_usd": 73.35,
+            "distance_E": 2.462,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -11270,8 +11306,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 274.8,
-            "distance_E": 9.225,
+            "distance_usd": 275.33,
+            "distance_E": 9.242,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11312,8 +11348,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 307.26,
-            "distance_E": 10.314,
+            "distance_usd": 307.79,
+            "distance_E": 10.332,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11352,8 +11388,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -108.54,
-            "distance_E": -3.644,
+            "distance_usd": -108.01,
+            "distance_E": -3.626,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 3,
@@ -11392,8 +11428,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 22.35,
-            "distance_E": 0.75,
+            "distance_usd": 22.88,
+            "distance_E": 0.768,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 39,
@@ -11434,14 +11470,14 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -2.65,
-            "distance_E": -0.089,
+            "distance_usd": -2.12,
+            "distance_E": -0.071,
             "within_brief_range": true,
             "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 218,
+              "hits": 226,
               "n": 250,
-              "rate": 0.872
+              "rate": 0.904
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -11477,18 +11513,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 27.78,
-            "distance_E": 0.574,
+            "distance_usd": 28.31,
+            "distance_E": 0.585,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 64,
+              "hits": 62,
               "n": 250,
-              "rate": 0.256
+              "rate": 0.248
             },
             "p_reach_unpublished": {
-              "hits": 64,
+              "hits": 62,
               "n": 250,
-              "rate": 0.256
+              "rate": 0.248
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -11516,18 +11552,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 19.43,
-            "distance_E": 0.402,
+            "distance_usd": 19.96,
+            "distance_E": 0.413,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 111,
+              "hits": 106,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.424
             },
             "p_reach_unpublished": {
-              "hits": 111,
+              "hits": 106,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.424
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -11562,18 +11598,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 8.93,
-            "distance_E": 0.185,
+            "distance_usd": 9.46,
+            "distance_E": 0.196,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 182,
+              "hits": 179,
               "n": 250,
-              "rate": 0.728
+              "rate": 0.716
             },
             "p_reach_unpublished": {
-              "hits": 182,
+              "hits": 179,
               "n": 250,
-              "rate": 0.728
+              "rate": 0.716
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11597,14 +11633,14 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -2.85,
-            "distance_E": -0.059,
+            "distance_usd": -2.32,
+            "distance_E": -0.048,
             "within_brief_range": true,
             "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 235,
+              "hits": 240,
               "n": 250,
-              "rate": 0.94
+              "rate": 0.96
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -11639,18 +11675,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -11.98,
-            "distance_E": -0.248,
+            "distance_usd": -11.45,
+            "distance_E": -0.237,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 175,
+              "hits": 177,
               "n": 250,
-              "rate": 0.7
+              "rate": 0.708
             },
             "p_reach_unpublished": {
-              "hits": 175,
+              "hits": 177,
               "n": 250,
-              "rate": 0.7
+              "rate": 0.708
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -11684,18 +11720,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.85,
-            "distance_E": -0.348,
+            "distance_usd": -16.32,
+            "distance_E": -0.337,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 145,
+              "hits": 146,
               "n": 250,
-              "rate": 0.58
+              "rate": 0.584
             },
             "p_reach_unpublished": {
-              "hits": 145,
+              "hits": 146,
               "n": 250,
-              "rate": 0.58
+              "rate": 0.584
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -11742,18 +11778,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -27.65,
-            "distance_E": -0.572,
+            "distance_usd": -27.12,
+            "distance_E": -0.561,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 84,
+              "hits": 85,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.34
             },
             "p_reach_unpublished": {
-              "hits": 84,
+              "hits": 85,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.34
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11777,18 +11813,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -61.22,
-            "distance_E": -1.266,
+            "distance_usd": -60.69,
+            "distance_E": -1.255,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 20,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.08
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 20,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.08
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -11860,8 +11896,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 569.06,
-            "distance_E": 11.767,
+            "distance_usd": 569.59,
+            "distance_E": 11.778,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11895,8 +11931,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 503.75,
-            "distance_E": 10.417,
+            "distance_usd": 504.28,
+            "distance_E": 10.428,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11930,8 +11966,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 390.58,
-            "distance_E": 8.076,
+            "distance_usd": 391.11,
+            "distance_E": 8.087,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11965,8 +12001,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 383.15,
-            "distance_E": 7.923,
+            "distance_usd": 383.68,
+            "distance_E": 7.934,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12009,8 +12045,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 315.3,
-            "distance_E": 6.52,
+            "distance_usd": 315.83,
+            "distance_E": 6.531,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12044,8 +12080,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 3,
-            "distance_usd": 307.75,
-            "distance_E": 6.364,
+            "distance_usd": 308.28,
+            "distance_E": 6.375,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12088,8 +12124,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 270.35,
-            "distance_E": 5.59,
+            "distance_usd": 270.88,
+            "distance_E": 5.601,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12142,8 +12178,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 241.69,
-            "distance_E": 4.998,
+            "distance_usd": 242.22,
+            "distance_E": 5.009,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12177,8 +12213,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 193.58,
-            "distance_E": 4.003,
+            "distance_usd": 194.11,
+            "distance_E": 4.014,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12216,8 +12252,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 185.66,
-            "distance_E": 3.839,
+            "distance_usd": 186.19,
+            "distance_E": 3.85,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12260,8 +12296,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 164.31,
-            "distance_E": 3.398,
+            "distance_usd": 164.84,
+            "distance_E": 3.408,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12295,8 +12331,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 96.74,
-            "distance_E": 2.0,
+            "distance_usd": 97.27,
+            "distance_E": 2.011,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12345,8 +12381,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 89.53,
-            "distance_E": 1.851,
+            "distance_usd": 90.06,
+            "distance_E": 1.862,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 2,
@@ -12400,8 +12436,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 71.96,
-            "distance_E": 1.488,
+            "distance_usd": 72.49,
+            "distance_E": 1.499,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 4,
@@ -12461,18 +12497,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 47.35,
-            "distance_E": 0.979,
+            "distance_usd": 47.88,
+            "distance_E": 0.99,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 21,
+              "hits": 19,
               "n": 250,
-              "rate": 0.084
+              "rate": 0.076
             },
             "p_reach_unpublished": {
-              "hits": 21,
+              "hits": 19,
               "n": 250,
-              "rate": 0.084
+              "rate": 0.076
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12500,18 +12536,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 42.17,
-            "distance_E": 0.872,
+            "distance_usd": 42.7,
+            "distance_E": 0.883,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 30,
+              "hits": 29,
               "n": 250,
-              "rate": 0.12
+              "rate": 0.116
             },
             "p_reach_unpublished": {
-              "hits": 30,
+              "hits": 29,
               "n": 250,
-              "rate": 0.12
+              "rate": 0.116
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12539,18 +12575,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 27.78,
-            "distance_E": 0.574,
+            "distance_usd": 28.31,
+            "distance_E": 0.585,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 64,
+              "hits": 62,
               "n": 250,
-              "rate": 0.256
+              "rate": 0.248
             },
             "p_reach_unpublished": {
-              "hits": 64,
+              "hits": 62,
               "n": 250,
-              "rate": 0.256
+              "rate": 0.248
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12578,18 +12614,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 19.43,
-            "distance_E": 0.402,
+            "distance_usd": 19.96,
+            "distance_E": 0.413,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 111,
+              "hits": 106,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.424
             },
             "p_reach_unpublished": {
-              "hits": 111,
+              "hits": 106,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.424
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12624,18 +12660,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 8.93,
-            "distance_E": 0.185,
+            "distance_usd": 9.46,
+            "distance_E": 0.196,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 182,
+              "hits": 179,
               "n": 250,
-              "rate": 0.728
+              "rate": 0.716
             },
             "p_reach_unpublished": {
-              "hits": 182,
+              "hits": 179,
               "n": 250,
-              "rate": 0.728
+              "rate": 0.716
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12659,14 +12695,14 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -2.85,
-            "distance_E": -0.059,
+            "distance_usd": -2.32,
+            "distance_E": -0.048,
             "within_brief_range": true,
             "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 235,
+              "hits": 240,
               "n": 250,
-              "rate": 0.94
+              "rate": 0.96
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12701,18 +12737,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -11.98,
-            "distance_E": -0.248,
+            "distance_usd": -11.45,
+            "distance_E": -0.237,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 175,
+              "hits": 177,
               "n": 250,
-              "rate": 0.7
+              "rate": 0.708
             },
             "p_reach_unpublished": {
-              "hits": 175,
+              "hits": 177,
               "n": 250,
-              "rate": 0.7
+              "rate": 0.708
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -12746,18 +12782,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.85,
-            "distance_E": -0.348,
+            "distance_usd": -16.32,
+            "distance_E": -0.337,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 145,
+              "hits": 146,
               "n": 250,
-              "rate": 0.58
+              "rate": 0.584
             },
             "p_reach_unpublished": {
-              "hits": 145,
+              "hits": 146,
               "n": 250,
-              "rate": 0.58
+              "rate": 0.584
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -12804,18 +12840,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -27.65,
-            "distance_E": -0.572,
+            "distance_usd": -27.12,
+            "distance_E": -0.561,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 84,
+              "hits": 85,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.34
             },
             "p_reach_unpublished": {
-              "hits": 84,
+              "hits": 85,
               "n": 250,
-              "rate": 0.336
+              "rate": 0.34
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12839,18 +12875,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -54.27,
-            "distance_E": -1.122,
+            "distance_usd": -53.74,
+            "distance_E": -1.111,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 28,
+              "hits": 30,
               "n": 250,
-              "rate": 0.112
+              "rate": 0.12
             },
             "p_reach_unpublished": {
-              "hits": 28,
+              "hits": 30,
               "n": 250,
-              "rate": 0.112
+              "rate": 0.12
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12888,18 +12924,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -61.22,
-            "distance_E": -1.266,
+            "distance_usd": -60.69,
+            "distance_E": -1.255,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 20,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.08
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 20,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.08
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12937,8 +12973,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -77.65,
-            "distance_E": -1.606,
+            "distance_usd": -77.12,
+            "distance_E": -1.595,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 12,
@@ -12972,18 +13008,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": -107.59,
-            "distance_E": -2.225,
+            "distance_usd": -107.06,
+            "distance_E": -2.214,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 6,
+              "hits": 7,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.028
             },
             "p_reach_unpublished": {
-              "hits": 6,
+              "hits": 7,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.028
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13022,18 +13058,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.02,
-            "distance_E": -0.331,
+            "distance_usd": -15.49,
+            "distance_E": -0.32,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 147,
+              "hits": 151,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.604
             },
             "p_reach_unpublished": {
-              "hits": 147,
+              "hits": 151,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.604
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -13070,18 +13106,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.02,
-            "distance_E": -0.331,
+            "distance_usd": -15.49,
+            "distance_E": -0.32,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 147,
+              "hits": 151,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.604
             },
             "p_reach_unpublished": {
-              "hits": 147,
+              "hits": 151,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.604
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -13118,8 +13154,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 90.56,
-            "distance_E": 1.873,
+            "distance_usd": 91.09,
+            "distance_E": 1.884,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 2,
@@ -13164,8 +13200,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 89.53,
-            "distance_E": 1.851,
+            "distance_usd": 90.06,
+            "distance_E": 1.862,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 2,
@@ -13209,8 +13245,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 97.76,
-            "distance_E": 2.022,
+            "distance_usd": 98.29,
+            "distance_E": 2.032,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -13252,8 +13288,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 271.91,
-            "distance_E": 5.623,
+            "distance_usd": 272.44,
+            "distance_E": 5.634,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13296,8 +13332,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 383.15,
-            "distance_E": 7.923,
+            "distance_usd": 383.68,
+            "distance_E": 7.934,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13336,18 +13372,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -54.27,
-            "distance_E": -1.122,
+            "distance_usd": -53.74,
+            "distance_E": -1.111,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 28,
+              "hits": 30,
               "n": 250,
-              "rate": 0.112
+              "rate": 0.12
             },
             "p_reach_unpublished": {
-              "hits": 28,
+              "hits": 30,
               "n": 250,
-              "rate": 0.112
+              "rate": 0.12
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -13381,18 +13417,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -61.22,
-            "distance_E": -1.266,
+            "distance_usd": -60.69,
+            "distance_E": -1.255,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 20,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.08
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 20,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.08
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -13426,8 +13462,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 71.1,
-            "distance_E": 1.47,
+            "distance_usd": 71.63,
+            "distance_E": 1.481,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 4,
@@ -13471,8 +13507,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 72.82,
-            "distance_E": 1.506,
+            "distance_usd": 73.35,
+            "distance_E": 1.517,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 4,
@@ -13516,8 +13552,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 188.03,
-            "distance_E": 3.888,
+            "distance_usd": 188.56,
+            "distance_E": 3.899,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13560,8 +13596,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 274.8,
-            "distance_E": 5.682,
+            "distance_usd": 275.33,
+            "distance_E": 5.693,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13604,8 +13640,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 307.26,
-            "distance_E": 6.354,
+            "distance_usd": 307.79,
+            "distance_E": 6.365,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13644,8 +13680,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -108.54,
-            "distance_E": -2.244,
+            "distance_usd": -108.01,
+            "distance_E": -2.233,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 6,
@@ -13684,18 +13720,18 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 22.35,
-            "distance_E": 0.462,
+            "distance_usd": 22.88,
+            "distance_E": 0.473,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 94,
+              "hits": 93,
               "n": 250,
-              "rate": 0.376
+              "rate": 0.372
             },
             "p_reach_unpublished": {
-              "hits": 94,
+              "hits": 93,
               "n": 250,
-              "rate": 0.376
+              "rate": 0.372
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -13730,8 +13766,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 72.35,
-            "distance_E": 1.496,
+            "distance_usd": 72.88,
+            "distance_E": 1.507,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 4,
@@ -13775,14 +13811,14 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -2.65,
-            "distance_E": -0.055,
+            "distance_usd": -2.12,
+            "distance_E": -0.044,
             "within_brief_range": true,
             "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 237,
+              "hits": 242,
               "n": 250,
-              "rate": 0.948
+              "rate": 0.968
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -13807,13 +13843,13 @@
     "note": "expected_range_usd (calibrated E) is shipped. The GVZ implied-vol scale is computed and logged with every forecast but does not drive the brief (scale_used = E) until stage 2 Part C is reviewed.",
     "gvz_availability": {
       "cboe": {
-        "fetched_utc": "2026-10-20T22:05:29+00:00",
+        "fetched_utc": "2026-10-20T22:09:53+00:00",
         "latest_date": "2026-10-19",
         "latest_value": 22.23,
         "error": null
       },
       "fred": {
-        "fetched_utc": "2026-10-20T22:05:29+00:00",
+        "fetched_utc": "2026-10-20T22:09:54+00:00",
         "latest_date": "2026-10-19",
         "latest_value": 22.23,
         "error": null
@@ -13845,8 +13881,8 @@
         "gvz_closes_behind": 0,
         "iv_share": 0.4307,
         "iv_k": 0.765,
-        "iv_raw_usd": 60.53,
-        "iv_forecast_usd": 46.31,
+        "iv_raw_usd": 60.52,
+        "iv_forecast_usd": 46.3,
         "iv_status": "ok",
         "scale_used": "E"
       }
