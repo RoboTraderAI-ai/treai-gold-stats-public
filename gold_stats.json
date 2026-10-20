@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-20T11:54:46+00:00",
+  "generated_utc": "2026-10-20T12:35:57+00:00",
   "data": {
     "symbol": "XAUUSD",
     "gold_like_symbols": [
@@ -16,12 +16,12 @@
     "digits": 2,
     "symbol_path": "Gold\\XAUUSD",
     "live_clock": {
-      "tick_server_epoch": 1792508081,
-      "local_utc_epoch": 1792497281
+      "tick_server_epoch": 1792510552,
+      "local_utc_epoch": 1792499752
     },
-    "m5_bars": 553272,
+    "m5_bars": 553281,
     "m5_first": "2019-01-02 01:00:00",
-    "m5_last": "2026-10-20 14:50:00",
+    "m5_last": "2026-10-20 15:35:00",
     "d1_bars": 3046,
     "d1_first": "2015-01-02 00:00:00",
     "d1_last": "2026-10-20 00:00:00",
