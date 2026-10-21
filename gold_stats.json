@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-10-21T11:52:10+00:00",
+  "generated_utc": "2026-10-21T12:59:59+00:00",
   "price": {
     "status": "ok",
     "source": "Vantage MT5 XAUUSD",
-    "bid": 4139.01,
-    "ask": 4139.22,
-    "mid": 4139.115,
+    "bid": 4130.34,
+    "ask": 4130.55,
+    "mid": 4130.445,
     "spread": 0.21,
-    "quote_server_time": "2026-10-21 14:52:02.508",
-    "quote_utc": "2026-10-21T11:52:02.508+00:00",
-    "quote_london": "2026-10-21 12:52:02",
+    "quote_server_time": "2026-10-21 15:59:51.635",
+    "quote_utc": "2026-10-21T12:59:51.635+00:00",
+    "quote_london": "2026-10-21 13:59:51",
     "server_offset_h": 3,
     "server_offset_source": "empirical weekly offset from the M5 daily break (UTC+2 on EST, UTC+3 on EDT)",
     "live_clock_offset_h": 3.0,
-    "read_at_utc": "2026-10-21T11:52:02+00:00",
-    "quote_age_at_read_s": 0.0,
+    "read_at_utc": "2026-10-21T12:59:51+00:00",
+    "quote_age_at_read_s": 0.2,
     "stale_after_minutes": 15,
     "usage": "Use mid as the gold price. Its age = brief time - quote_utc; if over 15 minutes, state the age. Fall back to a web spot price only if this file is stale (generated_utc more than 60 minutes old, or quote_utc more than 60 minutes old on a weekday market session) or the run failed (file missing or unreadable), and say which source the brief used."
   },
@@ -34,12 +34,12 @@
     "digits": 2,
     "symbol_path": "Gold\\XAUUSD",
     "live_clock": {
-      "tick_server_epoch": 1792594322,
-      "local_utc_epoch": 1792583522
+      "tick_server_epoch": 1792598391,
+      "local_utc_epoch": 1792587591
     },
-    "m5_bars": 553548,
+    "m5_bars": 553561,
     "m5_first": "2019-01-02 01:00:00",
-    "m5_last": "2026-10-21 14:50:00",
+    "m5_last": "2026-10-21 15:55:00",
     "d1_bars": 3047,
     "d1_first": "2015-01-02 00:00:00",
     "d1_last": "2026-10-21 00:00:00",
@@ -236,10 +236,10 @@
     "london_0800_1300": {
       "current_scale": {
         "for_session": "2026-10-21",
-        "usd": 24.17,
+        "usd": 24.12,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 24.17,
+        "unadjusted_usd": 24.12,
         "release": {
           "class": "quiet",
           "releases": null,
@@ -283,8 +283,8 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.1688,
           "iv_k": 0.6476,
-          "iv_raw_usd": 37.32,
-          "iv_forecast_usd": 24.17,
+          "iv_raw_usd": 37.24,
+          "iv_forecast_usd": 24.12,
           "iv_status": "ok"
         },
         "E_usd": 22.88,
@@ -1619,10 +1619,10 @@
     "us_1300_2000": {
       "current_scale": {
         "for_session": "2026-10-21",
-        "usd": 45.48,
+        "usd": 45.39,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 45.48,
+        "unadjusted_usd": 45.39,
         "release": {
           "class": "quiet",
           "releases": null,
@@ -1666,14 +1666,14 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.4311,
           "iv_k": 0.7627,
-          "iv_raw_usd": 59.63,
-          "iv_forecast_usd": 45.48,
+          "iv_raw_usd": 59.51,
+          "iv_forecast_usd": 45.39,
           "iv_status": "ok"
         },
         "E_usd": 41.37,
         "E_raw_usd": 48.22,
         "E_calibration_k": 0.8578,
-        "percentile_in_sample": 8.0
+        "percentile_in_sample": 7.6
       },
       "ruler_distribution_usd": {
         "n": 250,
@@ -9598,7 +9598,8 @@
         "driver_corr_10y_vs_tips": 0.89,
         "driver_corr_10y_vs_2y": 0.81
       }
-    }
+    },
+    "usage": "Context only. Never multiply a session's dollar move by these betas to state a gold amount; see dollar.usage."
   },
   "q4_dollar_comparison": {
     "20": {
@@ -10675,9 +10676,9 @@
     }
   },
   "reference_levels": {
-    "as_of_london": "2026-10-21 12:55",
-    "latest_price": 4139.02,
-    "latest_bar_london": "2026-10-21 12:50",
+    "as_of_london": "2026-10-21 14:00",
+    "latest_price": 4130.34,
+    "latest_bar_london": "2026-10-21 13:55",
     "rules": {
       "brief_max_distance_E": 2.0,
       "dedup_threshold_E": 0.1,
@@ -10756,13 +10757,13 @@
       },
       "london_morning": {
         "definition": "08:00 -> 13:00 London; the US window's reference range",
-        "status": "partial",
+        "status": "complete",
         "high": 4140.99,
         "low": 4111.54,
         "open": 4112.24,
-        "last": 4139.02,
+        "last": 4139.86,
         "from_london": "2026-10-21 08:00",
-        "to_london": "2026-10-21 12:55"
+        "to_london": "2026-10-21 13:00"
       }
     },
     "swing_points": {
@@ -10773,12 +10774,12 @@
         "H4": 5
       },
       "d1_bars": 60,
-      "h4_bars": 362,
+      "h4_bars": 363,
       "d1_pivots": 12,
       "d1_unviolated": 7,
-      "h4_pivots_distinct_turns": 29,
-      "h4_unviolated": 8,
-      "unviolated_total": 15
+      "h4_pivots_distinct_turns": 30,
+      "h4_unviolated": 9,
+      "unviolated_total": 16
     },
     "fair_value_gaps": {
       "D1": {
@@ -10788,13 +10789,13 @@
         "unfilled": 2
       },
       "H4": {
-        "bars": 362,
+        "bars": 363,
         "gaps_found": 74,
         "filled": 66,
         "unfilled": 8
       },
       "H1": {
-        "bars": 13,
+        "bars": 15,
         "gaps_found": 0,
         "filled": 0,
         "unfilled": 0
@@ -10805,12 +10806,12 @@
     "confluence_note": "Within 0.15 rulers of a level, own entry included, over every candidate before dedup. confluence_sources (primary) = independent price events: labels printed by the same M5 bar are one source, a reaction level and the turns it was built from are one source, each round number and moving average is its own source. confluence_labels (secondary) = distinct level types. Neither is used in any probability. backed_by = the independent-source count, then each source's labels in short form (same-source labels joined by '/', round numbers as the price).",
     "windows": {
       "london_0800_1300": {
-        "window_status": "in progress",
+        "window_status": "closed",
         "scale_used": "IV",
         "scale_status": "ok",
-        "scale_usd": 24.17,
-        "expected_range_usd": 24.17,
-        "scale_unadjusted_usd": 24.17,
+        "scale_usd": 24.12,
+        "expected_range_usd": 24.12,
+        "scale_unadjusted_usd": 24.12,
         "release": {
           "class": "quiet",
           "releases": null,
@@ -10850,57 +10851,9 @@
         "E_usd": 22.88,
         "E_raw_usd": 28.71,
         "E_calibration_k": 0.7971,
-        "dedup_threshold_usd": 2.42,
-        "confluence_threshold_usd": 3.63,
+        "dedup_threshold_usd": 2.41,
+        "confluence_threshold_usd": 3.62,
         "brief_levels": [
-          {
-            "label": "20-day MA",
-            "type": "20-day MA",
-            "price": 4169.82,
-            "source": "SMA of D1 closes 2026-09-23 -> 2026-10-20",
-            "side": "up",
-            "at_price": false,
-            "partial": false,
-            "computed_to_london": null,
-            "touches": null,
-            "distance_usd": 30.8,
-            "distance_scale": 1.274,
-            "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 18,
-              "n": 250,
-              "rate": 0.072
-            },
-            "p_reach_unpublished": {
-              "hits": 18,
-              "n": 250,
-              "rate": 0.072
-            },
-            "distance_E": 1.346,
-            "p_reach_E": {
-              "hits": 14,
-              "n": 250,
-              "rate": 0.056
-            },
-            "confluence_sources": 2,
-            "confluence_source_groups": [
-              [
-                "20-day MA 4169.82"
-              ],
-              [
-                "H4 FVG bearish 4167.13"
-              ]
-            ],
-            "backed_by": "2: 20MA, H4 fvg-",
-            "confluence_labels": 2,
-            "confluence_types": {
-              "20-day MA": "20-day MA 4169.82",
-              "H4 FVG": "H4 FVG bearish 4167.13"
-            },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
-          },
           {
             "label": "H4 FVG bearish",
             "type": "H4 FVG",
@@ -10911,24 +10864,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 28.11,
-            "distance_scale": 1.163,
+            "distance_usd": 36.79,
+            "distance_scale": 1.525,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 24,
+              "hits": 10,
               "n": 250,
-              "rate": 0.096
+              "rate": 0.04
             },
             "p_reach_unpublished": {
-              "hits": 24,
+              "hits": 10,
               "n": 250,
-              "rate": 0.096
+              "rate": 0.04
             },
-            "distance_E": 1.229,
+            "distance_E": 1.608,
             "p_reach_E": {
-              "hits": 19,
+              "hits": 8,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.032
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -10949,9 +10902,7 @@
             "zone_high": 4169.68,
             "zone_width_usd": 2.55,
             "formed_server": "2026-10-19 20:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior day high",
@@ -10963,48 +10914,54 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 16.41,
-            "distance_scale": 0.679,
+            "distance_usd": 25.09,
+            "distance_scale": 1.04,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 67,
+              "hits": 27,
               "n": 250,
-              "rate": 0.268
+              "rate": 0.108
             },
             "p_reach_unpublished": {
-              "hits": 67,
+              "hits": 27,
               "n": 250,
-              "rate": 0.268
+              "rate": 0.108
             },
-            "distance_E": 0.717,
+            "distance_E": 1.097,
             "p_reach_E": {
-              "hits": 55,
+              "hits": 25,
               "n": 250,
-              "rate": 0.22
+              "rate": 0.1
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
               [
                 "prior day high 4155.43",
+                "H4 swing high 4155.43",
                 "H4 FVG bearish 4155.43"
               ]
             ],
-            "backed_by": "1: PD hi/H4 fvg-",
-            "confluence_labels": 2,
+            "backed_by": "1: PD hi/H4 sw hi/H4 fvg-",
+            "confluence_labels": 3,
             "confluence_types": {
               "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
               "H4 FVG": "H4 FVG bearish 4155.43"
             },
             "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4155.43,
+                "partial": false,
+                "computed_to_london": null
+              },
               {
                 "label": "H4 FVG bearish",
                 "price": 4155.43,
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "round 50",
@@ -11016,24 +10973,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 10.98,
-            "distance_scale": 0.454,
+            "distance_usd": 19.66,
+            "distance_scale": 0.815,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 111,
+              "hits": 45,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.18
             },
             "p_reach_unpublished": {
-              "hits": 111,
+              "hits": 45,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.18
             },
-            "distance_E": 0.48,
+            "distance_E": 0.859,
             "p_reach_E": {
-              "hits": 100,
+              "hits": 38,
               "n": 250,
-              "rate": 0.4
+              "rate": 0.152
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11046,38 +11003,32 @@
             "confluence_types": {
               "round number": "round 50 4150.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "overnight high",
             "type": "overnight",
             "price": 4131.75,
             "source": "overnight Tue 2026-10-20 23:00 -> 08:00 London",
-            "side": "down",
-            "at_price": false,
+            "side": "up",
+            "at_price": true,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -7.27,
-            "distance_scale": -0.301,
+            "distance_usd": 1.41,
+            "distance_scale": 0.058,
             "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 178,
-              "n": 250,
-              "rate": 0.712
-            },
+            "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 178,
+              "hits": 233,
               "n": 250,
-              "rate": 0.712
+              "rate": 0.932
             },
-            "distance_E": -0.318,
+            "distance_E": 0.062,
             "p_reach_E": {
-              "hits": 169,
+              "hits": 232,
               "n": 250,
-              "rate": 0.676
+              "rate": 0.928
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11090,9 +11041,7 @@
             "confluence_types": {
               "overnight": "overnight high 4131.75"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior day close",
@@ -11104,24 +11053,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -14.22,
-            "distance_scale": -0.588,
+            "distance_usd": -5.54,
+            "distance_scale": -0.23,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 102,
+              "hits": 195,
               "n": 250,
-              "rate": 0.408
+              "rate": 0.78
             },
             "p_reach_unpublished": {
-              "hits": 102,
+              "hits": 195,
               "n": 250,
-              "rate": 0.408
+              "rate": 0.78
             },
-            "distance_E": -0.622,
+            "distance_E": -0.242,
             "p_reach_E": {
-              "hits": 87,
+              "hits": 184,
               "n": 250,
-              "rate": 0.348
+              "rate": 0.736
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -11145,9 +11094,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior month low",
@@ -11159,24 +11106,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -28.22,
-            "distance_scale": -1.168,
+            "distance_usd": -19.54,
+            "distance_scale": -0.81,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 33,
+              "hits": 59,
               "n": 250,
-              "rate": 0.132
+              "rate": 0.236
             },
             "p_reach_unpublished": {
-              "hits": 33,
+              "hits": 59,
               "n": 250,
-              "rate": 0.132
+              "rate": 0.236
             },
-            "distance_E": -1.233,
+            "distance_E": -0.854,
             "p_reach_E": {
-              "hits": 27,
+              "hits": 52,
               "n": 250,
-              "rate": 0.108
+              "rate": 0.208
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -11200,9 +11147,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "overnight low",
@@ -11214,24 +11159,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -32.85,
-            "distance_scale": -1.359,
+            "distance_usd": -24.17,
+            "distance_scale": -1.002,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 23,
+              "hits": 42,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.168
             },
             "p_reach_unpublished": {
-              "hits": 23,
+              "hits": 42,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.168
             },
-            "distance_E": -1.436,
+            "distance_E": -1.056,
             "p_reach_E": {
-              "hits": 23,
+              "hits": 42,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.168
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11244,16 +11189,56 @@
             "confluence_types": {
               "overnight": "overnight low 4106.17"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
+          },
+          {
+            "label": "round 50",
+            "type": "round number",
+            "price": 4100.0,
+            "source": "round number",
+            "side": "down",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -30.34,
+            "distance_scale": -1.258,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 27,
+              "n": 250,
+              "rate": 0.108
+            },
+            "p_reach_unpublished": {
+              "hits": 27,
+              "n": 250,
+              "rate": 0.108
+            },
+            "distance_E": -1.326,
+            "p_reach_E": {
+              "hits": 24,
+              "n": 250,
+              "rate": 0.096
+            },
+            "confluence_sources": 1,
+            "confluence_source_groups": [
+              [
+                "round 50 4100.00"
+              ]
+            ],
+            "backed_by": "1: 4100",
+            "confluence_labels": 1,
+            "confluence_types": {
+              "round number": "round 50 4100.00"
+            },
+            "absorbed": []
           }
         ],
         "brief_excluded": [
           {
-            "label": "round 50",
-            "price": 4100.0,
-            "reason": "brief cap of 8 rows (band 6, sources 1)"
+            "label": "20-day MA",
+            "price": 4169.82,
+            "reason": "brief cap of 8 rows (band 6, sources 2)"
           }
         ],
         "levels": [
@@ -11267,8 +11252,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 557.69,
-            "distance_scale": 23.074,
+            "distance_usd": 566.37,
+            "distance_scale": 23.481,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11280,7 +11265,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 24.375,
+            "distance_E": 24.754,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11297,9 +11282,7 @@
             "confluence_types": {
               "D1 swing": "D1 swing high 4696.71"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 swing high",
@@ -11311,8 +11294,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 492.38,
-            "distance_scale": 20.372,
+            "distance_usd": 501.06,
+            "distance_scale": 20.774,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11324,7 +11307,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 21.52,
+            "distance_E": 21.899,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11341,9 +11324,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4631.40"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "200-day MA",
@@ -11355,8 +11336,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 379.21,
-            "distance_scale": 15.689,
+            "distance_usd": 387.89,
+            "distance_scale": 16.081,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11368,7 +11349,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.574,
+            "distance_E": 16.953,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11385,9 +11366,7 @@
             "confluence_types": {
               "200-day MA": "200-day MA 4518.23"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior month high",
@@ -11399,8 +11378,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 15.382,
+            "distance_usd": 380.46,
+            "distance_scale": 15.774,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11412,7 +11391,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.249,
+            "distance_E": 16.628,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11454,9 +11433,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "H4 FVG bearish",
@@ -11468,8 +11445,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 309.87,
-            "distance_scale": 12.82,
+            "distance_usd": 318.55,
+            "distance_scale": 13.207,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11481,7 +11458,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.543,
+            "distance_E": 13.923,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11502,9 +11479,7 @@
             "zone_high": 4460.16,
             "zone_width_usd": 11.27,
             "formed_server": "2026-09-04 20:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 swing high",
@@ -11516,8 +11491,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 303.93,
-            "distance_scale": 12.575,
+            "distance_usd": 312.61,
+            "distance_scale": 12.961,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11529,7 +11504,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.284,
+            "distance_E": 13.663,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11546,9 +11521,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4442.95"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "reaction level",
@@ -11560,8 +11533,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 3,
-            "distance_usd": 296.38,
-            "distance_scale": 12.262,
+            "distance_usd": 305.06,
+            "distance_scale": 12.648,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11573,7 +11546,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.954,
+            "distance_E": 13.333,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11599,9 +11572,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "H4 swing high",
@@ -11613,8 +11584,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 263.43,
-            "distance_scale": 10.899,
+            "distance_usd": 272.11,
+            "distance_scale": 11.282,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11626,7 +11597,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.514,
+            "distance_E": 11.893,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11647,9 +11618,7 @@
               "H4 swing": "H4 swing high 4402.45",
               "D1 swing": "D1 swing high 4399.56"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "D1 swing high",
@@ -11661,8 +11630,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 260.54,
-            "distance_scale": 10.779,
+            "distance_usd": 269.22,
+            "distance_scale": 11.162,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11674,7 +11643,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.387,
+            "distance_E": 11.767,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11695,9 +11664,7 @@
               "D1 swing": "D1 swing high 4399.56",
               "H4 swing": "H4 swing high 4402.45"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "20-day high",
@@ -11709,8 +11676,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 230.32,
-            "distance_scale": 9.529,
+            "distance_usd": 239.0,
+            "distance_scale": 9.909,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11722,7 +11689,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 10.066,
+            "distance_E": 10.446,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11739,9 +11706,7 @@
             "confluence_types": {
               "20-day range": "20-day high 4369.34"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 FVG bearish",
@@ -11753,8 +11718,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 206.73,
-            "distance_scale": 8.553,
+            "distance_usd": 215.41,
+            "distance_scale": 8.931,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11766,7 +11731,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.035,
+            "distance_E": 9.415,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11787,9 +11752,7 @@
             "zone_high": 4355.19,
             "zone_width_usd": 9.44,
             "formed_server": "2026-09-23 12:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "50-day MA",
@@ -11801,8 +11764,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 182.21,
-            "distance_scale": 7.539,
+            "distance_usd": 190.89,
+            "distance_scale": 7.914,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11814,7 +11777,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.964,
+            "distance_E": 8.343,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11842,9 +11805,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "H4 swing high",
@@ -11856,8 +11817,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 176.66,
-            "distance_scale": 7.309,
+            "distance_usd": 185.34,
+            "distance_scale": 7.684,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11869,7 +11830,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.721,
+            "distance_E": 8.101,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11886,9 +11847,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4315.68"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "reaction level",
@@ -11900,8 +11859,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 152.93,
-            "distance_scale": 6.327,
+            "distance_usd": 161.61,
+            "distance_scale": 6.7,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -11913,7 +11872,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 6.684,
+            "distance_E": 7.064,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11930,9 +11889,7 @@
             "confluence_types": {
               "reaction level": "reaction level 4291.95"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 FVG bearish",
@@ -11944,8 +11901,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 92.45,
-            "distance_scale": 3.825,
+            "distance_usd": 101.13,
+            "distance_scale": 4.193,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -11957,7 +11914,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 4.041,
+            "distance_E": 4.42,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -11978,9 +11935,7 @@
             "zone_high": 4279.5,
             "zone_width_usd": 48.03,
             "formed_server": "2026-09-28 08:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "reaction level",
@@ -11992,20 +11947,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 85.37,
-            "distance_scale": 3.532,
+            "distance_usd": 94.05,
+            "distance_scale": 3.899,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "p_reach_unpublished": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
-            "distance_E": 3.731,
+            "distance_E": 4.111,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12047,9 +12002,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior week high",
@@ -12061,8 +12014,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 78.16,
-            "distance_scale": 3.234,
+            "distance_usd": 86.84,
+            "distance_scale": 3.6,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12074,7 +12027,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 3.416,
+            "distance_E": 3.795,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12108,9 +12061,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "reaction level",
@@ -12122,8 +12073,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 60.59,
-            "distance_scale": 2.507,
+            "distance_usd": 69.27,
+            "distance_scale": 2.872,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12135,7 +12086,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.648,
+            "distance_E": 3.028,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12168,9 +12119,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "20-day MA",
@@ -12182,24 +12131,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 30.8,
-            "distance_scale": 1.274,
+            "distance_usd": 39.48,
+            "distance_scale": 1.637,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 18,
+              "hits": 8,
               "n": 250,
-              "rate": 0.072
+              "rate": 0.032
             },
             "p_reach_unpublished": {
-              "hits": 18,
+              "hits": 8,
               "n": 250,
-              "rate": 0.072
+              "rate": 0.032
             },
-            "distance_E": 1.346,
+            "distance_E": 1.725,
             "p_reach_E": {
-              "hits": 14,
+              "hits": 5,
               "n": 250,
-              "rate": 0.056
+              "rate": 0.02
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12216,9 +12165,7 @@
               "20-day MA": "20-day MA 4169.82",
               "H4 FVG": "H4 FVG bearish 4167.13"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 FVG bearish",
@@ -12230,24 +12177,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 28.11,
-            "distance_scale": 1.163,
+            "distance_usd": 36.79,
+            "distance_scale": 1.525,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 24,
+              "hits": 10,
               "n": 250,
-              "rate": 0.096
+              "rate": 0.04
             },
             "p_reach_unpublished": {
-              "hits": 24,
+              "hits": 10,
               "n": 250,
-              "rate": 0.096
+              "rate": 0.04
             },
-            "distance_E": 1.229,
+            "distance_E": 1.608,
             "p_reach_E": {
-              "hits": 19,
+              "hits": 8,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.032
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12268,9 +12215,7 @@
             "zone_high": 4169.68,
             "zone_width_usd": 2.55,
             "formed_server": "2026-10-19 20:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior day high",
@@ -12282,48 +12227,54 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 16.41,
-            "distance_scale": 0.679,
+            "distance_usd": 25.09,
+            "distance_scale": 1.04,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 67,
+              "hits": 27,
               "n": 250,
-              "rate": 0.268
+              "rate": 0.108
             },
             "p_reach_unpublished": {
-              "hits": 67,
+              "hits": 27,
               "n": 250,
-              "rate": 0.268
+              "rate": 0.108
             },
-            "distance_E": 0.717,
+            "distance_E": 1.097,
             "p_reach_E": {
-              "hits": 55,
+              "hits": 25,
               "n": 250,
-              "rate": 0.22
+              "rate": 0.1
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
               [
                 "prior day high 4155.43",
+                "H4 swing high 4155.43",
                 "H4 FVG bearish 4155.43"
               ]
             ],
-            "backed_by": "1: PD hi/H4 fvg-",
-            "confluence_labels": 2,
+            "backed_by": "1: PD hi/H4 sw hi/H4 fvg-",
+            "confluence_labels": 3,
             "confluence_types": {
               "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
               "H4 FVG": "H4 FVG bearish 4155.43"
             },
             "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4155.43,
+                "partial": false,
+                "computed_to_london": null
+              },
               {
                 "label": "H4 FVG bearish",
                 "price": 4155.43,
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "round 50",
@@ -12335,24 +12286,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 10.98,
-            "distance_scale": 0.454,
+            "distance_usd": 19.66,
+            "distance_scale": 0.815,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 111,
+              "hits": 45,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.18
             },
             "p_reach_unpublished": {
-              "hits": 111,
+              "hits": 45,
               "n": 250,
-              "rate": 0.444
+              "rate": 0.18
             },
-            "distance_E": 0.48,
+            "distance_E": 0.859,
             "p_reach_E": {
-              "hits": 100,
+              "hits": 38,
               "n": 250,
-              "rate": 0.4
+              "rate": 0.152
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12365,38 +12316,32 @@
             "confluence_types": {
               "round number": "round 50 4150.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "overnight high",
             "type": "overnight",
             "price": 4131.75,
             "source": "overnight Tue 2026-10-20 23:00 -> 08:00 London",
-            "side": "down",
-            "at_price": false,
+            "side": "up",
+            "at_price": true,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -7.27,
-            "distance_scale": -0.301,
+            "distance_usd": 1.41,
+            "distance_scale": 0.058,
             "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 178,
-              "n": 250,
-              "rate": 0.712
-            },
+            "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 178,
+              "hits": 233,
               "n": 250,
-              "rate": 0.712
+              "rate": 0.932
             },
-            "distance_E": -0.318,
+            "distance_E": 0.062,
             "p_reach_E": {
-              "hits": 169,
+              "hits": 232,
               "n": 250,
-              "rate": 0.676
+              "rate": 0.928
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12409,9 +12354,7 @@
             "confluence_types": {
               "overnight": "overnight high 4131.75"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior day close",
@@ -12423,24 +12366,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -14.22,
-            "distance_scale": -0.588,
+            "distance_usd": -5.54,
+            "distance_scale": -0.23,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 102,
+              "hits": 195,
               "n": 250,
-              "rate": 0.408
+              "rate": 0.78
             },
             "p_reach_unpublished": {
-              "hits": 102,
+              "hits": 195,
               "n": 250,
-              "rate": 0.408
+              "rate": 0.78
             },
-            "distance_E": -0.622,
+            "distance_E": -0.242,
             "p_reach_E": {
-              "hits": 87,
+              "hits": 184,
               "n": 250,
-              "rate": 0.348
+              "rate": 0.736
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12464,9 +12407,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior month low",
@@ -12478,24 +12419,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -28.22,
-            "distance_scale": -1.168,
+            "distance_usd": -19.54,
+            "distance_scale": -0.81,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 33,
+              "hits": 59,
               "n": 250,
-              "rate": 0.132
+              "rate": 0.236
             },
             "p_reach_unpublished": {
-              "hits": 33,
+              "hits": 59,
               "n": 250,
-              "rate": 0.132
+              "rate": 0.236
             },
-            "distance_E": -1.233,
+            "distance_E": -0.854,
             "p_reach_E": {
-              "hits": 27,
+              "hits": 52,
               "n": 250,
-              "rate": 0.108
+              "rate": 0.208
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12519,9 +12460,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "overnight low",
@@ -12533,24 +12472,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -32.85,
-            "distance_scale": -1.359,
+            "distance_usd": -24.17,
+            "distance_scale": -1.002,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 23,
+              "hits": 42,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.168
             },
             "p_reach_unpublished": {
-              "hits": 23,
+              "hits": 42,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.168
             },
-            "distance_E": -1.436,
+            "distance_E": -1.056,
             "p_reach_E": {
-              "hits": 23,
+              "hits": 42,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.168
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12563,9 +12502,7 @@
             "confluence_types": {
               "overnight": "overnight low 4106.17"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "round 50",
@@ -12577,24 +12514,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -39.02,
-            "distance_scale": -1.614,
+            "distance_usd": -30.34,
+            "distance_scale": -1.258,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 27,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.108
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 27,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.108
             },
-            "distance_E": -1.705,
+            "distance_E": -1.326,
             "p_reach_E": {
-              "hits": 21,
+              "hits": 24,
               "n": 250,
-              "rate": 0.084
+              "rate": 0.096
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12607,9 +12544,7 @@
             "confluence_types": {
               "round number": "round 50 4100.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior week low",
@@ -12621,8 +12556,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -65.64,
-            "distance_scale": -2.716,
+            "distance_usd": -56.96,
+            "distance_scale": -2.362,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 6,
@@ -12634,11 +12569,11 @@
               "n": 250,
               "rate": 0.024
             },
-            "distance_E": -2.869,
+            "distance_E": -2.49,
             "p_reach_E": {
-              "hits": 6,
+              "hits": 8,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.032
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12660,9 +12595,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "20-day low",
@@ -12674,24 +12607,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -72.59,
-            "distance_scale": -3.003,
+            "distance_usd": -63.91,
+            "distance_scale": -2.65,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 5,
+              "hits": 6,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.024
             },
             "p_reach_unpublished": {
-              "hits": 5,
+              "hits": 6,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.024
             },
-            "distance_E": -3.173,
+            "distance_E": -2.793,
             "p_reach_E": {
-              "hits": 4,
+              "hits": 6,
               "n": 250,
-              "rate": 0.016
+              "rate": 0.024
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12713,9 +12646,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "reaction level",
@@ -12727,8 +12658,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": -118.97,
-            "distance_scale": -4.922,
+            "distance_usd": -110.28,
+            "distance_scale": -4.572,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12740,7 +12671,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": -5.2,
+            "distance_E": -4.82,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12766,9 +12697,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           }
         ],
         "dropped": [
@@ -12779,31 +12708,31 @@
             "dropped_for": "prior month low 4110.80",
             "gap_usd": 0.83,
             "gap_E": 0.034,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior month low",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior month low",
             "type": "prior day",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -27.39,
-            "distance_scale": -1.133,
+            "distance_usd": -18.71,
+            "distance_scale": -0.776,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 34,
+              "hits": 67,
               "n": 250,
-              "rate": 0.136
+              "rate": 0.268
             },
             "p_reach_unpublished": {
-              "hits": 34,
+              "hits": 67,
               "n": 250,
-              "rate": 0.136
+              "rate": 0.268
             },
-            "distance_E": -1.197,
+            "distance_E": -0.818,
             "p_reach_E": {
-              "hits": 29,
+              "hits": 57,
               "n": 250,
-              "rate": 0.116
+              "rate": 0.228
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12819,9 +12748,7 @@
             "confluence_types": {
               "prior day": "prior day low 4111.63",
               "prior month": "prior month low 4110.80"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "reaction level",
@@ -12830,15 +12757,15 @@
             "dropped_for": "prior week high 4217.18",
             "gap_usd": 1.03,
             "gap_E": 0.043,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior week high",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior week high",
             "type": "reaction level",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 79.19,
-            "distance_scale": 3.276,
+            "distance_usd": 87.87,
+            "distance_scale": 3.643,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12850,7 +12777,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 3.461,
+            "distance_E": 3.84,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12870,9 +12797,7 @@
               "reaction level": "reaction level 4218.21",
               "prior week": "prior week high 4217.18",
               "D1 swing": "D1 swing high 4217.18"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing high",
@@ -12881,15 +12806,15 @@
             "dropped_for": "prior week high 4217.18",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior week high",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior week high",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 78.16,
-            "distance_scale": 3.234,
+            "distance_usd": 86.84,
+            "distance_scale": 3.6,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12901,7 +12826,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 3.416,
+            "distance_E": 3.795,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12921,9 +12846,7 @@
               "prior week": "prior week high 4217.18",
               "D1 swing": "D1 swing high 4217.18",
               "reaction level": "reaction level 4218.21"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing high",
@@ -12932,27 +12855,27 @@
             "dropped_for": "reaction level 4224.39",
             "gap_usd": 1.02,
             "gap_E": 0.042,
-            "reason": "within 0.1 E ($2.42) of higher-priority reaction level",
+            "reason": "within 0.1 E ($2.41) of higher-priority reaction level",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 86.39,
-            "distance_scale": 3.574,
+            "distance_usd": 95.07,
+            "distance_scale": 3.942,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "p_reach_unpublished": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
-            "distance_E": 3.776,
+            "distance_E": 4.155,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12974,9 +12897,7 @@
               "D1 FVG": "D1 FVG bearish 4225.41",
               "H4 FVG": "H4 FVG bearish 4225.41",
               "reaction level": "reaction level 4224.39"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing high",
@@ -12985,15 +12906,15 @@
             "dropped_for": "prior month high 4510.80",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior month high",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior month high",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 15.382,
+            "distance_usd": 380.46,
+            "distance_scale": 15.774,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13005,7 +12926,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.249,
+            "distance_E": 16.628,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13027,9 +12948,7 @@
               "D1 swing": "D1 swing high 4510.80",
               "D1 FVG": "D1 FVG bearish 4510.80",
               "H4 FVG": "H4 FVG bearish 4510.80"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing low",
@@ -13038,15 +12957,15 @@
             "dropped_for": "prior week low 4073.38",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior week low",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior week low",
             "type": "D1 swing",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -65.64,
-            "distance_scale": -2.716,
+            "distance_usd": -56.96,
+            "distance_scale": -2.362,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 6,
@@ -13058,11 +12977,11 @@
               "n": 250,
               "rate": 0.024
             },
-            "distance_E": -2.869,
+            "distance_E": -2.49,
             "p_reach_E": {
-              "hits": 6,
+              "hits": 8,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.032
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13076,9 +12995,7 @@
             "confluence_types": {
               "prior week": "prior week low 4073.38",
               "D1 swing": "D1 swing low 4073.38"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing low",
@@ -13087,31 +13004,31 @@
             "dropped_for": "20-day low 4066.43",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.42) of higher-priority 20-day low",
+            "reason": "within 0.1 E ($2.41) of higher-priority 20-day low",
             "type": "D1 swing",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -72.59,
-            "distance_scale": -3.003,
+            "distance_usd": -63.91,
+            "distance_scale": -2.65,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 5,
+              "hits": 6,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.024
             },
             "p_reach_unpublished": {
-              "hits": 5,
+              "hits": 6,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.024
             },
-            "distance_E": -3.173,
+            "distance_E": -2.793,
             "p_reach_E": {
-              "hits": 4,
+              "hits": 6,
               "n": 250,
-              "rate": 0.016
+              "rate": 0.024
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13125,9 +13042,56 @@
             "confluence_types": {
               "20-day range": "20-day low 4066.43",
               "D1 swing": "D1 swing low 4066.43"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4155.43,
+            "source": "H4 pivot (5 bars each side) at 2026-10-20 16:00 server, unviolated",
+            "dropped_for": "prior day high 4155.43",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($2.41) of higher-priority prior day high",
+            "type": "H4 swing",
+            "side": "up",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 25.09,
+            "distance_scale": 1.04,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 27,
+              "n": 250,
+              "rate": 0.108
             },
-            "lean_direction": "up",
-            "lean_role": null
+            "p_reach_unpublished": {
+              "hits": 27,
+              "n": 250,
+              "rate": 0.108
+            },
+            "distance_E": 1.097,
+            "p_reach_E": {
+              "hits": 25,
+              "n": 250,
+              "rate": 0.1
+            },
+            "confluence_sources": 1,
+            "confluence_source_groups": [
+              [
+                "prior day high 4155.43",
+                "H4 swing high 4155.43",
+                "H4 FVG bearish 4155.43"
+              ]
+            ],
+            "backed_by": "1: PD hi/H4 sw hi/H4 fvg-",
+            "confluence_labels": 3,
+            "confluence_types": {
+              "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
+              "H4 FVG": "H4 FVG bearish 4155.43"
+            }
           },
           {
             "label": "H4 swing high",
@@ -13136,15 +13100,15 @@
             "dropped_for": "reaction level 4199.61",
             "gap_usd": 0.86,
             "gap_E": 0.036,
-            "reason": "within 0.1 E ($2.42) of higher-priority reaction level",
+            "reason": "within 0.1 E ($2.41) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 59.73,
-            "distance_scale": 2.471,
+            "distance_usd": 68.41,
+            "distance_scale": 2.836,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -13156,7 +13120,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.611,
+            "distance_E": 2.99,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -13175,9 +13139,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4198.75",
               "reaction level": "reaction level 4199.61"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "H4 swing high",
@@ -13186,15 +13148,15 @@
             "dropped_for": "reaction level 4199.61",
             "gap_usd": 0.86,
             "gap_E": 0.036,
-            "reason": "within 0.1 E ($2.42) of higher-priority reaction level",
+            "reason": "within 0.1 E ($2.41) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 61.45,
-            "distance_scale": 2.542,
+            "distance_usd": 70.13,
+            "distance_scale": 2.908,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -13206,7 +13168,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.686,
+            "distance_E": 3.065,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -13225,9 +13187,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4200.47",
               "reaction level": "reaction level 4199.61"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "H4 swing high",
@@ -13236,15 +13196,15 @@
             "dropped_for": "reaction level 4435.40",
             "gap_usd": 0.49,
             "gap_E": 0.02,
-            "reason": "within 0.1 E ($2.42) of higher-priority reaction level",
+            "reason": "within 0.1 E ($2.41) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 295.89,
-            "distance_scale": 12.242,
+            "distance_usd": 304.57,
+            "distance_scale": 12.627,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13256,7 +13216,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.932,
+            "distance_E": 13.312,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13274,9 +13234,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4434.91",
               "reaction level": "reaction level 4435.40"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "H4 swing low",
@@ -13285,27 +13243,27 @@
             "dropped_for": "reaction level 4020.06",
             "gap_usd": 0.95,
             "gap_E": 0.039,
-            "reason": "within 0.1 E ($2.42) of higher-priority reaction level",
+            "reason": "within 0.1 E ($2.41) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -119.91,
-            "distance_scale": -4.961,
+            "distance_usd": -111.23,
+            "distance_scale": -4.612,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 1,
+              "hits": 2,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.008
             },
             "p_reach_unpublished": {
-              "hits": 1,
+              "hits": 2,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.008
             },
-            "distance_E": -5.241,
+            "distance_E": -4.861,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -13323,9 +13281,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing low 4019.11",
               "reaction level": "reaction level 4020.06"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 FVG bearish",
@@ -13334,27 +13290,27 @@
             "dropped_for": "reaction level 4224.39",
             "gap_usd": 1.02,
             "gap_E": 0.042,
-            "reason": "within 0.1 E ($2.42) of higher-priority reaction level",
+            "reason": "within 0.1 E ($2.41) of higher-priority reaction level",
             "type": "D1 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 86.39,
-            "distance_scale": 3.574,
+            "distance_usd": 95.07,
+            "distance_scale": 3.942,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "p_reach_unpublished": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
-            "distance_E": 3.776,
+            "distance_E": 4.155,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -13380,9 +13336,7 @@
             "zone_low": 4225.41,
             "zone_high": 4254.62,
             "zone_width_usd": 29.21,
-            "formed_server": "2026-09-30 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-30 00:00"
           },
           {
             "label": "D1 FVG bearish",
@@ -13391,15 +13345,15 @@
             "dropped_for": "prior month high 4510.80",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior month high",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior month high",
             "type": "D1 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 15.382,
+            "distance_usd": 380.46,
+            "distance_scale": 15.774,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13411,7 +13365,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.249,
+            "distance_E": 16.628,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13437,9 +13391,7 @@
             "zone_low": 4510.8,
             "zone_high": 4565.19,
             "zone_width_usd": 54.39,
-            "formed_server": "2026-09-01 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-01 00:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -13448,51 +13400,51 @@
             "dropped_for": "prior day high 4155.43",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior day high",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior day high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 16.41,
-            "distance_scale": 0.679,
+            "distance_usd": 25.09,
+            "distance_scale": 1.04,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 67,
+              "hits": 27,
               "n": 250,
-              "rate": 0.268
+              "rate": 0.108
             },
             "p_reach_unpublished": {
-              "hits": 67,
+              "hits": 27,
               "n": 250,
-              "rate": 0.268
+              "rate": 0.108
             },
-            "distance_E": 0.717,
+            "distance_E": 1.097,
             "p_reach_E": {
-              "hits": 55,
+              "hits": 25,
               "n": 250,
-              "rate": 0.22
+              "rate": 0.1
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
               [
                 "prior day high 4155.43",
+                "H4 swing high 4155.43",
                 "H4 FVG bearish 4155.43"
               ]
             ],
-            "backed_by": "1: PD hi/H4 fvg-",
-            "confluence_labels": 2,
+            "backed_by": "1: PD hi/H4 sw hi/H4 fvg-",
+            "confluence_labels": 3,
             "confluence_types": {
               "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
               "H4 FVG": "H4 FVG bearish 4155.43"
             },
             "zone_low": 4155.43,
             "zone_high": 4158.68,
             "zone_width_usd": 3.25,
-            "formed_server": "2026-10-20 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-10-20 00:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -13501,27 +13453,27 @@
             "dropped_for": "reaction level 4224.39",
             "gap_usd": 1.02,
             "gap_E": 0.042,
-            "reason": "within 0.1 E ($2.42) of higher-priority reaction level",
+            "reason": "within 0.1 E ($2.41) of higher-priority reaction level",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 86.39,
-            "distance_scale": 3.574,
+            "distance_usd": 95.07,
+            "distance_scale": 3.942,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "p_reach_unpublished": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
-            "distance_E": 3.776,
+            "distance_E": 4.155,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -13547,9 +13499,7 @@
             "zone_low": 4225.41,
             "zone_high": 4227.21,
             "zone_width_usd": 1.8,
-            "formed_server": "2026-09-28 12:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-28 12:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -13558,15 +13508,15 @@
             "dropped_for": "50-day MA 4321.23",
             "gap_usd": 0.89,
             "gap_E": 0.037,
-            "reason": "within 0.1 E ($2.42) of higher-priority 50-day MA",
+            "reason": "within 0.1 E ($2.41) of higher-priority 50-day MA",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 181.32,
-            "distance_scale": 7.502,
+            "distance_usd": 190.0,
+            "distance_scale": 7.877,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13578,7 +13528,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.925,
+            "distance_E": 8.304,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13602,9 +13552,7 @@
             "zone_low": 4320.34,
             "zone_high": 4333.27,
             "zone_width_usd": 12.93,
-            "formed_server": "2026-09-23 16:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-23 16:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -13613,15 +13561,15 @@
             "dropped_for": "prior month high 4510.80",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior month high",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior month high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 15.382,
+            "distance_usd": 380.46,
+            "distance_scale": 15.774,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13633,7 +13581,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.249,
+            "distance_E": 16.628,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13659,9 +13607,7 @@
             "zone_low": 4510.8,
             "zone_high": 4589.07,
             "zone_width_usd": 78.27,
-            "formed_server": "2026-08-29 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-08-29 00:00"
           },
           {
             "label": "round 25",
@@ -13670,31 +13616,31 @@
             "dropped_for": "prior day close 4124.80",
             "gap_usd": 0.2,
             "gap_E": 0.008,
-            "reason": "within 0.1 E ($2.42) of higher-priority prior day close",
+            "reason": "within 0.1 E ($2.41) of higher-priority prior day close",
             "type": "round number",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -14.02,
-            "distance_scale": -0.58,
+            "distance_usd": -5.34,
+            "distance_scale": -0.221,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 103,
+              "hits": 199,
               "n": 250,
-              "rate": 0.412
+              "rate": 0.796
             },
             "p_reach_unpublished": {
-              "hits": 103,
+              "hits": 199,
               "n": 250,
-              "rate": 0.412
+              "rate": 0.796
             },
-            "distance_E": -0.613,
+            "distance_E": -0.233,
             "p_reach_E": {
-              "hits": 87,
+              "hits": 187,
               "n": 250,
-              "rate": 0.348
+              "rate": 0.748
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -13710,19 +13656,17 @@
             "confluence_types": {
               "round number": "round 25 4125.00",
               "prior day": "prior day close 4124.80"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           }
         ]
       },
       "us_1300_2000": {
-        "window_status": "pre-open",
+        "window_status": "in progress",
         "scale_used": "IV",
         "scale_status": "ok",
-        "scale_usd": 45.48,
-        "expected_range_usd": 45.48,
-        "scale_unadjusted_usd": 45.48,
+        "scale_usd": 45.39,
+        "expected_range_usd": 45.39,
+        "scale_unadjusted_usd": 45.39,
         "release": {
           "class": "quiet",
           "releases": null,
@@ -13762,8 +13706,8 @@
         "E_usd": 41.37,
         "E_raw_usd": 48.22,
         "E_calibration_k": 0.8578,
-        "dedup_threshold_usd": 4.55,
-        "confluence_threshold_usd": 6.82,
+        "dedup_threshold_usd": 4.54,
+        "confluence_threshold_usd": 6.81,
         "brief_levels": [
           {
             "label": "20-day MA",
@@ -13775,24 +13719,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 30.8,
-            "distance_scale": 0.677,
+            "distance_usd": 39.48,
+            "distance_scale": 0.87,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 66,
+              "hits": 38,
               "n": 250,
-              "rate": 0.264
+              "rate": 0.152
             },
             "p_reach_unpublished": {
-              "hits": 66,
+              "hits": 38,
               "n": 250,
-              "rate": 0.264
+              "rate": 0.152
             },
-            "distance_E": 0.744,
+            "distance_E": 0.954,
             "p_reach_E": {
-              "hits": 52,
+              "hits": 31,
               "n": 250,
-              "rate": 0.208
+              "rate": 0.124
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -13820,9 +13764,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior day high",
@@ -13834,77 +13776,87 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 16.41,
-            "distance_scale": 0.361,
+            "distance_usd": 25.09,
+            "distance_scale": 0.553,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 146,
+              "hits": 92,
               "n": 250,
-              "rate": 0.584
+              "rate": 0.368
             },
             "p_reach_unpublished": {
-              "hits": 146,
+              "hits": 92,
               "n": 250,
-              "rate": 0.584
+              "rate": 0.368
             },
-            "distance_E": 0.397,
+            "distance_E": 0.606,
             "p_reach_E": {
-              "hits": 126,
+              "hits": 73,
               "n": 250,
-              "rate": 0.504
+              "rate": 0.292
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
                 "prior day high 4155.43",
+                "H4 swing high 4155.43",
                 "H4 FVG bearish 4155.43"
               ],
               [
                 "round 50 4150.00"
               ]
             ],
-            "backed_by": "2: PD hi/H4 fvg-, 4150",
-            "confluence_labels": 3,
+            "backed_by": "2: PD hi/H4 sw hi/H4 fvg-, 4150",
+            "confluence_labels": 4,
             "confluence_types": {
               "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
               "H4 FVG": "H4 FVG bearish 4155.43",
               "round number": "round 50 4150.00"
             },
             "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4155.43,
+                "partial": false,
+                "computed_to_london": null
+              },
               {
                 "label": "H4 FVG bearish",
                 "price": 4155.43,
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "London morning high",
             "type": "London morning",
             "price": 4140.99,
-            "source": "London morning 2026-10-21 08:00 -> 12:55 (partial, as at 12:55)",
+            "source": "London morning 2026-10-21 08:00 -> 13:00",
             "side": "up",
-            "at_price": true,
-            "partial": true,
-            "computed_to_london": "2026-10-21 12:55",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": 1.97,
-            "distance_scale": 0.043,
+            "distance_usd": 10.65,
+            "distance_scale": 0.235,
             "within_brief_range": true,
-            "p_reach_from_array": null,
-            "p_reach_unpublished": {
-              "hits": 234,
+            "p_reach_from_array": {
+              "hits": 175,
               "n": 250,
-              "rate": 0.936
+              "rate": 0.7
             },
-            "distance_E": 0.048,
-            "p_reach_E": {
-              "hits": 233,
+            "p_reach_unpublished": {
+              "hits": 175,
               "n": 250,
-              "rate": 0.932
+              "rate": 0.7
+            },
+            "distance_E": 0.257,
+            "p_reach_E": {
+              "hits": 164,
+              "n": 250,
+              "rate": 0.656
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13917,38 +13869,32 @@
             "confluence_types": {
               "London morning": "London morning high 4140.99"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "overnight high",
             "type": "overnight",
             "price": 4131.75,
             "source": "overnight Tue 2026-10-20 23:00 -> 08:00 London",
-            "side": "down",
-            "at_price": false,
+            "side": "up",
+            "at_price": true,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -7.27,
-            "distance_scale": -0.16,
+            "distance_usd": 1.41,
+            "distance_scale": 0.031,
             "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 211,
-              "n": 250,
-              "rate": 0.844
-            },
+            "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 211,
+              "hits": 237,
               "n": 250,
-              "rate": 0.844
+              "rate": 0.948
             },
-            "distance_E": -0.176,
+            "distance_E": 0.034,
             "p_reach_E": {
-              "hits": 204,
+              "hits": 235,
               "n": 250,
-              "rate": 0.816
+              "rate": 0.94
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -13965,9 +13911,7 @@
               "overnight": "overnight high 4131.75",
               "round number": "round 25 4125.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior day close",
@@ -13979,24 +13923,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -14.22,
-            "distance_scale": -0.313,
+            "distance_usd": -5.54,
+            "distance_scale": -0.122,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 166,
+              "hits": 221,
               "n": 250,
-              "rate": 0.664
+              "rate": 0.884
             },
             "p_reach_unpublished": {
-              "hits": 166,
+              "hits": 221,
               "n": 250,
-              "rate": 0.664
+              "rate": 0.884
             },
-            "distance_E": -0.344,
+            "distance_E": -0.134,
             "p_reach_E": {
-              "hits": 152,
+              "hits": 217,
               "n": 250,
-              "rate": 0.608
+              "rate": 0.868
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -14020,9 +13964,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior month low",
@@ -14034,24 +13976,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -28.22,
-            "distance_scale": -0.62,
+            "distance_usd": -19.54,
+            "distance_scale": -0.43,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 91,
+              "hits": 136,
               "n": 250,
-              "rate": 0.364
+              "rate": 0.544
             },
             "p_reach_unpublished": {
-              "hits": 91,
+              "hits": 136,
               "n": 250,
-              "rate": 0.364
+              "rate": 0.544
             },
-            "distance_E": -0.682,
+            "distance_E": -0.472,
             "p_reach_E": {
-              "hits": 75,
+              "hits": 125,
               "n": 250,
-              "rate": 0.3
+              "rate": 0.5
             },
             "confluence_sources": 4,
             "confluence_source_groups": [
@@ -14086,12 +14028,10 @@
               {
                 "label": "London morning low",
                 "price": 4111.54,
-                "partial": true,
-                "computed_to_london": "2026-10-21 12:55"
+                "partial": false,
+                "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "overnight low",
@@ -14103,24 +14043,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -32.85,
-            "distance_scale": -0.722,
+            "distance_usd": -24.17,
+            "distance_scale": -0.532,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 73,
+              "hits": 115,
               "n": 250,
-              "rate": 0.292
+              "rate": 0.46
             },
             "p_reach_unpublished": {
-              "hits": 73,
+              "hits": 115,
               "n": 250,
-              "rate": 0.292
+              "rate": 0.46
             },
-            "distance_E": -0.794,
+            "distance_E": -0.584,
             "p_reach_E": {
-              "hits": 61,
+              "hits": 101,
               "n": 250,
-              "rate": 0.244
+              "rate": 0.404
             },
             "confluence_sources": 5,
             "confluence_source_groups": [
@@ -14149,9 +14089,7 @@
               "prior day": "prior day low 4111.63",
               "round number": "round 50 4100.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "20-day low",
@@ -14163,24 +14101,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -72.59,
-            "distance_scale": -1.596,
+            "distance_usd": -63.91,
+            "distance_scale": -1.408,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 25,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.1
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 25,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.1
             },
-            "distance_E": -1.755,
+            "distance_E": -1.545,
             "p_reach_E": {
-              "hits": 11,
+              "hits": 14,
               "n": 250,
-              "rate": 0.044
+              "rate": 0.056
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -14202,9 +14140,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           }
         ],
         "brief_excluded": [
@@ -14224,28 +14160,23 @@
             "reason": "overnight low 4106.17 within 0.2 E"
           },
           {
-            "label": "reaction level",
-            "price": 4199.61,
-            "reason": "brief cap of 8 rows (band 5, sources 2)"
-          },
-          {
             "label": "prior week low",
             "price": 4073.38,
             "reason": "brief cap of 8 rows (band 5, sources 1)"
           },
           {
-            "label": "prior week high",
-            "price": 4217.18,
-            "reason": "brief cap of 8 rows (band 6, sources 1)"
-          },
-          {
             "label": "reaction level",
-            "price": 4224.39,
-            "reason": "brief cap of 8 rows (band 7, sources 2)"
+            "price": 4199.61,
+            "reason": "brief cap of 8 rows (band 6, sources 2)"
           },
           {
             "label": "round 50",
             "price": 4050.0,
+            "reason": "brief cap of 8 rows (band 7, sources 1)"
+          },
+          {
+            "label": "prior week high",
+            "price": 4217.18,
             "reason": "brief cap of 8 rows (band 7, sources 1)"
           }
         ],
@@ -14260,8 +14191,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 557.69,
-            "distance_scale": 12.262,
+            "distance_usd": 566.37,
+            "distance_scale": 12.478,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14273,7 +14204,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.481,
+            "distance_E": 13.69,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14290,9 +14221,7 @@
             "confluence_types": {
               "D1 swing": "D1 swing high 4696.71"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 swing high",
@@ -14304,8 +14233,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 492.38,
-            "distance_scale": 10.826,
+            "distance_usd": 501.06,
+            "distance_scale": 11.039,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14317,7 +14246,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.902,
+            "distance_E": 12.112,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14334,9 +14263,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4631.40"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "200-day MA",
@@ -14348,8 +14275,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 379.21,
-            "distance_scale": 8.338,
+            "distance_usd": 387.89,
+            "distance_scale": 8.546,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14361,7 +14288,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.166,
+            "distance_E": 9.376,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14378,9 +14305,7 @@
             "confluence_types": {
               "200-day MA": "200-day MA 4518.23"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior month high",
@@ -14392,8 +14317,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 8.175,
+            "distance_usd": 380.46,
+            "distance_scale": 8.382,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14405,7 +14330,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.987,
+            "distance_E": 9.197,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14447,9 +14372,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "H4 FVG bearish",
@@ -14461,8 +14384,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 309.87,
-            "distance_scale": 6.813,
+            "distance_usd": 318.55,
+            "distance_scale": 7.018,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14474,7 +14397,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.49,
+            "distance_E": 7.7,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14499,9 +14422,7 @@
             "zone_high": 4460.16,
             "zone_width_usd": 11.27,
             "formed_server": "2026-09-04 20:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 swing high",
@@ -14513,8 +14434,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 303.93,
-            "distance_scale": 6.683,
+            "distance_usd": 312.61,
+            "distance_scale": 6.887,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14526,7 +14447,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.347,
+            "distance_E": 7.556,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14547,9 +14468,7 @@
               "H4 swing": "H4 swing high 4442.95",
               "H4 FVG": "H4 FVG bearish 4448.89"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "reaction level",
@@ -14561,8 +14480,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 3,
-            "distance_usd": 296.38,
-            "distance_scale": 6.517,
+            "distance_usd": 305.06,
+            "distance_scale": 6.721,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14574,7 +14493,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.164,
+            "distance_E": 7.374,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14600,9 +14519,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "reaction level",
@@ -14614,8 +14531,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 258.98,
-            "distance_scale": 5.694,
+            "distance_usd": 267.66,
+            "distance_scale": 5.897,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14627,7 +14544,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.26,
+            "distance_E": 6.47,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14663,9 +14580,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "20-day high",
@@ -14677,8 +14592,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 230.32,
-            "distance_scale": 5.064,
+            "distance_usd": 239.0,
+            "distance_scale": 5.265,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14690,7 +14605,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 5.567,
+            "distance_E": 5.777,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14707,9 +14622,7 @@
             "confluence_types": {
               "20-day range": "20-day high 4369.34"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 FVG bearish",
@@ -14721,8 +14634,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 206.73,
-            "distance_scale": 4.546,
+            "distance_usd": 215.41,
+            "distance_scale": 4.746,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14734,7 +14647,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.997,
+            "distance_E": 5.207,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14755,9 +14668,7 @@
             "zone_high": 4355.19,
             "zone_width_usd": 9.44,
             "formed_server": "2026-09-23 12:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "50-day MA",
@@ -14769,8 +14680,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 182.21,
-            "distance_scale": 4.006,
+            "distance_usd": 190.89,
+            "distance_scale": 4.206,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14782,7 +14693,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.405,
+            "distance_E": 4.614,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14814,9 +14725,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "H4 swing high",
@@ -14828,8 +14737,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 176.66,
-            "distance_scale": 3.884,
+            "distance_usd": 185.34,
+            "distance_scale": 4.083,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14841,7 +14750,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.27,
+            "distance_E": 4.48,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14866,9 +14775,7 @@
               "H4 FVG": "H4 FVG bearish 4320.34",
               "50-day MA": "50-day MA 4321.23"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "reaction level",
@@ -14880,8 +14787,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 152.93,
-            "distance_scale": 3.363,
+            "distance_usd": 161.61,
+            "distance_scale": 3.561,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14893,7 +14800,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 3.697,
+            "distance_E": 3.907,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14910,9 +14817,7 @@
             "confluence_types": {
               "reaction level": "reaction level 4291.95"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "H4 FVG bearish",
@@ -14924,24 +14829,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 92.45,
-            "distance_scale": 2.033,
+            "distance_usd": 101.13,
+            "distance_scale": 2.228,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "p_reach_unpublished": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
-            "distance_E": 2.235,
+            "distance_E": 2.445,
             "p_reach_E": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -14965,9 +14870,7 @@
             "zone_high": 4279.5,
             "zone_width_usd": 48.03,
             "formed_server": "2026-09-28 08:00",
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "reaction level",
@@ -14979,9 +14882,9 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 85.37,
-            "distance_scale": 1.877,
-            "within_brief_range": true,
+            "distance_usd": 94.05,
+            "distance_scale": 2.072,
+            "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
               "n": 250,
@@ -14992,7 +14895,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.064,
+            "distance_E": 2.273,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -15037,9 +14940,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior week high",
@@ -15051,20 +14952,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 78.16,
-            "distance_scale": 1.719,
+            "distance_usd": 86.84,
+            "distance_scale": 1.913,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
             "p_reach_unpublished": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
-            "distance_E": 1.889,
+            "distance_E": 2.099,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -15098,9 +14999,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "reaction level",
@@ -15112,24 +15011,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 60.59,
-            "distance_scale": 1.332,
+            "distance_usd": 69.27,
+            "distance_scale": 1.526,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 13,
-              "n": 250,
-              "rate": 0.052
-            },
-            "p_reach_unpublished": {
-              "hits": 13,
-              "n": 250,
-              "rate": 0.052
-            },
-            "distance_E": 1.465,
-            "p_reach_E": {
               "hits": 6,
               "n": 250,
               "rate": 0.024
+            },
+            "p_reach_unpublished": {
+              "hits": 6,
+              "n": 250,
+              "rate": 0.024
+            },
+            "distance_E": 1.674,
+            "p_reach_E": {
+              "hits": 5,
+              "n": 250,
+              "rate": 0.02
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -15168,9 +15067,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "round 25",
@@ -15182,24 +15079,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 35.98,
-            "distance_scale": 0.791,
+            "distance_usd": 44.66,
+            "distance_scale": 0.984,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 51,
+              "hits": 29,
               "n": 250,
-              "rate": 0.204
+              "rate": 0.116
             },
             "p_reach_unpublished": {
-              "hits": 51,
+              "hits": 29,
               "n": 250,
-              "rate": 0.204
+              "rate": 0.116
             },
-            "distance_E": 0.87,
+            "distance_E": 1.08,
             "p_reach_E": {
-              "hits": 36,
+              "hits": 21,
               "n": 250,
-              "rate": 0.144
+              "rate": 0.084
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -15216,9 +15113,7 @@
               "round number": "round 25 4175.00",
               "20-day MA": "20-day MA 4169.82"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "20-day MA",
@@ -15230,24 +15125,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 30.8,
-            "distance_scale": 0.677,
+            "distance_usd": 39.48,
+            "distance_scale": 0.87,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 66,
+              "hits": 38,
               "n": 250,
-              "rate": 0.264
+              "rate": 0.152
             },
             "p_reach_unpublished": {
-              "hits": 66,
+              "hits": 38,
               "n": 250,
-              "rate": 0.264
+              "rate": 0.152
             },
-            "distance_E": 0.744,
+            "distance_E": 0.954,
             "p_reach_E": {
-              "hits": 52,
+              "hits": 31,
               "n": 250,
-              "rate": 0.208
+              "rate": 0.124
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -15275,9 +15170,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior day high",
@@ -15289,52 +15182,58 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 16.41,
-            "distance_scale": 0.361,
+            "distance_usd": 25.09,
+            "distance_scale": 0.553,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 146,
+              "hits": 92,
               "n": 250,
-              "rate": 0.584
+              "rate": 0.368
             },
             "p_reach_unpublished": {
-              "hits": 146,
+              "hits": 92,
               "n": 250,
-              "rate": 0.584
+              "rate": 0.368
             },
-            "distance_E": 0.397,
+            "distance_E": 0.606,
             "p_reach_E": {
-              "hits": 126,
+              "hits": 73,
               "n": 250,
-              "rate": 0.504
+              "rate": 0.292
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
                 "prior day high 4155.43",
+                "H4 swing high 4155.43",
                 "H4 FVG bearish 4155.43"
               ],
               [
                 "round 50 4150.00"
               ]
             ],
-            "backed_by": "2: PD hi/H4 fvg-, 4150",
-            "confluence_labels": 3,
+            "backed_by": "2: PD hi/H4 sw hi/H4 fvg-, 4150",
+            "confluence_labels": 4,
             "confluence_types": {
               "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
               "H4 FVG": "H4 FVG bearish 4155.43",
               "round number": "round 50 4150.00"
             },
             "absorbed": [
+              {
+                "label": "H4 swing high",
+                "price": 4155.43,
+                "partial": false,
+                "computed_to_london": null
+              },
               {
                 "label": "H4 FVG bearish",
                 "price": 4155.43,
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "round 50",
@@ -15346,24 +15245,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 10.98,
-            "distance_scale": 0.241,
+            "distance_usd": 19.66,
+            "distance_scale": 0.433,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 174,
+              "hits": 122,
               "n": 250,
-              "rate": 0.696
+              "rate": 0.488
             },
             "p_reach_unpublished": {
-              "hits": 174,
+              "hits": 122,
               "n": 250,
-              "rate": 0.696
+              "rate": 0.488
             },
-            "distance_E": 0.265,
+            "distance_E": 0.475,
             "p_reach_E": {
-              "hits": 164,
+              "hits": 102,
               "n": 250,
-              "rate": 0.656
+              "rate": 0.408
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -15372,44 +15271,48 @@
               ],
               [
                 "prior day high 4155.43",
+                "H4 swing high 4155.43",
                 "H4 FVG bearish 4155.43"
               ]
             ],
-            "backed_by": "2: 4150, PD hi/H4 fvg-",
-            "confluence_labels": 3,
+            "backed_by": "2: 4150, PD hi/H4 sw hi/H4 fvg-",
+            "confluence_labels": 4,
             "confluence_types": {
               "round number": "round 50 4150.00",
               "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
               "H4 FVG": "H4 FVG bearish 4155.43"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "London morning high",
             "type": "London morning",
             "price": 4140.99,
-            "source": "London morning 2026-10-21 08:00 -> 12:55 (partial, as at 12:55)",
+            "source": "London morning 2026-10-21 08:00 -> 13:00",
             "side": "up",
-            "at_price": true,
-            "partial": true,
-            "computed_to_london": "2026-10-21 12:55",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": 1.97,
-            "distance_scale": 0.043,
+            "distance_usd": 10.65,
+            "distance_scale": 0.235,
             "within_brief_range": true,
-            "p_reach_from_array": null,
-            "p_reach_unpublished": {
-              "hits": 234,
+            "p_reach_from_array": {
+              "hits": 175,
               "n": 250,
-              "rate": 0.936
+              "rate": 0.7
             },
-            "distance_E": 0.048,
-            "p_reach_E": {
-              "hits": 233,
+            "p_reach_unpublished": {
+              "hits": 175,
               "n": 250,
-              "rate": 0.932
+              "rate": 0.7
+            },
+            "distance_E": 0.257,
+            "p_reach_E": {
+              "hits": 164,
+              "n": 250,
+              "rate": 0.656
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -15422,38 +15325,32 @@
             "confluence_types": {
               "London morning": "London morning high 4140.99"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "overnight high",
             "type": "overnight",
             "price": 4131.75,
             "source": "overnight Tue 2026-10-20 23:00 -> 08:00 London",
-            "side": "down",
-            "at_price": false,
+            "side": "up",
+            "at_price": true,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -7.27,
-            "distance_scale": -0.16,
+            "distance_usd": 1.41,
+            "distance_scale": 0.031,
             "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 211,
-              "n": 250,
-              "rate": 0.844
-            },
+            "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 211,
+              "hits": 237,
               "n": 250,
-              "rate": 0.844
+              "rate": 0.948
             },
-            "distance_E": -0.176,
+            "distance_E": 0.034,
             "p_reach_E": {
-              "hits": 204,
+              "hits": 235,
               "n": 250,
-              "rate": 0.816
+              "rate": 0.94
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -15470,9 +15367,7 @@
               "overnight": "overnight high 4131.75",
               "round number": "round 25 4125.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior day close",
@@ -15484,24 +15379,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -14.22,
-            "distance_scale": -0.313,
+            "distance_usd": -5.54,
+            "distance_scale": -0.122,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 166,
+              "hits": 221,
               "n": 250,
-              "rate": 0.664
+              "rate": 0.884
             },
             "p_reach_unpublished": {
-              "hits": 166,
+              "hits": 221,
               "n": 250,
-              "rate": 0.664
+              "rate": 0.884
             },
-            "distance_E": -0.344,
+            "distance_E": -0.134,
             "p_reach_E": {
-              "hits": 152,
+              "hits": 217,
               "n": 250,
-              "rate": 0.608
+              "rate": 0.868
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -15525,9 +15420,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "prior month low",
@@ -15539,24 +15432,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -28.22,
-            "distance_scale": -0.62,
+            "distance_usd": -19.54,
+            "distance_scale": -0.43,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 91,
+              "hits": 136,
               "n": 250,
-              "rate": 0.364
+              "rate": 0.544
             },
             "p_reach_unpublished": {
-              "hits": 91,
+              "hits": 136,
               "n": 250,
-              "rate": 0.364
+              "rate": 0.544
             },
-            "distance_E": -0.682,
+            "distance_E": -0.472,
             "p_reach_E": {
-              "hits": 75,
+              "hits": 125,
               "n": 250,
-              "rate": 0.3
+              "rate": 0.5
             },
             "confluence_sources": 4,
             "confluence_source_groups": [
@@ -15591,12 +15484,10 @@
               {
                 "label": "London morning low",
                 "price": 4111.54,
-                "partial": true,
-                "computed_to_london": "2026-10-21 12:55"
+                "partial": false,
+                "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "overnight low",
@@ -15608,24 +15499,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -32.85,
-            "distance_scale": -0.722,
+            "distance_usd": -24.17,
+            "distance_scale": -0.532,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 73,
+              "hits": 115,
               "n": 250,
-              "rate": 0.292
+              "rate": 0.46
             },
             "p_reach_unpublished": {
-              "hits": 73,
+              "hits": 115,
               "n": 250,
-              "rate": 0.292
+              "rate": 0.46
             },
-            "distance_E": -0.794,
+            "distance_E": -0.584,
             "p_reach_E": {
-              "hits": 61,
+              "hits": 101,
               "n": 250,
-              "rate": 0.244
+              "rate": 0.404
             },
             "confluence_sources": 5,
             "confluence_source_groups": [
@@ -15654,9 +15545,7 @@
               "prior day": "prior day low 4111.63",
               "round number": "round 50 4100.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "round 50",
@@ -15668,24 +15557,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -39.02,
-            "distance_scale": -0.858,
+            "distance_usd": -30.34,
+            "distance_scale": -0.668,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 61,
+              "hits": 81,
               "n": 250,
-              "rate": 0.244
+              "rate": 0.324
             },
             "p_reach_unpublished": {
-              "hits": 61,
+              "hits": 81,
               "n": 250,
-              "rate": 0.244
+              "rate": 0.324
             },
-            "distance_E": -0.943,
+            "distance_E": -0.733,
             "p_reach_E": {
-              "hits": 46,
+              "hits": 70,
               "n": 250,
-              "rate": 0.184
+              "rate": 0.28
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -15702,9 +15591,7 @@
               "round number": "round 50 4100.00",
               "overnight": "overnight low 4106.17"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "prior week low",
@@ -15716,24 +15603,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -65.64,
-            "distance_scale": -1.443,
+            "distance_usd": -56.96,
+            "distance_scale": -1.255,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 23,
+              "hits": 32,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.128
             },
             "p_reach_unpublished": {
-              "hits": 23,
+              "hits": 32,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.128
             },
-            "distance_E": -1.587,
+            "distance_E": -1.377,
             "p_reach_E": {
-              "hits": 13,
+              "hits": 20,
               "n": 250,
-              "rate": 0.052
+              "rate": 0.08
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -15755,9 +15642,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "20-day low",
@@ -15769,24 +15654,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -72.59,
-            "distance_scale": -1.596,
+            "distance_usd": -63.91,
+            "distance_scale": -1.408,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 25,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.1
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 25,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.1
             },
-            "distance_E": -1.755,
+            "distance_E": -1.545,
             "p_reach_E": {
-              "hits": 11,
+              "hits": 14,
               "n": 250,
-              "rate": 0.044
+              "rate": 0.056
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -15808,9 +15693,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           },
           {
             "label": "round 50",
@@ -15822,24 +15705,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -89.02,
-            "distance_scale": -1.957,
+            "distance_usd": -80.34,
+            "distance_scale": -1.77,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 9,
+              "hits": 15,
               "n": 250,
-              "rate": 0.036
+              "rate": 0.06
             },
             "p_reach_unpublished": {
-              "hits": 9,
+              "hits": 15,
               "n": 250,
-              "rate": 0.036
+              "rate": 0.06
             },
-            "distance_E": -2.152,
+            "distance_E": -1.942,
             "p_reach_E": {
-              "hits": 8,
+              "hits": 10,
               "n": 250,
-              "rate": 0.032
+              "rate": 0.04
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -15852,9 +15735,7 @@
             "confluence_types": {
               "round number": "round 50 4050.00"
             },
-            "absorbed": [],
-            "lean_direction": "up",
-            "lean_role": null
+            "absorbed": []
           },
           {
             "label": "reaction level",
@@ -15866,24 +15747,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": -118.97,
-            "distance_scale": -2.616,
+            "distance_usd": -110.28,
+            "distance_scale": -2.43,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 6,
+              "hits": 7,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.028
             },
             "p_reach_unpublished": {
-              "hits": 6,
+              "hits": 7,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.028
             },
-            "distance_E": -2.876,
+            "distance_E": -2.666,
             "p_reach_E": {
-              "hits": 4,
+              "hits": 5,
               "n": 250,
-              "rate": 0.016
+              "rate": 0.02
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -15905,9 +15786,7 @@
                 "partial": false,
                 "computed_to_london": null
               }
-            ],
-            "lean_direction": "up",
-            "lean_role": null
+            ]
           }
         ],
         "dropped": [
@@ -15918,31 +15797,31 @@
             "dropped_for": "prior month low 4110.80",
             "gap_usd": 0.83,
             "gap_E": 0.018,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior month low",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior month low",
             "type": "prior day",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -27.39,
-            "distance_scale": -0.602,
+            "distance_usd": -18.71,
+            "distance_scale": -0.412,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 98,
+              "hits": 138,
               "n": 250,
-              "rate": 0.392
+              "rate": 0.552
             },
             "p_reach_unpublished": {
-              "hits": 98,
+              "hits": 138,
               "n": 250,
-              "rate": 0.392
+              "rate": 0.552
             },
-            "distance_E": -0.662,
+            "distance_E": -0.452,
             "p_reach_E": {
-              "hits": 77,
+              "hits": 130,
               "n": 250,
-              "rate": 0.308
+              "rate": 0.52
             },
             "confluence_sources": 4,
             "confluence_source_groups": [
@@ -15966,42 +15845,40 @@
               "London morning": "London morning low 4111.54",
               "prior month": "prior month low 4110.80",
               "overnight": "overnight low 4106.17"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "London morning low",
             "price": 4111.54,
-            "source": "London morning 2026-10-21 08:00 -> 12:55 (partial, as at 12:55)",
+            "source": "London morning 2026-10-21 08:00 -> 13:00",
             "dropped_for": "prior month low 4110.80",
             "gap_usd": 0.74,
             "gap_E": 0.016,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior month low",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior month low",
             "type": "London morning",
             "side": "down",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-10-21 12:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": -27.48,
-            "distance_scale": -0.604,
+            "distance_usd": -18.8,
+            "distance_scale": -0.414,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 98,
+              "hits": 138,
               "n": 250,
-              "rate": 0.392
+              "rate": 0.552
             },
             "p_reach_unpublished": {
-              "hits": 98,
+              "hits": 138,
               "n": 250,
-              "rate": 0.392
+              "rate": 0.552
             },
-            "distance_E": -0.664,
+            "distance_E": -0.454,
             "p_reach_E": {
-              "hits": 76,
+              "hits": 129,
               "n": 250,
-              "rate": 0.304
+              "rate": 0.516
             },
             "confluence_sources": 4,
             "confluence_source_groups": [
@@ -16025,9 +15902,7 @@
               "prior day": "prior day low 4111.63",
               "prior month": "prior month low 4110.80",
               "overnight": "overnight low 4106.17"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "reaction level",
@@ -16036,27 +15911,27 @@
             "dropped_for": "prior week high 4217.18",
             "gap_usd": 1.03,
             "gap_E": 0.023,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior week high",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior week high",
             "type": "reaction level",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 79.19,
-            "distance_scale": 1.741,
+            "distance_usd": 87.87,
+            "distance_scale": 1.936,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
             "p_reach_unpublished": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
-            "distance_E": 1.914,
+            "distance_E": 2.124,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16079,9 +15954,7 @@
               "reaction level": "reaction level 4218.21",
               "prior week": "prior week high 4217.18",
               "D1 swing": "D1 swing high 4217.18"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing high",
@@ -16090,27 +15963,27 @@
             "dropped_for": "prior week high 4217.18",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior week high",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior week high",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 78.16,
-            "distance_scale": 1.719,
+            "distance_usd": 86.84,
+            "distance_scale": 1.913,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
             "p_reach_unpublished": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
-            "distance_E": 1.889,
+            "distance_E": 2.099,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16130,9 +16003,7 @@
               "prior week": "prior week high 4217.18",
               "D1 swing": "D1 swing high 4217.18",
               "reaction level": "reaction level 4218.21"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing high",
@@ -16141,16 +16012,16 @@
             "dropped_for": "reaction level 4224.39",
             "gap_usd": 1.02,
             "gap_E": 0.022,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 86.39,
-            "distance_scale": 1.9,
-            "within_brief_range": true,
+            "distance_usd": 95.07,
+            "distance_scale": 2.095,
+            "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
               "n": 250,
@@ -16161,7 +16032,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.088,
+            "distance_E": 2.298,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16186,9 +16057,7 @@
               "D1 FVG": "D1 FVG bearish 4225.41",
               "H4 FVG": "H4 FVG bearish 4225.41",
               "reaction level": "reaction level 4224.39"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing high",
@@ -16197,15 +16066,15 @@
             "dropped_for": "reaction level 4398.00",
             "gap_usd": 1.56,
             "gap_E": 0.034,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 260.54,
-            "distance_scale": 5.729,
+            "distance_usd": 269.22,
+            "distance_scale": 5.931,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16217,7 +16086,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.298,
+            "distance_E": 6.508,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16239,9 +16108,7 @@
               "D1 swing": "D1 swing high 4399.56",
               "reaction level": "reaction level 4398.00",
               "H4 swing": "H4 swing high 4402.45"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing high",
@@ -16250,15 +16117,15 @@
             "dropped_for": "prior month high 4510.80",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior month high",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior month high",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 8.175,
+            "distance_usd": 380.46,
+            "distance_scale": 8.382,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16270,7 +16137,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.987,
+            "distance_E": 9.197,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16292,9 +16159,7 @@
               "D1 swing": "D1 swing high 4510.80",
               "D1 FVG": "D1 FVG bearish 4510.80",
               "H4 FVG": "H4 FVG bearish 4510.80"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing low",
@@ -16303,31 +16168,31 @@
             "dropped_for": "prior week low 4073.38",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior week low",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior week low",
             "type": "D1 swing",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -65.64,
-            "distance_scale": -1.443,
+            "distance_usd": -56.96,
+            "distance_scale": -1.255,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 23,
+              "hits": 32,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.128
             },
             "p_reach_unpublished": {
-              "hits": 23,
+              "hits": 32,
               "n": 250,
-              "rate": 0.092
+              "rate": 0.128
             },
-            "distance_E": -1.587,
+            "distance_E": -1.377,
             "p_reach_E": {
-              "hits": 13,
+              "hits": 20,
               "n": 250,
-              "rate": 0.052
+              "rate": 0.08
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -16341,9 +16206,7 @@
             "confluence_types": {
               "prior week": "prior week low 4073.38",
               "D1 swing": "D1 swing low 4073.38"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 swing low",
@@ -16352,31 +16215,31 @@
             "dropped_for": "20-day low 4066.43",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.55) of higher-priority 20-day low",
+            "reason": "within 0.1 E ($4.54) of higher-priority 20-day low",
             "type": "D1 swing",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -72.59,
-            "distance_scale": -1.596,
+            "distance_usd": -63.91,
+            "distance_scale": -1.408,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 25,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.1
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 25,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.1
             },
-            "distance_E": -1.755,
+            "distance_E": -1.545,
             "p_reach_E": {
-              "hits": 11,
+              "hits": 14,
               "n": 250,
-              "rate": 0.044
+              "rate": 0.056
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -16390,9 +16253,60 @@
             "confluence_types": {
               "20-day range": "20-day low 4066.43",
               "D1 swing": "D1 swing low 4066.43"
+            }
+          },
+          {
+            "label": "H4 swing high",
+            "price": 4155.43,
+            "source": "H4 pivot (5 bars each side) at 2026-10-20 16:00 server, unviolated",
+            "dropped_for": "prior day high 4155.43",
+            "gap_usd": 0.0,
+            "gap_E": 0.0,
+            "reason": "within 0.1 E ($4.54) of higher-priority prior day high",
+            "type": "H4 swing",
+            "side": "up",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 25.09,
+            "distance_scale": 0.553,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 92,
+              "n": 250,
+              "rate": 0.368
             },
-            "lean_direction": "up",
-            "lean_role": null
+            "p_reach_unpublished": {
+              "hits": 92,
+              "n": 250,
+              "rate": 0.368
+            },
+            "distance_E": 0.606,
+            "p_reach_E": {
+              "hits": 73,
+              "n": 250,
+              "rate": 0.292
+            },
+            "confluence_sources": 2,
+            "confluence_source_groups": [
+              [
+                "prior day high 4155.43",
+                "H4 swing high 4155.43",
+                "H4 FVG bearish 4155.43"
+              ],
+              [
+                "round 50 4150.00"
+              ]
+            ],
+            "backed_by": "2: PD hi/H4 sw hi/H4 fvg-, 4150",
+            "confluence_labels": 4,
+            "confluence_types": {
+              "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
+              "H4 FVG": "H4 FVG bearish 4155.43",
+              "round number": "round 50 4150.00"
+            }
           },
           {
             "label": "H4 swing high",
@@ -16401,31 +16315,31 @@
             "dropped_for": "reaction level 4199.61",
             "gap_usd": 0.86,
             "gap_E": 0.019,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 59.73,
-            "distance_scale": 1.313,
+            "distance_usd": 68.41,
+            "distance_scale": 1.507,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 15,
+              "hits": 6,
               "n": 250,
-              "rate": 0.06
+              "rate": 0.024
             },
             "p_reach_unpublished": {
-              "hits": 15,
+              "hits": 6,
               "n": 250,
-              "rate": 0.06
+              "rate": 0.024
             },
-            "distance_E": 1.444,
+            "distance_E": 1.654,
             "p_reach_E": {
-              "hits": 7,
+              "hits": 5,
               "n": 250,
-              "rate": 0.028
+              "rate": 0.02
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -16444,9 +16358,7 @@
               "H4 swing": "H4 swing high 4198.75",
               "reaction level": "reaction level 4199.61",
               "round number": "round 50 4200.00"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "H4 swing high",
@@ -16455,31 +16367,31 @@
             "dropped_for": "reaction level 4199.61",
             "gap_usd": 0.86,
             "gap_E": 0.019,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 61.45,
-            "distance_scale": 1.351,
+            "distance_usd": 70.13,
+            "distance_scale": 1.545,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 12,
+              "hits": 5,
               "n": 250,
-              "rate": 0.048
+              "rate": 0.02
             },
             "p_reach_unpublished": {
-              "hits": 12,
+              "hits": 5,
               "n": 250,
-              "rate": 0.048
+              "rate": 0.02
             },
-            "distance_E": 1.485,
+            "distance_E": 1.695,
             "p_reach_E": {
-              "hits": 6,
+              "hits": 4,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.016
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -16498,9 +16410,7 @@
               "H4 swing": "H4 swing high 4200.47",
               "round number": "round 50 4200.00",
               "reaction level": "reaction level 4199.61"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "H4 swing high",
@@ -16509,15 +16419,15 @@
             "dropped_for": "reaction level 4398.00",
             "gap_usd": 4.45,
             "gap_E": 0.098,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 263.43,
-            "distance_scale": 5.792,
+            "distance_usd": 272.11,
+            "distance_scale": 5.995,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16529,7 +16439,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.368,
+            "distance_E": 6.577,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16551,9 +16461,7 @@
               "H4 swing": "H4 swing high 4402.45",
               "D1 swing": "D1 swing high 4399.56",
               "reaction level": "reaction level 4398.00"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "H4 swing high",
@@ -16562,15 +16470,15 @@
             "dropped_for": "reaction level 4435.40",
             "gap_usd": 0.49,
             "gap_E": 0.011,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 295.89,
-            "distance_scale": 6.506,
+            "distance_usd": 304.57,
+            "distance_scale": 6.71,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16582,7 +16490,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.152,
+            "distance_E": 7.362,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16600,9 +16508,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing high 4434.91",
               "reaction level": "reaction level 4435.40"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "H4 swing low",
@@ -16611,31 +16517,31 @@
             "dropped_for": "reaction level 4020.06",
             "gap_usd": 0.95,
             "gap_E": 0.021,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -119.91,
-            "distance_scale": -2.637,
+            "distance_usd": -111.23,
+            "distance_scale": -2.451,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 5,
+              "hits": 7,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.028
             },
             "p_reach_unpublished": {
+              "hits": 7,
+              "n": 250,
+              "rate": 0.028
+            },
+            "distance_E": -2.689,
+            "p_reach_E": {
               "hits": 5,
               "n": 250,
               "rate": 0.02
-            },
-            "distance_E": -2.898,
-            "p_reach_E": {
-              "hits": 4,
-              "n": 250,
-              "rate": 0.016
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -16649,9 +16555,7 @@
             "confluence_types": {
               "H4 swing": "H4 swing low 4019.11",
               "reaction level": "reaction level 4020.06"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "D1 FVG bearish",
@@ -16660,16 +16564,16 @@
             "dropped_for": "reaction level 4224.39",
             "gap_usd": 1.02,
             "gap_E": 0.022,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "D1 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 86.39,
-            "distance_scale": 1.9,
-            "within_brief_range": true,
+            "distance_usd": 95.07,
+            "distance_scale": 2.095,
+            "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
               "n": 250,
@@ -16680,7 +16584,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.088,
+            "distance_E": 2.298,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16709,9 +16613,7 @@
             "zone_low": 4225.41,
             "zone_high": 4254.62,
             "zone_width_usd": 29.21,
-            "formed_server": "2026-09-30 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-30 00:00"
           },
           {
             "label": "D1 FVG bearish",
@@ -16720,15 +16622,15 @@
             "dropped_for": "prior month high 4510.80",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior month high",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior month high",
             "type": "D1 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 8.175,
+            "distance_usd": 380.46,
+            "distance_scale": 8.382,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16740,7 +16642,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.987,
+            "distance_E": 9.197,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16766,9 +16668,7 @@
             "zone_low": 4510.8,
             "zone_high": 4565.19,
             "zone_width_usd": 54.39,
-            "formed_server": "2026-09-01 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-01 00:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -16777,55 +16677,55 @@
             "dropped_for": "prior day high 4155.43",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior day high",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior day high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 16.41,
-            "distance_scale": 0.361,
+            "distance_usd": 25.09,
+            "distance_scale": 0.553,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 146,
+              "hits": 92,
               "n": 250,
-              "rate": 0.584
+              "rate": 0.368
             },
             "p_reach_unpublished": {
-              "hits": 146,
+              "hits": 92,
               "n": 250,
-              "rate": 0.584
+              "rate": 0.368
             },
-            "distance_E": 0.397,
+            "distance_E": 0.606,
             "p_reach_E": {
-              "hits": 126,
+              "hits": 73,
               "n": 250,
-              "rate": 0.504
+              "rate": 0.292
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
                 "prior day high 4155.43",
+                "H4 swing high 4155.43",
                 "H4 FVG bearish 4155.43"
               ],
               [
                 "round 50 4150.00"
               ]
             ],
-            "backed_by": "2: PD hi/H4 fvg-, 4150",
-            "confluence_labels": 3,
+            "backed_by": "2: PD hi/H4 sw hi/H4 fvg-, 4150",
+            "confluence_labels": 4,
             "confluence_types": {
               "prior day": "prior day high 4155.43",
+              "H4 swing": "H4 swing high 4155.43",
               "H4 FVG": "H4 FVG bearish 4155.43",
               "round number": "round 50 4150.00"
             },
             "zone_low": 4155.43,
             "zone_high": 4158.68,
             "zone_width_usd": 3.25,
-            "formed_server": "2026-10-20 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-10-20 00:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -16834,31 +16734,31 @@
             "dropped_for": "20-day MA 4169.82",
             "gap_usd": 2.69,
             "gap_E": 0.059,
-            "reason": "within 0.1 E ($4.55) of higher-priority 20-day MA",
+            "reason": "within 0.1 E ($4.54) of higher-priority 20-day MA",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 28.11,
-            "distance_scale": 0.618,
+            "distance_usd": 36.79,
+            "distance_scale": 0.811,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 73,
+              "hits": 50,
               "n": 250,
-              "rate": 0.292
+              "rate": 0.2
             },
             "p_reach_unpublished": {
-              "hits": 73,
+              "hits": 50,
               "n": 250,
-              "rate": 0.292
+              "rate": 0.2
             },
-            "distance_E": 0.679,
+            "distance_E": 0.889,
             "p_reach_E": {
-              "hits": 61,
+              "hits": 35,
               "n": 250,
-              "rate": 0.244
+              "rate": 0.14
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -16878,9 +16778,7 @@
             "zone_low": 4167.13,
             "zone_high": 4169.68,
             "zone_width_usd": 2.55,
-            "formed_server": "2026-10-19 20:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-10-19 20:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -16889,16 +16787,16 @@
             "dropped_for": "reaction level 4224.39",
             "gap_usd": 1.02,
             "gap_E": 0.022,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 86.39,
-            "distance_scale": 1.9,
-            "within_brief_range": true,
+            "distance_usd": 95.07,
+            "distance_scale": 2.095,
+            "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
               "n": 250,
@@ -16909,7 +16807,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.088,
+            "distance_E": 2.298,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16938,9 +16836,7 @@
             "zone_low": 4225.41,
             "zone_high": 4227.21,
             "zone_width_usd": 1.8,
-            "formed_server": "2026-09-28 12:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-28 12:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -16949,15 +16845,15 @@
             "dropped_for": "50-day MA 4321.23",
             "gap_usd": 0.89,
             "gap_E": 0.02,
-            "reason": "within 0.1 E ($4.55) of higher-priority 50-day MA",
+            "reason": "within 0.1 E ($4.54) of higher-priority 50-day MA",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 181.32,
-            "distance_scale": 3.987,
+            "distance_usd": 190.0,
+            "distance_scale": 4.186,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16969,7 +16865,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.383,
+            "distance_E": 4.593,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16997,9 +16893,7 @@
             "zone_low": 4320.34,
             "zone_high": 4333.27,
             "zone_width_usd": 12.93,
-            "formed_server": "2026-09-23 16:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-09-23 16:00"
           },
           {
             "label": "H4 FVG bearish",
@@ -17008,15 +16902,15 @@
             "dropped_for": "prior month high 4510.80",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior month high",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior month high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 371.78,
-            "distance_scale": 8.175,
+            "distance_usd": 380.46,
+            "distance_scale": 8.382,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17028,7 +16922,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.987,
+            "distance_E": 9.197,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17054,9 +16948,7 @@
             "zone_low": 4510.8,
             "zone_high": 4589.07,
             "zone_width_usd": 78.27,
-            "formed_server": "2026-08-29 00:00",
-            "lean_direction": "up",
-            "lean_role": null
+            "formed_server": "2026-08-29 00:00"
           },
           {
             "label": "round 50",
@@ -17065,31 +16957,31 @@
             "dropped_for": "reaction level 4199.61",
             "gap_usd": 0.39,
             "gap_E": 0.009,
-            "reason": "within 0.1 E ($4.55) of higher-priority reaction level",
+            "reason": "within 0.1 E ($4.54) of higher-priority reaction level",
             "type": "round number",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 60.98,
-            "distance_scale": 1.341,
+            "distance_usd": 69.66,
+            "distance_scale": 1.535,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 12,
-              "n": 250,
-              "rate": 0.048
-            },
-            "p_reach_unpublished": {
-              "hits": 12,
-              "n": 250,
-              "rate": 0.048
-            },
-            "distance_E": 1.474,
-            "p_reach_E": {
               "hits": 6,
               "n": 250,
               "rate": 0.024
+            },
+            "p_reach_unpublished": {
+              "hits": 6,
+              "n": 250,
+              "rate": 0.024
+            },
+            "distance_E": 1.684,
+            "p_reach_E": {
+              "hits": 4,
+              "n": 250,
+              "rate": 0.016
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -17108,9 +17000,7 @@
               "round number": "round 50 4200.00",
               "reaction level": "reaction level 4199.61",
               "H4 swing": "H4 swing high 4200.47"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           },
           {
             "label": "round 25",
@@ -17119,31 +17009,31 @@
             "dropped_for": "prior day close 4124.80",
             "gap_usd": 0.2,
             "gap_E": 0.004,
-            "reason": "within 0.1 E ($4.55) of higher-priority prior day close",
+            "reason": "within 0.1 E ($4.54) of higher-priority prior day close",
             "type": "round number",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -14.02,
-            "distance_scale": -0.308,
+            "distance_usd": -5.34,
+            "distance_scale": -0.118,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 167,
+              "hits": 222,
               "n": 250,
-              "rate": 0.668
+              "rate": 0.888
             },
             "p_reach_unpublished": {
-              "hits": 167,
+              "hits": 222,
               "n": 250,
-              "rate": 0.668
+              "rate": 0.888
             },
-            "distance_E": -0.339,
+            "distance_E": -0.129,
             "p_reach_E": {
-              "hits": 152,
+              "hits": 218,
               "n": 250,
-              "rate": 0.608
+              "rate": 0.872
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -17163,9 +17053,7 @@
               "round number": "round 25 4125.00",
               "prior day": "prior day close 4124.80",
               "overnight": "overnight high 4131.75"
-            },
-            "lean_direction": "up",
-            "lean_role": null
+            }
           }
         ]
       }
@@ -17175,13 +17063,13 @@
     "note": "The ruler (scale_usd = the published expected range) is the walk-forward implied-vol range x the tier-1 release ratio; the calibrated 20-day E (E_usd) is a shadow, and the fallback when implied vol is unavailable, more than 3 US closes stale, or its history is short (scale_used / status).",
     "gvz_availability": {
       "cboe": {
-        "fetched_utc": "2026-10-21T11:52:01+00:00",
+        "fetched_utc": "2026-10-21T12:59:50+00:00",
         "latest_date": "2026-10-20",
         "latest_value": 21.83,
         "error": null
       },
       "fred": {
-        "fetched_utc": "2026-10-21T11:52:01+00:00",
+        "fetched_utc": "2026-10-21T12:59:51+00:00",
         "latest_date": "2026-10-19",
         "latest_value": 22.23,
         "error": null
@@ -17190,10 +17078,10 @@
     "windows": {
       "london_0800_1300": {
         "for_session": "2026-10-21",
-        "usd": 24.17,
+        "usd": 24.12,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 24.17,
+        "unadjusted_usd": 24.12,
         "release": {
           "class": "quiet",
           "releases": null,
@@ -17237,8 +17125,8 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.1688,
           "iv_k": 0.6476,
-          "iv_raw_usd": 37.32,
-          "iv_forecast_usd": 24.17,
+          "iv_raw_usd": 37.24,
+          "iv_forecast_usd": 24.12,
           "iv_status": "ok"
         },
         "E_usd": 22.88,
@@ -17247,10 +17135,10 @@
       },
       "us_1300_2000": {
         "for_session": "2026-10-21",
-        "usd": 45.48,
+        "usd": 45.39,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 45.48,
+        "unadjusted_usd": 45.39,
         "release": {
           "class": "quiet",
           "releases": null,
@@ -17294,222 +17182,13 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.4311,
           "iv_k": 0.7627,
-          "iv_raw_usd": 59.63,
-          "iv_forecast_usd": 45.48,
+          "iv_raw_usd": 59.51,
+          "iv_forecast_usd": 45.39,
           "iv_status": "ok"
         },
         "E_usd": 41.37,
         "E_raw_usd": 48.22,
         "E_calibration_k": 0.8578
-      }
-    }
-  },
-  "lean": {
-    "london_0800_1300": {
-      "status": "superseded",
-      "direction": null,
-      "line": "No lean published: the directional work is being rebuilt as per-indicator scores.",
-      "superseded_62_feature_lean": {
-        "direction": "up",
-        "strength": "weak",
-        "score_E": 0.0005,
-        "score_usd": 0.02,
-        "score_ranges": 0.001,
-        "drivers": [
-          {
-            "input": "imb_prox_M30 swing",
-            "value": -0.052,
-            "push_E": 0.0005,
-            "phrase": "levels below further from a M30 swing"
-          }
-        ],
-        "against": [],
-        "inputs": {
-          "rsi_M30": 57.8791,
-          "trend_M30": 1.1843,
-          "rsi_H1": 52.0441,
-          "trend_H1": 0.4653,
-          "rsi_H4": 41.6293,
-          "trend_H4": -1.1418,
-          "rsi_D1": 41.849,
-          "trend_D1": -0.5929,
-          "range_pos_20d": 0.24,
-          "atr5_over_atr20": 0.876,
-          "vol_expanding": 0.0,
-          "recent5_range_over_E": 0.848,
-          "tier_window_1": 0.0,
-          "tier_window_2": 0.0,
-          "tier_window_3": 0.0,
-          "tier_day_1": 0.0,
-          "tier_day_2": 0.0,
-          "tier_day_3": 0.0,
-          "prior_dir_up": 0.0,
-          "prior_change_pct": -0.438,
-          "dow_mon": 0.0,
-          "dow_tue": 0.0,
-          "dow_wed": 1.0,
-          "dow_thu": 0.0,
-          "dow_fri": 0.0,
-          "imb_abs_d": -0.1352,
-          "imb_sqrt_abs_d": -0.0693,
-          "imb_log_abs_d": -0.1331,
-          "imb_type_prior day": 0.0476,
-          "imb_type_prior week": 0.0,
-          "imb_type_prior month": -0.1429,
-          "imb_type_overnight": -0.2857,
-          "imb_type_London morning": 0.0,
-          "imb_type_20-day range": 0.0,
-          "imb_type_D1 swing": 0.0,
-          "imb_type_H4 swing": 0.0,
-          "imb_type_reaction level": 0.0,
-          "imb_type_20-day MA": 0.3333,
-          "imb_type_50-day MA": 0.0,
-          "imb_type_200-day MA": 0.0,
-          "imb_type_round number": 0.0476,
-          "imb_labels": -0.5714,
-          "imb_sources": -0.5714,
-          "imb_touches": 0.0,
-          "imb_prox_prior day": 0.3299,
-          "imb_prox_prior week": 0.5715,
-          "imb_prox_prior month": 0.9045,
-          "imb_prox_overnight": 0.5252,
-          "imb_prox_London morning": 0.0,
-          "imb_prox_20-day range": 1.2529,
-          "imb_prox_D1 swing": 0.5715,
-          "imb_prox_H4 swing": -1.3517,
-          "imb_prox_reaction level": -1.3298,
-          "imb_prox_20-day MA": -0.4867,
-          "imb_prox_50-day MA": 0.0,
-          "imb_prox_200-day MA": 0.0,
-          "imb_prox_round number": 0.1577,
-          "imb_prox_M30 swing": -0.052,
-          "imb_prox_H1 swing": -0.155,
-          "imb_count": -4.0,
-          "conf_imbalance": -2.0,
-          "volcontract_x_streak": -0.4809
-        },
-        "line": "Lean up (weak, 0.001 of the expected range) - levels below further from a M30 swing.",
-        "window_status": "in progress",
-        "timing": "inputs as at 12:55; trained as at 07:45; window in progress",
-        "raw_E_usd": 28.71,
-        "interaction": {
-          "streak_closes": -3,
-          "vol_contraction": 0.1603
-        },
-        "basis": "elastic net on development sessions (model/lean_weights.json), direction of the surviving weights",
-        "model_generated_utc": "2026-10-21T01:16:36+00:00",
-        "note": "A description of where today's inputs point under the fitted weights - not a forecast and not a trade call.",
-        "status": "superseded - logged for comparison only"
-      }
-    },
-    "us_1300_2000": {
-      "status": "superseded",
-      "direction": null,
-      "line": "No lean published: the directional work is being rebuilt as per-indicator scores.",
-      "superseded_62_feature_lean": {
-        "direction": "up",
-        "strength": "moderate",
-        "score_E": 0.0277,
-        "score_usd": 1.34,
-        "score_ranges": 0.029,
-        "drivers": [
-          {
-            "input": "rsi_D1",
-            "value": 41.849,
-            "push_E": 0.0313,
-            "phrase": "D1 RSI 42"
-          },
-          {
-            "input": "imb_type_50-day MA",
-            "value": 0.0,
-            "push_E": 0.0001,
-            "phrase": "50-day MA levels below"
-          }
-        ],
-        "against": [
-          {
-            "input": "imb_type_D1 swing",
-            "value": 0.0,
-            "push_E": -0.0022,
-            "phrase": "D1 swing levels below"
-          }
-        ],
-        "inputs": {
-          "rsi_M30": 57.8791,
-          "trend_M30": 1.1843,
-          "rsi_H1": 52.0441,
-          "trend_H1": 0.4653,
-          "rsi_H4": 41.6293,
-          "trend_H4": -1.1418,
-          "rsi_D1": 41.849,
-          "trend_D1": -0.5929,
-          "range_pos_20d": 0.24,
-          "atr5_over_atr20": 0.876,
-          "vol_expanding": 0.0,
-          "recent5_range_over_E": 0.996,
-          "tier_window_1": 0.0,
-          "tier_window_2": 0.0,
-          "tier_window_3": 0.0,
-          "tier_day_1": 0.0,
-          "tier_day_2": 0.0,
-          "tier_day_3": 0.0,
-          "prior_dir_up": 0.0,
-          "prior_change_pct": -0.438,
-          "dow_mon": 0.0,
-          "dow_tue": 0.0,
-          "dow_wed": 1.0,
-          "dow_thu": 0.0,
-          "dow_fri": 0.0,
-          "imb_abs_d": 0.3002,
-          "imb_sqrt_abs_d": 0.1609,
-          "imb_log_abs_d": 0.3405,
-          "imb_type_prior day": -0.0769,
-          "imb_type_prior week": 0.0,
-          "imb_type_prior month": -0.0769,
-          "imb_type_overnight": -0.1538,
-          "imb_type_London morning": -0.0769,
-          "imb_type_20-day range": -0.0769,
-          "imb_type_D1 swing": 0.0,
-          "imb_type_H4 swing": 0.1538,
-          "imb_type_reaction level": 0.2308,
-          "imb_type_20-day MA": 0.0769,
-          "imb_type_50-day MA": 0.0,
-          "imb_type_200-day MA": 0.0,
-          "imb_type_round number": 0.0,
-          "imb_labels": -0.5385,
-          "imb_sources": -0.8462,
-          "imb_touches": 0.4615,
-          "imb_prox_prior day": 0.4663,
-          "imb_prox_prior week": -0.107,
-          "imb_prox_prior month": 1.078,
-          "imb_prox_overnight": 0.8789,
-          "imb_prox_London morning": 0.6498,
-          "imb_prox_20-day range": 1.7147,
-          "imb_prox_D1 swing": -0.0927,
-          "imb_prox_H4 swing": -1.004,
-          "imb_prox_reaction level": -1.1057,
-          "imb_prox_20-day MA": -0.6372,
-          "imb_prox_50-day MA": -0.498,
-          "imb_prox_200-day MA": 0.0,
-          "imb_prox_round number": -0.0584,
-          "imb_prox_M30 swing": -0.0374,
-          "imb_prox_H1 swing": -0.0776,
-          "imb_count": 0.0,
-          "conf_imbalance": 1.0,
-          "volcontract_x_streak": -0.4809
-        },
-        "line": "Lean up (moderate, 0.03 of the expected range) - D1 RSI 42; 50-day MA levels below. Against: D1 swing levels below.",
-        "window_status": "pre-open",
-        "timing": "inputs as at 12:55; trained as at 12:45",
-        "raw_E_usd": 48.22,
-        "interaction": {
-          "streak_closes": -3,
-          "vol_contraction": 0.1603
-        },
-        "basis": "elastic net on development sessions (model/lean_weights.json), direction of the surviving weights",
-        "model_generated_utc": "2026-10-21T01:16:36+00:00",
-        "note": "A description of where today's inputs point under the fitted weights - not a forecast and not a trade call.",
-        "status": "superseded - logged for comparison only"
       }
     }
   },
@@ -17520,17 +17199,19 @@
       "outcomes": "forward/v4/outcomes.csv",
       "leans": "forward/v4/leans.csv"
     },
-    "forecasts_appended_this_run": 54,
-    "leans_appended_this_run": 1,
+    "forecasts_appended_this_run": 0,
+    "leans_appended_this_run": 0,
     "outcomes_appended_this_run": 0,
     "forecast_rows_total": 353,
-    "outcome_rows_total": 0,
-    "completed_sessions": 0,
-    "completed_by_window": {},
+    "outcome_rows_total": 144,
+    "completed_sessions": 1,
+    "completed_by_window": {
+      "london_0800_1300": 1
+    },
     "first_session": "2026-10-21",
     "min_sessions_before_skill": 60,
     "skill": null,
-    "note": "Record only: no fitting, no tuning. Skill is not computed or reported until 60 completed sessions exist (currently 0)."
+    "note": "Record only: no fitting, no tuning. Skill is not computed or reported until 60 completed sessions exist (currently 1)."
   },
   "scorecard": {
     "definition": "One plain line for the top of the morning brief: the latest forward-log session before `today`, per ...",
@@ -17541,6 +17222,239 @@
   "chart_outputs": {
     "mql5_script": "chart/GoldStatsLevels.mq5 (private repo)",
     "png": "gold_levels.png (public repo)",
-    "as_of_london": "2026-10-21 12:55"
+    "as_of_london": "2026-10-21 14:00"
+  },
+  "dollar": {
+    "index": "MT5-built dollar index (ICE DXY formula on Vantage EURUSD, USDJPY, GBPUSD, USDCAD, USDSEK, USDCHF)",
+    "level": 101.677,
+    "as_of_date": "2026-10-21",
+    "prior_close": 101.705,
+    "prior_close_date": "2026-10-20",
+    "change": -0.029,
+    "change_pct": -0.028,
+    "relationship_250d": {
+      "r2": 0.203,
+      "t": -7.95,
+      "from": "2025-10-14",
+      "to": "2026-10-14",
+      "sign": "opposite"
+    },
+    "line": "Dollar index 101.68 (-0.03, -0.03% on the day). Over the last 250 days gold's daily moves have run opposite the dollar's (R-squared 0.20); context only, not a conversion.",
+    "usage": "Publish the dollar index level and its change, and the relationship as context only. Never convert the dollar's move into a gold figure: no per-session dollar amount for gold (for example 'worth about $0.40 of gold'). The 250-day relationship is an average and does not apply to one session."
+  },
+  "volatility_widening": {
+    "definition": "Both excursions >= x1.10 their base in the band (stage 7 Part 2). Magnitude only, not direction.",
+    "note": "Frozen reference: percentiles and first-touch rates from the last 250 development sessions (2025-07-21 -> 2026-07-17); rates from stage7/.",
+    "windows": {
+      "london_0800_1300": {
+        "triggered": false,
+        "bands": [],
+        "line": "Volatility: no widening band today.",
+        "inputs": {
+          "rsi_D1": 41.8,
+          "rsi_D1_pct": 16.4,
+          "ma200_distance_E": 17.744,
+          "ma200_pct": 100.0
+        }
+      },
+      "us_1300_2000": {
+        "triggered": false,
+        "bands": [],
+        "line": "Volatility: no widening band today.",
+        "inputs": {
+          "rsi_D1": 41.8,
+          "rsi_D1_pct": 16.0,
+          "ma200_distance_E": 9.146,
+          "ma200_pct": 100.0
+        }
+      }
+    }
+  },
+  "direction_steer": {
+    "note": "Not a forecast and not a lean. Frozen reference: percentiles and first-touch rates from the last 250 development sessions (2025-07-21 -> 2026-07-17); rates from stage7/.",
+    "windows": {
+      "london_0800_1300": {
+        "even_odds_band": {
+          "anchor": 4112.24,
+          "up_distance_ranges": 0.3801,
+          "down_distance_ranges": 0.4904,
+          "up_price": 4121.41,
+          "down_price": 4100.41,
+          "up_usd": 9.17,
+          "down_usd": 11.83,
+          "skew": "down",
+          "skew_usd": 2.66,
+          "definition": "50% reach point of each excursion array (its median) x the published expected range, from the anchor",
+          "anchor_source": "window open 08:00"
+        },
+        "first_level": {
+          "status": "ok",
+          "above": {
+            "label": "prior day close",
+            "price": 4124.8,
+            "distance_usd": 12.56
+          },
+          "below": {
+            "label": "prior month low",
+            "price": 4110.8,
+            "distance_usd": 1.44
+          },
+          "raw_above_first": 0.105,
+          "raw_bucket_sessions": 17,
+          "adjusted_above_first": 0.443,
+          "window_residual": -0.0035,
+          "band_used": {
+            "indicator": "200-day average",
+            "band": "top decile (price far below)",
+            "points": "up",
+            "effect": -0.0537,
+            "ci": [
+              -0.0972,
+              -0.0125
+            ],
+            "n": 198
+          },
+          "other_active_bands": [
+            {
+              "indicator": "200-day average",
+              "band": "top ventile (price furthest below)",
+              "points": "up",
+              "effect": -0.0537,
+              "ci": [
+                -0.1174,
+                -0.006
+              ],
+              "n": 144
+            }
+          ],
+          "definition": "raw = share of the last 250 development sessions with the same distance split (level-below distance / both distances, deciles) that reached the level above first; adjusted = 50% + the window's measured residual after distance + the stage-7 effect of an active band whose interval excludes 0 (largest sample if several)"
+        },
+        "confluence": {
+          "imbalance": 0,
+          "percentile_vs_dev_history": 54.2,
+          "state": "balanced",
+          "line": "Confluence: balanced."
+        },
+        "inputs": {
+          "rsi_D1": 41.849,
+          "rsi_H4": 39.491,
+          "rsi_H1": 40.1491,
+          "ma_d_D120": 2.5165,
+          "ma_d_D150": 9.1344,
+          "ma_d_D1200": 17.7441,
+          "ma_d_H420": 1.6006,
+          "ma_d_H120": 0.4068,
+          "pos": 0.1512,
+          "conf": 0.0,
+          "as_of_server": "2026-10-21 10:00:00"
+        },
+        "percentiles_vs_dev_history": {
+          "rsi_D1": 16.4,
+          "rsi_H4": 16.4,
+          "rsi_H1": 15.6,
+          "conf": 54.2,
+          "ma_d_D1200": 100.0,
+          "ma_d_D150": 91.6,
+          "ma_d_D120": 77.6,
+          "ma_d_H420": 84.4,
+          "ma_d_H120": 72.8
+        },
+        "active_bands": [
+          "20-day range position|10-25%",
+          "200-day average|top decile (price far below)",
+          "200-day average|top ventile (price furthest below)",
+          "50-day average|top decile (price far below)",
+          "RSI D1 own deciles|decile 2",
+          "RSI H1 own deciles|decile 2",
+          "RSI H4 own deciles|decile 2"
+        ]
+      },
+      "us_1300_2000": {
+        "even_odds_band": {
+          "anchor": 4139.84,
+          "up_distance_ranges": 0.4292,
+          "down_distance_ranges": 0.4959,
+          "up_price": 4159.32,
+          "down_price": 4117.33,
+          "up_usd": 19.48,
+          "down_usd": 22.51,
+          "skew": "down",
+          "skew_usd": 3.03,
+          "definition": "50% reach point of each excursion array (its median) x the published expected range, from the anchor",
+          "anchor_source": "window open 13:00"
+        },
+        "first_level": {
+          "status": "ok",
+          "above": {
+            "label": "London morning high",
+            "price": 4140.99,
+            "distance_usd": 1.15
+          },
+          "below": {
+            "label": "prior day close",
+            "price": 4124.8,
+            "distance_usd": 15.04
+          },
+          "raw_above_first": 0.885,
+          "raw_bucket_sessions": 24,
+          "adjusted_above_first": 0.499,
+          "window_residual": -0.0014,
+          "band_used": null,
+          "other_active_bands": [],
+          "definition": "raw = share of the last 250 development sessions with the same distance split (level-below distance / both distances, deciles) that reached the level above first; adjusted = 50% + the window's measured residual after distance + the stage-7 effect of an active band whose interval excludes 0 (largest sample if several)"
+        },
+        "confluence": {
+          "imbalance": 1,
+          "percentile_vs_dev_history": 74.6,
+          "state": "balanced",
+          "line": "Confluence: balanced."
+        },
+        "inputs": {
+          "rsi_D1": 41.849,
+          "rsi_H4": 41.6293,
+          "rsi_H1": 59.692,
+          "ma_d_D120": 0.7246,
+          "ma_d_D150": 4.3847,
+          "ma_d_D1200": 9.1464,
+          "ma_d_H420": 0.1736,
+          "ma_d_H120": -0.4504,
+          "pos": 0.2423,
+          "conf": 1.0,
+          "as_of_server": "2026-10-21 15:00:00"
+        },
+        "percentiles_vs_dev_history": {
+          "rsi_D1": 16.0,
+          "rsi_H4": 19.6,
+          "rsi_H1": 76.4,
+          "conf": 74.6,
+          "ma_d_D1200": 100.0,
+          "ma_d_D150": 86.4,
+          "ma_d_D120": 71.2,
+          "ma_d_H420": 63.6,
+          "ma_d_H120": 18.4
+        },
+        "active_bands": [
+          "20-day range position|10-25%",
+          "200-day average|top decile (price far below)",
+          "200-day average|top ventile (price furthest below)",
+          "RSI D1 own deciles|decile 2",
+          "RSI H1 own deciles|decile 8",
+          "RSI H4 own deciles|decile 2"
+        ]
+      }
+    }
+  },
+  "brief_addendum": {
+    "usage": "After each window's levels table, print that window's two lines below verbatim. They describe the published arrays and measured rates; never turn them into a forecast, a trade call or a lean.",
+    "windows": {
+      "london_0800_1300": [
+        "Even odds: 4100-4121 (-$12 / +$9), skewed down by $3. First level: 4125 above vs 4111 below - above first 10% raw, 44% with distance removed.",
+        "Confluence: balanced. Volatility: no widening band today."
+      ],
+      "us_1300_2000": [
+        "Even odds: 4117-4159 (-$23 / +$19), skewed down by $3. First level: 4141 above vs 4125 below - above first 88% raw, 50% with distance removed.",
+        "Confluence: balanced. Volatility: no widening band today."
+      ]
+    }
   }
 }
