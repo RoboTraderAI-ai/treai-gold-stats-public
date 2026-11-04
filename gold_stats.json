@@ -1,19 +1,19 @@
 {
-  "generated_utc": "2026-11-04T11:51:03+00:00",
+  "generated_utc": "2026-11-04T12:52:12+00:00",
   "price": {
     "status": "ok",
     "source": "Vantage MT5 XAUUSD",
-    "bid": 4041.07,
-    "ask": 4041.28,
-    "mid": 4041.175,
-    "spread": 0.21,
-    "quote_server_time": "2026-11-04 13:50:54.628",
-    "quote_utc": "2026-11-04T11:50:54.628+00:00",
-    "quote_london": "2026-11-04 11:50:54",
+    "bid": 4040.8,
+    "ask": 4041.02,
+    "mid": 4040.91,
+    "spread": 0.22,
+    "quote_server_time": "2026-11-04 14:52:04.436",
+    "quote_utc": "2026-11-04T12:52:04.436+00:00",
+    "quote_london": "2026-11-04 12:52:04",
     "server_offset_h": 2,
     "server_offset_source": "empirical weekly offset from the M5 daily break (UTC+2 on EST, UTC+3 on EDT)",
     "live_clock_offset_h": 2.0,
-    "read_at_utc": "2026-11-04T11:50:55+00:00",
+    "read_at_utc": "2026-11-04T12:52:05+00:00",
     "quote_age_at_read_s": 1.0,
     "stale_after_minutes": 15,
     "usage": "Use mid as the gold price. Its age = brief time - quote_utc; if over 15 minutes, state the age. Fall back to a web spot price only if this file is stale (generated_utc more than 60 minutes old, or quote_utc more than 60 minutes old on a weekday market session) or the run failed (file missing or unreadable), and say which source the brief used."
@@ -34,12 +34,12 @@
     "digits": 2,
     "symbol_path": "Gold\\XAUUSD",
     "live_clock": {
-      "tick_server_epoch": 1793800252,
-      "local_utc_epoch": 1793793053
+      "tick_server_epoch": 1793803923,
+      "local_utc_epoch": 1793796723
     },
-    "m5_bars": 556296,
+    "m5_bars": 556308,
     "m5_first": "2019-01-02 01:00:00",
-    "m5_last": "2026-11-04 13:50:00",
+    "m5_last": "2026-11-04 14:50:00",
     "d1_bars": 3057,
     "d1_first": "2015-01-02 00:00:00",
     "d1_last": "2026-11-04 00:00:00",
@@ -78,38 +78,38 @@
     "intraday_m5_recent": {
       "EURUSD": {
         "bars": 89861,
-        "first": "2025-08-21 11:55:00",
-        "last": "2026-11-04 13:50:00"
+        "first": "2025-08-21 12:55:00",
+        "last": "2026-11-04 14:50:00"
       },
       "USDJPY": {
         "bars": 89877,
-        "first": "2025-08-21 11:55:00",
-        "last": "2026-11-04 13:50:00"
+        "first": "2025-08-21 12:55:00",
+        "last": "2026-11-04 14:50:00"
       },
       "GBPUSD": {
         "bars": 89846,
-        "first": "2025-08-21 11:55:00",
-        "last": "2026-11-04 13:50:00"
+        "first": "2025-08-21 12:55:00",
+        "last": "2026-11-04 14:50:00"
       },
       "USDCAD": {
         "bars": 89880,
-        "first": "2025-08-21 11:55:00",
-        "last": "2026-11-04 13:50:00"
+        "first": "2025-08-21 12:55:00",
+        "last": "2026-11-04 14:50:00"
       },
       "USDSEK": {
         "bars": 89822,
-        "first": "2025-08-21 11:55:00",
-        "last": "2026-11-04 13:50:00"
+        "first": "2025-08-21 12:55:00",
+        "last": "2026-11-04 14:50:00"
       },
       "USDCHF": {
         "bars": 89880,
-        "first": "2025-08-21 11:55:00",
-        "last": "2026-11-04 13:50:00"
+        "first": "2025-08-21 12:55:00",
+        "last": "2026-11-04 14:50:00"
       },
       "USOUSD": {
-        "bars": 85381,
-        "first": "2025-08-21 11:55:00",
-        "last": "2026-11-04 13:15:00"
+        "bars": 85388,
+        "first": "2025-08-21 12:55:00",
+        "last": "2026-11-04 14:50:00"
       }
     },
     "sessions": 250,
@@ -10737,9 +10737,9 @@
     }
   },
   "reference_levels": {
-    "as_of_london": "2026-11-04 11:55",
-    "latest_price": 4041.1,
-    "latest_bar_london": "2026-11-04 11:50",
+    "as_of_london": "2026-11-04 12:55",
+    "latest_price": 4040.8,
+    "latest_bar_london": "2026-11-04 12:50",
     "rules": {
       "brief_max_distance_E": 2.0,
       "dedup_threshold_E": 0.1,
@@ -10819,12 +10819,12 @@
       "london_morning": {
         "definition": "08:00 -> 13:00 London; the US window's reference range",
         "status": "partial",
-        "high": 4049.49,
+        "high": 4051.34,
         "low": 4021.37,
         "open": 4022.42,
-        "last": 4041.1,
+        "last": 4040.8,
         "from_london": "2026-11-04 08:00",
-        "to_london": "2026-11-04 11:55"
+        "to_london": "2026-11-04 12:55"
       }
     },
     "swing_points": {
@@ -10856,10 +10856,10 @@
         "unfilled": 10
       },
       "H1": {
-        "bars": 12,
+        "bars": 13,
         "gaps_found": 5,
-        "filled": 0,
-        "unfilled": 5
+        "filled": 1,
+        "unfilled": 4
       }
     },
     "distance_note": "distance_scale = (level - latest price) / the window's ruler (scale_usd, the published expected range); every E-named rule below is in rulers. distance_E and p_reach_E are the shadow calibrated 20-day E. The excursion arrays are measured from the window OPEN, so p_reach_from_array is exact only when the latest price is the window open; before the open it is an approximation. Levels within 0.1 rulers are 'at price' and carry no published percentage.",
@@ -10925,24 +10925,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 8.9,
-            "distance_scale": 0.32,
+            "distance_usd": 9.2,
+            "distance_scale": 0.331,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 152,
+              "hits": 150,
               "n": 250,
-              "rate": 0.608
+              "rate": 0.6
             },
             "p_reach_unpublished": {
-              "hits": 152,
+              "hits": 150,
               "n": 250,
-              "rate": 0.608
+              "rate": 0.6
             },
-            "distance_E": 0.41,
+            "distance_E": 0.423,
             "p_reach_E": {
-              "hits": 120,
+              "hits": 116,
               "n": 250,
-              "rate": 0.48
+              "rate": 0.464
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -10968,24 +10968,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.07,
-            "distance_scale": -0.434,
+            "distance_usd": -11.77,
+            "distance_scale": -0.424,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 134,
+              "hits": 139,
               "n": 250,
-              "rate": 0.536
+              "rate": 0.556
             },
             "p_reach_unpublished": {
-              "hits": 134,
+              "hits": 139,
               "n": 250,
-              "rate": 0.536
+              "rate": 0.556
             },
-            "distance_E": -0.555,
+            "distance_E": -0.542,
             "p_reach_E": {
-              "hits": 93,
+              "hits": 96,
               "n": 250,
-              "rate": 0.372
+              "rate": 0.384
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11011,8 +11011,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -69.92,
-            "distance_scale": -2.516,
+            "distance_usd": -69.62,
+            "distance_scale": -2.505,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 5,
@@ -11024,7 +11024,7 @@
               "n": 250,
               "rate": 0.02
             },
-            "distance_E": -3.218,
+            "distance_E": -3.204,
             "p_reach_E": {
               "hits": 3,
               "n": 250,
@@ -11054,8 +11054,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -110.69,
-            "distance_scale": -3.983,
+            "distance_usd": -110.39,
+            "distance_scale": -3.972,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 3,
@@ -11067,7 +11067,7 @@
               "n": 250,
               "rate": 0.012
             },
-            "distance_E": -5.094,
+            "distance_E": -5.08,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -11097,8 +11097,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -121.26,
-            "distance_scale": -4.363,
+            "distance_usd": -120.96,
+            "distance_scale": -4.353,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -11110,7 +11110,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": -5.58,
+            "distance_E": -5.566,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -11140,8 +11140,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -145.66,
-            "distance_scale": -5.241,
+            "distance_usd": -145.36,
+            "distance_scale": -5.231,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11153,7 +11153,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": -6.703,
+            "distance_E": -6.689,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -11186,8 +11186,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 655.61,
-            "distance_scale": 23.592,
+            "distance_usd": 655.91,
+            "distance_scale": 23.602,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11199,7 +11199,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 30.171,
+            "distance_E": 30.185,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11228,8 +11228,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 590.3,
-            "distance_scale": 21.241,
+            "distance_usd": 590.6,
+            "distance_scale": 21.252,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11241,7 +11241,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 27.165,
+            "distance_E": 27.179,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11270,8 +11270,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 469.7,
-            "distance_scale": 16.902,
+            "distance_usd": 470.0,
+            "distance_scale": 16.913,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11283,7 +11283,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 21.615,
+            "distance_E": 21.629,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11329,8 +11329,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 439.44,
-            "distance_scale": 15.813,
+            "distance_usd": 439.74,
+            "distance_scale": 15.824,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11342,7 +11342,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 20.223,
+            "distance_E": 20.237,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11371,8 +11371,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 407.79,
-            "distance_scale": 14.674,
+            "distance_usd": 408.09,
+            "distance_scale": 14.685,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11384,7 +11384,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 18.766,
+            "distance_E": 18.78,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11417,8 +11417,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 401.85,
-            "distance_scale": 14.46,
+            "distance_usd": 402.15,
+            "distance_scale": 14.471,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11430,7 +11430,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 18.493,
+            "distance_E": 18.507,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11459,8 +11459,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 394.42,
-            "distance_scale": 14.193,
+            "distance_usd": 394.72,
+            "distance_scale": 14.204,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11472,7 +11472,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 18.151,
+            "distance_E": 18.165,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11510,8 +11510,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 361.35,
-            "distance_scale": 13.003,
+            "distance_usd": 361.65,
+            "distance_scale": 13.014,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11523,7 +11523,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.629,
+            "distance_E": 16.643,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11556,8 +11556,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 358.46,
-            "distance_scale": 12.899,
+            "distance_usd": 358.76,
+            "distance_scale": 12.91,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11569,7 +11569,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.496,
+            "distance_E": 16.51,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11602,8 +11602,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 304.65,
-            "distance_scale": 10.963,
+            "distance_usd": 304.95,
+            "distance_scale": 10.973,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11615,7 +11615,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.02,
+            "distance_E": 14.034,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11648,8 +11648,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 279.24,
-            "distance_scale": 10.048,
+            "distance_usd": 279.54,
+            "distance_scale": 10.059,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11661,7 +11661,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.85,
+            "distance_E": 12.864,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11694,8 +11694,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 274.58,
-            "distance_scale": 9.881,
+            "distance_usd": 274.88,
+            "distance_scale": 9.891,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11707,7 +11707,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.636,
+            "distance_E": 12.65,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11736,8 +11736,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 250.86,
-            "distance_scale": 9.027,
+            "distance_usd": 251.15,
+            "distance_scale": 9.038,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11749,7 +11749,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.544,
+            "distance_E": 11.558,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11778,8 +11778,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 190.37,
-            "distance_scale": 6.85,
+            "distance_usd": 190.67,
+            "distance_scale": 6.861,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -11791,7 +11791,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.761,
+            "distance_E": 8.775,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11824,8 +11824,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 6.632,
+            "distance_usd": 184.61,
+            "distance_scale": 6.643,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -11837,7 +11837,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.482,
+            "distance_E": 8.496,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11901,8 +11901,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 176.08,
-            "distance_scale": 6.336,
+            "distance_usd": 176.38,
+            "distance_scale": 6.347,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -11914,7 +11914,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.103,
+            "distance_E": 8.117,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11960,8 +11960,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 158.51,
-            "distance_scale": 5.704,
+            "distance_usd": 158.81,
+            "distance_scale": 5.715,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -11973,7 +11973,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 7.295,
+            "distance_E": 7.308,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12018,8 +12018,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 126.03,
-            "distance_scale": 4.535,
+            "distance_usd": 126.33,
+            "distance_scale": 4.546,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -12031,7 +12031,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 5.8,
+            "distance_E": 5.814,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -12064,8 +12064,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 114.33,
-            "distance_scale": 4.114,
+            "distance_usd": 114.63,
+            "distance_scale": 4.125,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -12077,7 +12077,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 5.261,
+            "distance_E": 5.275,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -12115,8 +12115,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 105.39,
-            "distance_scale": 3.792,
+            "distance_usd": 105.69,
+            "distance_scale": 3.803,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -12128,7 +12128,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 4.85,
+            "distance_E": 4.864,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -12157,8 +12157,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 61.63,
-            "distance_scale": 2.218,
+            "distance_usd": 61.93,
+            "distance_scale": 2.228,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12170,7 +12170,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.836,
+            "distance_E": 2.85,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12203,8 +12203,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 41.6,
-            "distance_scale": 1.497,
+            "distance_usd": 41.9,
+            "distance_scale": 1.508,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 9,
@@ -12216,11 +12216,11 @@
               "n": 250,
               "rate": 0.036
             },
-            "distance_E": 1.914,
+            "distance_E": 1.928,
             "p_reach_E": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12262,20 +12262,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 36.82,
-            "distance_scale": 1.325,
+            "distance_usd": 37.12,
+            "distance_scale": 1.336,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 14,
+              "hits": 13,
               "n": 250,
-              "rate": 0.056
+              "rate": 0.052
             },
             "p_reach_unpublished": {
-              "hits": 14,
+              "hits": 13,
               "n": 250,
-              "rate": 0.056
+              "rate": 0.052
             },
-            "distance_E": 1.695,
+            "distance_E": 1.708,
             "p_reach_E": {
               "hits": 5,
               "n": 250,
@@ -12304,24 +12304,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 8.9,
-            "distance_scale": 0.32,
+            "distance_usd": 9.2,
+            "distance_scale": 0.331,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 152,
+              "hits": 150,
               "n": 250,
-              "rate": 0.608
+              "rate": 0.6
             },
             "p_reach_unpublished": {
-              "hits": 152,
+              "hits": 150,
               "n": 250,
-              "rate": 0.608
+              "rate": 0.6
             },
-            "distance_E": 0.41,
+            "distance_E": 0.423,
             "p_reach_E": {
-              "hits": 120,
+              "hits": 116,
               "n": 250,
-              "rate": 0.48
+              "rate": 0.464
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12339,88 +12339,48 @@
           {
             "label": "H1 FVG bullish",
             "type": "H1 FVG",
-            "price": 4039.47,
-            "source": "H1 fair value gap 4038.85-4039.47, bars 2026-11-04 10:00 -> 2026-11-04 12:00 server, unfilled",
-            "side": "down",
-            "at_price": true,
-            "partial": false,
-            "computed_to_london": null,
-            "touches": null,
-            "distance_usd": -1.63,
-            "distance_scale": -0.059,
-            "within_brief_range": true,
-            "p_reach_from_array": null,
-            "p_reach_unpublished": {
-              "hits": 231,
-              "n": 250,
-              "rate": 0.924
-            },
-            "distance_E": -0.075,
-            "p_reach_E": {
-              "hits": 227,
-              "n": 250,
-              "rate": 0.908
-            },
-            "confluence_sources": 1,
-            "confluence_source_groups": [
-              [
-                "H1 FVG bullish 4039.47"
-              ]
-            ],
-            "backed_by": "1: H1 fvg+",
-            "confluence_labels": 1,
-            "confluence_types": {
-              "H1 FVG": "H1 FVG bullish 4039.47"
-            },
-            "zone_low": 4038.85,
-            "zone_high": 4039.47,
-            "zone_width_usd": 0.62,
-            "formed_server": "2026-11-04 13:00",
-            "absorbed": []
-          },
-          {
-            "label": "H1 FVG bullish",
-            "type": "H1 FVG",
-            "price": 4033.67,
-            "source": "H1 fair value gap 4029.03-4033.67, bars 2026-11-04 09:00 -> 2026-11-04 11:00 server, unfilled",
+            "price": 4031.87,
+            "source": "H1 fair value gap 4029.03-4031.87, bars 2026-11-04 09:00 -> 2026-11-04 11:00 server, unfilled (part-filled)",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -7.43,
-            "distance_scale": -0.267,
+            "distance_usd": -8.93,
+            "distance_scale": -0.321,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 188,
+              "hits": 171,
               "n": 250,
-              "rate": 0.752
+              "rate": 0.684
             },
             "p_reach_unpublished": {
-              "hits": 188,
+              "hits": 171,
               "n": 250,
-              "rate": 0.752
+              "rate": 0.684
             },
-            "distance_E": -0.342,
+            "distance_E": -0.411,
             "p_reach_E": {
-              "hits": 163,
+              "hits": 136,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.544
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
               [
-                "H1 FVG bullish 4033.67"
+                "H1 FVG bullish 4031.87",
+                "overnight high 4029.03"
               ]
             ],
-            "backed_by": "1: H1 fvg+",
-            "confluence_labels": 1,
+            "backed_by": "1: H1 fvg+/ON hi",
+            "confluence_labels": 2,
             "confluence_types": {
-              "H1 FVG": "H1 FVG bullish 4033.67"
+              "H1 FVG": "H1 FVG bullish 4031.87",
+              "overnight": "overnight high 4029.03"
             },
             "zone_low": 4029.03,
-            "zone_high": 4033.67,
-            "zone_width_usd": 4.64,
+            "zone_high": 4031.87,
+            "zone_width_usd": 2.84,
             "formed_server": "2026-11-04 12:00",
             "absorbed": []
           },
@@ -12434,38 +12394,40 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.07,
-            "distance_scale": -0.434,
+            "distance_usd": -11.77,
+            "distance_scale": -0.424,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 134,
+              "hits": 139,
               "n": 250,
-              "rate": 0.536
+              "rate": 0.556
             },
             "p_reach_unpublished": {
-              "hits": 134,
+              "hits": 139,
               "n": 250,
-              "rate": 0.536
+              "rate": 0.556
             },
-            "distance_E": -0.555,
+            "distance_E": -0.542,
             "p_reach_E": {
-              "hits": 93,
+              "hits": 96,
               "n": 250,
-              "rate": 0.372
+              "rate": 0.384
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
-                "overnight high 4029.03"
+                "overnight high 4029.03",
+                "H1 FVG bullish 4031.87"
               ],
               [
                 "round 25 4025.00"
               ]
             ],
-            "backed_by": "2: ON hi, 4025",
-            "confluence_labels": 2,
+            "backed_by": "2: ON hi/H1 fvg+, 4025",
+            "confluence_labels": 3,
             "confluence_types": {
               "overnight": "overnight high 4029.03",
+              "H1 FVG": "H1 FVG bullish 4031.87",
               "round number": "round 25 4025.00"
             },
             "absorbed": []
@@ -12480,24 +12442,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.1,
-            "distance_scale": -0.579,
+            "distance_usd": -15.8,
+            "distance_scale": -0.569,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 99,
+              "hits": 100,
               "n": 250,
-              "rate": 0.396
+              "rate": 0.4
             },
             "p_reach_unpublished": {
-              "hits": 99,
+              "hits": 100,
               "n": 250,
-              "rate": 0.396
+              "rate": 0.4
             },
-            "distance_E": -0.741,
+            "distance_E": -0.727,
             "p_reach_E": {
-              "hits": 64,
+              "hits": 67,
               "n": 250,
-              "rate": 0.256
+              "rate": 0.268
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12526,24 +12488,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -26.46,
-            "distance_scale": -0.952,
+            "distance_usd": -26.16,
+            "distance_scale": -0.941,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 42,
+              "hits": 43,
               "n": 250,
-              "rate": 0.168
+              "rate": 0.172
             },
             "p_reach_unpublished": {
-              "hits": 42,
+              "hits": 43,
               "n": 250,
-              "rate": 0.168
+              "rate": 0.172
             },
-            "distance_E": -1.218,
+            "distance_E": -1.204,
             "p_reach_E": {
-              "hits": 25,
+              "hits": 27,
               "n": 250,
-              "rate": 0.1
+              "rate": 0.108
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12572,8 +12534,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -41.1,
-            "distance_scale": -1.479,
+            "distance_usd": -40.8,
+            "distance_scale": -1.468,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 18,
@@ -12585,7 +12547,7 @@
               "n": 250,
               "rate": 0.072
             },
-            "distance_E": -1.891,
+            "distance_E": -1.878,
             "p_reach_E": {
               "hits": 14,
               "n": 250,
@@ -12620,8 +12582,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -44.82,
-            "distance_scale": -1.613,
+            "distance_usd": -44.52,
+            "distance_scale": -1.602,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 17,
@@ -12633,11 +12595,11 @@
               "n": 250,
               "rate": 0.068
             },
-            "distance_E": -2.063,
+            "distance_E": -2.049,
             "p_reach_E": {
-              "hits": 10,
+              "hits": 11,
               "n": 250,
-              "rate": 0.04
+              "rate": 0.044
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12679,8 +12641,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -69.92,
-            "distance_scale": -2.516,
+            "distance_usd": -69.62,
+            "distance_scale": -2.505,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 5,
@@ -12692,7 +12654,7 @@
               "n": 250,
               "rate": 0.02
             },
-            "distance_E": -3.218,
+            "distance_E": -3.204,
             "p_reach_E": {
               "hits": 3,
               "n": 250,
@@ -12721,8 +12683,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -95.39,
-            "distance_scale": -3.433,
+            "distance_usd": -95.09,
+            "distance_scale": -3.422,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 3,
@@ -12734,7 +12696,7 @@
               "n": 250,
               "rate": 0.012
             },
-            "distance_E": -4.39,
+            "distance_E": -4.376,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12767,8 +12729,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -110.69,
-            "distance_scale": -3.983,
+            "distance_usd": -110.39,
+            "distance_scale": -3.972,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 3,
@@ -12780,7 +12742,7 @@
               "n": 250,
               "rate": 0.012
             },
-            "distance_E": -5.094,
+            "distance_E": -5.08,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12809,8 +12771,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -121.26,
-            "distance_scale": -4.363,
+            "distance_usd": -120.96,
+            "distance_scale": -4.353,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -12822,7 +12784,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": -5.58,
+            "distance_E": -5.566,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -12851,8 +12813,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -145.66,
-            "distance_scale": -5.241,
+            "distance_usd": -145.36,
+            "distance_scale": -5.231,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12864,7 +12826,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": -6.703,
+            "distance_E": -6.689,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -12893,8 +12855,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -6.153,
+            "distance_usd": -170.69,
+            "distance_scale": -6.142,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12906,7 +12868,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": -7.869,
+            "distance_E": -7.855,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -12966,8 +12928,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -6.153,
+            "distance_usd": -170.69,
+            "distance_scale": -6.142,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12979,7 +12941,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": -7.869,
+            "distance_E": -7.855,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -13017,8 +12979,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -6.153,
+            "distance_usd": -170.69,
+            "distance_scale": -6.142,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13030,7 +12992,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": -7.869,
+            "distance_E": -7.855,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -13068,8 +13030,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 177.11,
-            "distance_scale": 6.373,
+            "distance_usd": 177.41,
+            "distance_scale": 6.384,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13081,7 +13043,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.15,
+            "distance_E": 8.164,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13117,8 +13079,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.94,
-            "distance_scale": 6.655,
+            "distance_usd": 185.24,
+            "distance_scale": 6.666,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13130,7 +13092,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.511,
+            "distance_E": 8.525,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13172,8 +13134,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 41.6,
-            "distance_scale": 1.497,
+            "distance_usd": 41.9,
+            "distance_scale": 1.508,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 9,
@@ -13185,11 +13147,11 @@
               "n": 250,
               "rate": 0.036
             },
-            "distance_E": 1.914,
+            "distance_E": 1.928,
             "p_reach_E": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13221,8 +13183,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 176.08,
-            "distance_scale": 6.336,
+            "distance_usd": 176.38,
+            "distance_scale": 6.347,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13234,7 +13196,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.103,
+            "distance_E": 8.117,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13270,8 +13232,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 6.632,
+            "distance_usd": 184.61,
+            "distance_scale": 6.643,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13283,7 +13245,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.482,
+            "distance_E": 8.496,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13325,8 +13287,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 157.65,
-            "distance_scale": 5.673,
+            "distance_usd": 157.95,
+            "distance_scale": 5.684,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13338,7 +13300,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 7.255,
+            "distance_E": 7.269,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13373,8 +13335,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 159.37,
-            "distance_scale": 5.735,
+            "distance_usd": 159.67,
+            "distance_scale": 5.746,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13386,7 +13348,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 7.334,
+            "distance_E": 7.348,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13421,8 +13383,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 393.81,
-            "distance_scale": 14.171,
+            "distance_usd": 394.11,
+            "distance_scale": 14.182,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13434,7 +13396,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 18.123,
+            "distance_E": 18.137,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13468,8 +13430,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -6.153,
+            "distance_usd": -170.69,
+            "distance_scale": -6.142,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13481,7 +13443,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": -7.869,
+            "distance_E": -7.855,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -13519,8 +13481,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 41.6,
-            "distance_scale": 1.497,
+            "distance_usd": 41.9,
+            "distance_scale": 1.508,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 9,
@@ -13532,11 +13494,11 @@
               "n": 250,
               "rate": 0.036
             },
-            "distance_E": 1.914,
+            "distance_E": 1.928,
             "p_reach_E": {
-              "hits": 3,
+              "hits": 2,
               "n": 250,
-              "rate": 0.012
+              "rate": 0.008
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13572,8 +13534,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 6.632,
+            "distance_usd": 184.61,
+            "distance_scale": 6.643,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13585,7 +13547,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.482,
+            "distance_E": 8.496,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13631,8 +13593,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 469.7,
-            "distance_scale": 16.902,
+            "distance_usd": 470.0,
+            "distance_scale": 16.913,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13644,7 +13606,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 21.615,
+            "distance_E": 21.629,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13684,8 +13646,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 114.33,
-            "distance_scale": 4.114,
+            "distance_usd": 114.63,
+            "distance_scale": 4.125,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13697,7 +13659,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 5.261,
+            "distance_E": 5.275,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -13735,8 +13697,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 6.632,
+            "distance_usd": 184.61,
+            "distance_scale": 6.643,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13748,7 +13710,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 8.482,
+            "distance_E": 8.496,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13794,8 +13756,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 469.7,
-            "distance_scale": 16.902,
+            "distance_usd": 470.0,
+            "distance_scale": 16.913,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13807,7 +13769,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 21.615,
+            "distance_E": 21.629,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13847,8 +13809,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -44.82,
-            "distance_scale": -1.613,
+            "distance_usd": -44.52,
+            "distance_scale": -1.602,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 17,
@@ -13860,11 +13822,11 @@
               "n": 250,
               "rate": 0.068
             },
-            "distance_E": -2.063,
+            "distance_E": -2.049,
             "p_reach_E": {
-              "hits": 10,
+              "hits": 11,
               "n": 250,
-              "rate": 0.04
+              "rate": 0.044
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -14314,8 +14276,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 8.9,
-            "distance_scale": 0.171,
+            "distance_usd": 9.2,
+            "distance_scale": 0.177,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 198,
@@ -14327,11 +14289,11 @@
               "n": 250,
               "rate": 0.792
             },
-            "distance_E": 0.215,
+            "distance_E": 0.222,
             "p_reach_E": {
-              "hits": 180,
+              "hits": 178,
               "n": 250,
-              "rate": 0.72
+              "rate": 0.712
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -14357,24 +14319,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.07,
-            "distance_scale": -0.232,
+            "distance_usd": -11.77,
+            "distance_scale": -0.227,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 196,
+              "hits": 198,
               "n": 250,
-              "rate": 0.784
+              "rate": 0.792
             },
             "p_reach_unpublished": {
-              "hits": 196,
+              "hits": 198,
               "n": 250,
-              "rate": 0.784
+              "rate": 0.792
             },
-            "distance_E": -0.291,
+            "distance_E": -0.284,
             "p_reach_E": {
-              "hits": 170,
+              "hits": 171,
               "n": 250,
-              "rate": 0.68
+              "rate": 0.684
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -14400,20 +14362,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -69.92,
-            "distance_scale": -1.346,
+            "distance_usd": -69.62,
+            "distance_scale": -1.34,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 26,
+              "hits": 27,
               "n": 250,
-              "rate": 0.104
+              "rate": 0.108
             },
             "p_reach_unpublished": {
-              "hits": 26,
+              "hits": 27,
               "n": 250,
-              "rate": 0.104
+              "rate": 0.108
             },
-            "distance_E": -1.688,
+            "distance_E": -1.681,
             "p_reach_E": {
               "hits": 12,
               "n": 250,
@@ -14443,8 +14405,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -110.69,
-            "distance_scale": -2.131,
+            "distance_usd": -110.39,
+            "distance_scale": -2.125,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 8,
@@ -14456,7 +14418,7 @@
               "n": 250,
               "rate": 0.032
             },
-            "distance_E": -2.673,
+            "distance_E": -2.666,
             "p_reach_E": {
               "hits": 4,
               "n": 250,
@@ -14486,8 +14448,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -121.26,
-            "distance_scale": -2.335,
+            "distance_usd": -120.96,
+            "distance_scale": -2.329,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 8,
@@ -14499,7 +14461,7 @@
               "n": 250,
               "rate": 0.032
             },
-            "distance_E": -2.928,
+            "distance_E": -2.921,
             "p_reach_E": {
               "hits": 3,
               "n": 250,
@@ -14529,8 +14491,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -145.66,
-            "distance_scale": -2.804,
+            "distance_usd": -145.36,
+            "distance_scale": -2.799,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -14542,7 +14504,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": -3.518,
+            "distance_E": -3.51,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -14575,8 +14537,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 655.61,
-            "distance_scale": 12.622,
+            "distance_usd": 655.91,
+            "distance_scale": 12.628,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14588,7 +14550,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 15.832,
+            "distance_E": 15.839,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14617,8 +14579,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 590.3,
-            "distance_scale": 11.365,
+            "distance_usd": 590.6,
+            "distance_scale": 11.371,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14630,7 +14592,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.255,
+            "distance_E": 14.262,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14659,8 +14621,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 469.7,
-            "distance_scale": 9.043,
+            "distance_usd": 470.0,
+            "distance_scale": 9.049,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14672,7 +14634,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.343,
+            "distance_E": 11.35,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14718,8 +14680,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 439.44,
-            "distance_scale": 8.461,
+            "distance_usd": 439.74,
+            "distance_scale": 8.466,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14731,7 +14693,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 10.612,
+            "distance_E": 10.619,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14760,8 +14722,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 407.79,
-            "distance_scale": 7.851,
+            "distance_usd": 408.09,
+            "distance_scale": 7.857,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14773,7 +14735,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.848,
+            "distance_E": 9.855,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14810,8 +14772,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 401.85,
-            "distance_scale": 7.737,
+            "distance_usd": 402.15,
+            "distance_scale": 7.743,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14823,7 +14785,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.704,
+            "distance_E": 9.711,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14860,8 +14822,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 394.42,
-            "distance_scale": 7.594,
+            "distance_usd": 394.72,
+            "distance_scale": 7.6,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14873,7 +14835,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.525,
+            "distance_E": 9.532,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14914,8 +14876,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 356.9,
-            "distance_scale": 6.871,
+            "distance_usd": 357.2,
+            "distance_scale": 6.877,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14927,7 +14889,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.619,
+            "distance_E": 8.626,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14975,8 +14937,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 304.65,
-            "distance_scale": 5.865,
+            "distance_usd": 304.95,
+            "distance_scale": 5.871,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14988,7 +14950,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.357,
+            "distance_E": 7.364,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15021,8 +14983,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 279.24,
-            "distance_scale": 5.376,
+            "distance_usd": 279.54,
+            "distance_scale": 5.382,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15034,7 +14996,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.743,
+            "distance_E": 6.751,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15073,8 +15035,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 272.21,
-            "distance_scale": 5.241,
+            "distance_usd": 272.51,
+            "distance_scale": 5.247,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15086,7 +15048,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.574,
+            "distance_E": 6.581,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15128,8 +15090,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 250.86,
-            "distance_scale": 4.83,
+            "distance_usd": 251.15,
+            "distance_scale": 4.835,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15141,7 +15103,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.058,
+            "distance_E": 6.065,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15170,8 +15132,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 190.37,
-            "distance_scale": 3.665,
+            "distance_usd": 190.67,
+            "distance_scale": 3.671,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15183,7 +15145,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.597,
+            "distance_E": 4.604,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15229,8 +15191,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 3.549,
+            "distance_usd": 184.61,
+            "distance_scale": 3.554,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15242,7 +15204,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.451,
+            "distance_E": 4.458,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15313,8 +15275,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 176.08,
-            "distance_scale": 3.39,
+            "distance_usd": 176.38,
+            "distance_scale": 3.396,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15326,7 +15288,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.252,
+            "distance_E": 4.259,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15372,8 +15334,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 158.51,
-            "distance_scale": 3.052,
+            "distance_usd": 158.81,
+            "distance_scale": 3.058,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15385,7 +15347,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 3.828,
+            "distance_E": 3.835,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15430,8 +15392,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 126.03,
-            "distance_scale": 2.426,
+            "distance_usd": 126.33,
+            "distance_scale": 2.432,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -15443,7 +15405,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 3.043,
+            "distance_E": 3.051,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15476,20 +15438,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 114.33,
-            "distance_scale": 2.201,
+            "distance_usd": 114.63,
+            "distance_scale": 2.207,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "p_reach_unpublished": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
-            "distance_E": 2.761,
+            "distance_E": 2.768,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -15527,8 +15489,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 105.39,
-            "distance_scale": 2.029,
+            "distance_usd": 105.69,
+            "distance_scale": 2.035,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -15540,7 +15502,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": 2.545,
+            "distance_E": 2.552,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -15569,20 +15531,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 61.63,
-            "distance_scale": 1.187,
+            "distance_usd": 61.93,
+            "distance_scale": 1.192,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 18,
+              "hits": 17,
               "n": 250,
-              "rate": 0.072
+              "rate": 0.068
             },
             "p_reach_unpublished": {
-              "hits": 18,
+              "hits": 17,
               "n": 250,
-              "rate": 0.072
+              "rate": 0.068
             },
-            "distance_E": 1.488,
+            "distance_E": 1.496,
             "p_reach_E": {
               "hits": 6,
               "n": 250,
@@ -15626,8 +15588,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 41.6,
-            "distance_scale": 0.801,
+            "distance_usd": 41.9,
+            "distance_scale": 0.807,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 46,
@@ -15639,7 +15601,7 @@
               "n": 250,
               "rate": 0.184
             },
-            "distance_E": 1.005,
+            "distance_E": 1.012,
             "p_reach_E": {
               "hits": 27,
               "n": 250,
@@ -15699,8 +15661,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 33.9,
-            "distance_scale": 0.653,
+            "distance_usd": 34.2,
+            "distance_scale": 0.658,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 66,
@@ -15712,7 +15674,7 @@
               "n": 250,
               "rate": 0.264
             },
-            "distance_E": 0.819,
+            "distance_E": 0.826,
             "p_reach_E": {
               "hits": 39,
               "n": 250,
@@ -15746,36 +15708,36 @@
           {
             "label": "London morning high",
             "type": "London morning",
-            "price": 4049.49,
-            "source": "London morning 2026-11-04 08:00 -> 11:55 (partial, as at 11:55)",
+            "price": 4051.34,
+            "source": "London morning 2026-11-04 08:00 -> 12:55 (partial, as at 12:55)",
             "side": "up",
             "at_price": false,
             "partial": true,
-            "computed_to_london": "2026-11-04 11:55",
+            "computed_to_london": "2026-11-04 12:55",
             "touches": null,
-            "distance_usd": 8.39,
-            "distance_scale": 0.162,
+            "distance_usd": 10.54,
+            "distance_scale": 0.203,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 198,
+              "hits": 189,
               "n": 250,
-              "rate": 0.792
+              "rate": 0.756
             },
             "p_reach_unpublished": {
-              "hits": 198,
+              "hits": 189,
               "n": 250,
-              "rate": 0.792
+              "rate": 0.756
             },
-            "distance_E": 0.203,
+            "distance_E": 0.255,
             "p_reach_E": {
-              "hits": 187,
+              "hits": 167,
               "n": 250,
-              "rate": 0.748
+              "rate": 0.668
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
-                "London morning high 4049.49"
+                "London morning high 4051.34"
               ],
               [
                 "round 50 4050.00"
@@ -15784,7 +15746,7 @@
             "backed_by": "2: AM hi, 4050",
             "confluence_labels": 2,
             "confluence_types": {
-              "London morning": "London morning high 4049.49",
+              "London morning": "London morning high 4051.34",
               "round number": "round 50 4050.00"
             },
             "absorbed": [
@@ -15797,51 +15759,6 @@
             ]
           },
           {
-            "label": "H1 FVG bullish",
-            "type": "H1 FVG",
-            "price": 4039.47,
-            "source": "H1 fair value gap 4038.85-4039.47, bars 2026-11-04 10:00 -> 2026-11-04 12:00 server, unfilled",
-            "side": "down",
-            "at_price": true,
-            "partial": false,
-            "computed_to_london": null,
-            "touches": null,
-            "distance_usd": -1.63,
-            "distance_scale": -0.031,
-            "within_brief_range": true,
-            "p_reach_from_array": null,
-            "p_reach_unpublished": {
-              "hits": 245,
-              "n": 250,
-              "rate": 0.98
-            },
-            "distance_E": -0.039,
-            "p_reach_E": {
-              "hits": 245,
-              "n": 250,
-              "rate": 0.98
-            },
-            "confluence_sources": 2,
-            "confluence_source_groups": [
-              [
-                "H1 FVG bullish 4039.47"
-              ],
-              [
-                "H1 FVG bullish 4033.67"
-              ]
-            ],
-            "backed_by": "2: H1 fvg+, H1 fvg+",
-            "confluence_labels": 1,
-            "confluence_types": {
-              "H1 FVG": "H1 FVG bullish 4039.47"
-            },
-            "zone_low": 4038.85,
-            "zone_high": 4039.47,
-            "zone_width_usd": 0.62,
-            "formed_server": "2026-11-04 13:00",
-            "absorbed": []
-          },
-          {
             "label": "overnight high",
             "type": "overnight",
             "price": 4029.03,
@@ -15851,30 +15768,30 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.07,
-            "distance_scale": -0.232,
+            "distance_usd": -11.77,
+            "distance_scale": -0.227,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 196,
+              "hits": 198,
               "n": 250,
-              "rate": 0.784
+              "rate": 0.792
             },
             "p_reach_unpublished": {
-              "hits": 196,
+              "hits": 198,
               "n": 250,
-              "rate": 0.784
+              "rate": 0.792
             },
-            "distance_E": -0.291,
+            "distance_E": -0.284,
             "p_reach_E": {
-              "hits": 170,
+              "hits": 171,
               "n": 250,
-              "rate": 0.68
+              "rate": 0.684
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
               [
                 "overnight high 4029.03",
-                "H1 FVG bullish 4033.67"
+                "H1 FVG bullish 4031.87"
               ],
               [
                 "round 25 4025.00"
@@ -15887,14 +15804,14 @@
             "confluence_labels": 4,
             "confluence_types": {
               "overnight": "overnight high 4029.03",
+              "H1 FVG": "H1 FVG bullish 4031.87",
               "round number": "round 25 4025.00",
-              "H1 FVG": "H1 FVG bullish 4033.67",
               "London morning": "London morning low 4021.37"
             },
             "absorbed": [
               {
                 "label": "H1 FVG bullish",
-                "price": 4033.67,
+                "price": 4031.87,
                 "partial": false,
                 "computed_to_london": null
               }
@@ -15904,30 +15821,30 @@
             "label": "London morning low",
             "type": "London morning",
             "price": 4021.37,
-            "source": "London morning 2026-11-04 08:00 -> 11:55 (partial, as at 11:55)",
+            "source": "London morning 2026-11-04 08:00 -> 12:55 (partial, as at 12:55)",
             "side": "down",
             "at_price": false,
             "partial": true,
-            "computed_to_london": "2026-11-04 11:55",
+            "computed_to_london": "2026-11-04 12:55",
             "touches": null,
-            "distance_usd": -19.73,
-            "distance_scale": -0.38,
+            "distance_usd": -19.43,
+            "distance_scale": -0.374,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 148,
+              "hits": 149,
               "n": 250,
-              "rate": 0.592
+              "rate": 0.596
             },
             "p_reach_unpublished": {
-              "hits": 148,
+              "hits": 149,
               "n": 250,
-              "rate": 0.592
+              "rate": 0.596
             },
-            "distance_E": -0.476,
+            "distance_E": -0.469,
             "p_reach_E": {
-              "hits": 127,
+              "hits": 129,
               "n": 250,
-              "rate": 0.508
+              "rate": 0.516
             },
             "confluence_sources": 4,
             "confluence_source_groups": [
@@ -15971,24 +15888,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -26.46,
-            "distance_scale": -0.509,
+            "distance_usd": -26.16,
+            "distance_scale": -0.504,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 124,
+              "hits": 125,
               "n": 250,
-              "rate": 0.496
+              "rate": 0.5
             },
             "p_reach_unpublished": {
-              "hits": 124,
+              "hits": 125,
               "n": 250,
-              "rate": 0.496
+              "rate": 0.5
             },
-            "distance_E": -0.639,
+            "distance_E": -0.632,
             "p_reach_E": {
-              "hits": 85,
+              "hits": 86,
               "n": 250,
-              "rate": 0.34
+              "rate": 0.344
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -16021,8 +15938,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -44.82,
-            "distance_scale": -0.863,
+            "distance_usd": -44.52,
+            "distance_scale": -0.857,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 59,
@@ -16034,7 +15951,7 @@
               "n": 250,
               "rate": 0.236
             },
-            "distance_E": -1.082,
+            "distance_E": -1.075,
             "p_reach_E": {
               "hits": 39,
               "n": 250,
@@ -16086,20 +16003,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -69.92,
-            "distance_scale": -1.346,
+            "distance_usd": -69.62,
+            "distance_scale": -1.34,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 26,
+              "hits": 27,
               "n": 250,
-              "rate": 0.104
+              "rate": 0.108
             },
             "p_reach_unpublished": {
-              "hits": 26,
+              "hits": 27,
               "n": 250,
-              "rate": 0.104
+              "rate": 0.108
             },
-            "distance_E": -1.688,
+            "distance_E": -1.681,
             "p_reach_E": {
               "hits": 12,
               "n": 250,
@@ -16128,8 +16045,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -95.39,
-            "distance_scale": -1.837,
+            "distance_usd": -95.09,
+            "distance_scale": -1.831,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 13,
@@ -16141,7 +16058,7 @@
               "n": 250,
               "rate": 0.052
             },
-            "distance_E": -2.304,
+            "distance_E": -2.296,
             "p_reach_E": {
               "hits": 7,
               "n": 250,
@@ -16185,8 +16102,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -110.69,
-            "distance_scale": -2.131,
+            "distance_usd": -110.39,
+            "distance_scale": -2.125,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 8,
@@ -16198,7 +16115,7 @@
               "n": 250,
               "rate": 0.032
             },
-            "distance_E": -2.673,
+            "distance_E": -2.666,
             "p_reach_E": {
               "hits": 4,
               "n": 250,
@@ -16227,8 +16144,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -121.26,
-            "distance_scale": -2.335,
+            "distance_usd": -120.96,
+            "distance_scale": -2.329,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 8,
@@ -16240,7 +16157,7 @@
               "n": 250,
               "rate": 0.032
             },
-            "distance_E": -2.928,
+            "distance_E": -2.921,
             "p_reach_E": {
               "hits": 3,
               "n": 250,
@@ -16269,8 +16186,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -145.66,
-            "distance_scale": -2.804,
+            "distance_usd": -145.36,
+            "distance_scale": -2.799,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 2,
@@ -16282,7 +16199,7 @@
               "n": 250,
               "rate": 0.008
             },
-            "distance_E": -3.518,
+            "distance_E": -3.51,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16311,8 +16228,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -3.292,
+            "distance_usd": -170.69,
+            "distance_scale": -3.286,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -16324,7 +16241,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": -4.129,
+            "distance_E": -4.122,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16384,8 +16301,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -3.292,
+            "distance_usd": -170.69,
+            "distance_scale": -3.286,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -16397,7 +16314,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": -4.129,
+            "distance_E": -4.122,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16435,8 +16352,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -3.292,
+            "distance_usd": -170.69,
+            "distance_scale": -3.286,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -16448,7 +16365,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": -4.129,
+            "distance_E": -4.122,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -16486,8 +16403,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 177.11,
-            "distance_scale": 3.41,
+            "distance_usd": 177.41,
+            "distance_scale": 3.416,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16499,7 +16416,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.277,
+            "distance_E": 4.284,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16544,8 +16461,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.94,
-            "distance_scale": 3.561,
+            "distance_usd": 185.24,
+            "distance_scale": 3.566,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16557,7 +16474,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.466,
+            "distance_E": 4.473,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16602,24 +16519,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 36.82,
-            "distance_scale": 0.709,
+            "distance_usd": 37.12,
+            "distance_scale": 0.715,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 62,
+              "hits": 61,
               "n": 250,
-              "rate": 0.248
+              "rate": 0.244
             },
             "p_reach_unpublished": {
-              "hits": 62,
+              "hits": 61,
               "n": 250,
-              "rate": 0.248
+              "rate": 0.244
             },
-            "distance_E": 0.889,
+            "distance_E": 0.897,
             "p_reach_E": {
-              "hits": 33,
+              "hits": 32,
               "n": 250,
-              "rate": 0.132
+              "rate": 0.128
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -16659,8 +16576,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 41.6,
-            "distance_scale": 0.801,
+            "distance_usd": 41.9,
+            "distance_scale": 0.807,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 46,
@@ -16672,7 +16589,7 @@
               "n": 250,
               "rate": 0.184
             },
-            "distance_E": 1.005,
+            "distance_E": 1.012,
             "p_reach_E": {
               "hits": 27,
               "n": 250,
@@ -16716,8 +16633,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 176.08,
-            "distance_scale": 3.39,
+            "distance_usd": 176.38,
+            "distance_scale": 3.396,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16729,7 +16646,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.252,
+            "distance_E": 4.259,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16765,8 +16682,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 3.549,
+            "distance_usd": 184.61,
+            "distance_scale": 3.554,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16778,7 +16695,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.451,
+            "distance_E": 4.458,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16827,8 +16744,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 358.46,
-            "distance_scale": 6.901,
+            "distance_usd": 358.76,
+            "distance_scale": 6.907,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16840,7 +16757,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.656,
+            "distance_E": 8.664,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16878,8 +16795,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 157.65,
-            "distance_scale": 3.035,
+            "distance_usd": 157.95,
+            "distance_scale": 3.041,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16891,7 +16808,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 3.807,
+            "distance_E": 3.814,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16926,8 +16843,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 159.37,
-            "distance_scale": 3.068,
+            "distance_usd": 159.67,
+            "distance_scale": 3.074,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16939,7 +16856,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 3.849,
+            "distance_E": 3.856,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16974,8 +16891,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 274.58,
-            "distance_scale": 5.286,
+            "distance_usd": 274.88,
+            "distance_scale": 5.292,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16987,7 +16904,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.631,
+            "distance_E": 6.638,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17025,8 +16942,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 361.35,
-            "distance_scale": 6.957,
+            "distance_usd": 361.65,
+            "distance_scale": 6.963,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17038,7 +16955,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.726,
+            "distance_E": 8.733,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17076,8 +16993,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 393.81,
-            "distance_scale": 7.582,
+            "distance_usd": 394.11,
+            "distance_scale": 7.588,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17089,7 +17006,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.51,
+            "distance_E": 9.517,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17123,8 +17040,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -170.99,
-            "distance_scale": -3.292,
+            "distance_usd": -170.69,
+            "distance_scale": -3.286,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -17136,7 +17053,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": -4.129,
+            "distance_E": -4.122,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -17174,8 +17091,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 41.6,
-            "distance_scale": 0.801,
+            "distance_usd": 41.9,
+            "distance_scale": 0.807,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 46,
@@ -17187,7 +17104,7 @@
               "n": 250,
               "rate": 0.184
             },
-            "distance_E": 1.005,
+            "distance_E": 1.012,
             "p_reach_E": {
               "hits": 27,
               "n": 250,
@@ -17235,8 +17152,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 3.549,
+            "distance_usd": 184.61,
+            "distance_scale": 3.554,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17248,7 +17165,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.451,
+            "distance_E": 4.458,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17301,8 +17218,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 469.7,
-            "distance_scale": 9.043,
+            "distance_usd": 470.0,
+            "distance_scale": 9.049,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17314,7 +17231,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.343,
+            "distance_E": 11.35,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17354,20 +17271,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 114.33,
-            "distance_scale": 2.201,
+            "distance_usd": 114.63,
+            "distance_scale": 2.207,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
             "p_reach_unpublished": {
-              "hits": 2,
+              "hits": 1,
               "n": 250,
-              "rate": 0.008
+              "rate": 0.004
             },
-            "distance_E": 2.761,
+            "distance_E": 2.768,
             "p_reach_E": {
               "hits": 1,
               "n": 250,
@@ -17405,8 +17322,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 184.31,
-            "distance_scale": 3.549,
+            "distance_usd": 184.61,
+            "distance_scale": 3.554,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17418,7 +17335,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.451,
+            "distance_E": 4.458,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17471,8 +17388,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 469.7,
-            "distance_scale": 9.043,
+            "distance_usd": 470.0,
+            "distance_scale": 9.049,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17484,7 +17401,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.343,
+            "distance_E": 11.35,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17512,11 +17429,11 @@
           },
           {
             "label": "H1 FVG bullish",
-            "price": 4033.67,
-            "source": "H1 fair value gap 4029.03-4033.67, bars 2026-11-04 09:00 -> 2026-11-04 11:00 server, unfilled",
+            "price": 4031.87,
+            "source": "H1 fair value gap 4029.03-4031.87, bars 2026-11-04 09:00 -> 2026-11-04 11:00 server, unfilled (part-filled)",
             "dropped_for": "overnight high 4029.03",
-            "gap_usd": 4.64,
-            "gap_E": 0.089,
+            "gap_usd": 2.84,
+            "gap_E": 0.055,
             "reason": "within 0.1 E ($5.19) of higher-priority overnight high",
             "type": "H1 FVG",
             "side": "down",
@@ -17524,44 +17441,45 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -7.43,
-            "distance_scale": -0.143,
+            "distance_usd": -8.93,
+            "distance_scale": -0.172,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 218,
+              "hits": 209,
               "n": 250,
-              "rate": 0.872
+              "rate": 0.836
             },
             "p_reach_unpublished": {
-              "hits": 218,
+              "hits": 209,
               "n": 250,
-              "rate": 0.872
+              "rate": 0.836
             },
-            "distance_E": -0.179,
+            "distance_E": -0.216,
             "p_reach_E": {
-              "hits": 205,
+              "hits": 194,
               "n": 250,
-              "rate": 0.82
+              "rate": 0.776
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
-                "H1 FVG bullish 4033.67",
+                "H1 FVG bullish 4031.87",
                 "overnight high 4029.03"
               ],
               [
-                "H1 FVG bullish 4039.47"
+                "round 25 4025.00"
               ]
             ],
-            "backed_by": "2: H1 fvg+/ON hi, H1 fvg+",
-            "confluence_labels": 2,
+            "backed_by": "2: H1 fvg+/ON hi, 4025",
+            "confluence_labels": 3,
             "confluence_types": {
-              "H1 FVG": "H1 FVG bullish 4033.67",
-              "overnight": "overnight high 4029.03"
+              "H1 FVG": "H1 FVG bullish 4031.87",
+              "overnight": "overnight high 4029.03",
+              "round number": "round 25 4025.00"
             },
             "zone_low": 4029.03,
-            "zone_high": 4033.67,
-            "zone_width_usd": 4.64,
+            "zone_high": 4031.87,
+            "zone_width_usd": 2.84,
             "formed_server": "2026-11-04 12:00"
           },
           {
@@ -17578,8 +17496,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -44.82,
-            "distance_scale": -0.863,
+            "distance_usd": -44.52,
+            "distance_scale": -0.857,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 59,
@@ -17591,7 +17509,7 @@
               "n": 250,
               "rate": 0.236
             },
-            "distance_E": -1.082,
+            "distance_E": -1.075,
             "p_reach_E": {
               "hits": 39,
               "n": 250,
@@ -17633,8 +17551,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -91.1,
-            "distance_scale": -1.754,
+            "distance_usd": -90.8,
+            "distance_scale": -1.748,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 14,
@@ -17646,7 +17564,7 @@
               "n": 250,
               "rate": 0.056
             },
-            "distance_E": -2.2,
+            "distance_E": -2.193,
             "p_reach_E": {
               "hits": 7,
               "n": 250,
@@ -17682,20 +17600,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -41.1,
-            "distance_scale": -0.791,
+            "distance_usd": -40.8,
+            "distance_scale": -0.786,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 65,
+              "hits": 67,
               "n": 250,
-              "rate": 0.26
+              "rate": 0.268
             },
             "p_reach_unpublished": {
-              "hits": 65,
+              "hits": 67,
               "n": 250,
-              "rate": 0.26
+              "rate": 0.268
             },
-            "distance_E": -0.993,
+            "distance_E": -0.985,
             "p_reach_E": {
               "hits": 43,
               "n": 250,
@@ -17723,9 +17641,9 @@
             "label": "round 50",
             "price": 4050.0,
             "source": "round number",
-            "dropped_for": "London morning high 4049.49",
-            "gap_usd": 0.51,
-            "gap_E": 0.01,
+            "dropped_for": "London morning high 4051.34",
+            "gap_usd": 1.34,
+            "gap_E": 0.026,
             "reason": "within 0.1 E ($5.19) of higher-priority London morning high",
             "type": "round number",
             "side": "up",
@@ -17733,8 +17651,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 8.9,
-            "distance_scale": 0.171,
+            "distance_usd": 9.2,
+            "distance_scale": 0.177,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 198,
@@ -17746,11 +17664,11 @@
               "n": 250,
               "rate": 0.792
             },
-            "distance_E": 0.215,
+            "distance_E": 0.222,
             "p_reach_E": {
-              "hits": 180,
+              "hits": 178,
               "n": 250,
-              "rate": 0.72
+              "rate": 0.712
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -17758,14 +17676,14 @@
                 "round 50 4050.00"
               ],
               [
-                "London morning high 4049.49"
+                "London morning high 4051.34"
               ]
             ],
             "backed_by": "2: 4050, AM hi",
             "confluence_labels": 2,
             "confluence_types": {
               "round number": "round 50 4050.00",
-              "London morning": "London morning high 4049.49"
+              "London morning": "London morning high 4051.34"
             }
           },
           {
@@ -17782,24 +17700,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 58.9,
-            "distance_scale": 1.134,
+            "distance_usd": 59.2,
+            "distance_scale": 1.14,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 20,
+              "hits": 19,
               "n": 250,
-              "rate": 0.08
+              "rate": 0.076
             },
             "p_reach_unpublished": {
-              "hits": 20,
+              "hits": 19,
               "n": 250,
-              "rate": 0.08
+              "rate": 0.076
             },
-            "distance_E": 1.422,
+            "distance_E": 1.43,
             "p_reach_E": {
-              "hits": 9,
+              "hits": 7,
               "n": 250,
-              "rate": 0.036
+              "rate": 0.028
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -17831,8 +17749,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -16.1,
-            "distance_scale": -0.31,
+            "distance_usd": -15.8,
+            "distance_scale": -0.304,
             "within_brief_range": true,
             "p_reach_from_array": {
               "hits": 170,
@@ -17844,11 +17762,11 @@
               "n": 250,
               "rate": 0.68
             },
-            "distance_E": -0.389,
+            "distance_E": -0.382,
             "p_reach_E": {
-              "hits": 144,
+              "hits": 148,
               "n": 250,
-              "rate": 0.576
+              "rate": 0.592
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -17859,15 +17777,17 @@
                 "London morning low 4021.37"
               ],
               [
-                "overnight high 4029.03"
+                "overnight high 4029.03",
+                "H1 FVG bullish 4031.87"
               ]
             ],
-            "backed_by": "3: 4025, AM lo, ON hi",
-            "confluence_labels": 3,
+            "backed_by": "3: 4025, AM lo, ON hi/H1 fvg+",
+            "confluence_labels": 4,
             "confluence_types": {
               "round number": "round 25 4025.00",
               "London morning": "London morning low 4021.37",
-              "overnight": "overnight high 4029.03"
+              "overnight": "overnight high 4029.03",
+              "H1 FVG": "H1 FVG bullish 4031.87"
             }
           }
         ],
@@ -18243,13 +18163,13 @@
     "note": "The ruler (scale_usd = the published expected range) is the walk-forward implied-vol range x the tier-1 release ratio; the calibrated 20-day E (E_usd) is a shadow, and the fallback when implied vol is unavailable, more than 3 US closes stale, or its history is short (scale_used / status).",
     "gvz_availability": {
       "cboe": {
-        "fetched_utc": "2026-11-04T11:50:51+00:00",
+        "fetched_utc": "2026-11-04T12:52:02+00:00",
         "latest_date": "2026-11-03",
         "latest_value": 25.82,
         "error": null
       },
       "fred": {
-        "fetched_utc": "2026-11-04T11:50:52+00:00",
+        "fetched_utc": "2026-11-04T12:52:03+00:00",
         "latest_date": "2026-11-02",
         "latest_value": 25.45,
         "error": null
@@ -18379,11 +18299,11 @@
       "outcomes": "forward/v4/outcomes.csv",
       "leans": "forward/v4/leans.csv"
     },
-    "run_type_this_run": "manual",
-    "forecasts_appended_this_run": 62,
+    "run_type_this_run": "scheduled",
+    "forecasts_appended_this_run": 61,
     "leans_appended_this_run": 1,
     "outcomes_appended_this_run": 0,
-    "forecast_rows_total": 2155,
+    "forecast_rows_total": 2216,
     "outcome_rows_total": 1969,
     "completed_sessions": 10,
     "completed_by_window": {
@@ -18392,7 +18312,7 @@
     },
     "completed_sessions_any_run": 10,
     "rows_by_run_type": {
-      "scheduled": 1558,
+      "scheduled": 1619,
       "manual": 597
     },
     "run_type_rule": "completed_sessions counts scheduled runs only (Task Scheduler time trigger); manual runs are logged with run_type=manual and must be excluded from any analysis of the record.",
@@ -18432,16 +18352,16 @@
   "chart_outputs": {
     "mql5_script": "chart/GoldStatsLevels.mq5 (private repo)",
     "png": "gold_levels.png (public repo)",
-    "as_of_london": "2026-11-04 11:55"
+    "as_of_london": "2026-11-04 12:55"
   },
   "dollar": {
     "index": "MT5-built dollar index (ICE DXY formula on Vantage EURUSD, USDJPY, GBPUSD, USDCAD, USDSEK, USDCHF)",
-    "level": 101.381,
+    "level": 101.337,
     "as_of_date": "2026-11-04",
     "prior_close": 101.869,
     "prior_close_date": "2026-11-03",
-    "change": -0.488,
-    "change_pct": -0.479,
+    "change": -0.533,
+    "change_pct": -0.523,
     "relationship_250d": {
       "r2": 0.19,
       "t": -7.63,
@@ -18449,7 +18369,7 @@
       "to": "2026-10-27",
       "sign": "opposite"
     },
-    "line": "Dollar index 101.38, -0.49 (-0.48%) on the day. Over the last 250 days gold has tended to move the opposite way to the dollar, but loosely: the dollar accounts for about 19% of gold's day-to-day movement. Context only, not a guide to today's gold move.",
+    "line": "Dollar index 101.34, -0.53 (-0.52%) on the day. Over the last 250 days gold has tended to move the opposite way to the dollar, but loosely: the dollar accounts for about 19% of gold's day-to-day movement. Context only, not a guide to today's gold move.",
     "usage": "Publish the dollar index level and its change, and the relationship as context only. Never convert the dollar's move into a gold figure: no per-session dollar amount for gold (for example 'worth about $0.40 of gold'). The 250-day relationship is an average and does not apply to one session."
   },
   "brief_breaks": {
@@ -19145,7 +19065,7 @@
         "inputs": {
           "rsi_D1": 35.9,
           "rsi_D1_pct": 8.8,
-          "ma200_distance_E": 10.612,
+          "ma200_distance_E": 10.619,
           "ma200_pct": 96.4
         }
       }
@@ -19578,24 +19498,24 @@
       },
       "us_1300_2000": {
         "even_odds_band": {
-          "anchor": 4041.1,
+          "anchor": 4040.8,
           "up_distance_ranges": 0.4262,
           "down_distance_ranges": 0.5029,
-          "up_price": 4063.23,
-          "down_price": 4014.98,
+          "up_price": 4062.93,
+          "down_price": 4014.68,
           "up_usd": 22.13,
           "down_usd": 26.12,
           "skew": "down",
           "skew_usd": 3.98,
           "definition": "50% reach point of each excursion array (its median) x the published expected range, from the anchor",
-          "anchor_source": "latest price 2026-11-04 11:50 (window not open yet)"
+          "anchor_source": "latest price 2026-11-04 12:50 (window not open yet)"
         },
         "first_level": {
           "status": "ok",
           "above": "round number 4050",
           "below": "overnight high 4029",
-          "distance_up_usd": 8.9,
-          "distance_down_usd": 12.07,
+          "distance_up_usd": 9.2,
+          "distance_down_usd": 11.77,
           "nearer": "above",
           "nearer_first": 32,
           "similar_sessions": 49,
@@ -19613,24 +19533,24 @@
         "inputs": {
           "rsi_D1": 35.9329,
           "rsi_H4": 62.0249,
-          "rsi_H1": 76.1896,
-          "ma_d_D120": 0.8893,
-          "ma_d_D150": 4.4661,
-          "ma_d_D1200": 10.6119,
-          "ma_d_H420": -2.356,
-          "ma_d_H120": -1.8989,
-          "pos": 0.4927,
+          "rsi_H1": 73.8697,
+          "ma_d_D120": 0.8965,
+          "ma_d_D150": 4.4734,
+          "ma_d_D1200": 10.6192,
+          "ma_d_H420": -2.3488,
+          "ma_d_H120": -1.7742,
+          "pos": 0.4918,
           "conf": 1.0
         },
         "percentiles_vs_trailing": {
           "rsi_D1": 8.8,
           "rsi_H4": 83.2,
-          "rsi_H1": 98.4,
+          "rsi_H1": 97.6,
           "conf": 68.3,
           "ma_d_D1200": 96.4,
           "ma_d_D150": 82.0,
           "ma_d_D120": 59.2,
-          "ma_d_H420": 4.0,
+          "ma_d_H420": 4.4,
           "ma_d_H120": 0.0
         },
         "active_bands": {
@@ -19651,7 +19571,7 @@
             "in_range": true
           },
           "RSI H1 conventional|70-80": {
-            "reading": 76.1896,
+            "reading": 73.8697,
             "measured_range": [
               70.1023,
               79.6402
@@ -19659,7 +19579,7 @@
             "in_range": true
           },
           "RSI H1 own deciles|decile 10": {
-            "reading": 76.1896,
+            "reading": 73.8697,
             "measured_range": [
               64.5592,
               83.6467
@@ -19667,7 +19587,7 @@
             "in_range": true
           },
           "200-day average|top decile (price far below)": {
-            "reading": 10.6119,
+            "reading": 10.6192,
             "measured_range": [
               -10.8787,
               15.0175
@@ -19675,7 +19595,7 @@
             "in_range": true
           },
           "200-day average|top ventile (price furthest below)": {
-            "reading": 10.6119,
+            "reading": 10.6192,
             "measured_range": [
               -9.3352,
               15.0175
@@ -19683,7 +19603,7 @@
             "in_range": true
           },
           "H4 20 average|bottom ventile (price furthest above)": {
-            "reading": -2.356,
+            "reading": -2.3488,
             "measured_range": [
               -5.1755,
               -1.3173
@@ -19691,7 +19611,7 @@
             "in_range": true
           },
           "H4 20 average|bottom decile (price far above)": {
-            "reading": -2.356,
+            "reading": -2.3488,
             "measured_range": [
               -5.1755,
               -1.0216
@@ -19699,7 +19619,7 @@
             "in_range": true
           },
           "H1 20 average|bottom ventile (price furthest above)": {
-            "reading": -1.8989,
+            "reading": -1.7742,
             "measured_range": [
               -2.2063,
               -0.5228
@@ -19707,7 +19627,7 @@
             "in_range": true
           },
           "H1 20 average|bottom decile (price far above)": {
-            "reading": -1.8989,
+            "reading": -1.7742,
             "measured_range": [
               -2.2063,
               -0.4004
@@ -19762,40 +19682,34 @@
         "window": "New York",
         "pre_session_uk": "08:00-13:00",
         "pre_session_status": "in progress",
-        "pre_session_through_london": "11:55",
+        "pre_session_through_london": "12:55",
         "forecast_usd": 51.94,
         "status": "ok",
-        "gold_ratio": 1.079,
-        "dollar_ratio": 0.895,
+        "gold_ratio": 1.15,
+        "dollar_ratio": 1.0,
         "gold_busy": false,
         "dollar_busy": false,
         "state": "neither",
         "multiplier": 0.97,
         "adjusted_usd": 50.38,
-        "session_open_price": 4041.1,
-        "session_open_source": "latest price 2026-11-04 11:50 (window not open yet)",
+        "session_open_price": 4040.8,
+        "session_open_source": "latest price 2026-11-04 12:50 (window not open yet)",
         "adjusted_low": 4016,
         "adjusted_high": 4066,
         "past_sessions_like_this": 817,
         "past_beat_forecast_pct": 47,
         "line": "Before the open: neither gold nor the dollar was busier than usual. In 817 past New York sessions like this the range beat the forecast 47% of the time. Adjusted range $50 (forecast $52)."
       }
-    },
-    "stale_inputs": {
-      "USOUSD": "last bar 2026-11-04 13:15:00 is 35 min behind gold"
     }
   },
   "oil_regime": {
-    "share_opposite": 0.5963,
-    "hours": 2581,
+    "share_opposite": 0.5964,
+    "hours": 2582,
     "state": "against gold",
     "trading_days": 120,
     "from": "2026-05-22",
     "to": "2026-11-04",
-    "definition": "Last 120 trading days of hourly bars (close to close, consecutive hours only, the forming hour excluded): share of hours where gold and USOUSD both moved and moved in opposite directions. 'against gold' >= 55%, 'with gold' <= 45%, otherwise 'mixed'.",
-    "stale_inputs": {
-      "USOUSD": "last bar 2026-11-04 13:15:00 is 35 min behind gold"
-    }
+    "definition": "Last 120 trading days of hourly bars (close to close, consecutive hours only, the forming hour excluded): share of hours where gold and USOUSD both moved and moved in opposite directions. 'against gold' >= 55%, 'with gold' <= 45%, otherwise 'mixed'."
   },
   "direction_lean": {
     "definition": "Pre-session move = log(close/open) over the window before each session (UK: London 23:00-08:00, New York 08:00-13:00). Hard up / hard down = top / bottom 10% of the previous 250 sessions' moves; dollar and oil both down / up = each in its bottom / top 25%. For each signal, the past sessions where it was active: share where gold closed the session above its open (close_up) and share where gold rose further from the open than it fell (ext_up), raw, weighted by recency (weight = 0.5^(age_days/182)) and over the last 12 months. Signals are listed separately; there is no combined score. Past frequencies - not a forecast and not a trade call.",
@@ -19806,25 +19720,115 @@
         "pre_session_status": "complete",
         "pre_session_through_london": "08:00",
         "history_from": "2019-12-18",
-        "status": "pending",
-        "active": [],
-        "line": null,
-        "note": "pre-session window not started yet"
+        "status": "ok",
+        "inputs": {
+          "moves_log": {
+            "gold": 0.02292,
+            "dollar": -0.0046,
+            "oil": -0.00578
+          },
+          "cutoffs_log": {
+            "gold": {
+              "q10": -0.00908,
+              "q25": -0.00525,
+              "q75": 0.0068,
+              "q90": 0.0111
+            },
+            "dollar": {
+              "q10": -0.00173,
+              "q25": -0.00091,
+              "q75": 0.0009,
+              "q90": 0.00174
+            },
+            "oil": {
+              "q10": -0.01685,
+              "q25": -0.00803,
+              "q75": 0.00543,
+              "q90": 0.01531
+            }
+          }
+        },
+        "active": [
+          {
+            "signal": "dollar_hard_down",
+            "line": "Dollar fell hard overnight. After this, gold closed London higher in 50% of past sessions, recent sessions weighted most (192 sessions since 2019, 19 in the last year).",
+            "n": 192,
+            "n_12m": 19,
+            "close_up_raw": 0.5938,
+            "ext_up_raw": 0.5573,
+            "close_up_weighted": 0.5032,
+            "ext_up_weighted": 0.4542,
+            "close_up_12m": 0.5263,
+            "ext_up_12m": 0.4737,
+            "first_session": "2019-12-27"
+          },
+          {
+            "signal": "gold_hard_up",
+            "line": "Gold rose hard overnight. After this, gold closed London higher in 56% of past sessions, recent sessions weighted most (210 sessions since 2019, 29 in the last year).",
+            "n": 210,
+            "n_12m": 29,
+            "close_up_raw": 0.5429,
+            "ext_up_raw": 0.5,
+            "close_up_weighted": 0.5584,
+            "ext_up_weighted": 0.4831,
+            "close_up_12m": 0.4828,
+            "ext_up_12m": 0.4138,
+            "first_session": "2019-12-31"
+          }
+        ],
+        "line": null
       },
       "us_1300_2000": {
         "window": "New York",
         "pre_session_uk": "08:00-13:00",
         "pre_session_status": "in progress",
-        "pre_session_through_london": "11:55",
+        "pre_session_through_london": "12:55",
         "history_from": "2019-12-18",
-        "status": "pending",
-        "active": [],
-        "line": null,
-        "note": "pre-session window not started yet"
+        "status": "ok",
+        "inputs": {
+          "moves_log": {
+            "gold": 0.00456,
+            "dollar": -0.0013,
+            "oil": -0.01219
+          },
+          "cutoffs_log": {
+            "gold": {
+              "q10": -0.00558,
+              "q25": -0.00218,
+              "q75": 0.00269,
+              "q90": 0.00599
+            },
+            "dollar": {
+              "q10": -0.00174,
+              "q25": -0.00076,
+              "q75": 0.00098,
+              "q90": 0.00156
+            },
+            "oil": {
+              "q10": -0.01824,
+              "q25": -0.00666,
+              "q75": 0.01116,
+              "q90": 0.01902
+            }
+          }
+        },
+        "active": [
+          {
+            "signal": "dollar_oil_both_down",
+            "line": "Dollar and oil both fell this morning. After this, gold closed New York higher in 49% of past sessions, recent sessions weighted most (126 sessions since 2019, 27 in the last year).",
+            "n": 126,
+            "n_12m": 27,
+            "close_up_raw": 0.4603,
+            "ext_up_raw": 0.4762,
+            "close_up_weighted": 0.4905,
+            "ext_up_weighted": 0.4365,
+            "close_up_12m": 0.4074,
+            "ext_up_12m": 0.3704,
+            "first_session": "2019-12-31"
+          }
+        ],
+        "line": null
       }
-    },
-    "stale_inputs": {
-      "USOUSD": "last bar 2026-11-04 13:15:00 is 35 min behind gold"
     }
   }
 }
