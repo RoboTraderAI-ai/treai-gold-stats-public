@@ -1,20 +1,20 @@
 {
-  "generated_utc": "2026-11-25T07:52:37+00:00",
+  "generated_utc": "2026-11-25T12:52:11+00:00",
   "price": {
     "status": "ok",
     "source": "Vantage MT5 XAUUSD",
-    "bid": 3525.05,
-    "ask": 3525.27,
-    "mid": 3525.16,
-    "spread": 0.22,
-    "quote_server_time": "2026-11-25 09:52:30.130",
-    "quote_utc": "2026-11-25T07:52:30.130+00:00",
-    "quote_london": "2026-11-25 07:52:30",
+    "bid": 3519.13,
+    "ask": 3519.34,
+    "mid": 3519.235,
+    "spread": 0.21,
+    "quote_server_time": "2026-11-25 14:52:04.064",
+    "quote_utc": "2026-11-25T12:52:04.064+00:00",
+    "quote_london": "2026-11-25 12:52:04",
     "server_offset_h": 2,
     "server_offset_source": "empirical weekly offset from the M5 daily break (UTC+2 on EST, UTC+3 on EDT)",
     "live_clock_offset_h": 2.0,
-    "read_at_utc": "2026-11-25T07:52:30+00:00",
-    "quote_age_at_read_s": 0.1,
+    "read_at_utc": "2026-11-25T12:52:04+00:00",
+    "quote_age_at_read_s": 0.0,
     "stale_after_minutes": 15,
     "usage": "Use mid as the gold price. Its age = brief time - quote_utc; if over 15 minutes, state the age. Fall back to a web spot price only if this file is stale (generated_utc more than 60 minutes old, or quote_utc more than 60 minutes old on a weekday market session) or the run failed (file missing or unreadable), and say which source the brief used."
   },
@@ -34,12 +34,12 @@
     "digits": 2,
     "symbol_path": "Gold\\XAUUSD",
     "live_clock": {
-      "tick_server_epoch": 1795600348,
-      "local_utc_epoch": 1795593148
+      "tick_server_epoch": 1795618322,
+      "local_utc_epoch": 1795611122
     },
-    "m5_bars": 560388,
+    "m5_bars": 560448,
     "m5_first": "2019-01-02 01:00:00",
-    "m5_last": "2026-11-25 09:50:00",
+    "m5_last": "2026-11-25 14:50:00",
     "d1_bars": 3072,
     "d1_first": "2015-01-02 00:00:00",
     "d1_last": "2026-11-25 00:00:00",
@@ -50,66 +50,66 @@
         "last": "2026-11-25 00:00:00"
       },
       "USDJPY": {
-        "bars": 3086,
+        "bars": 3087,
         "first": "2015-01-02 00:00:00",
-        "last": "2026-11-24 00:00:00"
+        "last": "2026-11-25 00:00:00"
       },
       "GBPUSD": {
-        "bars": 3086,
+        "bars": 3087,
         "first": "2015-01-02 00:00:00",
-        "last": "2026-11-24 00:00:00"
+        "last": "2026-11-25 00:00:00"
       },
       "USDCAD": {
-        "bars": 3086,
+        "bars": 3087,
         "first": "2015-01-02 00:00:00",
-        "last": "2026-11-24 00:00:00"
+        "last": "2026-11-25 00:00:00"
       },
       "USDSEK": {
-        "bars": 3086,
+        "bars": 3087,
         "first": "2015-01-02 00:00:00",
-        "last": "2026-11-24 00:00:00"
+        "last": "2026-11-25 00:00:00"
       },
       "USDCHF": {
-        "bars": 3085,
+        "bars": 3086,
         "first": "2015-01-02 00:00:00",
-        "last": "2026-11-24 00:00:00"
+        "last": "2026-11-25 00:00:00"
       }
     },
     "intraday_m5_recent": {
       "EURUSD": {
         "bars": 89862,
-        "first": "2025-09-11 07:55:00",
-        "last": "2026-11-25 09:50:00"
+        "first": "2025-09-11 12:55:00",
+        "last": "2026-11-25 14:50:00"
       },
       "USDJPY": {
         "bars": 89877,
-        "first": "2025-09-11 07:55:00",
-        "last": "2026-11-25 09:50:00"
+        "first": "2025-09-11 12:55:00",
+        "last": "2026-11-25 14:50:00"
       },
       "GBPUSD": {
         "bars": 89853,
-        "first": "2025-09-11 07:55:00",
-        "last": "2026-11-25 09:50:00"
+        "first": "2025-09-11 12:55:00",
+        "last": "2026-11-25 14:50:00"
       },
       "USDCAD": {
         "bars": 89880,
-        "first": "2025-09-11 07:55:00",
-        "last": "2026-11-25 09:50:00"
+        "first": "2025-09-11 12:55:00",
+        "last": "2026-11-25 14:50:00"
       },
       "USDSEK": {
         "bars": 89821,
-        "first": "2025-09-11 07:55:00",
-        "last": "2026-11-25 09:50:00"
+        "first": "2025-09-11 12:55:00",
+        "last": "2026-11-25 14:50:00"
       },
       "USDCHF": {
         "bars": 89880,
-        "first": "2025-09-11 07:55:00",
-        "last": "2026-11-25 09:50:00"
+        "first": "2025-09-11 12:55:00",
+        "last": "2026-11-25 14:50:00"
       },
       "USOUSD": {
-        "bars": 85211,
-        "first": "2025-09-11 07:55:00",
-        "last": "2026-11-24 15:20:00"
+        "bars": 85367,
+        "first": "2025-09-11 12:55:00",
+        "last": "2026-11-25 10:20:00"
       }
     },
     "sessions": 250,
@@ -171,7 +171,7 @@
       "tips10y": "2003-01-02"
     },
     "driver_last_dates": {
-      "dxy_mt5": "2026-11-24",
+      "dxy_mt5": "2026-11-25",
       "usd_broad": "2026-11-20",
       "wti": "2026-11-17",
       "us10y": "2026-11-23",
@@ -273,10 +273,10 @@
     "london_0800_1300": {
       "current_scale": {
         "for_session": "2026-11-25",
-        "usd": 26.91,
+        "usd": 26.86,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 31.34,
+        "unadjusted_usd": 31.29,
         "release": {
           "class": "t1_out",
           "releases": "GDP 13:30 (t2), Core PCE 13:30 (t1), Durable goods 13:30 (t2)",
@@ -320,8 +320,8 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.1648,
           "iv_k": 0.6476,
-          "iv_raw_usd": 48.39,
-          "iv_forecast_usd": 31.34,
+          "iv_raw_usd": 48.31,
+          "iv_forecast_usd": 31.29,
           "iv_status": "ok"
         },
         "E_usd": 25.85,
@@ -1656,10 +1656,10 @@
     "us_1300_2000": {
       "current_scale": {
         "for_session": "2026-11-25",
-        "usd": 65.09,
+        "usd": 64.98,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 58.51,
+        "unadjusted_usd": 58.41,
         "release": {
           "class": "t1_in",
           "releases": "GDP 13:30 (t2), Core PCE 13:30 (t1), Durable goods 13:30 (t2)",
@@ -1703,8 +1703,8 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.4236,
           "iv_k": 0.7541,
-          "iv_raw_usd": 77.58,
-          "iv_forecast_usd": 58.51,
+          "iv_raw_usd": 77.45,
+          "iv_forecast_usd": 58.41,
           "iv_status": "ok"
         },
         "E_usd": 53.36,
@@ -10773,9 +10773,9 @@
     }
   },
   "reference_levels": {
-    "as_of_london": "2026-11-25 07:55",
-    "latest_price": 3525.13,
-    "latest_bar_london": "2026-11-25 07:50",
+    "as_of_london": "2026-11-25 12:55",
+    "latest_price": 3519.18,
+    "latest_bar_london": "2026-11-25 12:50",
     "rules": {
       "brief_max_distance_E": 2.0,
       "dedup_threshold_E": 0.1,
@@ -10846,15 +10846,21 @@
     "session_ranges": {
       "overnight": {
         "definition": "last daily reopen (after the 1-hour break) -> 08:00 London",
-        "status": "partial",
+        "status": "complete",
         "high": 3575.13,
         "low": 3512.53,
         "from_london": "2026-11-24 23:00",
-        "to_london": "2026-11-25 07:55"
+        "to_london": "2026-11-25 08:00"
       },
       "london_morning": {
         "definition": "08:00 -> 13:00 London; the US window's reference range",
-        "status": "not started"
+        "status": "partial",
+        "high": 3540.24,
+        "low": 3485.06,
+        "open": 3523.41,
+        "last": 3519.18,
+        "from_london": "2026-11-25 08:00",
+        "to_london": "2026-11-25 12:55"
       }
     },
     "swing_points": {
@@ -10865,12 +10871,12 @@
         "H4": 5
       },
       "d1_bars": 60,
-      "h4_bars": 361,
+      "h4_bars": 362,
       "d1_pivots": 11,
       "d1_unviolated": 4,
       "h4_pivots_distinct_turns": 27,
-      "h4_unviolated": 11,
-      "unviolated_total": 15
+      "h4_unviolated": 10,
+      "unviolated_total": 14
     },
     "fair_value_gaps": {
       "D1": {
@@ -10880,13 +10886,13 @@
         "unfilled": 5
       },
       "H4": {
-        "bars": 361,
+        "bars": 362,
         "gaps_found": 75,
         "filled": 57,
         "unfilled": 18
       },
       "H1": {
-        "bars": 8,
+        "bars": 13,
         "gaps_found": 1,
         "filled": 0,
         "unfilled": 1
@@ -10897,12 +10903,12 @@
     "confluence_note": "Within 0.15 rulers of a level, own entry included, over every candidate before dedup. confluence_sources (primary) = independent price events: labels printed by the same M5 bar are one source, a reaction level and the turns it was built from are one source, each round number and moving average is its own source. confluence_labels (secondary) = distinct level types. Neither is used in any probability. backed_by = the independent-source count, then each source's labels in short form (same-source labels joined by '/', round numbers as the price).",
     "windows": {
       "london_0800_1300": {
-        "window_status": "pre-open",
+        "window_status": "in progress",
         "scale_used": "IV",
         "scale_status": "ok",
-        "scale_usd": 26.91,
-        "expected_range_usd": 26.91,
-        "scale_unadjusted_usd": 31.34,
+        "scale_usd": 26.86,
+        "expected_range_usd": 26.86,
+        "scale_unadjusted_usd": 31.29,
         "release": {
           "class": "t1_out",
           "releases": "GDP 13:30 (t2), Core PCE 13:30 (t1), Durable goods 13:30 (t2)",
@@ -10943,7 +10949,7 @@
         "E_raw_usd": 30.61,
         "E_calibration_k": 0.8445,
         "dedup_threshold_usd": 2.69,
-        "confluence_threshold_usd": 4.04,
+        "confluence_threshold_usd": 4.03,
         "brief_levels": [
           {
             "label": "prior day high",
@@ -10955,8 +10961,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 153.14,
-            "distance_scale": 5.691,
+            "distance_usd": 159.09,
+            "distance_scale": 5.923,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -10968,7 +10974,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 5.924,
+            "distance_E": 6.154,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -10992,26 +10998,26 @@
             "label": "overnight high",
             "type": "overnight",
             "price": 3575.13,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "up",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": 50.0,
-            "distance_scale": 1.858,
-            "within_brief_range": true,
+            "distance_usd": 55.95,
+            "distance_scale": 2.083,
+            "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 5,
+              "hits": 4,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.016
             },
             "p_reach_unpublished": {
-              "hits": 5,
+              "hits": 4,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.016
             },
-            "distance_E": 1.934,
+            "distance_E": 2.164,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -11041,24 +11047,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 30.46,
-            "distance_scale": 1.132,
+            "distance_usd": 36.41,
+            "distance_scale": 1.356,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 25,
+              "hits": 12,
               "n": 250,
-              "rate": 0.1
+              "rate": 0.048
             },
             "p_reach_unpublished": {
-              "hits": 25,
+              "hits": 12,
               "n": 250,
-              "rate": 0.1
+              "rate": 0.048
             },
-            "distance_E": 1.178,
+            "distance_E": 1.409,
             "p_reach_E": {
-              "hits": 25,
+              "hits": 14,
               "n": 250,
-              "rate": 0.1
+              "rate": 0.056
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11084,24 +11090,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 21.48,
-            "distance_scale": 0.798,
+            "distance_usd": 27.43,
+            "distance_scale": 1.021,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 54,
+              "hits": 30,
               "n": 250,
-              "rate": 0.216
+              "rate": 0.12
             },
             "p_reach_unpublished": {
-              "hits": 54,
+              "hits": 30,
               "n": 250,
-              "rate": 0.216
+              "rate": 0.12
             },
-            "distance_E": 0.831,
+            "distance_E": 1.061,
             "p_reach_E": {
-              "hits": 45,
+              "hits": 32,
               "n": 250,
-              "rate": 0.18
+              "rate": 0.128
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11121,30 +11127,30 @@
             "label": "overnight low",
             "type": "overnight",
             "price": 3512.53,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "down",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.6,
-            "distance_scale": -0.468,
+            "distance_usd": -6.65,
+            "distance_scale": -0.248,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 131,
+              "hits": 194,
               "n": 250,
-              "rate": 0.524
+              "rate": 0.776
             },
             "p_reach_unpublished": {
-              "hits": 131,
+              "hits": 194,
               "n": 250,
-              "rate": 0.524
+              "rate": 0.776
             },
-            "distance_E": -0.487,
+            "distance_E": -0.257,
             "p_reach_E": {
-              "hits": 117,
+              "hits": 182,
               "n": 250,
-              "rate": 0.468
+              "rate": 0.728
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -11159,9 +11165,120 @@
             },
             "absorbed": [],
             "level_set_role": "every session"
+          },
+          {
+            "label": "20-day low",
+            "type": "20-day range",
+            "price": 3502.84,
+            "source": "D1 2026-11-20 (server day ending 17:00 New York); min of 2026-10-28 -> 2026-11-24",
+            "side": "down",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -16.34,
+            "distance_scale": -0.608,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 93,
+              "n": 250,
+              "rate": 0.372
+            },
+            "p_reach_unpublished": {
+              "hits": 93,
+              "n": 250,
+              "rate": 0.372
+            },
+            "distance_E": -0.632,
+            "p_reach_E": {
+              "hits": 87,
+              "n": 250,
+              "rate": 0.348
+            },
+            "confluence_sources": 2,
+            "confluence_source_groups": [
+              [
+                "20-day low 3502.84",
+                "prior week low 3502.84"
+              ],
+              [
+                "round 50 3500.00"
+              ]
+            ],
+            "backed_by": "2: 20d lo/PW lo, 3500",
+            "confluence_labels": 3,
+            "confluence_types": {
+              "20-day range": "20-day low 3502.84",
+              "prior week": "prior week low 3502.84",
+              "round number": "round 50 3500.00"
+            },
+            "absorbed": [
+              {
+                "label": "prior week low",
+                "price": 3502.84,
+                "partial": false,
+                "computed_to_london": null
+              }
+            ],
+            "level_set_role": "when near"
+          },
+          {
+            "label": "round 50",
+            "type": "round number",
+            "price": 3500.0,
+            "source": "round number",
+            "side": "down",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": -19.18,
+            "distance_scale": -0.714,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 70,
+              "n": 250,
+              "rate": 0.28
+            },
+            "p_reach_unpublished": {
+              "hits": 70,
+              "n": 250,
+              "rate": 0.28
+            },
+            "distance_E": -0.742,
+            "p_reach_E": {
+              "hits": 68,
+              "n": 250,
+              "rate": 0.272
+            },
+            "confluence_sources": 2,
+            "confluence_source_groups": [
+              [
+                "round 50 3500.00"
+              ],
+              [
+                "20-day low 3502.84",
+                "prior week low 3502.84"
+              ]
+            ],
+            "backed_by": "2: 3500, 20d lo/PW lo",
+            "confluence_labels": 3,
+            "confluence_types": {
+              "round number": "round 50 3500.00",
+              "20-day range": "20-day low 3502.84",
+              "prior week": "prior week low 3502.84"
+            },
+            "absorbed": [],
+            "level_set_role": "when near"
           }
         ],
-        "brief_excluded": [],
+        "brief_excluded": [
+          {
+            "label": "prior week low",
+            "price": 3502.84,
+            "reason": "within 0.1 E ($2.69) of 20-day low; shown as one row"
+          }
+        ],
         "levels": [
           {
             "label": "H4 swing high",
@@ -11173,8 +11290,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 985.67,
-            "distance_scale": 36.628,
+            "distance_usd": 991.62,
+            "distance_scale": 36.918,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11186,7 +11303,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 38.13,
+            "distance_E": 38.361,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11215,8 +11332,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 923.76,
-            "distance_scale": 34.328,
+            "distance_usd": 929.71,
+            "distance_scale": 34.613,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11228,7 +11345,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 35.735,
+            "distance_E": 35.966,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11261,8 +11378,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 917.82,
-            "distance_scale": 34.107,
+            "distance_usd": 923.77,
+            "distance_scale": 34.392,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11274,7 +11391,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 35.506,
+            "distance_E": 35.736,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11303,8 +11420,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 909.78,
-            "distance_scale": 33.808,
+            "distance_usd": 915.73,
+            "distance_scale": 34.093,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11316,7 +11433,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 35.195,
+            "distance_E": 35.425,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11345,8 +11462,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 877.32,
-            "distance_scale": 32.602,
+            "distance_usd": 883.27,
+            "distance_scale": 32.884,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11358,7 +11475,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 33.939,
+            "distance_E": 34.169,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11391,8 +11508,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 874.43,
-            "distance_scale": 32.495,
+            "distance_usd": 880.38,
+            "distance_scale": 32.777,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11404,7 +11521,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 33.827,
+            "distance_E": 34.057,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11437,8 +11554,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 868.54,
-            "distance_scale": 32.276,
+            "distance_usd": 874.49,
+            "distance_scale": 32.557,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11450,7 +11567,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 33.599,
+            "distance_E": 33.829,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11479,8 +11596,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 820.62,
-            "distance_scale": 30.495,
+            "distance_usd": 826.57,
+            "distance_scale": 30.773,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11492,7 +11609,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 31.745,
+            "distance_E": 31.976,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11525,8 +11642,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 795.21,
-            "distance_scale": 29.551,
+            "distance_usd": 801.16,
+            "distance_scale": 29.827,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11538,7 +11655,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 30.762,
+            "distance_E": 30.993,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11571,8 +11688,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 790.55,
-            "distance_scale": 29.378,
+            "distance_usd": 796.5,
+            "distance_scale": 29.654,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11584,7 +11701,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 30.582,
+            "distance_E": 30.812,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11613,8 +11730,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 766.82,
-            "distance_scale": 28.496,
+            "distance_usd": 772.78,
+            "distance_scale": 28.77,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11626,7 +11743,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 29.664,
+            "distance_E": 29.895,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11655,8 +11772,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 706.34,
-            "distance_scale": 26.248,
+            "distance_usd": 712.29,
+            "distance_scale": 26.519,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11668,7 +11785,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 27.325,
+            "distance_E": 27.555,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11701,8 +11818,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 26.023,
+            "distance_usd": 706.23,
+            "distance_scale": 26.293,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11714,7 +11831,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 27.09,
+            "distance_E": 27.32,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11768,8 +11885,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 693.08,
-            "distance_scale": 25.755,
+            "distance_usd": 699.03,
+            "distance_scale": 26.025,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11781,7 +11898,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 26.812,
+            "distance_E": 27.042,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11819,8 +11936,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 674.48,
-            "distance_scale": 25.064,
+            "distance_usd": 680.43,
+            "distance_scale": 25.332,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11832,7 +11949,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 26.092,
+            "distance_E": 26.322,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11877,8 +11994,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 642.0,
-            "distance_scale": 23.857,
+            "distance_usd": 647.95,
+            "distance_scale": 24.123,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11890,7 +12007,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 24.836,
+            "distance_E": 25.066,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11923,8 +12040,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 630.3,
-            "distance_scale": 23.423,
+            "distance_usd": 636.25,
+            "distance_scale": 23.688,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11936,7 +12053,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 24.383,
+            "distance_E": 24.613,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -11974,8 +12091,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 623.41,
-            "distance_scale": 23.166,
+            "distance_usd": 629.36,
+            "distance_scale": 23.431,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -11987,7 +12104,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 24.116,
+            "distance_E": 24.347,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12033,8 +12150,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 563.44,
-            "distance_scale": 20.938,
+            "distance_usd": 569.39,
+            "distance_scale": 21.198,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12046,7 +12163,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 21.797,
+            "distance_E": 22.027,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12079,8 +12196,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 541.79,
-            "distance_scale": 20.133,
+            "distance_usd": 547.74,
+            "distance_scale": 20.392,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12092,7 +12209,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 20.959,
+            "distance_E": 21.189,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12125,8 +12242,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 536.66,
-            "distance_scale": 19.943,
+            "distance_usd": 542.61,
+            "distance_scale": 20.201,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12138,7 +12255,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 20.761,
+            "distance_E": 20.991,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12167,8 +12284,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 513.03,
-            "distance_scale": 19.065,
+            "distance_usd": 518.98,
+            "distance_scale": 19.322,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12180,7 +12297,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 19.846,
+            "distance_E": 20.077,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12213,8 +12330,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 475.36,
-            "distance_scale": 17.665,
+            "distance_usd": 481.31,
+            "distance_scale": 17.919,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12226,7 +12343,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 18.389,
+            "distance_E": 18.619,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12268,8 +12385,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 430.3,
-            "distance_scale": 15.99,
+            "distance_usd": 436.25,
+            "distance_scale": 16.242,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12281,7 +12398,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.646,
+            "distance_E": 16.876,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12314,8 +12431,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 397.93,
-            "distance_scale": 14.787,
+            "distance_usd": 403.88,
+            "distance_scale": 15.036,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12327,7 +12444,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 15.394,
+            "distance_E": 15.624,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12369,8 +12486,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 376.03,
-            "distance_scale": 13.974,
+            "distance_usd": 381.98,
+            "distance_scale": 14.221,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12382,7 +12499,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.547,
+            "distance_E": 14.777,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12411,8 +12528,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 363.22,
-            "distance_scale": 13.497,
+            "distance_usd": 369.17,
+            "distance_scale": 13.744,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12424,7 +12541,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.051,
+            "distance_E": 14.281,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12464,8 +12581,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 344.98,
-            "distance_scale": 12.82,
+            "distance_usd": 350.93,
+            "distance_scale": 13.065,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12477,7 +12594,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.345,
+            "distance_E": 13.576,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12506,8 +12623,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 285.06,
-            "distance_scale": 10.593,
+            "distance_usd": 291.01,
+            "distance_scale": 10.834,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12519,7 +12636,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.027,
+            "distance_E": 11.258,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12552,8 +12669,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 265.34,
-            "distance_scale": 9.86,
+            "distance_usd": 271.29,
+            "distance_scale": 10.1,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12565,7 +12682,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 10.265,
+            "distance_E": 10.495,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12598,8 +12715,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 233.39,
-            "distance_scale": 8.673,
+            "distance_usd": 239.34,
+            "distance_scale": 8.911,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12611,7 +12728,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.029,
+            "distance_E": 9.259,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12644,8 +12761,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 192.41,
-            "distance_scale": 7.15,
+            "distance_usd": 198.36,
+            "distance_scale": 7.385,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -12657,7 +12774,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.443,
+            "distance_E": 7.674,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12690,8 +12807,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 164.48,
-            "distance_scale": 6.112,
+            "distance_usd": 170.43,
+            "distance_scale": 6.345,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -12703,7 +12820,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 6.363,
+            "distance_E": 6.593,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12749,8 +12866,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 153.14,
-            "distance_scale": 5.691,
+            "distance_usd": 159.09,
+            "distance_scale": 5.923,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -12762,7 +12879,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 5.924,
+            "distance_E": 6.154,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -12785,26 +12902,26 @@
             "label": "overnight high",
             "type": "overnight",
             "price": 3575.13,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "up",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": 50.0,
-            "distance_scale": 1.858,
-            "within_brief_range": true,
+            "distance_usd": 55.95,
+            "distance_scale": 2.083,
+            "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 5,
+              "hits": 4,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.016
             },
             "p_reach_unpublished": {
-              "hits": 5,
+              "hits": 4,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.016
             },
-            "distance_E": 1.934,
+            "distance_E": 2.164,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -12842,24 +12959,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 30.46,
-            "distance_scale": 1.132,
+            "distance_usd": 36.41,
+            "distance_scale": 1.356,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 25,
+              "hits": 12,
               "n": 250,
-              "rate": 0.1
+              "rate": 0.048
             },
             "p_reach_unpublished": {
-              "hits": 25,
+              "hits": 12,
               "n": 250,
-              "rate": 0.1
+              "rate": 0.048
             },
-            "distance_E": 1.178,
+            "distance_E": 1.409,
             "p_reach_E": {
-              "hits": 25,
+              "hits": 14,
               "n": 250,
-              "rate": 0.1
+              "rate": 0.056
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -12884,24 +13001,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 24.87,
-            "distance_scale": 0.924,
+            "distance_usd": 30.82,
+            "distance_scale": 1.147,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 38,
+              "hits": 25,
               "n": 250,
-              "rate": 0.152
+              "rate": 0.1
             },
             "p_reach_unpublished": {
-              "hits": 38,
+              "hits": 25,
               "n": 250,
-              "rate": 0.152
+              "rate": 0.1
             },
-            "distance_E": 0.962,
+            "distance_E": 1.192,
             "p_reach_E": {
-              "hits": 37,
+              "hits": 25,
               "n": 250,
-              "rate": 0.148
+              "rate": 0.1
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12930,24 +13047,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 21.48,
-            "distance_scale": 0.798,
+            "distance_usd": 27.43,
+            "distance_scale": 1.021,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 54,
+              "hits": 30,
               "n": 250,
-              "rate": 0.216
+              "rate": 0.12
             },
             "p_reach_unpublished": {
-              "hits": 54,
+              "hits": 30,
               "n": 250,
-              "rate": 0.216
+              "rate": 0.12
             },
-            "distance_E": 0.831,
+            "distance_E": 1.061,
             "p_reach_E": {
-              "hits": 45,
+              "hits": 32,
               "n": 250,
-              "rate": 0.18
+              "rate": 0.128
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -12969,46 +13086,46 @@
           {
             "label": "H1 FVG bearish",
             "type": "H1 FVG",
-            "price": 3531.89,
-            "source": "H1 fair value gap 3531.89-3542.98, bars 2026-11-25 06:00 -> 2026-11-25 08:00 server, unfilled (part-filled)",
+            "price": 3540.24,
+            "source": "H1 fair value gap 3540.24-3542.98, bars 2026-11-25 06:00 -> 2026-11-25 08:00 server, unfilled (part-filled)",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 6.76,
-            "distance_scale": 0.251,
+            "distance_usd": 21.06,
+            "distance_scale": 0.784,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 172,
+              "hits": 55,
               "n": 250,
-              "rate": 0.688
+              "rate": 0.22
             },
             "p_reach_unpublished": {
-              "hits": 172,
+              "hits": 55,
               "n": 250,
-              "rate": 0.688
+              "rate": 0.22
             },
-            "distance_E": 0.262,
+            "distance_E": 0.815,
             "p_reach_E": {
-              "hits": 163,
+              "hits": 47,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.188
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
               [
-                "H1 FVG bearish 3531.89"
+                "H1 FVG bearish 3540.24"
               ]
             ],
             "backed_by": "1: H1 fvg-",
             "confluence_labels": 1,
             "confluence_types": {
-              "H1 FVG": "H1 FVG bearish 3531.89"
+              "H1 FVG": "H1 FVG bearish 3540.24"
             },
-            "zone_low": 3531.89,
+            "zone_low": 3540.24,
             "zone_high": 3542.98,
-            "zone_width_usd": 11.09,
+            "zone_width_usd": 2.74,
             "formed_server": "2026-11-25 09:00",
             "absorbed": []
           },
@@ -13017,25 +13134,29 @@
             "type": "round number",
             "price": 3525.0,
             "source": "round number",
-            "side": "down",
-            "at_price": true,
+            "side": "up",
+            "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -0.13,
-            "distance_scale": -0.005,
+            "distance_usd": 5.82,
+            "distance_scale": 0.217,
             "within_brief_range": true,
-            "p_reach_from_array": null,
-            "p_reach_unpublished": {
-              "hits": 246,
+            "p_reach_from_array": {
+              "hits": 177,
               "n": 250,
-              "rate": 0.984
+              "rate": 0.708
             },
-            "distance_E": -0.005,
-            "p_reach_E": {
-              "hits": 247,
+            "p_reach_unpublished": {
+              "hits": 177,
               "n": 250,
-              "rate": 0.988
+              "rate": 0.708
+            },
+            "distance_E": 0.225,
+            "p_reach_E": {
+              "hits": 172,
+              "n": 250,
+              "rate": 0.688
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13054,30 +13175,30 @@
             "label": "overnight low",
             "type": "overnight",
             "price": 3512.53,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "down",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.6,
-            "distance_scale": -0.468,
+            "distance_usd": -6.65,
+            "distance_scale": -0.248,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 131,
+              "hits": 194,
               "n": 250,
-              "rate": 0.524
+              "rate": 0.776
             },
             "p_reach_unpublished": {
-              "hits": 131,
+              "hits": 194,
               "n": 250,
-              "rate": 0.524
+              "rate": 0.776
             },
-            "distance_E": -0.487,
+            "distance_E": -0.257,
             "p_reach_E": {
-              "hits": 117,
+              "hits": 182,
               "n": 250,
-              "rate": 0.468
+              "rate": 0.728
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -13102,53 +13223,45 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -22.29,
-            "distance_scale": -0.828,
+            "distance_usd": -16.34,
+            "distance_scale": -0.608,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 56,
+              "hits": 93,
               "n": 250,
-              "rate": 0.224
+              "rate": 0.372
             },
             "p_reach_unpublished": {
-              "hits": 56,
+              "hits": 93,
               "n": 250,
-              "rate": 0.224
+              "rate": 0.372
             },
-            "distance_E": -0.862,
+            "distance_E": -0.632,
             "p_reach_E": {
-              "hits": 52,
+              "hits": 87,
               "n": 250,
-              "rate": 0.208
+              "rate": 0.348
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
                 "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
+                "prior week low 3502.84"
               ],
               [
                 "round 50 3500.00"
               ]
             ],
-            "backed_by": "2: 20d lo/PW lo/H4 sw lo, 3500",
-            "confluence_labels": 4,
+            "backed_by": "2: 20d lo/PW lo, 3500",
+            "confluence_labels": 3,
             "confluence_types": {
               "20-day range": "20-day low 3502.84",
               "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84",
               "round number": "round 50 3500.00"
             },
             "absorbed": [
               {
                 "label": "prior week low",
-                "price": 3502.84,
-                "partial": false,
-                "computed_to_london": null
-              },
-              {
-                "label": "H4 swing low",
                 "price": 3502.84,
                 "partial": false,
                 "computed_to_london": null
@@ -13165,24 +13278,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -25.13,
-            "distance_scale": -0.934,
+            "distance_usd": -19.18,
+            "distance_scale": -0.714,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 46,
+              "hits": 70,
               "n": 250,
-              "rate": 0.184
+              "rate": 0.28
             },
             "p_reach_unpublished": {
-              "hits": 46,
+              "hits": 70,
               "n": 250,
-              "rate": 0.184
+              "rate": 0.28
             },
-            "distance_E": -0.972,
+            "distance_E": -0.742,
             "p_reach_E": {
-              "hits": 45,
+              "hits": 68,
               "n": 250,
-              "rate": 0.18
+              "rate": 0.272
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -13191,17 +13304,15 @@
               ],
               [
                 "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
+                "prior week low 3502.84"
               ]
             ],
-            "backed_by": "2: 3500, 20d lo/PW lo/H4 sw lo",
-            "confluence_labels": 4,
+            "backed_by": "2: 3500, 20d lo/PW lo",
+            "confluence_labels": 3,
             "confluence_types": {
               "round number": "round 50 3500.00",
               "20-day range": "20-day low 3502.84",
-              "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84"
+              "prior week": "prior week low 3502.84"
             },
             "absorbed": []
           }
@@ -13221,42 +13332,40 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -22.29,
-            "distance_scale": -0.828,
+            "distance_usd": -16.34,
+            "distance_scale": -0.608,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 56,
+              "hits": 93,
               "n": 250,
-              "rate": 0.224
+              "rate": 0.372
             },
             "p_reach_unpublished": {
-              "hits": 56,
+              "hits": 93,
               "n": 250,
-              "rate": 0.224
+              "rate": 0.372
             },
-            "distance_E": -0.862,
+            "distance_E": -0.632,
             "p_reach_E": {
-              "hits": 52,
+              "hits": 87,
               "n": 250,
-              "rate": 0.208
+              "rate": 0.348
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
               [
                 "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
+                "prior week low 3502.84"
               ],
               [
                 "round 50 3500.00"
               ]
             ],
-            "backed_by": "2: 20d lo/PW lo/H4 sw lo, 3500",
-            "confluence_labels": 4,
+            "backed_by": "2: 20d lo/PW lo, 3500",
+            "confluence_labels": 3,
             "confluence_types": {
               "20-day range": "20-day low 3502.84",
               "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84",
               "round number": "round 50 3500.00"
             }
           },
@@ -13274,8 +13383,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 3,
-            "distance_usd": 622.18,
-            "distance_scale": 23.121,
+            "distance_usd": 628.13,
+            "distance_scale": 23.385,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13287,7 +13396,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 24.069,
+            "distance_E": 24.299,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13323,8 +13432,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 623.41,
-            "distance_scale": 23.166,
+            "distance_usd": 629.36,
+            "distance_scale": 23.431,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13336,7 +13445,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 24.116,
+            "distance_E": 24.347,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13372,8 +13481,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 692.05,
-            "distance_scale": 25.717,
+            "distance_usd": 698.0,
+            "distance_scale": 25.987,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13385,7 +13494,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 26.772,
+            "distance_E": 27.002,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13419,8 +13528,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 26.023,
+            "distance_usd": 706.23,
+            "distance_scale": 26.293,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13432,7 +13541,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 27.09,
+            "distance_E": 27.32,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13470,8 +13579,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 365.78,
-            "distance_scale": 13.593,
+            "distance_usd": 371.73,
+            "distance_scale": 13.84,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13483,7 +13592,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.15,
+            "distance_E": 14.38,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13519,8 +13628,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 673.62,
-            "distance_scale": 25.032,
+            "distance_usd": 679.57,
+            "distance_scale": 25.3,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13532,7 +13641,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 26.059,
+            "distance_E": 26.289,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13567,8 +13676,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 675.34,
-            "distance_scale": 25.096,
+            "distance_usd": 681.29,
+            "distance_scale": 25.364,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13580,7 +13689,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 26.125,
+            "distance_E": 26.356,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13602,59 +13711,6 @@
             }
           },
           {
-            "label": "H4 swing low",
-            "price": 3502.84,
-            "source": "H4 pivot (5 bars each side) at 2026-11-20 20:00 server, unviolated",
-            "dropped_for": "20-day low 3502.84",
-            "gap_usd": 0.0,
-            "gap_E": 0.0,
-            "reason": "within 0.1 E ($2.69) of higher-priority 20-day low",
-            "type": "H4 swing",
-            "side": "down",
-            "at_price": false,
-            "partial": false,
-            "computed_to_london": null,
-            "touches": null,
-            "distance_usd": -22.29,
-            "distance_scale": -0.828,
-            "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 56,
-              "n": 250,
-              "rate": 0.224
-            },
-            "p_reach_unpublished": {
-              "hits": 56,
-              "n": 250,
-              "rate": 0.224
-            },
-            "distance_E": -0.862,
-            "p_reach_E": {
-              "hits": 52,
-              "n": 250,
-              "rate": 0.208
-            },
-            "confluence_sources": 2,
-            "confluence_source_groups": [
-              [
-                "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
-              ],
-              [
-                "round 50 3500.00"
-              ]
-            ],
-            "backed_by": "2: 20d lo/PW lo/H4 sw lo, 3500",
-            "confluence_labels": 4,
-            "confluence_types": {
-              "20-day range": "20-day low 3502.84",
-              "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84",
-              "round number": "round 50 3500.00"
-            }
-          },
-          {
             "label": "D1 FVG bearish",
             "price": 3689.61,
             "source": "D1 fair value gap 3689.61-3719.85, bars 2026-11-18 00:00 -> 2026-11-20 00:00 server, unfilled (part-filled)",
@@ -13668,8 +13724,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 164.48,
-            "distance_scale": 6.112,
+            "distance_usd": 170.43,
+            "distance_scale": 6.345,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13681,7 +13737,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 6.363,
+            "distance_E": 6.593,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13721,8 +13777,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 26.023,
+            "distance_usd": 706.23,
+            "distance_scale": 26.293,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13734,7 +13790,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 27.09,
+            "distance_E": 27.32,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13776,20 +13832,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 50.0,
-            "distance_scale": 1.858,
-            "within_brief_range": true,
+            "distance_usd": 55.95,
+            "distance_scale": 2.083,
+            "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 5,
+              "hits": 4,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.016
             },
             "p_reach_unpublished": {
-              "hits": 5,
+              "hits": 4,
               "n": 250,
-              "rate": 0.02
+              "rate": 0.016
             },
-            "distance_E": 1.934,
+            "distance_E": 2.164,
             "p_reach_E": {
               "hits": 2,
               "n": 250,
@@ -13827,8 +13883,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 164.48,
-            "distance_scale": 6.112,
+            "distance_usd": 170.43,
+            "distance_scale": 6.345,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -13840,7 +13896,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 6.363,
+            "distance_E": 6.593,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13880,8 +13936,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 397.93,
-            "distance_scale": 14.787,
+            "distance_usd": 403.88,
+            "distance_scale": 15.036,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13893,7 +13949,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 15.394,
+            "distance_E": 15.624,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13931,8 +13987,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 475.36,
-            "distance_scale": 17.665,
+            "distance_usd": 481.31,
+            "distance_scale": 17.919,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13944,7 +14000,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 18.389,
+            "distance_E": 18.619,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -13982,8 +14038,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 630.3,
-            "distance_scale": 23.423,
+            "distance_usd": 636.25,
+            "distance_scale": 23.688,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -13995,7 +14051,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 24.383,
+            "distance_E": 24.613,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14033,8 +14089,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 26.023,
+            "distance_usd": 706.23,
+            "distance_scale": 26.293,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14046,7 +14102,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 27.09,
+            "distance_E": 27.32,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14119,14 +14175,14 @@
                   "price": 3505,
                   "pct": 49.8,
                   "count": 855,
-                  "near_level": null
+                  "near_level": "20-day low 3503"
                 },
                 {
                   "fraction_E": 0.35,
                   "price": 3501,
                   "pct": 28.3,
                   "count": 485,
-                  "near_level": null
+                  "near_level": "round number 3500"
                 },
                 {
                   "fraction_E": 0.5,
@@ -14144,7 +14200,115 @@
                 }
               ],
               "based_on_breaks": 1716,
-              "text": "Overnight low 3513: if 3510 breaks down\nHeld 61% of 1,809 visits, broke 35%\n73% of past breaks reached 3507\n50% reached 3505\n28% reached 3501\n15% reached 3497\n5% reached 3491\nBased on 1,716 London breaks down."
+              "text": "Overnight low 3513: if 3510 breaks down\nHeld 61% of 1,809 visits, broke 35%\n73% of past breaks reached 3507\n50% reached 3505 (20-day low 3503)\n28% reached 3501 (round number 3500)\n15% reached 3497\n5% reached 3491\nBased on 1,716 London breaks down."
+            },
+            {
+              "label": "20-day low",
+              "price": 3502.84,
+              "direction": "down",
+              "trigger": 3500,
+              "held": {
+                "visits": 70,
+                "held": 44,
+                "broke": 23,
+                "held_pct": 63,
+                "broke_pct": 33,
+                "level_type": "20-day low",
+                "approach": "from above"
+              },
+              "rungs": [
+                {
+                  "fraction_E": 0.1,
+                  "price": 3498,
+                  "pct": 72.8,
+                  "count": 1249,
+                  "near_level": "round number 3500"
+                },
+                {
+                  "fraction_E": 0.2,
+                  "price": 3495,
+                  "pct": 49.8,
+                  "count": 855,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.35,
+                  "price": 3491,
+                  "pct": 28.3,
+                  "count": 485,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.5,
+                  "price": 3487,
+                  "pct": 15.4,
+                  "count": 265,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.75,
+                  "price": 3481,
+                  "pct": 5.3,
+                  "count": 91,
+                  "near_level": null
+                }
+              ],
+              "based_on_breaks": 1716,
+              "text": "20-day low 3503: if 3500 breaks down\nHeld 63% of 70 visits, broke 33%\n73% of past breaks reached 3498 (round number 3500)\n50% reached 3495\n28% reached 3491\n15% reached 3487\n5% reached 3481\nBased on 1,716 London breaks down."
+            },
+            {
+              "label": "round 50",
+              "price": 3500.0,
+              "direction": "down",
+              "trigger": 3497,
+              "held": {
+                "visits": 385,
+                "held": 228,
+                "broke": 138,
+                "held_pct": 59,
+                "broke_pct": 36,
+                "level_type": "$100 round",
+                "approach": "from above"
+              },
+              "rungs": [
+                {
+                  "fraction_E": 0.1,
+                  "price": 3495,
+                  "pct": 72.8,
+                  "count": 1249,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.2,
+                  "price": 3492,
+                  "pct": 49.8,
+                  "count": 855,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.35,
+                  "price": 3488,
+                  "pct": 28.3,
+                  "count": 485,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.5,
+                  "price": 3484,
+                  "pct": 15.4,
+                  "count": 265,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.75,
+                  "price": 3478,
+                  "pct": 5.3,
+                  "count": 91,
+                  "near_level": null
+                }
+              ],
+              "based_on_breaks": 1716,
+              "text": "Round number 3500: if 3497 breaks down\nHeld 59% of 385 visits, broke 36%\n73% of past breaks reached 3495\n50% reached 3492\n28% reached 3488\n15% reached 3484\n5% reached 3478\nBased on 1,716 London breaks down."
             },
             {
               "label": "prior day low",
@@ -14391,9 +14555,9 @@
         "window_status": "pre-open",
         "scale_used": "IV",
         "scale_status": "ok",
-        "scale_usd": 65.09,
-        "expected_range_usd": 65.09,
-        "scale_unadjusted_usd": 58.51,
+        "scale_usd": 64.98,
+        "expected_range_usd": 64.98,
+        "scale_unadjusted_usd": 58.41,
         "release": {
           "class": "t1_in",
           "releases": "GDP 13:30 (t2), Core PCE 13:30 (t1), Durable goods 13:30 (t2)",
@@ -14433,8 +14597,8 @@
         "E_usd": 53.36,
         "E_raw_usd": 61.64,
         "E_calibration_k": 0.8656,
-        "dedup_threshold_usd": 6.51,
-        "confluence_threshold_usd": 9.76,
+        "dedup_threshold_usd": 6.5,
+        "confluence_threshold_usd": 9.75,
         "brief_levels": [
           {
             "label": "prior day high",
@@ -14446,8 +14610,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 153.14,
-            "distance_scale": 2.353,
+            "distance_usd": 159.09,
+            "distance_scale": 2.448,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -14459,7 +14623,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 2.87,
+            "distance_E": 2.981,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14483,30 +14647,30 @@
             "label": "overnight high",
             "type": "overnight",
             "price": 3575.13,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "up",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": 50.0,
-            "distance_scale": 0.768,
+            "distance_usd": 55.95,
+            "distance_scale": 0.861,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
             "p_reach_unpublished": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
-            "distance_E": 0.937,
+            "distance_E": 1.049,
             "p_reach_E": {
-              "hits": 32,
+              "hits": 23,
               "n": 250,
-              "rate": 0.128
+              "rate": 0.092
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -14532,24 +14696,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 30.46,
-            "distance_scale": 0.468,
+            "distance_usd": 36.41,
+            "distance_scale": 0.56,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 107,
+              "hits": 87,
               "n": 250,
-              "rate": 0.428
+              "rate": 0.348
             },
             "p_reach_unpublished": {
-              "hits": 107,
+              "hits": 87,
               "n": 250,
-              "rate": 0.428
+              "rate": 0.348
             },
-            "distance_E": 0.571,
+            "distance_E": 0.682,
             "p_reach_E": {
-              "hits": 82,
+              "hits": 59,
               "n": 250,
-              "rate": 0.328
+              "rate": 0.236
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -14582,24 +14746,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 21.48,
-            "distance_scale": 0.33,
+            "distance_usd": 27.43,
+            "distance_scale": 0.422,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 147,
+              "hits": 123,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.492
             },
             "p_reach_unpublished": {
-              "hits": 147,
+              "hits": 123,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.492
             },
-            "distance_E": 0.403,
+            "distance_E": 0.514,
             "p_reach_E": {
-              "hits": 127,
+              "hits": 93,
               "n": 250,
-              "rate": 0.508
+              "rate": 0.372
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -14633,30 +14797,30 @@
             "label": "overnight low",
             "type": "overnight",
             "price": 3512.53,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "down",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.6,
-            "distance_scale": -0.194,
+            "distance_usd": -6.65,
+            "distance_scale": -0.102,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 208,
+              "hits": 230,
               "n": 250,
-              "rate": 0.832
+              "rate": 0.92
             },
             "p_reach_unpublished": {
-              "hits": 208,
+              "hits": 230,
               "n": 250,
-              "rate": 0.832
+              "rate": 0.92
             },
-            "distance_E": -0.236,
+            "distance_E": -0.125,
             "p_reach_E": {
-              "hits": 194,
+              "hits": 223,
               "n": 250,
-              "rate": 0.776
+              "rate": 0.892
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -14688,24 +14852,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -22.29,
-            "distance_scale": -0.342,
+            "distance_usd": -16.34,
+            "distance_scale": -0.251,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 163,
+              "hits": 189,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.756
             },
             "p_reach_unpublished": {
-              "hits": 163,
+              "hits": 189,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.756
             },
-            "distance_E": -0.418,
+            "distance_E": -0.306,
             "p_reach_E": {
-              "hits": 143,
+              "hits": 168,
               "n": 250,
-              "rate": 0.572
+              "rate": 0.672
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -14749,17 +14913,17 @@
           {
             "label": "prior week low",
             "price": 3502.84,
-            "reason": "within 0.1 E ($6.51) of 20-day low; shown as one row"
+            "reason": "within 0.1 E ($6.50) of 20-day low; shown as one row"
           },
           {
             "label": "round 50",
             "price": 3500.0,
-            "reason": "within 0.1 E ($6.51) of 20-day low; shown as one row"
+            "reason": "within 0.1 E ($6.50) of 20-day low; shown as one row"
           },
           {
             "label": "round 50",
             "price": 3550.0,
-            "reason": "within 0.1 E ($6.51) of prior day low; shown as one row"
+            "reason": "within 0.1 E ($6.50) of prior day low; shown as one row"
           }
         ],
         "levels": [
@@ -14773,8 +14937,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 985.67,
-            "distance_scale": 15.143,
+            "distance_usd": 991.62,
+            "distance_scale": 15.26,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14786,7 +14950,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 18.472,
+            "distance_E": 18.584,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14815,8 +14979,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 917.82,
-            "distance_scale": 14.101,
+            "distance_usd": 923.77,
+            "distance_scale": 14.216,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14828,7 +14992,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 17.201,
+            "distance_E": 17.312,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14871,8 +15035,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 909.78,
-            "distance_scale": 13.977,
+            "distance_usd": 915.73,
+            "distance_scale": 14.092,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14884,7 +15048,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 17.05,
+            "distance_E": 17.161,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14916,8 +15080,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 875.88,
-            "distance_scale": 13.456,
+            "distance_usd": 881.83,
+            "distance_scale": 13.571,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14929,7 +15093,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.414,
+            "distance_E": 16.526,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -14979,8 +15143,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 868.54,
-            "distance_scale": 13.344,
+            "distance_usd": 874.49,
+            "distance_scale": 13.458,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -14992,7 +15156,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.277,
+            "distance_E": 16.388,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15029,8 +15193,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 820.62,
-            "distance_scale": 12.607,
+            "distance_usd": 826.57,
+            "distance_scale": 12.72,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15042,7 +15206,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 15.379,
+            "distance_E": 15.49,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15075,8 +15239,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 790.55,
-            "distance_scale": 12.145,
+            "distance_usd": 796.5,
+            "distance_scale": 12.258,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15088,7 +15252,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.815,
+            "distance_E": 14.927,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15128,8 +15292,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 766.82,
-            "distance_scale": 11.781,
+            "distance_usd": 772.78,
+            "distance_scale": 11.893,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15141,7 +15305,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.371,
+            "distance_E": 14.482,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15170,8 +15334,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 10.759,
+            "distance_usd": 706.23,
+            "distance_scale": 10.868,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15183,7 +15347,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.124,
+            "distance_E": 13.235,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15251,8 +15415,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 693.08,
-            "distance_scale": 10.648,
+            "distance_usd": 699.03,
+            "distance_scale": 10.758,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15264,7 +15428,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.989,
+            "distance_E": 13.1,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15311,8 +15475,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": 2,
-            "distance_usd": 674.48,
-            "distance_scale": 10.362,
+            "distance_usd": 680.43,
+            "distance_scale": 10.471,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15324,7 +15488,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.64,
+            "distance_E": 12.752,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15369,8 +15533,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 642.0,
-            "distance_scale": 9.863,
+            "distance_usd": 647.95,
+            "distance_scale": 9.972,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15382,7 +15546,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.031,
+            "distance_E": 12.143,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15415,8 +15579,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 630.3,
-            "distance_scale": 9.684,
+            "distance_usd": 636.25,
+            "distance_scale": 9.791,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15428,7 +15592,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.812,
+            "distance_E": 11.924,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15474,8 +15638,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 623.41,
-            "distance_scale": 9.578,
+            "distance_usd": 629.36,
+            "distance_scale": 9.685,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15487,7 +15651,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.683,
+            "distance_E": 11.795,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15539,8 +15703,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 563.44,
-            "distance_scale": 8.656,
+            "distance_usd": 569.39,
+            "distance_scale": 8.763,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15552,7 +15716,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 10.559,
+            "distance_E": 10.671,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15585,8 +15749,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 536.66,
-            "distance_scale": 8.245,
+            "distance_usd": 542.61,
+            "distance_scale": 8.35,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15598,7 +15762,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 10.057,
+            "distance_E": 10.169,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15638,8 +15802,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 513.03,
-            "distance_scale": 7.882,
+            "distance_usd": 518.98,
+            "distance_scale": 7.987,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15651,7 +15815,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 9.615,
+            "distance_E": 9.726,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15684,8 +15848,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 475.36,
-            "distance_scale": 7.303,
+            "distance_usd": 481.31,
+            "distance_scale": 7.407,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15697,7 +15861,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.909,
+            "distance_E": 9.02,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15739,8 +15903,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 430.3,
-            "distance_scale": 6.611,
+            "distance_usd": 436.25,
+            "distance_scale": 6.714,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15752,7 +15916,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.064,
+            "distance_E": 8.176,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15785,8 +15949,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 397.93,
-            "distance_scale": 6.114,
+            "distance_usd": 403.88,
+            "distance_scale": 6.215,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15798,7 +15962,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.457,
+            "distance_E": 7.569,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15840,8 +16004,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 376.03,
-            "distance_scale": 5.777,
+            "distance_usd": 381.98,
+            "distance_scale": 5.878,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15853,7 +16017,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.047,
+            "distance_E": 7.159,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15882,8 +16046,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 363.22,
-            "distance_scale": 5.58,
+            "distance_usd": 369.17,
+            "distance_scale": 5.681,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15895,7 +16059,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.807,
+            "distance_E": 6.918,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15935,8 +16099,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 344.98,
-            "distance_scale": 5.3,
+            "distance_usd": 350.93,
+            "distance_scale": 5.401,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15948,7 +16112,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.465,
+            "distance_E": 6.577,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -15977,8 +16141,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 285.06,
-            "distance_scale": 4.379,
+            "distance_usd": 291.01,
+            "distance_scale": 4.478,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -15990,7 +16154,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 5.342,
+            "distance_E": 5.454,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16023,8 +16187,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 265.34,
-            "distance_scale": 4.077,
+            "distance_usd": 271.29,
+            "distance_scale": 4.175,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16036,7 +16200,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.973,
+            "distance_E": 5.084,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16069,8 +16233,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 233.39,
-            "distance_scale": 3.586,
+            "distance_usd": 239.34,
+            "distance_scale": 3.683,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16082,7 +16246,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 4.374,
+            "distance_E": 4.485,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16115,8 +16279,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 192.41,
-            "distance_scale": 2.956,
+            "distance_usd": 198.36,
+            "distance_scale": 3.053,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16128,7 +16292,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 3.606,
+            "distance_E": 3.717,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16161,20 +16325,20 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 164.48,
-            "distance_scale": 2.527,
+            "distance_usd": 170.43,
+            "distance_scale": 2.623,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 1,
+              "hits": 0,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.0
             },
             "p_reach_unpublished": {
-              "hits": 1,
+              "hits": 0,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.0
             },
-            "distance_E": 3.082,
+            "distance_E": 3.194,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16220,8 +16384,8 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 153.14,
-            "distance_scale": 2.353,
+            "distance_usd": 159.09,
+            "distance_scale": 2.448,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 1,
@@ -16233,7 +16397,7 @@
               "n": 250,
               "rate": 0.004
             },
-            "distance_E": 2.87,
+            "distance_E": 2.981,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16255,48 +16419,6 @@
           {
             "label": "round 50",
             "type": "round number",
-            "price": 3650.0,
-            "source": "round number",
-            "side": "up",
-            "at_price": false,
-            "partial": false,
-            "computed_to_london": null,
-            "touches": null,
-            "distance_usd": 124.87,
-            "distance_scale": 1.918,
-            "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 2,
-              "n": 250,
-              "rate": 0.008
-            },
-            "p_reach_unpublished": {
-              "hits": 2,
-              "n": 250,
-              "rate": 0.008
-            },
-            "distance_E": 2.34,
-            "p_reach_E": {
-              "hits": 2,
-              "n": 250,
-              "rate": 0.008
-            },
-            "confluence_sources": 1,
-            "confluence_source_groups": [
-              [
-                "round 50 3650.00"
-              ]
-            ],
-            "backed_by": "1: 3650",
-            "confluence_labels": 1,
-            "confluence_types": {
-              "round number": "round 50 3650.00"
-            },
-            "absorbed": []
-          },
-          {
-            "label": "round 50",
-            "type": "round number",
             "price": 3600.0,
             "source": "round number",
             "side": "up",
@@ -16304,24 +16426,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 74.87,
-            "distance_scale": 1.15,
+            "distance_usd": 80.82,
+            "distance_scale": 1.244,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 19,
+              "hits": 13,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.052
             },
             "p_reach_unpublished": {
-              "hits": 19,
+              "hits": 13,
               "n": 250,
-              "rate": 0.076
+              "rate": 0.052
             },
-            "distance_E": 1.403,
+            "distance_E": 1.515,
             "p_reach_E": {
-              "hits": 11,
+              "hits": 6,
               "n": 250,
-              "rate": 0.044
+              "rate": 0.024
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -16340,30 +16462,30 @@
             "label": "overnight high",
             "type": "overnight",
             "price": 3575.13,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "up",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": 50.0,
-            "distance_scale": 0.768,
+            "distance_usd": 55.95,
+            "distance_scale": 0.861,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
             "p_reach_unpublished": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
-            "distance_E": 0.937,
+            "distance_E": 1.049,
             "p_reach_E": {
-              "hits": 32,
+              "hits": 23,
               "n": 250,
-              "rate": 0.128
+              "rate": 0.092
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -16407,24 +16529,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 30.46,
-            "distance_scale": 0.468,
+            "distance_usd": 36.41,
+            "distance_scale": 0.56,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 107,
+              "hits": 87,
               "n": 250,
-              "rate": 0.428
+              "rate": 0.348
             },
             "p_reach_unpublished": {
-              "hits": 107,
+              "hits": 87,
               "n": 250,
-              "rate": 0.428
+              "rate": 0.348
             },
-            "distance_E": 0.571,
+            "distance_E": 0.682,
             "p_reach_E": {
-              "hits": 82,
+              "hits": 59,
               "n": 250,
-              "rate": 0.328
+              "rate": 0.236
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -16456,26 +16578,26 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 21.48,
-            "distance_scale": 0.33,
+            "distance_usd": 27.43,
+            "distance_scale": 0.422,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 147,
+              "hits": 123,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.492
             },
             "p_reach_unpublished": {
-              "hits": 147,
+              "hits": 123,
               "n": 250,
-              "rate": 0.588
+              "rate": 0.492
             },
-            "distance_E": 0.403,
+            "distance_E": 0.514,
             "p_reach_E": {
-              "hits": 127,
+              "hits": 93,
               "n": 250,
-              "rate": 0.508
+              "rate": 0.372
             },
-            "confluence_sources": 3,
+            "confluence_sources": 4,
             "confluence_source_groups": [
               [
                 "prior day low 3546.61"
@@ -16484,16 +16606,34 @@
                 "round 50 3550.00"
               ],
               [
+                "London morning high 3540.24",
+                "H1 FVG bearish 3540.24"
+              ],
+              [
                 "prior day close 3555.59"
               ]
             ],
-            "backed_by": "3: PD lo, 3550, PD close",
-            "confluence_labels": 2,
+            "backed_by": "4: PD lo, 3550, AM hi/H1 fvg-, PD close",
+            "confluence_labels": 4,
             "confluence_types": {
               "prior day": "prior day low 3546.61",
-              "round number": "round 50 3550.00"
+              "round number": "round 50 3550.00",
+              "London morning": "London morning high 3540.24",
+              "H1 FVG": "H1 FVG bearish 3540.24"
             },
             "absorbed": [
+              {
+                "label": "London morning high",
+                "price": 3540.24,
+                "partial": true,
+                "computed_to_london": "2026-11-25 12:55"
+              },
+              {
+                "label": "H1 FVG bearish",
+                "price": 3540.24,
+                "partial": false,
+                "computed_to_london": null
+              },
               {
                 "label": "round 50",
                 "price": 3550.0,
@@ -16503,94 +16643,40 @@
             ]
           },
           {
-            "label": "H1 FVG bearish",
-            "type": "H1 FVG",
-            "price": 3531.89,
-            "source": "H1 fair value gap 3531.89-3542.98, bars 2026-11-25 06:00 -> 2026-11-25 08:00 server, unfilled (part-filled)",
-            "side": "up",
-            "at_price": false,
-            "partial": false,
-            "computed_to_london": null,
-            "touches": null,
-            "distance_usd": 6.76,
-            "distance_scale": 0.104,
-            "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 214,
-              "n": 250,
-              "rate": 0.856
-            },
-            "p_reach_unpublished": {
-              "hits": 214,
-              "n": 250,
-              "rate": 0.856
-            },
-            "distance_E": 0.127,
-            "p_reach_E": {
-              "hits": 203,
-              "n": 250,
-              "rate": 0.812
-            },
-            "confluence_sources": 2,
-            "confluence_source_groups": [
-              [
-                "H1 FVG bearish 3531.89"
-              ],
-              [
-                "round 25 3525.00"
-              ]
-            ],
-            "backed_by": "2: H1 fvg-, 3525",
-            "confluence_labels": 2,
-            "confluence_types": {
-              "H1 FVG": "H1 FVG bearish 3531.89",
-              "round number": "round 25 3525.00"
-            },
-            "zone_low": 3531.89,
-            "zone_high": 3542.98,
-            "zone_width_usd": 11.09,
-            "formed_server": "2026-11-25 09:00",
-            "absorbed": []
-          },
-          {
             "label": "round 25",
             "type": "round number",
             "price": 3525.0,
             "source": "round number",
-            "side": "down",
+            "side": "up",
             "at_price": true,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -0.13,
-            "distance_scale": -0.002,
+            "distance_usd": 5.82,
+            "distance_scale": 0.09,
             "within_brief_range": true,
             "p_reach_from_array": null,
             "p_reach_unpublished": {
-              "hits": 249,
+              "hits": 220,
               "n": 250,
-              "rate": 0.996
+              "rate": 0.88
             },
-            "distance_E": -0.002,
+            "distance_E": 0.109,
             "p_reach_E": {
-              "hits": 249,
+              "hits": 210,
               "n": 250,
-              "rate": 0.996
+              "rate": 0.84
             },
-            "confluence_sources": 2,
+            "confluence_sources": 1,
             "confluence_source_groups": [
               [
                 "round 25 3525.00"
-              ],
-              [
-                "H1 FVG bearish 3531.89"
               ]
             ],
-            "backed_by": "2: 3525, H1 fvg-",
-            "confluence_labels": 2,
+            "backed_by": "1: 3525",
+            "confluence_labels": 1,
             "confluence_types": {
-              "round number": "round 25 3525.00",
-              "H1 FVG": "H1 FVG bearish 3531.89"
+              "round number": "round 25 3525.00"
             },
             "absorbed": []
           },
@@ -16598,30 +16684,30 @@
             "label": "overnight low",
             "type": "overnight",
             "price": 3512.53,
-            "source": "overnight Tue 2026-11-24 23:00 -> 07:55 London (partial, as at 07:55)",
+            "source": "overnight Tue 2026-11-24 23:00 -> 08:00 London",
             "side": "down",
             "at_price": false,
-            "partial": true,
-            "computed_to_london": "2026-11-25 07:55",
+            "partial": false,
+            "computed_to_london": null,
             "touches": null,
-            "distance_usd": -12.6,
-            "distance_scale": -0.194,
+            "distance_usd": -6.65,
+            "distance_scale": -0.102,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 208,
+              "hits": 230,
               "n": 250,
-              "rate": 0.832
+              "rate": 0.92
             },
             "p_reach_unpublished": {
-              "hits": 208,
+              "hits": 230,
               "n": 250,
-              "rate": 0.832
+              "rate": 0.92
             },
-            "distance_E": -0.236,
+            "distance_E": -0.125,
             "p_reach_E": {
-              "hits": 194,
+              "hits": 223,
               "n": 250,
-              "rate": 0.776
+              "rate": 0.892
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -16630,17 +16716,15 @@
               ],
               [
                 "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
+                "prior week low 3502.84"
               ]
             ],
-            "backed_by": "2: ON lo, 20d lo/PW lo/H4 sw lo",
-            "confluence_labels": 4,
+            "backed_by": "2: ON lo, 20d lo/PW lo",
+            "confluence_labels": 3,
             "confluence_types": {
               "overnight": "overnight low 3512.53",
               "20-day range": "20-day low 3502.84",
-              "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84"
+              "prior week": "prior week low 3502.84"
             },
             "absorbed": []
           },
@@ -16654,31 +16738,30 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -22.29,
-            "distance_scale": -0.342,
+            "distance_usd": -16.34,
+            "distance_scale": -0.251,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 163,
+              "hits": 189,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.756
             },
             "p_reach_unpublished": {
-              "hits": 163,
+              "hits": 189,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.756
             },
-            "distance_E": -0.418,
+            "distance_E": -0.306,
             "p_reach_E": {
-              "hits": 143,
+              "hits": 168,
               "n": 250,
-              "rate": 0.572
+              "rate": 0.672
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
               [
                 "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
+                "prior week low 3502.84"
               ],
               [
                 "round 50 3500.00"
@@ -16687,24 +16770,17 @@
                 "overnight low 3512.53"
               ]
             ],
-            "backed_by": "3: 20d lo/PW lo/H4 sw lo, 3500, ON lo",
-            "confluence_labels": 5,
+            "backed_by": "3: 20d lo/PW lo, 3500, ON lo",
+            "confluence_labels": 4,
             "confluence_types": {
               "20-day range": "20-day low 3502.84",
               "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84",
               "round number": "round 50 3500.00",
               "overnight": "overnight low 3512.53"
             },
             "absorbed": [
               {
                 "label": "prior week low",
-                "price": 3502.84,
-                "partial": false,
-                "computed_to_london": null
-              },
-              {
-                "label": "H4 swing low",
                 "price": 3502.84,
                 "partial": false,
                 "computed_to_london": null
@@ -16718,6 +16794,48 @@
             ]
           },
           {
+            "label": "London morning low",
+            "type": "London morning",
+            "price": 3485.06,
+            "source": "London morning 2026-11-25 08:00 -> 12:55 (partial, as at 12:55)",
+            "side": "down",
+            "at_price": false,
+            "partial": true,
+            "computed_to_london": "2026-11-25 12:55",
+            "touches": null,
+            "distance_usd": -34.12,
+            "distance_scale": -0.525,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 117,
+              "n": 250,
+              "rate": 0.468
+            },
+            "p_reach_unpublished": {
+              "hits": 117,
+              "n": 250,
+              "rate": 0.468
+            },
+            "distance_E": -0.639,
+            "p_reach_E": {
+              "hits": 88,
+              "n": 250,
+              "rate": 0.352
+            },
+            "confluence_sources": 1,
+            "confluence_source_groups": [
+              [
+                "London morning low 3485.06"
+              ]
+            ],
+            "backed_by": "1: AM lo",
+            "confluence_labels": 1,
+            "confluence_types": {
+              "London morning": "London morning low 3485.06"
+            },
+            "absorbed": []
+          },
+          {
             "label": "round 25",
             "type": "round number",
             "price": 3475.0,
@@ -16727,24 +16845,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -50.13,
-            "distance_scale": -0.77,
+            "distance_usd": -44.18,
+            "distance_scale": -0.68,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 68,
+              "hits": 77,
               "n": 250,
-              "rate": 0.272
+              "rate": 0.308
             },
             "p_reach_unpublished": {
-              "hits": 68,
+              "hits": 77,
               "n": 250,
-              "rate": 0.272
+              "rate": 0.308
             },
-            "distance_E": -0.939,
+            "distance_E": -0.828,
             "p_reach_E": {
-              "hits": 48,
+              "hits": 57,
               "n": 250,
-              "rate": 0.192
+              "rate": 0.228
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -16769,24 +16887,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -75.13,
-            "distance_scale": -1.154,
+            "distance_usd": -69.18,
+            "distance_scale": -1.065,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 36,
+              "hits": 40,
               "n": 250,
-              "rate": 0.144
+              "rate": 0.16
             },
             "p_reach_unpublished": {
-              "hits": 36,
+              "hits": 40,
               "n": 250,
-              "rate": 0.144
+              "rate": 0.16
             },
-            "distance_E": -1.408,
+            "distance_E": -1.296,
             "p_reach_E": {
-              "hits": 20,
+              "hits": 24,
               "n": 250,
-              "rate": 0.08
+              "rate": 0.096
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -16811,24 +16929,24 @@
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -125.13,
-            "distance_scale": -1.922,
+            "distance_usd": -119.18,
+            "distance_scale": -1.834,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 8,
+              "hits": 12,
               "n": 250,
-              "rate": 0.032
+              "rate": 0.048
             },
             "p_reach_unpublished": {
-              "hits": 8,
+              "hits": 12,
               "n": 250,
-              "rate": 0.032
+              "rate": 0.048
             },
-            "distance_E": -2.345,
+            "distance_E": -2.234,
             "p_reach_E": {
-              "hits": 6,
+              "hits": 7,
               "n": 250,
-              "rate": 0.024
+              "rate": 0.028
             },
             "confluence_sources": 1,
             "confluence_source_groups": [
@@ -16852,38 +16970,37 @@
             "dropped_for": "20-day low 3502.84",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority 20-day low",
+            "reason": "within 0.1 E ($6.50) of higher-priority 20-day low",
             "type": "prior week",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -22.29,
-            "distance_scale": -0.342,
+            "distance_usd": -16.34,
+            "distance_scale": -0.251,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 163,
+              "hits": 189,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.756
             },
             "p_reach_unpublished": {
-              "hits": 163,
+              "hits": 189,
               "n": 250,
-              "rate": 0.652
+              "rate": 0.756
             },
-            "distance_E": -0.418,
+            "distance_E": -0.306,
             "p_reach_E": {
-              "hits": 143,
+              "hits": 168,
               "n": 250,
-              "rate": 0.572
+              "rate": 0.672
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
               [
                 "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
+                "prior week low 3502.84"
               ],
               [
                 "round 50 3500.00"
@@ -16892,14 +17009,64 @@
                 "overnight low 3512.53"
               ]
             ],
-            "backed_by": "3: 20d lo/PW lo/H4 sw lo, 3500, ON lo",
-            "confluence_labels": 5,
+            "backed_by": "3: 20d lo/PW lo, 3500, ON lo",
+            "confluence_labels": 4,
             "confluence_types": {
               "20-day range": "20-day low 3502.84",
               "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84",
               "round number": "round 50 3500.00",
               "overnight": "overnight low 3512.53"
+            }
+          },
+          {
+            "label": "London morning high",
+            "price": 3540.24,
+            "source": "London morning 2026-11-25 08:00 -> 12:55 (partial, as at 12:55)",
+            "dropped_for": "prior day low 3546.61",
+            "gap_usd": 6.37,
+            "gap_E": 0.098,
+            "reason": "within 0.1 E ($6.50) of higher-priority prior day low",
+            "type": "London morning",
+            "side": "up",
+            "at_price": false,
+            "partial": true,
+            "computed_to_london": "2026-11-25 12:55",
+            "touches": null,
+            "distance_usd": 21.06,
+            "distance_scale": 0.324,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 149,
+              "n": 250,
+              "rate": 0.596
+            },
+            "p_reach_unpublished": {
+              "hits": 149,
+              "n": 250,
+              "rate": 0.596
+            },
+            "distance_E": 0.395,
+            "p_reach_E": {
+              "hits": 129,
+              "n": 250,
+              "rate": 0.516
+            },
+            "confluence_sources": 2,
+            "confluence_source_groups": [
+              [
+                "London morning high 3540.24",
+                "H1 FVG bearish 3540.24"
+              ],
+              [
+                "prior day low 3546.61"
+              ]
+            ],
+            "backed_by": "2: AM hi/H1 fvg-, PD lo",
+            "confluence_labels": 3,
+            "confluence_types": {
+              "London morning": "London morning high 3540.24",
+              "H1 FVG": "H1 FVG bearish 3540.24",
+              "prior day": "prior day low 3546.61"
             }
           },
           {
@@ -16909,15 +17076,15 @@
             "dropped_for": "20-day high 4148.54",
             "gap_usd": 1.23,
             "gap_E": 0.019,
-            "reason": "within 0.1 E ($6.51) of higher-priority 20-day high",
+            "reason": "within 0.1 E ($6.50) of higher-priority 20-day high",
             "type": "reaction level",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": 3,
-            "distance_usd": 622.18,
-            "distance_scale": 9.559,
+            "distance_usd": 628.13,
+            "distance_scale": 9.667,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16929,7 +17096,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.66,
+            "distance_E": 11.772,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -16964,15 +17131,15 @@
             "dropped_for": "20-day high 4148.54",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority 20-day high",
+            "reason": "within 0.1 E ($6.50) of higher-priority 20-day high",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 623.41,
-            "distance_scale": 9.578,
+            "distance_usd": 629.36,
+            "distance_scale": 9.685,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -16984,7 +17151,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.683,
+            "distance_E": 11.795,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17019,15 +17186,15 @@
             "dropped_for": "reaction level 4218.21",
             "gap_usd": 1.03,
             "gap_E": 0.016,
-            "reason": "within 0.1 E ($6.51) of higher-priority reaction level",
+            "reason": "within 0.1 E ($6.50) of higher-priority reaction level",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 692.05,
-            "distance_scale": 10.632,
+            "distance_usd": 698.0,
+            "distance_scale": 10.742,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17039,7 +17206,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.969,
+            "distance_E": 13.081,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17075,15 +17242,15 @@
             "dropped_for": "prior month high 4225.41",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority prior month high",
+            "reason": "within 0.1 E ($6.50) of higher-priority prior month high",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 10.759,
+            "distance_usd": 706.23,
+            "distance_scale": 10.868,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17095,7 +17262,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.124,
+            "distance_E": 13.235,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17134,15 +17301,15 @@
             "dropped_for": "reaction level 4401.01",
             "gap_usd": 1.44,
             "gap_E": 0.022,
-            "reason": "within 0.1 E ($6.51) of higher-priority reaction level",
+            "reason": "within 0.1 E ($6.50) of higher-priority reaction level",
             "type": "D1 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 874.43,
-            "distance_scale": 13.434,
+            "distance_usd": 880.38,
+            "distance_scale": 13.548,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17154,7 +17321,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.387,
+            "distance_E": 16.499,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17187,15 +17354,15 @@
             "dropped_for": "20-day MA 3888.35",
             "gap_usd": 2.56,
             "gap_E": 0.039,
-            "reason": "within 0.1 E ($6.51) of higher-priority 20-day MA",
+            "reason": "within 0.1 E ($6.50) of higher-priority 20-day MA",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 365.78,
-            "distance_scale": 5.62,
+            "distance_usd": 371.73,
+            "distance_scale": 5.721,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17207,7 +17374,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 6.855,
+            "distance_E": 6.966,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17236,15 +17403,15 @@
             "dropped_for": "reaction level 4199.61",
             "gap_usd": 0.86,
             "gap_E": 0.013,
-            "reason": "within 0.1 E ($6.51) of higher-priority reaction level",
+            "reason": "within 0.1 E ($6.50) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 673.62,
-            "distance_scale": 10.349,
+            "distance_usd": 679.57,
+            "distance_scale": 10.458,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17256,7 +17423,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.624,
+            "distance_E": 12.736,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17284,15 +17451,15 @@
             "dropped_for": "reaction level 4199.61",
             "gap_usd": 0.86,
             "gap_E": 0.013,
-            "reason": "within 0.1 E ($6.51) of higher-priority reaction level",
+            "reason": "within 0.1 E ($6.50) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 675.34,
-            "distance_scale": 10.375,
+            "distance_usd": 681.29,
+            "distance_scale": 10.485,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17304,7 +17471,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 12.656,
+            "distance_E": 12.768,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17332,15 +17499,15 @@
             "dropped_for": "reaction level 4401.01",
             "gap_usd": 1.44,
             "gap_E": 0.022,
-            "reason": "within 0.1 E ($6.51) of higher-priority reaction level",
+            "reason": "within 0.1 E ($6.50) of higher-priority reaction level",
             "type": "H4 swing",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 877.32,
-            "distance_scale": 13.479,
+            "distance_usd": 883.27,
+            "distance_scale": 13.593,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17352,7 +17519,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 16.442,
+            "distance_E": 16.553,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17379,90 +17546,33 @@
             }
           },
           {
-            "label": "H4 swing low",
-            "price": 3502.84,
-            "source": "H4 pivot (5 bars each side) at 2026-11-20 20:00 server, unviolated",
-            "dropped_for": "20-day low 3502.84",
-            "gap_usd": 0.0,
-            "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority 20-day low",
-            "type": "H4 swing",
-            "side": "down",
-            "at_price": false,
-            "partial": false,
-            "computed_to_london": null,
-            "touches": null,
-            "distance_usd": -22.29,
-            "distance_scale": -0.342,
-            "within_brief_range": true,
-            "p_reach_from_array": {
-              "hits": 163,
-              "n": 250,
-              "rate": 0.652
-            },
-            "p_reach_unpublished": {
-              "hits": 163,
-              "n": 250,
-              "rate": 0.652
-            },
-            "distance_E": -0.418,
-            "p_reach_E": {
-              "hits": 143,
-              "n": 250,
-              "rate": 0.572
-            },
-            "confluence_sources": 3,
-            "confluence_source_groups": [
-              [
-                "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
-              ],
-              [
-                "round 50 3500.00"
-              ],
-              [
-                "overnight low 3512.53"
-              ]
-            ],
-            "backed_by": "3: 20d lo/PW lo/H4 sw lo, 3500, ON lo",
-            "confluence_labels": 5,
-            "confluence_types": {
-              "20-day range": "20-day low 3502.84",
-              "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84",
-              "round number": "round 50 3500.00",
-              "overnight": "overnight low 3512.53"
-            }
-          },
-          {
             "label": "D1 FVG bearish",
             "price": 3689.61,
             "source": "D1 fair value gap 3689.61-3719.85, bars 2026-11-18 00:00 -> 2026-11-20 00:00 server, unfilled (part-filled)",
             "dropped_for": "H4 swing high 3689.61",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority H4 swing high",
+            "reason": "within 0.1 E ($6.50) of higher-priority H4 swing high",
             "type": "D1 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 164.48,
-            "distance_scale": 2.527,
+            "distance_usd": 170.43,
+            "distance_scale": 2.623,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 1,
+              "hits": 0,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.0
             },
             "p_reach_unpublished": {
-              "hits": 1,
+              "hits": 0,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.0
             },
-            "distance_E": 3.082,
+            "distance_E": 3.194,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17495,15 +17605,15 @@
             "dropped_for": "prior month high 4225.41",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority prior month high",
+            "reason": "within 0.1 E ($6.50) of higher-priority prior month high",
             "type": "D1 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 10.759,
+            "distance_usd": 706.23,
+            "distance_scale": 10.868,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17515,7 +17625,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.124,
+            "distance_E": 13.235,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17558,31 +17668,31 @@
             "dropped_for": "overnight high 3575.13",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority overnight high",
+            "reason": "within 0.1 E ($6.50) of higher-priority overnight high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 50.0,
-            "distance_scale": 0.768,
+            "distance_usd": 55.95,
+            "distance_scale": 0.861,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
             "p_reach_unpublished": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
-            "distance_E": 0.937,
+            "distance_E": 1.049,
             "p_reach_E": {
-              "hits": 32,
+              "hits": 23,
               "n": 250,
-              "rate": 0.128
+              "rate": 0.092
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -17613,27 +17723,27 @@
             "dropped_for": "H4 swing high 3689.61",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority H4 swing high",
+            "reason": "within 0.1 E ($6.50) of higher-priority H4 swing high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 164.48,
-            "distance_scale": 2.527,
+            "distance_usd": 170.43,
+            "distance_scale": 2.623,
             "within_brief_range": false,
             "p_reach_from_array": {
-              "hits": 1,
+              "hits": 0,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.0
             },
             "p_reach_unpublished": {
-              "hits": 1,
+              "hits": 0,
               "n": 250,
-              "rate": 0.004
+              "rate": 0.0
             },
-            "distance_E": 3.082,
+            "distance_E": 3.194,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17666,15 +17776,15 @@
             "dropped_for": "D1 FVG bearish 3923.06",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority D1 FVG bearish",
+            "reason": "within 0.1 E ($6.50) of higher-priority D1 FVG bearish",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 397.93,
-            "distance_scale": 6.114,
+            "distance_usd": 403.88,
+            "distance_scale": 6.215,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17686,7 +17796,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 7.457,
+            "distance_E": 7.569,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17717,15 +17827,15 @@
             "dropped_for": "D1 FVG bearish 4000.49",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority D1 FVG bearish",
+            "reason": "within 0.1 E ($6.50) of higher-priority D1 FVG bearish",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 475.36,
-            "distance_scale": 7.303,
+            "distance_usd": 481.31,
+            "distance_scale": 7.407,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17737,7 +17847,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 8.909,
+            "distance_E": 9.02,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17768,15 +17878,15 @@
             "dropped_for": "50-day MA 4061.79",
             "gap_usd": 5.13,
             "gap_E": 0.079,
-            "reason": "within 0.1 E ($6.51) of higher-priority 50-day MA",
+            "reason": "within 0.1 E ($6.50) of higher-priority 50-day MA",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 541.79,
-            "distance_scale": 8.324,
+            "distance_usd": 547.74,
+            "distance_scale": 8.429,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17788,7 +17898,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 10.153,
+            "distance_E": 10.265,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17821,15 +17931,15 @@
             "dropped_for": "H4 swing high 4155.43",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority H4 swing high",
+            "reason": "within 0.1 E ($6.50) of higher-priority H4 swing high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 630.3,
-            "distance_scale": 9.684,
+            "distance_usd": 636.25,
+            "distance_scale": 9.791,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17841,7 +17951,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 11.812,
+            "distance_E": 11.924,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17880,15 +17990,15 @@
             "dropped_for": "prior month high 4225.41",
             "gap_usd": 0.0,
             "gap_E": 0.0,
-            "reason": "within 0.1 E ($6.51) of higher-priority prior month high",
+            "reason": "within 0.1 E ($6.50) of higher-priority prior month high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 700.28,
-            "distance_scale": 10.759,
+            "distance_usd": 706.23,
+            "distance_scale": 10.868,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17900,7 +18010,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.124,
+            "distance_E": 13.235,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -17943,15 +18053,15 @@
             "dropped_for": "prior month high 4225.41",
             "gap_usd": 6.06,
             "gap_E": 0.093,
-            "reason": "within 0.1 E ($6.51) of higher-priority prior month high",
+            "reason": "within 0.1 E ($6.50) of higher-priority prior month high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 706.34,
-            "distance_scale": 10.852,
+            "distance_usd": 712.29,
+            "distance_scale": 10.962,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -17963,7 +18073,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 13.237,
+            "distance_E": 13.349,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -18001,15 +18111,15 @@
             "dropped_for": "H4 swing high 4315.68",
             "gap_usd": 4.66,
             "gap_E": 0.072,
-            "reason": "within 0.1 E ($6.51) of higher-priority H4 swing high",
+            "reason": "within 0.1 E ($6.50) of higher-priority H4 swing high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 795.21,
-            "distance_scale": 12.217,
+            "distance_usd": 801.16,
+            "distance_scale": 12.329,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -18021,7 +18131,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 14.903,
+            "distance_E": 15.014,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -18054,15 +18164,15 @@
             "dropped_for": "H4 swing high 4442.95",
             "gap_usd": 5.94,
             "gap_E": 0.091,
-            "reason": "within 0.1 E ($6.51) of higher-priority H4 swing high",
+            "reason": "within 0.1 E ($6.50) of higher-priority H4 swing high",
             "type": "H4 FVG",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 923.76,
-            "distance_scale": 14.192,
+            "distance_usd": 929.71,
+            "distance_scale": 14.308,
             "within_brief_range": false,
             "p_reach_from_array": {
               "hits": 0,
@@ -18074,7 +18184,7 @@
               "n": 250,
               "rate": 0.0
             },
-            "distance_E": 17.312,
+            "distance_E": 17.423,
             "p_reach_E": {
               "hits": 0,
               "n": 250,
@@ -18101,37 +18211,92 @@
             "formed_server": "2026-09-04 20:00"
           },
           {
+            "label": "H1 FVG bearish",
+            "price": 3540.24,
+            "source": "H1 fair value gap 3540.24-3542.98, bars 2026-11-25 06:00 -> 2026-11-25 08:00 server, unfilled (part-filled)",
+            "dropped_for": "prior day low 3546.61",
+            "gap_usd": 6.37,
+            "gap_E": 0.098,
+            "reason": "within 0.1 E ($6.50) of higher-priority prior day low",
+            "type": "H1 FVG",
+            "side": "up",
+            "at_price": false,
+            "partial": false,
+            "computed_to_london": null,
+            "touches": null,
+            "distance_usd": 21.06,
+            "distance_scale": 0.324,
+            "within_brief_range": true,
+            "p_reach_from_array": {
+              "hits": 149,
+              "n": 250,
+              "rate": 0.596
+            },
+            "p_reach_unpublished": {
+              "hits": 149,
+              "n": 250,
+              "rate": 0.596
+            },
+            "distance_E": 0.395,
+            "p_reach_E": {
+              "hits": 129,
+              "n": 250,
+              "rate": 0.516
+            },
+            "confluence_sources": 2,
+            "confluence_source_groups": [
+              [
+                "London morning high 3540.24",
+                "H1 FVG bearish 3540.24"
+              ],
+              [
+                "prior day low 3546.61"
+              ]
+            ],
+            "backed_by": "2: AM hi/H1 fvg-, PD lo",
+            "confluence_labels": 3,
+            "confluence_types": {
+              "London morning": "London morning high 3540.24",
+              "H1 FVG": "H1 FVG bearish 3540.24",
+              "prior day": "prior day low 3546.61"
+            },
+            "zone_low": 3540.24,
+            "zone_high": 3542.98,
+            "zone_width_usd": 2.74,
+            "formed_server": "2026-11-25 09:00"
+          },
+          {
             "label": "round 50",
             "price": 3500.0,
             "source": "round number",
             "dropped_for": "20-day low 3502.84",
             "gap_usd": 2.84,
             "gap_E": 0.044,
-            "reason": "within 0.1 E ($6.51) of higher-priority 20-day low",
+            "reason": "within 0.1 E ($6.50) of higher-priority 20-day low",
             "type": "round number",
             "side": "down",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": -25.13,
-            "distance_scale": -0.386,
+            "distance_usd": -19.18,
+            "distance_scale": -0.295,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 150,
+              "hits": 175,
               "n": 250,
-              "rate": 0.6
+              "rate": 0.7
             },
             "p_reach_unpublished": {
-              "hits": 150,
+              "hits": 175,
               "n": 250,
-              "rate": 0.6
+              "rate": 0.7
             },
-            "distance_E": -0.471,
+            "distance_E": -0.359,
             "p_reach_E": {
-              "hits": 131,
+              "hits": 157,
               "n": 250,
-              "rate": 0.524
+              "rate": 0.628
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -18140,17 +18305,15 @@
               ],
               [
                 "20-day low 3502.84",
-                "prior week low 3502.84",
-                "H4 swing low 3502.84"
+                "prior week low 3502.84"
               ]
             ],
-            "backed_by": "2: 3500, 20d lo/PW lo/H4 sw lo",
-            "confluence_labels": 4,
+            "backed_by": "2: 3500, 20d lo/PW lo",
+            "confluence_labels": 3,
             "confluence_types": {
               "round number": "round 50 3500.00",
               "20-day range": "20-day low 3502.84",
-              "prior week": "prior week low 3502.84",
-              "H4 swing": "H4 swing low 3502.84"
+              "prior week": "prior week low 3502.84"
             }
           },
           {
@@ -18160,31 +18323,31 @@
             "dropped_for": "prior day low 3546.61",
             "gap_usd": 3.39,
             "gap_E": 0.052,
-            "reason": "within 0.1 E ($6.51) of higher-priority prior day low",
+            "reason": "within 0.1 E ($6.50) of higher-priority prior day low",
             "type": "round number",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 24.87,
-            "distance_scale": 0.382,
+            "distance_usd": 30.82,
+            "distance_scale": 0.474,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 134,
+              "hits": 105,
               "n": 250,
-              "rate": 0.536
+              "rate": 0.42
             },
             "p_reach_unpublished": {
-              "hits": 134,
+              "hits": 105,
               "n": 250,
-              "rate": 0.536
+              "rate": 0.42
             },
-            "distance_E": 0.466,
+            "distance_E": 0.578,
             "p_reach_E": {
-              "hits": 106,
+              "hits": 79,
               "n": 250,
-              "rate": 0.424
+              "rate": 0.316
             },
             "confluence_sources": 3,
             "confluence_source_groups": [
@@ -18212,31 +18375,31 @@
             "dropped_for": "overnight high 3575.13",
             "gap_usd": 0.13,
             "gap_E": 0.002,
-            "reason": "within 0.1 E ($6.51) of higher-priority overnight high",
+            "reason": "within 0.1 E ($6.50) of higher-priority overnight high",
             "type": "round number",
             "side": "up",
             "at_price": false,
             "partial": false,
             "computed_to_london": null,
             "touches": null,
-            "distance_usd": 49.87,
-            "distance_scale": 0.766,
+            "distance_usd": 55.82,
+            "distance_scale": 0.859,
             "within_brief_range": true,
             "p_reach_from_array": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
             "p_reach_unpublished": {
-              "hits": 49,
+              "hits": 37,
               "n": 250,
-              "rate": 0.196
+              "rate": 0.148
             },
-            "distance_E": 0.935,
+            "distance_E": 1.046,
             "p_reach_E": {
-              "hits": 32,
+              "hits": 24,
               "n": 250,
-              "rate": 0.128
+              "rate": 0.096
             },
             "confluence_sources": 2,
             "confluence_source_groups": [
@@ -18329,60 +18492,6 @@
               "text": "Overnight low 3513: if 3507 breaks down\nHeld 63% of 1,941 visits, broke 33%\n76% of past breaks reached 3502 (20-day low 3503)\n50% reached 3497\n28% reached 3489\n16% reached 3481\n6% reached 3467\nBased on 2,002 US breaks down."
             },
             {
-              "label": "prior day low",
-              "price": 3546.61,
-              "direction": "up",
-              "trigger": 3552,
-              "held": {
-                "visits": 686,
-                "held": 409,
-                "broke": 227,
-                "held_pct": 60,
-                "broke_pct": 33,
-                "level_type": "prior day low",
-                "approach": "from below"
-              },
-              "rungs": [
-                {
-                  "fraction_E": 0.1,
-                  "price": 3557,
-                  "pct": 72.9,
-                  "count": 1405,
-                  "near_level": "prior day close 3556"
-                },
-                {
-                  "fraction_E": 0.2,
-                  "price": 3563,
-                  "pct": 50.1,
-                  "count": 966,
-                  "near_level": null
-                },
-                {
-                  "fraction_E": 0.35,
-                  "price": 3571,
-                  "pct": 28.1,
-                  "count": 541,
-                  "near_level": null
-                },
-                {
-                  "fraction_E": 0.5,
-                  "price": 3579,
-                  "pct": 17.1,
-                  "count": 329,
-                  "near_level": "overnight high 3575"
-                },
-                {
-                  "fraction_E": 0.75,
-                  "price": 3592,
-                  "pct": 7.0,
-                  "count": 134,
-                  "near_level": null
-                }
-              ],
-              "based_on_breaks": 1928,
-              "text": "Prior day low 3547: if 3552 breaks up\nHeld 60% of 686 visits, broke 33%\n73% of past breaks reached 3557 (prior day close 3556)\n50% reached 3563\n28% reached 3571\n17% reached 3579 (overnight high 3575)\n7% reached 3592\nBased on 1,928 US breaks up."
-            },
-            {
               "label": "20-day low",
               "price": 3502.84,
               "direction": "down",
@@ -18435,6 +18544,60 @@
               ],
               "based_on_breaks": 2002,
               "text": "20-day low 3503: if 3498 breaks down\nHeld 64% of 170 visits, broke 32%\n76% of past breaks reached 3492\n50% reached 3487\n28% reached 3479\n16% reached 3471\n6% reached 3457\nBased on 2,002 US breaks down."
+            },
+            {
+              "label": "prior day low",
+              "price": 3546.61,
+              "direction": "up",
+              "trigger": 3552,
+              "held": {
+                "visits": 686,
+                "held": 409,
+                "broke": 227,
+                "held_pct": 60,
+                "broke_pct": 33,
+                "level_type": "prior day low",
+                "approach": "from below"
+              },
+              "rungs": [
+                {
+                  "fraction_E": 0.1,
+                  "price": 3557,
+                  "pct": 72.9,
+                  "count": 1405,
+                  "near_level": "prior day close 3556"
+                },
+                {
+                  "fraction_E": 0.2,
+                  "price": 3563,
+                  "pct": 50.1,
+                  "count": 966,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.35,
+                  "price": 3571,
+                  "pct": 28.1,
+                  "count": 541,
+                  "near_level": null
+                },
+                {
+                  "fraction_E": 0.5,
+                  "price": 3579,
+                  "pct": 17.1,
+                  "count": 329,
+                  "near_level": "overnight high 3575"
+                },
+                {
+                  "fraction_E": 0.75,
+                  "price": 3592,
+                  "pct": 7.0,
+                  "count": 134,
+                  "near_level": null
+                }
+              ],
+              "based_on_breaks": 1928,
+              "text": "Prior day low 3547: if 3552 breaks up\nHeld 60% of 686 visits, broke 33%\n73% of past breaks reached 3557 (prior day close 3556)\n50% reached 3563\n28% reached 3571\n17% reached 3579 (overnight high 3575)\n7% reached 3592\nBased on 1,928 US breaks up."
             },
             {
               "label": "prior day close",
@@ -18629,13 +18792,13 @@
     "note": "The ruler (scale_usd = the published expected range) is the walk-forward implied-vol range x the tier-1 release ratio; the calibrated 20-day E (E_usd) is a shadow, and the fallback when implied vol is unavailable, more than 3 US closes stale, or its history is short (scale_used / status).",
     "gvz_availability": {
       "cboe": {
-        "fetched_utc": "2026-11-25T07:52:27+00:00",
+        "fetched_utc": "2026-11-25T12:52:01+00:00",
         "latest_date": "2026-11-24",
         "latest_value": 33.64,
         "error": null
       },
       "fred": {
-        "fetched_utc": "2026-11-25T07:52:27+00:00",
+        "fetched_utc": "2026-11-25T12:52:02+00:00",
         "latest_date": "2026-11-23",
         "latest_value": 31.25,
         "error": null
@@ -18644,10 +18807,10 @@
     "windows": {
       "london_0800_1300": {
         "for_session": "2026-11-25",
-        "usd": 26.91,
+        "usd": 26.86,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 31.34,
+        "unadjusted_usd": 31.29,
         "release": {
           "class": "t1_out",
           "releases": "GDP 13:30 (t2), Core PCE 13:30 (t1), Durable goods 13:30 (t2)",
@@ -18691,8 +18854,8 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.1648,
           "iv_k": 0.6476,
-          "iv_raw_usd": 48.39,
-          "iv_forecast_usd": 31.34,
+          "iv_raw_usd": 48.31,
+          "iv_forecast_usd": 31.29,
           "iv_status": "ok"
         },
         "E_usd": 25.85,
@@ -18701,10 +18864,10 @@
       },
       "us_1300_2000": {
         "for_session": "2026-11-25",
-        "usd": 65.09,
+        "usd": 64.98,
         "scale_used": "IV",
         "status": "ok",
-        "unadjusted_usd": 58.51,
+        "unadjusted_usd": 58.41,
         "release": {
           "class": "t1_in",
           "releases": "GDP 13:30 (t2), Core PCE 13:30 (t1), Durable goods 13:30 (t2)",
@@ -18748,8 +18911,8 @@
           "gvz_closes_behind": 0,
           "iv_share": 0.4236,
           "iv_k": 0.7541,
-          "iv_raw_usd": 77.58,
-          "iv_forecast_usd": 58.51,
+          "iv_raw_usd": 77.45,
+          "iv_forecast_usd": 58.41,
           "iv_status": "ok"
         },
         "E_usd": 53.36,
@@ -18766,10 +18929,10 @@
       "leans": "forward/v4/leans.csv"
     },
     "run_type_this_run": "scheduled",
-    "forecasts_appended_this_run": 127,
-    "leans_appended_this_run": 2,
-    "outcomes_appended_this_run": 190,
-    "forecast_rows_total": 4709,
+    "forecasts_appended_this_run": 67,
+    "leans_appended_this_run": 1,
+    "outcomes_appended_this_run": 0,
+    "forecast_rows_total": 4776,
     "outcome_rows_total": 4582,
     "completed_sessions": 25,
     "completed_by_window": {
@@ -18778,7 +18941,7 @@
     },
     "completed_sessions_any_run": 25,
     "rows_by_run_type": {
-      "scheduled": 4112,
+      "scheduled": 4179,
       "manual": 597
     },
     "run_type_rule": "completed_sessions counts scheduled runs only (Task Scheduler time trigger); manual runs are logged with run_type=manual and must be excluded from any analysis of the record.",
@@ -18818,16 +18981,16 @@
   "chart_outputs": {
     "mql5_script": "chart/GoldStatsLevels.mq5 (private repo)",
     "png": "gold_levels.png (public repo)",
-    "as_of_london": "2026-11-25 07:55"
+    "as_of_london": "2026-11-25 12:55"
   },
   "dollar": {
     "index": "MT5-built dollar index (ICE DXY formula on Vantage EURUSD, USDJPY, GBPUSD, USDCAD, USDSEK, USDCHF)",
-    "level": 103.874,
-    "as_of_date": "2026-11-24",
-    "prior_close": 104.324,
-    "prior_close_date": "2026-11-23",
-    "change": -0.45,
-    "change_pct": -0.431,
+    "level": 103.993,
+    "as_of_date": "2026-11-25",
+    "prior_close": 103.825,
+    "prior_close_date": "2026-11-24",
+    "change": 0.167,
+    "change_pct": 0.161,
     "relationship_250d": {
       "r2": 0.214,
       "t": -8.22,
@@ -18835,7 +18998,7 @@
       "to": "2026-11-17",
       "sign": "opposite"
     },
-    "line": "Dollar index 103.87, -0.45 (-0.43%) on the day. Over the last 250 days gold has tended to move the opposite way to the dollar, but loosely: the dollar accounts for about 21% of gold's day-to-day movement. Context only, not a guide to today's gold move.",
+    "line": "Dollar index 103.99, +0.17 (+0.16%) on the day. Over the last 250 days gold has tended to move the opposite way to the dollar, but loosely: the dollar accounts for about 21% of gold's day-to-day movement. Context only, not a guide to today's gold move.",
     "usage": "Publish the dollar index level and its change, and the relationship as context only. Never convert the dollar's move into a gold figure: no per-session dollar amount for gold (for example 'worth about $0.40 of gold'). The 250-day relationship is an average and does not apply to one session."
   },
   "brief_breaks": {
@@ -18850,7 +19013,7 @@
             "level_price": 3512.53,
             "trigger": 3510,
             "direction": "down",
-            "text": "Overnight low 3513: if 3510 breaks down\nHeld 61% of 1,809 visits, broke 35%\n73% of past breaks reached 3507\n50% reached 3505\n28% reached 3501\n15% reached 3497\n5% reached 3491\nBased on 1,716 London breaks down.",
+            "text": "Overnight low 3513: if 3510 breaks down\nHeld 61% of 1,809 visits, broke 35%\n73% of past breaks reached 3507\n50% reached 3505 (20-day low 3503)\n28% reached 3501 (round number 3500)\n15% reached 3497\n5% reached 3491\nBased on 1,716 London breaks down.",
             "held": {
               "visits": 1809,
               "held": 1108,
@@ -18873,14 +19036,14 @@
                 "price": 3505,
                 "pct": 49.8,
                 "count": 855,
-                "near_level": null
+                "near_level": "20-day low 3503"
               },
               {
                 "fraction_E": 0.35,
                 "price": 3501,
                 "pct": 28.3,
                 "count": 485,
-                "near_level": null
+                "near_level": "round number 3500"
               },
               {
                 "fraction_E": 0.5,
@@ -18892,6 +19055,114 @@
               {
                 "fraction_E": 0.75,
                 "price": 3491,
+                "pct": 5.3,
+                "count": 91,
+                "near_level": null
+              }
+            ],
+            "based_on_breaks": 1716
+          },
+          {
+            "level": "20-day low",
+            "level_price": 3502.84,
+            "trigger": 3500,
+            "direction": "down",
+            "text": "20-day low 3503: if 3500 breaks down\nHeld 63% of 70 visits, broke 33%\n73% of past breaks reached 3498 (round number 3500)\n50% reached 3495\n28% reached 3491\n15% reached 3487\n5% reached 3481\nBased on 1,716 London breaks down.",
+            "held": {
+              "visits": 70,
+              "held": 44,
+              "broke": 23,
+              "held_pct": 63,
+              "broke_pct": 33,
+              "level_type": "20-day low",
+              "approach": "from above"
+            },
+            "rungs": [
+              {
+                "fraction_E": 0.1,
+                "price": 3498,
+                "pct": 72.8,
+                "count": 1249,
+                "near_level": "round number 3500"
+              },
+              {
+                "fraction_E": 0.2,
+                "price": 3495,
+                "pct": 49.8,
+                "count": 855,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.35,
+                "price": 3491,
+                "pct": 28.3,
+                "count": 485,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.5,
+                "price": 3487,
+                "pct": 15.4,
+                "count": 265,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.75,
+                "price": 3481,
+                "pct": 5.3,
+                "count": 91,
+                "near_level": null
+              }
+            ],
+            "based_on_breaks": 1716
+          },
+          {
+            "level": "round 50",
+            "level_price": 3500.0,
+            "trigger": 3497,
+            "direction": "down",
+            "text": "Round number 3500: if 3497 breaks down\nHeld 59% of 385 visits, broke 36%\n73% of past breaks reached 3495\n50% reached 3492\n28% reached 3488\n15% reached 3484\n5% reached 3478\nBased on 1,716 London breaks down.",
+            "held": {
+              "visits": 385,
+              "held": 228,
+              "broke": 138,
+              "held_pct": 59,
+              "broke_pct": 36,
+              "level_type": "$100 round",
+              "approach": "from above"
+            },
+            "rungs": [
+              {
+                "fraction_E": 0.1,
+                "price": 3495,
+                "pct": 72.8,
+                "count": 1249,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.2,
+                "price": 3492,
+                "pct": 49.8,
+                "count": 855,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.35,
+                "price": 3488,
+                "pct": 28.3,
+                "count": 485,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.5,
+                "price": 3484,
+                "pct": 15.4,
+                "count": 265,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.75,
+                "price": 3478,
                 "pct": 5.3,
                 "count": 91,
                 "near_level": null
@@ -19176,60 +19447,6 @@
             "based_on_breaks": 2002
           },
           {
-            "level": "prior day low",
-            "level_price": 3546.61,
-            "trigger": 3552,
-            "direction": "up",
-            "text": "Prior day low 3547: if 3552 breaks up\nHeld 60% of 686 visits, broke 33%\n73% of past breaks reached 3557 (prior day close 3556)\n50% reached 3563\n28% reached 3571\n17% reached 3579 (overnight high 3575)\n7% reached 3592\nBased on 1,928 US breaks up.",
-            "held": {
-              "visits": 686,
-              "held": 409,
-              "broke": 227,
-              "held_pct": 60,
-              "broke_pct": 33,
-              "level_type": "prior day low",
-              "approach": "from below"
-            },
-            "rungs": [
-              {
-                "fraction_E": 0.1,
-                "price": 3557,
-                "pct": 72.9,
-                "count": 1405,
-                "near_level": "prior day close 3556"
-              },
-              {
-                "fraction_E": 0.2,
-                "price": 3563,
-                "pct": 50.1,
-                "count": 966,
-                "near_level": null
-              },
-              {
-                "fraction_E": 0.35,
-                "price": 3571,
-                "pct": 28.1,
-                "count": 541,
-                "near_level": null
-              },
-              {
-                "fraction_E": 0.5,
-                "price": 3579,
-                "pct": 17.1,
-                "count": 329,
-                "near_level": "overnight high 3575"
-              },
-              {
-                "fraction_E": 0.75,
-                "price": 3592,
-                "pct": 7.0,
-                "count": 134,
-                "near_level": null
-              }
-            ],
-            "based_on_breaks": 1928
-          },
-          {
             "level": "20-day low",
             "level_price": 3502.84,
             "trigger": 3498,
@@ -19282,6 +19499,60 @@
               }
             ],
             "based_on_breaks": 2002
+          },
+          {
+            "level": "prior day low",
+            "level_price": 3546.61,
+            "trigger": 3552,
+            "direction": "up",
+            "text": "Prior day low 3547: if 3552 breaks up\nHeld 60% of 686 visits, broke 33%\n73% of past breaks reached 3557 (prior day close 3556)\n50% reached 3563\n28% reached 3571\n17% reached 3579 (overnight high 3575)\n7% reached 3592\nBased on 1,928 US breaks up.",
+            "held": {
+              "visits": 686,
+              "held": 409,
+              "broke": 227,
+              "held_pct": 60,
+              "broke_pct": 33,
+              "level_type": "prior day low",
+              "approach": "from below"
+            },
+            "rungs": [
+              {
+                "fraction_E": 0.1,
+                "price": 3557,
+                "pct": 72.9,
+                "count": 1405,
+                "near_level": "prior day close 3556"
+              },
+              {
+                "fraction_E": 0.2,
+                "price": 3563,
+                "pct": 50.1,
+                "count": 966,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.35,
+                "price": 3571,
+                "pct": 28.1,
+                "count": 541,
+                "near_level": null
+              },
+              {
+                "fraction_E": 0.5,
+                "price": 3579,
+                "pct": 17.1,
+                "count": 329,
+                "near_level": "overnight high 3575"
+              },
+              {
+                "fraction_E": 0.75,
+                "price": 3592,
+                "pct": 7.0,
+                "count": 134,
+                "near_level": null
+              }
+            ],
+            "based_on_breaks": 1928
           },
           {
             "level": "prior day close",
@@ -19463,7 +19734,7 @@
         "inputs": {
           "rsi_D1": 29.1,
           "rsi_D1_pct": 1.6,
-          "ma200_distance_E": 33.599,
+          "ma200_distance_E": 33.666,
           "ma200_pct": 99.6
         }
       },
@@ -19477,7 +19748,7 @@
         "inputs": {
           "rsi_D1": 29.1,
           "rsi_D1_pct": 1.6,
-          "ma200_distance_E": 16.277,
+          "ma200_distance_E": 16.388,
           "ma200_pct": 99.6
         }
       }
@@ -19778,29 +20049,29 @@
     "windows": {
       "london_0800_1300": {
         "even_odds_band": {
-          "anchor": 3525.13,
+          "anchor": 3523.41,
           "up_distance_ranges": 0.3878,
           "down_distance_ranges": 0.4778,
-          "up_price": 3535.57,
-          "down_price": 3512.27,
-          "up_usd": 10.44,
-          "down_usd": 12.86,
+          "up_price": 3533.83,
+          "down_price": 3510.57,
+          "up_usd": 10.42,
+          "down_usd": 12.84,
           "skew": "down",
           "skew_usd": 2.42,
           "definition": "50% reach point of each excursion array (its median) x the published expected range, from the anchor",
-          "anchor_source": "latest price 2026-11-25 07:50 (window not open yet)"
+          "anchor_source": "window open 08:00"
         },
         "first_level": {
           "status": "ok",
           "above": "prior day low 3547",
           "below": "overnight low 3513",
-          "distance_up_usd": 21.48,
-          "distance_down_usd": 12.6,
+          "distance_up_usd": 23.2,
+          "distance_down_usd": 10.88,
           "nearer": "below",
           "nearer_first": 28,
           "similar_sessions": 39,
           "sessions": 250,
-          "line": "First level: the nearest shown levels are prior day low 3547 above ($21 away) and overnight low 3513 below ($13 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 28 of 39 (72%)."
+          "line": "First level: the nearest shown levels are prior day low 3547 above ($23 away) and overnight low 3513 below ($11 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 28 of 39 (72%)."
         },
         "confluence": {
           "imbalance": 1,
@@ -19813,25 +20084,25 @@
         "inputs": {
           "rsi_D1": 29.0849,
           "rsi_H4": 28.9304,
-          "rsi_H1": 23.2924,
-          "ma_d_D120": 14.0509,
-          "ma_d_D150": 20.7606,
-          "ma_d_D1200": 33.5992,
-          "ma_d_H420": 2.5234,
-          "ma_d_H120": 1.7315,
-          "pos": 0.0345,
+          "rsi_H1": 28.2613,
+          "ma_d_D120": 14.1174,
+          "ma_d_D150": 20.8272,
+          "ma_d_D1200": 33.6657,
+          "ma_d_H420": 2.5899,
+          "ma_d_H120": 1.5928,
+          "pos": 0.0319,
           "conf": 1.0
         },
         "percentiles_vs_trailing": {
           "rsi_D1": 1.6,
           "rsi_H4": 6.4,
-          "rsi_H1": 1.6,
+          "rsi_H1": 4.0,
           "conf": 75.4,
           "ma_d_D1200": 99.6,
           "ma_d_D150": 99.6,
           "ma_d_D120": 99.6,
-          "ma_d_H420": 86.8,
-          "ma_d_H120": 95.2
+          "ma_d_H420": 87.2,
+          "ma_d_H120": 94.0
         },
         "active_bands": {
           "RSI D1 conventional|20-30": {
@@ -19867,7 +20138,7 @@
             "in_range": true
           },
           "RSI H1 conventional|20-30": {
-            "reading": 23.2924,
+            "reading": 28.2613,
             "measured_range": [
               21.2249,
               29.946
@@ -19875,7 +20146,7 @@
             "in_range": true
           },
           "RSI H1 own deciles|decile 1": {
-            "reading": 23.2924,
+            "reading": 28.2613,
             "measured_range": [
               17.7642,
               38.1638
@@ -19883,7 +20154,7 @@
             "in_range": true
           },
           "200-day average|top decile (price far below)": {
-            "reading": 33.5992,
+            "reading": 33.6657,
             "measured_range": [
               -16.4984,
               33.9755
@@ -19891,7 +20162,7 @@
             "in_range": true
           },
           "200-day average|top ventile (price furthest below)": {
-            "reading": 33.5992,
+            "reading": 33.6657,
             "measured_range": [
               -12.905,
               33.9755
@@ -19899,7 +20170,7 @@
             "in_range": true
           },
           "50-day average|top decile (price far below)": {
-            "reading": 20.7606,
+            "reading": 20.8272,
             "measured_range": [
               -0.583,
               21.5811
@@ -19907,7 +20178,7 @@
             "in_range": true
           },
           "50-day average|top ventile (price furthest below)": {
-            "reading": 20.7606,
+            "reading": 20.8272,
             "measured_range": [
               2.5686,
               21.5811
@@ -19915,7 +20186,7 @@
             "in_range": true
           },
           "20-day average|top decile (price far below)": {
-            "reading": 14.0509,
+            "reading": 14.1174,
             "measured_range": [
               2.0399,
               15.5447
@@ -19923,7 +20194,7 @@
             "in_range": true
           },
           "20-day average|top ventile (price furthest below)": {
-            "reading": 14.0509,
+            "reading": 14.1174,
             "measured_range": [
               2.6353,
               15.5447
@@ -19931,23 +20202,15 @@
             "in_range": true
           },
           "H1 20 average|top decile (price far below)": {
-            "reading": 1.7315,
+            "reading": 1.5928,
             "measured_range": [
               0.6369,
               6.3526
             ],
             "in_range": true
           },
-          "H1 20 average|top ventile (price furthest below)": {
-            "reading": 1.7315,
-            "measured_range": [
-              0.9375,
-              6.3526
-            ],
-            "in_range": true
-          },
           "20-day range position|0-10%": {
-            "reading": 0.0345,
+            "reading": 0.0319,
             "measured_range": [
               -0.2901,
               0.0994
@@ -19958,33 +20221,33 @@
       },
       "us_1300_2000": {
         "even_odds_band": {
-          "anchor": 3525.13,
+          "anchor": 3519.18,
           "up_distance_ranges": 0.4176,
           "down_distance_ranges": 0.5029,
-          "up_price": 3552.31,
-          "down_price": 3492.4,
-          "up_usd": 27.18,
-          "down_usd": 32.73,
+          "up_price": 3546.32,
+          "down_price": 3486.5,
+          "up_usd": 27.14,
+          "down_usd": 32.68,
           "skew": "down",
-          "skew_usd": 5.55,
+          "skew_usd": 5.54,
           "definition": "50% reach point of each excursion array (its median) x the published expected range, from the anchor",
-          "anchor_source": "latest price 2026-11-25 07:50 (window not open yet)"
+          "anchor_source": "latest price 2026-11-25 12:50 (window not open yet)"
         },
         "first_level": {
           "status": "ok",
           "above": "prior day low 3547",
           "below": "overnight low 3513",
-          "distance_up_usd": 21.48,
-          "distance_down_usd": 12.6,
+          "distance_up_usd": 27.43,
+          "distance_down_usd": 6.65,
           "nearer": "below",
-          "nearer_first": 30,
-          "similar_sessions": 46,
+          "nearer_first": 7,
+          "similar_sessions": 8,
           "sessions": 250,
-          "line": "First level: the nearest shown levels are prior day low 3547 above ($21 away) and overnight low 3513 below ($13 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 30 of 46 (65%)."
+          "line": "First level: the nearest shown levels are prior day low 3547 above ($27 away) and overnight low 3513 below ($7 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 7 of 8 (88%)."
         },
         "confluence": {
-          "imbalance": 2,
-          "percentile_vs_trailing": 77.3,
+          "imbalance": 3,
+          "percentile_vs_trailing": 85.3,
           "state": "balanced",
           "line": "Confluence: balanced.",
           "in_brief": false,
@@ -19992,26 +20255,26 @@
         },
         "inputs": {
           "rsi_D1": 29.0849,
-          "rsi_H4": 28.9304,
-          "rsi_H1": 23.2924,
-          "ma_d_D120": 6.8069,
-          "ma_d_D150": 10.0574,
-          "ma_d_D1200": 16.277,
-          "ma_d_H420": 1.2224,
-          "ma_d_H120": 0.8388,
-          "pos": 0.0345,
-          "conf": 2.0
+          "rsi_H4": 30.6905,
+          "rsi_H1": 24.4997,
+          "ma_d_D120": 6.9184,
+          "ma_d_D150": 10.1689,
+          "ma_d_D1200": 16.3885,
+          "ma_d_H420": 1.3058,
+          "ma_d_H120": 0.4499,
+          "pos": 0.0253,
+          "conf": 3.0
         },
         "percentiles_vs_trailing": {
           "rsi_D1": 1.6,
-          "rsi_H4": 6.4,
+          "rsi_H4": 8.0,
           "rsi_H1": 2.0,
-          "conf": 77.3,
+          "conf": 85.3,
           "ma_d_D1200": 99.6,
           "ma_d_D150": 99.6,
-          "ma_d_D120": 99.2,
-          "ma_d_H420": 86.0,
-          "ma_d_H120": 94.4
+          "ma_d_D120": 99.6,
+          "ma_d_H420": 86.4,
+          "ma_d_H120": 84.4
         },
         "active_bands": {
           "RSI D1 conventional|20-30": {
@@ -20030,16 +20293,8 @@
             ],
             "in_range": true
           },
-          "RSI H4 conventional|20-30": {
-            "reading": 28.9304,
-            "measured_range": [
-              20.0581,
-              29.8366
-            ],
-            "in_range": true
-          },
           "RSI H4 own deciles|decile 1": {
-            "reading": 28.9304,
+            "reading": 30.6905,
             "measured_range": [
               15.0205,
               39.2954
@@ -20047,7 +20302,7 @@
             "in_range": true
           },
           "RSI H1 conventional|20-30": {
-            "reading": 23.2924,
+            "reading": 24.4997,
             "measured_range": [
               20.7829,
               29.8586
@@ -20055,7 +20310,7 @@
             "in_range": true
           },
           "RSI H1 own deciles|decile 1": {
-            "reading": 23.2924,
+            "reading": 24.4997,
             "measured_range": [
               9.6613,
               37.4281
@@ -20063,7 +20318,7 @@
             "in_range": true
           },
           "200-day average|top decile (price far below)": {
-            "reading": 16.277,
+            "reading": 16.3885,
             "measured_range": [
               -10.8787,
               17.3026
@@ -20071,7 +20326,7 @@
             "in_range": true
           },
           "200-day average|top ventile (price furthest below)": {
-            "reading": 16.277,
+            "reading": 16.3885,
             "measured_range": [
               -9.3352,
               17.3026
@@ -20079,7 +20334,7 @@
             "in_range": true
           },
           "50-day average|top decile (price far below)": {
-            "reading": 10.0574,
+            "reading": 10.1689,
             "measured_range": [
               0.562,
               10.9539
@@ -20087,7 +20342,7 @@
             "in_range": true
           },
           "50-day average|top ventile (price furthest below)": {
-            "reading": 10.0574,
+            "reading": 10.1689,
             "measured_range": [
               1.0473,
               10.9539
@@ -20095,7 +20350,7 @@
             "in_range": true
           },
           "20-day average|top decile (price far below)": {
-            "reading": 6.8069,
+            "reading": 6.9184,
             "measured_range": [
               1.0071,
               7.8619
@@ -20103,23 +20358,15 @@
             "in_range": true
           },
           "20-day average|top ventile (price furthest below)": {
-            "reading": 6.8069,
+            "reading": 6.9184,
             "measured_range": [
               1.8464,
               7.8619
             ],
             "in_range": true
           },
-          "H1 20 average|top decile (price far below)": {
-            "reading": 0.8388,
-            "measured_range": [
-              0.3885,
-              2.6778
-            ],
-            "in_range": true
-          },
           "20-day range position|0-10%": {
-            "reading": 0.0345,
+            "reading": 0.0253,
             "measured_range": [
               -0.3799,
               0.0997
@@ -20134,13 +20381,13 @@
     "usage": "After each window's levels table, print that window's lines below verbatim. They describe the published arrays and measured rates; never turn them into a forecast, a trade call or a lean.",
     "windows": {
       "london_0800_1300": [
-        "Even odds: half of past sessions went at least $13 below 3525 (to 3512) and half at least $10 above it (to 3536). The lower side is $2 wider.",
-        "First level: the nearest shown levels are prior day low 3547 above ($21 away) and overnight low 3513 below ($13 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 28 of 39 (72%).",
+        "Even odds: half of past sessions went at least $13 below 3523 (to 3511) and half at least $10 above it (to 3534). The lower side is $2 wider.",
+        "First level: the nearest shown levels are prior day low 3547 above ($23 away) and overnight low 3513 below ($11 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 28 of 39 (72%).",
         "Volatility: nothing in today's readings has gone with wider-than-expected sessions."
       ],
       "us_1300_2000": [
-        "Even odds: half of past sessions went at least $33 below 3525 (to 3492) and half at least $27 above it (to 3552). The lower side is $6 wider.",
-        "First level: the nearest shown levels are prior day low 3547 above ($21 away) and overnight low 3513 below ($13 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 30 of 46 (65%).",
+        "Even odds: half of past sessions went at least $33 below 3519 (to 3486) and half at least $27 above it (to 3546). The lower side is $6 wider.",
+        "First level: the nearest shown levels are prior day low 3547 above ($27 away) and overnight low 3513 below ($7 away). In the last 250 sessions, when the two distances were split like this, the nearer level (below) was reached first in 7 of 8 (88%).",
         "Volatility: nothing in today's readings has gone with wider-than-expected sessions."
       ]
     }
@@ -20151,9 +20398,9 @@
       "london_0800_1300": {
         "window": "London",
         "pre_session_uk": "23:00-08:00",
-        "pre_session_status": "in progress",
-        "pre_session_through_london": "07:55",
-        "forecast_usd": 26.91,
+        "pre_session_status": "complete",
+        "pre_session_through_london": "08:00",
+        "forecast_usd": 26.86,
         "status": "ok",
         "gold_ratio": 1.052,
         "dollar_ratio": 1.089,
@@ -20161,11 +20408,11 @@
         "dollar_busy": false,
         "state": "neither",
         "multiplier": 0.94,
-        "adjusted_usd": 25.3,
-        "session_open_price": 3525.13,
-        "session_open_source": "latest price 2026-11-25 07:50 (window not open yet)",
-        "adjusted_low": 3512,
-        "adjusted_high": 3538,
+        "adjusted_usd": 25.25,
+        "session_open_price": 3523.41,
+        "session_open_source": "window open 08:00",
+        "adjusted_low": 3511,
+        "adjusted_high": 3536,
         "past_sessions_like_this": 881,
         "past_beat_forecast_pct": 44,
         "line": "Before the open: neither gold nor the dollar was busier than usual. In 881 past London sessions like this the range beat the forecast 44% of the time. Adjusted range $25 (forecast $27)."
@@ -20173,28 +20420,40 @@
       "us_1300_2000": {
         "window": "New York",
         "pre_session_uk": "08:00-13:00",
-        "pre_session_status": "not started",
-        "pre_session_through_london": null,
-        "forecast_usd": 65.09,
-        "status": "pending",
-        "line": null,
-        "note": "pre-session window not started yet"
+        "pre_session_status": "in progress",
+        "pre_session_through_london": "12:55",
+        "forecast_usd": 64.98,
+        "status": "ok",
+        "gold_ratio": 2.002,
+        "dollar_ratio": 0.732,
+        "gold_busy": true,
+        "dollar_busy": false,
+        "state": "one",
+        "multiplier": 1.03,
+        "adjusted_usd": 66.93,
+        "session_open_price": 3519.18,
+        "session_open_source": "latest price 2026-11-25 12:50 (window not open yet)",
+        "adjusted_low": 3486,
+        "adjusted_high": 3553,
+        "past_sessions_like_this": 422,
+        "past_beat_forecast_pct": 54,
+        "line": "Before the open: gold was busier than usual, the dollar was not. In 422 past New York sessions like this the range beat the forecast 54% of the time. Adjusted range $67 (forecast $65)."
       }
     },
     "stale_inputs": {
-      "USOUSD": "last bar 2026-11-24 15:20:00 is 1110 min behind gold"
+      "USOUSD": "last bar 2026-11-25 10:20:00 is 270 min behind gold"
     }
   },
   "oil_regime": {
-    "share_opposite": 0.5931,
-    "hours": 2588,
+    "share_opposite": 0.5927,
+    "hours": 2583,
     "state": "against gold",
     "trading_days": 120,
-    "from": "2026-06-11",
-    "to": "2026-11-24",
+    "from": "2026-06-12",
+    "to": "2026-11-25",
     "definition": "Last 120 trading days of hourly bars (close to close, consecutive hours only, the forming hour excluded): share of hours where gold and USOUSD both moved and moved in opposite directions. 'against gold' >= 55%, 'with gold' <= 45%, otherwise 'mixed'.",
     "stale_inputs": {
-      "USOUSD": "last bar 2026-11-24 15:20:00 is 1110 min behind gold"
+      "USOUSD": "last bar 2026-11-25 10:20:00 is 270 min behind gold"
     }
   },
   "direction_lean": {
@@ -20203,8 +20462,8 @@
       "london_0800_1300": {
         "window": "London",
         "pre_session_uk": "23:00-08:00",
-        "pre_session_status": "in progress",
-        "pre_session_through_london": "07:55",
+        "pre_session_status": "complete",
+        "pre_session_through_london": "08:00",
         "history_from": "2019-12-18",
         "status": "pending",
         "active": [],
@@ -20214,8 +20473,8 @@
       "us_1300_2000": {
         "window": "New York",
         "pre_session_uk": "08:00-13:00",
-        "pre_session_status": "not started",
-        "pre_session_through_london": null,
+        "pre_session_status": "in progress",
+        "pre_session_through_london": "12:55",
         "history_from": "2019-12-18",
         "status": "pending",
         "active": [],
@@ -20224,7 +20483,7 @@
       }
     },
     "stale_inputs": {
-      "USOUSD": "last bar 2026-11-24 15:20:00 is 1110 min behind gold"
+      "USOUSD": "last bar 2026-11-25 10:20:00 is 270 min behind gold"
     }
   }
 }
